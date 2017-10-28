@@ -8,21 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */; };
-		222B20DF1FA27D9700C4ECEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DE1FA27D9700C4ECEE /* ViewController.swift */; };
+		222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */; };
 		222B20E21FA27D9700C4ECEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E01FA27D9700C4ECEE /* Main.storyboard */; };
 		222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E31FA27D9700C4ECEE /* Assets.xcassets */; };
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
+		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
+		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
+		22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326431FA2B46500077FE7 /* PagerViewCell.swift */; };
+		22E326471FA3961600077FE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326461FA3961600077FE7 /* LoginController.swift */; };
+		22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326481FA39B2F00077FE7 /* CustomTextField.swift */; };
+		22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264B1FA3C49400077FE7 /* RegexClass.swift */; };
+		22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264D1FA3C7C000077FE7 /* BaseController.swift */; };
+		22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */; };
 		315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		222B20D91FA27D9700C4ECEE /* Resten Glow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resten Glow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		222B20DE1FA27D9700C4ECEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		222B20E11FA27D9700C4ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		222B20E31FA27D9700C4ECEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222B20E61FA27D9700C4ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222B20E81FA27D9700C4ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewCell.xib; sourceTree = "<group>"; };
+		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		22E326431FA2B46500077FE7 /* PagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerViewCell.swift; sourceTree = "<group>"; };
+		22E326461FA3961600077FE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		22E326481FA39B2F00077FE7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		22E3264B1FA3C49400077FE7 /* RegexClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexClass.swift; sourceTree = "<group>"; };
+		22E3264D1FA3C7C000077FE7 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.release.xcconfig"; sourceTree = "<group>"; };
 		8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resten_Glow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,13 +78,45 @@
 			isa = PBXGroup;
 			children = (
 				222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */,
-				222B20DE1FA27D9700C4ECEE /* ViewController.swift */,
+				22E326401FA2B0D200077FE7 /* View */,
+				22E326451FA3935000077FE7 /* Controller */,
 				222B20E01FA27D9700C4ECEE /* Main.storyboard */,
 				222B20E31FA27D9700C4ECEE /* Assets.xcassets */,
+				22E3264A1FA3C48400077FE7 /* Extension */,
 				222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */,
 				222B20E81FA27D9700C4ECEE /* Info.plist */,
+				222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */,
+				22E326431FA2B46500077FE7 /* PagerViewCell.swift */,
 			);
 			path = "Resten Glow";
+			sourceTree = "<group>";
+		};
+		22E326401FA2B0D200077FE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22E326481FA39B2F00077FE7 /* CustomTextField.swift */,
+				22E326411FA2B0F300077FE7 /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		22E326451FA3935000077FE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22E3264D1FA3C7C000077FE7 /* BaseController.swift */,
+				22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */,
+				222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */,
+				22E326461FA3961600077FE7 /* LoginController.swift */,
+			);
+			name = "\U0010Controller";
+			sourceTree = "<group>";
+		};
+		22E3264A1FA3C48400077FE7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22E3264B1FA3C49400077FE7 /* RegexClass.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
@@ -150,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
 				222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */,
 				222B20E21FA27D9700C4ECEE /* Main.storyboard in Resources */,
@@ -211,8 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222B20DF1FA27D9700C4ECEE /* ViewController.swift in Sources */,
+				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
+				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
+				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
+				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
+				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
+				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
+				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
+				22E326471FA3961600077FE7 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +432,7 @@
 				222B20ED1FA27D9700C4ECEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
