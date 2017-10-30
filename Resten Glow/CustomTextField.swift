@@ -50,7 +50,7 @@ class CustomTextField: UITextField {
             self.font = calculatedFont
             break
         case 568.0: //iphone 5, 5s => 4 inch
-            calculatedFont = UIFont.systemFont(ofSize: fontSize * 0.7)
+            calculatedFont = UIFont.systemFont(ofSize: fontSize * 0.75)
             self.font = calculatedFont
             break
         case 667.0: //iphone 6, 6s => 4.7 inch
@@ -70,11 +70,11 @@ class CustomTextField: UITextField {
             self.font = calculatedFont
             break
         case 1112.0: //ipad for 10.5 inch
-            calculatedFont =  UIFont.systemFont(ofSize: fontSize*2.5)
+            calculatedFont =  UIFont.systemFont(ofSize: fontSize*2.3)
             self.font = calculatedFont
             break
         case 1366.0: //ipad for 12.9 inch
-            calculatedFont =  UIFont.systemFont(ofSize: fontSize*3.0)
+            calculatedFont =  UIFont.systemFont(ofSize: fontSize*2.7)
             self.font = calculatedFont
             break
         default:

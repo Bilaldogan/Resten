@@ -13,6 +13,7 @@
 		222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E31FA27D9700C4ECEE /* Assets.xcassets */; };
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
 		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
+		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
 		22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326431FA2B46500077FE7 /* PagerViewCell.swift */; };
 		22E326471FA3961600077FE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326461FA3961600077FE7 /* LoginController.swift */; };
@@ -32,6 +33,7 @@
 		222B20E61FA27D9700C4ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222B20E81FA27D9700C4ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewCell.xib; sourceTree = "<group>"; };
+		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		22E326431FA2B46500077FE7 /* PagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerViewCell.swift; sourceTree = "<group>"; };
 		22E326461FA3961600077FE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				22E3264D1FA3C7C000077FE7 /* BaseController.swift */,
 				22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */,
 				222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */,
+				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 				22E326461FA3961600077FE7 /* LoginController.swift */,
 			);
 			name = "\U0010Controller";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
 				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,

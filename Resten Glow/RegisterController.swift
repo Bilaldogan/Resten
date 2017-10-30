@@ -1,32 +1,35 @@
 //
-//  ForgotPasswordController.swift
+//  RegisterController.swift
 //  Resten Glow
 //
-//  Created by bilal on 27/10/2017.
+//  Created by bilal on 30/10/2017.
 //  Copyright © 2017 bilal. All rights reserved.
 //
 
 import UIKit
 
-class ForgotPasswordController: BaseController {
+class RegisterController: BaseController {
 
     @IBOutlet weak var textFieldEmail: CustomTextField!
-    
+    @IBOutlet weak var textFieldPassword: CustomTextField!
+    @IBOutlet weak var textFieldName: CustomTextField!
+    @IBOutlet weak var textFieldSurname: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
-    
-    @IBAction func submitButtonTapped(_ sender: UIButton) {
-    textFieldRegexHelp()
-    }
+
 
 
 }
-extension ForgotPasswordController {
+extension RegisterController{
     internal func textFieldRegexHelp() {
         
-        if  textFieldEmail.text! == "" {
+        if  textFieldEmail.text! == "" ||
+            textFieldPassword.text! == "" ||
+            textFieldName.text! == "" ||
+            textFieldSurname.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
             //Popup çağır
         }

@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="-60.326086956521742"/>
         </scene>
-        <!--View Controller-->
+        <!--Kayıt Ol-->
         <scene sceneID="8MP-GG-WGG">
             <objects>
-                <viewController id="4X1-3z-uPB" sceneMemberID="viewController">
+                <viewController id="4X1-3z-uPB" customClass="RegisterController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="niq-iL-i8x"/>
                         <viewControllerLayoutGuide type="bottom" id="t4U-5a-VQx"/>
@@ -128,12 +128,182 @@
                     <view key="view" contentMode="scaleToFill" id="zpT-LN-6Zw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-oG-tWl">
+                                <rect key="frame" x="35" y="84" width="48.333333333333329" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-jl-BeF" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="35" y="116" width="344" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-68-ck7">
+                                <rect key="frame" x="35" y="195" width="40.666666666666671" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-7G-cVq" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="35" y="227" width="344" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-wC-NW7">
+                                <rect key="frame" x="35" y="306" width="24.666666666666664" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-wE-f6u" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="35" y="338" width="344" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-PW-38R">
+                                <rect key="frame" x="35" y="417" width="56.333333333333329" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyadınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDx-Ku-jIk" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="35" y="449" width="344" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-Rp-vEv">
+                                <rect key="frame" x="0.0" y="662" width="414" height="73.666666666666629"/>
+                                <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="Kayıt Ol">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="4nj-Lq-Ltr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n2e-PW-38R" firstAttribute="top" secondItem="hVN-wE-f6u" secondAttribute="bottom" constant="20" id="1Tg-O0-vXN"/>
+                            <constraint firstItem="Xoz-wC-NW7" firstAttribute="top" secondItem="CVq-7G-cVq" secondAttribute="bottom" constant="20" id="2Zc-nI-bgM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gRt-jl-BeF" secondAttribute="trailing" constant="15" id="4Mh-TB-vu9"/>
+                            <constraint firstItem="Akd-Rp-vEv" firstAttribute="height" secondItem="zpT-LN-6Zw" secondAttribute="height" multiplier="0.1" id="7BA-me-heE"/>
+                            <constraint firstItem="Xoz-wC-NW7" firstAttribute="leading" secondItem="3MQ-68-ck7" secondAttribute="leading" id="8Sy-UZ-aaa"/>
+                            <constraint firstItem="hVN-wE-f6u" firstAttribute="top" secondItem="Xoz-wC-NW7" secondAttribute="bottom" constant="8" id="9Ov-2K-mkk"/>
+                            <constraint firstItem="3MQ-68-ck7" firstAttribute="top" secondItem="gRt-jl-BeF" secondAttribute="bottom" constant="20" id="9PO-Qh-Z3u"/>
+                            <constraint firstItem="nAF-oG-tWl" firstAttribute="leading" secondItem="zpT-LN-6Zw" secondAttribute="leadingMargin" constant="15" id="Bhk-Qf-9LB"/>
+                            <constraint firstItem="iDx-Ku-jIk" firstAttribute="height" secondItem="hVN-wE-f6u" secondAttribute="height" id="EVT-g6-jyo"/>
+                            <constraint firstItem="hVN-wE-f6u" firstAttribute="height" secondItem="CVq-7G-cVq" secondAttribute="height" id="Eo7-u6-fX7"/>
+                            <constraint firstItem="CVq-7G-cVq" firstAttribute="leading" secondItem="3MQ-68-ck7" secondAttribute="leading" id="LGK-d9-OJT"/>
+                            <constraint firstItem="gRt-jl-BeF" firstAttribute="top" secondItem="nAF-oG-tWl" secondAttribute="bottom" constant="8" id="NbG-BT-2u8"/>
+                            <constraint firstItem="iDx-Ku-jIk" firstAttribute="width" secondItem="hVN-wE-f6u" secondAttribute="width" id="PM6-6m-6iw"/>
+                            <constraint firstItem="hVN-wE-f6u" firstAttribute="leading" secondItem="Xoz-wC-NW7" secondAttribute="leading" id="Qv1-4F-VZT"/>
+                            <constraint firstItem="gRt-jl-BeF" firstAttribute="leading" secondItem="nAF-oG-tWl" secondAttribute="leading" id="WcQ-nq-ePj"/>
+                            <constraint firstItem="hVN-wE-f6u" firstAttribute="width" secondItem="CVq-7G-cVq" secondAttribute="width" id="dUY-mM-mXF"/>
+                            <constraint firstItem="n2e-PW-38R" firstAttribute="leading" secondItem="Xoz-wC-NW7" secondAttribute="leading" id="dvg-aA-fES"/>
+                            <constraint firstItem="3MQ-68-ck7" firstAttribute="leading" secondItem="nAF-oG-tWl" secondAttribute="leading" id="e0n-aq-ZSM"/>
+                            <constraint firstItem="CVq-7G-cVq" firstAttribute="top" secondItem="3MQ-68-ck7" secondAttribute="bottom" constant="8" id="eG6-zB-2oI"/>
+                            <constraint firstItem="iDx-Ku-jIk" firstAttribute="leading" secondItem="n2e-PW-38R" secondAttribute="leading" id="eMa-Bh-VKJ"/>
+                            <constraint firstItem="gRt-jl-BeF" firstAttribute="height" secondItem="zpT-LN-6Zw" secondAttribute="height" multiplier="0.08" id="hgA-xI-rEw"/>
+                            <constraint firstItem="t4U-5a-VQx" firstAttribute="top" secondItem="Akd-Rp-vEv" secondAttribute="bottom" id="nYa-qc-bYW"/>
+                            <constraint firstItem="CVq-7G-cVq" firstAttribute="height" secondItem="gRt-jl-BeF" secondAttribute="height" id="oAR-TG-wcx"/>
+                            <constraint firstItem="CVq-7G-cVq" firstAttribute="width" secondItem="gRt-jl-BeF" secondAttribute="width" id="pV6-MZ-9Wf"/>
+                            <constraint firstItem="nAF-oG-tWl" firstAttribute="top" secondItem="niq-iL-i8x" secondAttribute="bottom" constant="20" id="sot-zJ-egM"/>
+                            <constraint firstItem="iDx-Ku-jIk" firstAttribute="top" secondItem="n2e-PW-38R" secondAttribute="bottom" constant="8" id="ug9-TZ-oX1"/>
+                            <constraint firstItem="Akd-Rp-vEv" firstAttribute="leading" secondItem="zpT-LN-6Zw" secondAttribute="leading" id="vNK-K8-giG"/>
+                            <constraint firstAttribute="trailing" secondItem="Akd-Rp-vEv" secondAttribute="trailing" id="zIG-Im-gnQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Kayıt Ol" id="VY6-Ti-x5X"/>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="gRt-jl-BeF" id="Xgy-QM-dqG"/>
+                        <outlet property="textFieldName" destination="hVN-wE-f6u" id="gMh-M0-FOC"/>
+                        <outlet property="textFieldPassword" destination="CVq-7G-cVq" id="nHg-tb-rLF"/>
+                        <outlet property="textFieldSurname" destination="iDx-Ku-jIk" id="7zP-Yx-tis"/>
+                        <outlet property="tezxs" destination="hVN-wE-f6u" id="aEE-zx-6m8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5e-xL-5vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="281"/>
+            <point key="canvasLocation" x="1772.4637681159422" y="280.43478260869568"/>
         </scene>
         <!--Giriş Yap-->
         <scene sceneID="zTJ-24-sOR">
@@ -148,16 +318,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-8m-vf2">
-                                <rect key="frame" x="35" y="114" width="60" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="35" y="114" width="48.333333333333329" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-FB-QP3" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="152" width="344" height="59"/>
+                                <rect key="frame" x="35" y="146" width="344" height="59"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -172,21 +342,21 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ail-H9-bW6">
-                                <rect key="frame" x="35" y="241" width="50.333333333333329" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="35" y="235" width="40.666666666666671" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1x-gt-uzS" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="279" width="344" height="58.666666666666686"/>
+                                <rect key="frame" x="35" y="267" width="344" height="58.666666666666686"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -201,18 +371,18 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8A-R4-jw3">
-                                <rect key="frame" x="35" y="367.66666666666669" width="146" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <rect key="frame" x="35" y="355.66666666666669" width="129" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <state key="normal" title="ŞİFREMİ UNUTTUM?">
                                     <color key="titleColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 </variation>
                                 <connections>
                                     <segue destination="pMs-Oc-Mqa" kind="show" id="KSA-aS-x0U"/>
@@ -269,7 +439,7 @@
         <!--Şifremi Unuttum-->
         <scene sceneID="XAR-ze-Kfl">
             <objects>
-                <viewController id="pMs-Oc-Mqa" sceneMemberID="viewController">
+                <viewController id="pMs-Oc-Mqa" customClass="ForgotPasswordController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4mK-GR-Taa"/>
                         <viewControllerLayoutGuide type="bottom" id="n7h-AH-5Bw"/>
@@ -288,16 +458,16 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-6h-KJh">
-                                <rect key="frame" x="35" y="225" width="60" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="35" y="225" width="53" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-SB-9Fb" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="263" width="344" height="59"/>
+                                <rect key="frame" x="35" y="259.33333333333331" width="344" height="59"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -312,7 +482,7 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -327,7 +497,7 @@
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                 </variation>
                                 <connections>
-                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="07Y-9I-Jul"/>
+                                    <action selector="submitButtonTapped:" destination="pMs-Oc-Mqa" eventType="touchUpInside" id="B2F-cw-pB4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,6 +519,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Şifremi Unuttum" id="Ai7-43-Bzu"/>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="cwj-SB-9Fb" id="F77-pK-JjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGC-Kf-RMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
