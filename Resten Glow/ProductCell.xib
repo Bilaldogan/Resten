@@ -33,7 +33,7 @@
                         <rect key="frame" x="28" y="25" width="319" height="74.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FÖN 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-f6-IsM">
-                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
                                 <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                     <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IQButtonBarArrowRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-Lu-ZX0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-Lu-ZX0">
                                 <rect key="frame" x="307" y="22.5" width="12" height="29.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w0R-Lu-ZX0" secondAttribute="height" multiplier="12:29" id="O2E-jA-4NH"/>
@@ -91,6 +91,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DescLabel" destination="nIz-WP-Mlb" id="xT5-wE-geZ"/>
+                <outlet property="arrowImageView" destination="w0R-Lu-ZX0" id="DZ7-rj-Psh"/>
+                <outlet property="titleLabel" destination="ba1-f6-IsM" id="ZBO-QM-rQH"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="96.5"/>
         </tableViewCell>
         <view contentMode="scaleToFill" id="MWH-Tb-9F1">
@@ -101,7 +106,4 @@
             <point key="canvasLocation" x="174" y="235"/>
         </view>
     </objects>
-    <resources>
-        <image name="IQButtonBarArrowRight.png" width="12" height="21"/>
-    </resources>
 </document>
