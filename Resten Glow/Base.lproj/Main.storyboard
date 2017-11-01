@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gkO-Em-gmp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iPH-qF-hdw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -551,11 +551,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-Pe-Pzh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="53.5"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="54"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.62859374999999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-4L-lsz">
-                                <rect key="frame" x="0.0" y="73.5" width="375" height="593.5"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
                                 <color key="backgroundColor" red="1" green="0.94000865913063358" blue="0.9261252668677451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -687,10 +687,10 @@
             </objects>
             <point key="canvasLocation" x="3628" y="-290"/>
         </scene>
-        <!--View Controller-->
+        <!--Nav Delegate-->
         <scene sceneID="VEH-Fv-kUx">
             <objects>
-                <viewController id="iPH-qF-hdw" sceneMemberID="viewController">
+                <viewController id="iPH-qF-hdw" customClass="ChangePassController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ODe-cV-BAg"/>
                         <viewControllerLayoutGuide type="bottom" id="PEN-JO-x1O"/>
@@ -699,23 +699,148 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifreniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-6Q-ORa">
+                                <rect key="frame" x="31" y="93.5" width="66.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3J-KU-JS1" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="31" y="125.5" width="313" height="53.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni Şifreniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvw-78-jng">
+                                <rect key="frame" x="31" y="199" width="109" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-de-0ny" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="31" y="231" width="313" height="53.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-1W-cjT">
+                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
+                                <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="Şifreyi Değiştir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changePassTapped:" destination="iPH-qF-hdw" eventType="touchUpInside" id="xDL-2A-tVE"/>
+                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="06x-6I-BTP"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Rz-sya" customClass="CustomNavigationView" customModule="Resten_Glow">
                                 <rect key="frame" x="0.0" y="20" width="375" height="53.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Şifremi Unuttum"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="navDelegate" destination="iPH-qF-hdw" id="4Kn-Wd-hvE"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FPl-1W-cjT" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.1" id="2fb-YU-6SX"/>
+                            <constraint firstItem="nvw-78-jng" firstAttribute="leading" secondItem="TtO-6Q-ORa" secondAttribute="leading" id="7Iv-ux-GRm"/>
                             <constraint firstItem="0eE-Rz-sya" firstAttribute="top" secondItem="ODe-cV-BAg" secondAttribute="bottom" id="Bug-wv-nKO"/>
+                            <constraint firstItem="JaA-de-0ny" firstAttribute="top" secondItem="nvw-78-jng" secondAttribute="bottom" constant="8" id="GwR-KB-UFW"/>
                             <constraint firstAttribute="trailing" secondItem="0eE-Rz-sya" secondAttribute="trailing" id="P30-Ch-DH9"/>
                             <constraint firstItem="0eE-Rz-sya" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leading" id="QDl-QV-s43"/>
+                            <constraint firstItem="nvw-78-jng" firstAttribute="top" secondItem="H3J-KU-JS1" secondAttribute="bottom" constant="20" id="XH5-pj-DuE"/>
+                            <constraint firstItem="FPl-1W-cjT" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leading" id="aEf-hQ-I55"/>
+                            <constraint firstItem="JaA-de-0ny" firstAttribute="width" secondItem="H3J-KU-JS1" secondAttribute="width" id="caY-y5-bWZ"/>
+                            <constraint firstItem="H3J-KU-JS1" firstAttribute="top" secondItem="TtO-6Q-ORa" secondAttribute="bottom" constant="8" id="dQs-Pl-xaf"/>
+                            <constraint firstItem="TtO-6Q-ORa" firstAttribute="top" secondItem="0eE-Rz-sya" secondAttribute="bottom" constant="20" id="mDC-nn-DUR"/>
+                            <constraint firstItem="H3J-KU-JS1" firstAttribute="leading" secondItem="TtO-6Q-ORa" secondAttribute="leading" id="o4B-mT-dU7"/>
+                            <constraint firstItem="TtO-6Q-ORa" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leadingMargin" constant="15" id="o8Y-25-ATZ"/>
+                            <constraint firstItem="PEN-JO-x1O" firstAttribute="top" secondItem="FPl-1W-cjT" secondAttribute="bottom" id="qHW-Pv-YCZ"/>
+                            <constraint firstItem="JaA-de-0ny" firstAttribute="height" secondItem="H3J-KU-JS1" secondAttribute="height" id="qZg-jx-TJi"/>
+                            <constraint firstItem="H3J-KU-JS1" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.08" id="s6O-Bf-S06"/>
+                            <constraint firstAttribute="trailing" secondItem="FPl-1W-cjT" secondAttribute="trailing" id="spa-xO-mss"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H3J-KU-JS1" secondAttribute="trailing" constant="15" id="u7b-lR-tQo"/>
+                            <constraint firstItem="JaA-de-0ny" firstAttribute="leading" secondItem="nvw-78-jng" secondAttribute="leading" id="uwS-Ak-gzX"/>
                             <constraint firstItem="0eE-Rz-sya" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.08" id="yfb-kL-Xh2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navigationView" destination="0eE-Rz-sya" id="y89-kX-tQL"/>
+                        <outlet property="textFieldNewPass" destination="JaA-de-0ny" id="qUa-O9-rl8"/>
+                        <outlet property="textFieldOldPass" destination="H3J-KU-JS1" id="fcV-ln-uJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eF-Sm-sA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317.5999999999999" y="447.52623688155927"/>
+            <point key="canvasLocation" x="3388" y="450"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JsC-dl-Lb6">
+            <objects>
+                <viewController id="HcC-18-H6I" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9kn-vd-Ce6"/>
+                        <viewControllerLayoutGuide type="bottom" id="FtL-SY-Kx1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IVj-kX-vz5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-EJ-pN4">
+                                <rect key="frame" x="0.0" y="221" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsa-uT-AyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4086" y="487"/>
         </scene>
         <!--Nails Controller-->
         <scene sceneID="3qT-fK-xLO">

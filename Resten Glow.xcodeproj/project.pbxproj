@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220865191FA95B6B00F3539A /* CustomNavigationView.xib */; };
+		2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208651B1FA9615E00F3539A /* ChangePassController.swift */; };
 		222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */; };
 		222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */; };
 		222B20E21FA27D9700C4ECEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E01FA27D9700C4ECEE /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		220865191FA95B6B00F3539A /* CustomNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationView.xib; sourceTree = "<group>"; };
+		2208651B1FA9615E00F3539A /* ChangePassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassController.swift; sourceTree = "<group>"; };
 		222B20D91FA27D9700C4ECEE /* Resten Glow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resten Glow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				95D9B2B31FA92B2500F2BDC6 /* Main Controller */,
 				22E3264D1FA3C7C000077FE7 /* BaseController.swift */,
 				22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */,
+				2208651B1FA9615E00F3539A /* ChangePassController.swift */,
 				222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */,
 				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 				22E326461FA3961600077FE7 /* LoginController.swift */,
@@ -416,6 +419,7 @@
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
+				2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,

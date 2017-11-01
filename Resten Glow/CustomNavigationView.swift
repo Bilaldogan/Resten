@@ -7,26 +7,56 @@
 //
 
 import UIKit
+@objc protocol CustomNavigationViewDelegate :class {
+    func backButtonTapped()
+}
 
-class CustomNavigationView: UIView {
+@IBDesignable class CustomNavigationView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak   var navDelegate: NSObject?
+    var delegate: CustomNavigationViewDelegate? { return navDelegate as? CustomNavigationViewDelegate }
 
+    @IBInspectable var title: String? {
+        get {
+            return titleLabel.text
+        }
+        set {
+            titleLabel.text = newValue
+        }
+    }
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
+        xibSetup()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
+        xibSetup()
     }
-    private func commonInit() {
-        
-    }
+    
     @IBAction func backButtonTapped(_ sender: UIButton) {
-        Bundle.main.loadNibNamed("CustomNavigationView", owner: self, options: nil)
+        delegate?.backButtonTapped()
+    }
+    func xibSetup() {
+        contentView = loadViewFromNib()
+        
+        // use bounds not frame or it'll be offset
+        contentView.frame = bounds
+        
+        // Make the view stretch with containing view
+        contentView.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(contentView)
-        contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
+    
+    func loadViewFromNib() -> UIView {
+        
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: "CustomNavigationView", bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        
+        return view
     }
 }
