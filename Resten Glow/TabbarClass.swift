@@ -35,9 +35,9 @@ class TabbarClass {
         option.fontSize = 13.0
         //option.tabBackgroundColor = ColorUtil.backGroundColor
         //option.pageBackgoundColor =  ColorUtil.backGroundColor
-        //option.currentColor = ColorUtil.tabCurrentColor
+        option.currentColor = ColorUtil.orangeColor
         //option.defaultColor = ColorUtil.tabDefaultColor
-        //option.lineColor = ColorUtil.customBlueColor
+        option.lineColor = ColorUtil.orangeColor
         
         //option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
         option.hidesTabBarOnSwipe = true

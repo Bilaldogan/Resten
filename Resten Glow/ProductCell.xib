@@ -8,7 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,14 +26,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THH-T2-3rL">
                         <rect key="frame" x="28" y="25" width="319" height="74.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FÖN 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-f6-IsM">
-                                <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FÖN   50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-f6-IsM">
+                                <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
                                 <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,23 +51,32 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-Lu-ZX0">
-                                <rect key="frame" x="307" y="22.5" width="12" height="29.5"/>
+                                <rect key="frame" x="282" y="18.5" width="37" height="37.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="w0R-Lu-ZX0" secondAttribute="height" multiplier="12:29" id="O2E-jA-4NH"/>
+                                    <constraint firstAttribute="width" secondItem="w0R-Lu-ZX0" secondAttribute="height" id="O2E-jA-4NH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-0g-hfg">
+                                <rect key="frame" x="101" y="0.0" width="20" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eeI-0g-hfg" secondAttribute="height" multiplier="1:1.5" id="aVf-FI-GFZ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eeI-0g-hfg" firstAttribute="centerY" secondItem="ba1-f6-IsM" secondAttribute="centerY" id="47P-xC-MbJ"/>
                             <constraint firstAttribute="trailing" secondItem="w0R-Lu-ZX0" secondAttribute="trailing" id="5Me-kr-2Xb"/>
                             <constraint firstItem="ba1-f6-IsM" firstAttribute="top" secondItem="THH-T2-3rL" secondAttribute="top" id="KBH-hF-SR2"/>
                             <constraint firstItem="nIz-WP-Mlb" firstAttribute="leading" secondItem="THH-T2-3rL" secondAttribute="leading" id="QEl-qn-WxK"/>
                             <constraint firstItem="nIz-WP-Mlb" firstAttribute="top" secondItem="ba1-f6-IsM" secondAttribute="bottom" id="QhP-ku-In4"/>
+                            <constraint firstItem="eeI-0g-hfg" firstAttribute="height" secondItem="ba1-f6-IsM" secondAttribute="height" id="UBK-QT-h2s"/>
                             <constraint firstItem="w0R-Lu-ZX0" firstAttribute="centerY" secondItem="THH-T2-3rL" secondAttribute="centerY" id="aF9-M1-khH"/>
+                            <constraint firstItem="eeI-0g-hfg" firstAttribute="leading" secondItem="ba1-f6-IsM" secondAttribute="trailing" id="cDU-Bp-ACq"/>
                             <constraint firstItem="nIz-WP-Mlb" firstAttribute="width" secondItem="THH-T2-3rL" secondAttribute="width" multiplier="0.85" id="cMa-IR-jpD"/>
                             <constraint firstAttribute="bottom" secondItem="nIz-WP-Mlb" secondAttribute="bottom" id="fvR-zm-M0M"/>
                             <constraint firstItem="ba1-f6-IsM" firstAttribute="height" secondItem="THH-T2-3rL" secondAttribute="height" multiplier="0.4" id="nJi-jS-x99"/>
-                            <constraint firstItem="w0R-Lu-ZX0" firstAttribute="height" secondItem="THH-T2-3rL" secondAttribute="height" multiplier="0.4" id="t9N-ha-25R"/>
+                            <constraint firstItem="w0R-Lu-ZX0" firstAttribute="height" secondItem="THH-T2-3rL" secondAttribute="height" multiplier="0.5" id="t9N-ha-25R"/>
                             <constraint firstItem="ba1-f6-IsM" firstAttribute="leading" secondItem="THH-T2-3rL" secondAttribute="leading" id="wi7-Vc-bgg"/>
                         </constraints>
                     </view>
@@ -95,6 +104,7 @@
                 <outlet property="DescLabel" destination="nIz-WP-Mlb" id="xT5-wE-geZ"/>
                 <outlet property="arrowImageView" destination="w0R-Lu-ZX0" id="DZ7-rj-Psh"/>
                 <outlet property="titleLabel" destination="ba1-f6-IsM" id="ZBO-QM-rQH"/>
+                <outlet property="tryImageView" destination="eeI-0g-hfg" id="rOJ-Qd-gr9"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="96.5"/>
         </tableViewCell>
