@@ -13,7 +13,7 @@ class ProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //arrowImageView.setFAIconWithName(icon: .FAarrow, textColor: .gray)
         
     }
 
@@ -22,5 +22,8 @@ class ProductCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    @IBOutlet weak var arrowImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var DescLabel: UILabel!
     
 }
