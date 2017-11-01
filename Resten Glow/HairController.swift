@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TabPageViewController
 
 class HairController: BaseController {
 
@@ -18,6 +19,7 @@ class HairController: BaseController {
         self.tableViewDelegate()
         //Create Paralax Header
         paralaxHeader.createParalaxHeader(headerView: tableHeaderView, tableView: hairTableView, tableHeaderHeight: paralax_Header_Height)
+      
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -34,12 +36,16 @@ class HairController: BaseController {
     @IBOutlet weak var tableHeaderView: UIView!
     @IBOutlet weak var hairTableView: UITableView!
     
+    //
+    var hairStructure : HairStruct = HairStruct()
+    
 }
 
 extension HairController {
     
     func sizingSetting(){
         self.tableHeaderView.setHeight(height: paralax_Header_Height)
+        
     }
     
     func tableViewDelegate(){
