@@ -9,11 +9,12 @@
 import UIKit
 import Toast_Swift
 
+
 class BaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     let paralaxHeader = ParalaxHeaderClass()

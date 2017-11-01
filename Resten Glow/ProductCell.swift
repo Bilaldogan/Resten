@@ -13,8 +13,9 @@ class ProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        //arrowImageView.setFAIconWithName(icon: .FAarrow, textColor: .gray)
-        
+        arrowImageView.setFAIconWithName(icon: .FAAngleRight, textColor: .gray)
+        tryImageView.setFAIconWithName(icon: .FATry, textColor: .black)
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -22,8 +23,18 @@ class ProductCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func cellConfigure(Product item : ProductProperties){
+        if item.title == "" {
+            self.tryImageView.isHidden = true
+        }
+        titleLabel.text = item.title
+        DescLabel.text = item.desc
+    }
+    
     @IBOutlet weak var arrowImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var DescLabel: UILabel!
+    @IBOutlet weak var tryImageView: UIImageView!
     
 }

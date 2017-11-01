@@ -42,6 +42,12 @@
 		95D9B2E21FA9477E00F2BDC6 /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DD1FA946ED00F2BDC6 /* MuseoSans_500.otf */; };
 		95D9B2E31FA9477E00F2BDC6 /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DF1FA946EF00F2BDC6 /* MuseoSans_700.otf */; };
 		95D9B2E41FA9477E00F2BDC6 /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DB1FA946EC00F2BDC6 /* MuseoSans_900.otf */; };
+		95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2EB1FA95FE200F2BDC6 /* ProductStructureClass.swift */; };
+		95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2EE1FA967E400F2BDC6 /* MUCTableViewExt.swift */; };
+		95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F11FA9691300F2BDC6 /* NCTableViewExt.swift */; };
+		95D9B2F51FA969ED00F2BDC6 /* BCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F41FA969ED00F2BDC6 /* BCTableViewExt.swift */; };
+		95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F71FA96AC700F2BDC6 /* WCTableViewExt.swift */; };
+		95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2FA1FA9734500F2BDC6 /* ColorUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +89,12 @@
 		95D9B2DD1FA946ED00F2BDC6 /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
 		95D9B2DE1FA946EE00F2BDC6 /* MuseoSans_300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_300.otf; sourceTree = "<group>"; };
 		95D9B2DF1FA946EF00F2BDC6 /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
+		95D9B2EB1FA95FE200F2BDC6 /* ProductStructureClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStructureClass.swift; sourceTree = "<group>"; };
+		95D9B2EE1FA967E400F2BDC6 /* MUCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUCTableViewExt.swift; sourceTree = "<group>"; };
+		95D9B2F11FA9691300F2BDC6 /* NCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTableViewExt.swift; sourceTree = "<group>"; };
+		95D9B2F41FA969ED00F2BDC6 /* BCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCTableViewExt.swift; sourceTree = "<group>"; };
+		95D9B2F71FA96AC700F2BDC6 /* WCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCTableViewExt.swift; sourceTree = "<group>"; };
+		95D9B2FA1FA9734500F2BDC6 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +131,7 @@
 		222B20DB1FA27D9700C4ECEE /* Resten Glow */ = {
 			isa = PBXGroup;
 			children = (
+				95D9B2F91FA9733700F2BDC6 /* Util */,
 				95D9B2DA1FA946E100F2BDC6 /* Fonts */,
 				95D9B2CC1FA938C600F2BDC6 /* Enum */,
 				95D9B2B61FA92B8200F2BDC6 /* Support Class */,
@@ -190,6 +203,7 @@
 				95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */,
 				95D9B2CA1FA938A200F2BDC6 /* CalculateClass.swift */,
 				95D9B2CF1FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift */,
+				95D9B2EB1FA95FE200F2BDC6 /* ProductStructureClass.swift */,
 			);
 			name = "Support Class";
 			sourceTree = "<group>";
@@ -197,11 +211,11 @@
 		95D9B2B91FA92DA900F2BDC6 /* Main Controller Childs */ = {
 			isa = PBXGroup;
 			children = (
+				95D9B2F61FA96A4E00F2BDC6 /* Wedding Controller */,
+				95D9B2F31FA969B100F2BDC6 /* Brow Controller */,
+				95D9B2F01FA968D900F2BDC6 /* Nails Controller */,
+				95D9B2ED1FA9679A00F2BDC6 /* Makeup Controller */,
 				95D9B2D11FA93D9300F2BDC6 /* Hair Controller */,
-				95D9B2BE1FA92DF700F2BDC6 /* MakeupController.swift */,
-				95D9B2C21FA9314100F2BDC6 /* NailsController.swift */,
-				95D9B2C41FA9337300F2BDC6 /* BrowController.swift */,
-				95D9B2C61FA9338C00F2BDC6 /* WeddingController.swift */,
 			);
 			name = "Main Controller Childs";
 			sourceTree = "<group>";
@@ -252,6 +266,50 @@
 				95D9B2DB1FA946EC00F2BDC6 /* MuseoSans_900.otf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		95D9B2ED1FA9679A00F2BDC6 /* Makeup Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D9B2BE1FA92DF700F2BDC6 /* MakeupController.swift */,
+				95D9B2EE1FA967E400F2BDC6 /* MUCTableViewExt.swift */,
+			);
+			name = "Makeup Controller";
+			sourceTree = "<group>";
+		};
+		95D9B2F01FA968D900F2BDC6 /* Nails Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D9B2C21FA9314100F2BDC6 /* NailsController.swift */,
+				95D9B2F11FA9691300F2BDC6 /* NCTableViewExt.swift */,
+			);
+			name = "Nails Controller";
+			sourceTree = "<group>";
+		};
+		95D9B2F31FA969B100F2BDC6 /* Brow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D9B2C41FA9337300F2BDC6 /* BrowController.swift */,
+				95D9B2F41FA969ED00F2BDC6 /* BCTableViewExt.swift */,
+			);
+			name = "Brow Controller";
+			sourceTree = "<group>";
+		};
+		95D9B2F61FA96A4E00F2BDC6 /* Wedding Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D9B2C61FA9338C00F2BDC6 /* WeddingController.swift */,
+				95D9B2F71FA96AC700F2BDC6 /* WCTableViewExt.swift */,
+			);
+			name = "Wedding Controller";
+			sourceTree = "<group>";
+		};
+		95D9B2F91FA9733700F2BDC6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				95D9B2FA1FA9734500F2BDC6 /* ColorUtil.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
@@ -401,8 +459,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D9B2F51FA969ED00F2BDC6 /* BCTableViewExt.swift in Sources */,
 				95D9B2BF1FA92DF700F2BDC6 /* MakeupController.swift in Sources */,
 				95D9B2CE1FA9390E00F2BDC6 /* CellAndHeaderHeight.swift in Sources */,
+				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
 				95D9B2C51FA9337300F2BDC6 /* BrowController.swift in Sources */,
 				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
@@ -410,9 +470,11 @@
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
+				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
 				95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */,
+				95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */,
 				95D9B2C11FA92FFD00F2BDC6 /* Extensions.swift in Sources */,
 				95D9B2C31FA9314100F2BDC6 /* NailsController.swift in Sources */,
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
@@ -424,6 +486,8 @@
 				95D9B2CB1FA938A200F2BDC6 /* CalculateClass.swift in Sources */,
 				95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */,
 				95D9B2D01FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift in Sources */,
+				95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */,
+				95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */,
 				22E326471FA3961600077FE7 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

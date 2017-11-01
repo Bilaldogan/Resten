@@ -9,7 +9,7 @@
 import UIKit
 import TabPageViewController
 
-class MainController: UIViewController {
+class MainController: BaseController {
 
     //Life Cycle
     override func viewDidLoad() {

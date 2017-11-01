@@ -7,29 +7,51 @@
 //
 
 import UIKit
+import TabPageViewController
 
-class MakeupController: UIViewController {
-
+class MakeupController: BaseController {
+    
+    //Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Call Delegate
+        self.tableViewDelegate()
+        //Create Paralax Header
+        paralaxHeader.createParalaxHeader(headerView: tableHeaderView, tableView: makeUpTableView, tableHeaderHeight: paralax_Header_Height)
+        
+        
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.sizingSetting()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    //Storyboard Veriable
+    @IBOutlet weak var tableHeaderView: UIView!
+    @IBOutlet weak var makeUpTableView: UITableView!
+    
+    //
+    var makeupStructure : MakeUpStruct = MakeUpStruct()
+    
 }
+
+extension MakeupController {
+    
+    func sizingSetting(){
+        self.tableHeaderView.setHeight(height: paralax_Header_Height)
+        
+    }
+    
+    func tableViewDelegate(){
+        self.makeUpTableView.delegate = self
+        self.makeUpTableView.dataSource = self
+    }
+    
+}
+
