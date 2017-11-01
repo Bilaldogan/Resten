@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -135,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-oG-tWl">
-                                <rect key="frame" x="31" y="84" width="49" height="24"/>
+                                <rect key="frame" x="31" y="84" width="47.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -164,7 +164,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-68-ck7">
-                                <rect key="frame" x="31" y="190" width="41" height="24"/>
+                                <rect key="frame" x="31" y="190" width="40" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -222,7 +222,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-PW-38R">
-                                <rect key="frame" x="31" y="402" width="57" height="24"/>
+                                <rect key="frame" x="31" y="402" width="55" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -322,7 +322,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-8m-vf2">
-                                <rect key="frame" x="31" y="114" width="49" height="24"/>
+                                <rect key="frame" x="31" y="114" width="47.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -351,7 +351,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ail-H9-bW6">
-                                <rect key="frame" x="31" y="230" width="41" height="24"/>
+                                <rect key="frame" x="31" y="230" width="40" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -462,7 +462,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-6h-KJh">
-                                <rect key="frame" x="31" y="225" width="53" height="27"/>
+                                <rect key="frame" x="31" y="225" width="52" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -582,24 +582,6 @@
             </objects>
             <point key="canvasLocation" x="4455.072463768116" y="-290.21739130434787"/>
         </scene>
-        <!--Makeup Controller-->
-        <scene sceneID="4jY-AN-tpQ">
-            <objects>
-                <viewController storyboardIdentifier="MakeupControllerID" id="ALv-gx-Qp9" customClass="MakeupController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Khn-hc-fge"/>
-                        <viewControllerLayoutGuide type="bottom" id="yHv-Yr-fLu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oq9-HA-zQZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.47314119030700996" blue="0.53819269835258532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="muc-xc-hEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5277" y="-290"/>
-        </scene>
         <!--Hair Controller-->
         <scene sceneID="1iN-L3-DW7">
             <objects>
@@ -613,8 +595,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-Jg-Nb9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="gvl-8d-9Ss">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -633,10 +615,9 @@
                                 </view>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.64419392695199718" blue="0.66587095382056505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mZH-hB-p9m" firstAttribute="top" secondItem="5lD-Jg-Nb9" secondAttribute="bottom" id="ERj-d7-X7E"/>
-                            <constraint firstItem="5lD-Jg-Nb9" firstAttribute="top" secondItem="tkm-bk-dUs" secondAttribute="top" id="JAO-ve-JHg"/>
+                            <constraint firstItem="5lD-Jg-Nb9" firstAttribute="top" secondItem="tkm-bk-dUs" secondAttribute="top" constant="33" id="JAO-ve-JHg"/>
                             <constraint firstAttribute="trailing" secondItem="5lD-Jg-Nb9" secondAttribute="trailing" id="rCp-ZX-6WW"/>
                             <constraint firstItem="5lD-Jg-Nb9" firstAttribute="leading" secondItem="tkm-bk-dUs" secondAttribute="leading" id="wr7-vh-blq"/>
                         </constraints>
@@ -675,7 +656,6 @@
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K0g-u1-Q84">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -845,60 +825,206 @@
         <!--Nails Controller-->
         <scene sceneID="3qT-fK-xLO">
             <objects>
-                <viewController storyboardIdentifier="NailsControllerID" id="Frg-e7-NPS" customClass="NailsController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MakeupControllerID" id="XNi-QD-CpT" customClass="MakeupController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p5z-qm-WuZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="x6p-hk-vPP"/>
+                        <viewControllerLayoutGuide type="top" id="X1q-W4-qmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="L24-g5-OJX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TZB-q4-4mQ">
+                    <view key="view" contentMode="scaleToFill" id="gcw-uG-pud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.39338511291249612" green="0.34838234377381649" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-M2-Q4h">
+                                <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="k5n-Wa-dEe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MakeupHeader" translatesAutoresizingMaskIntoConstraints="NO" id="kJT-bj-f3N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="kJT-bj-f3N" secondAttribute="trailing" id="0i4-3d-go6"/>
+                                        <constraint firstItem="kJT-bj-f3N" firstAttribute="leading" secondItem="k5n-Wa-dEe" secondAttribute="leading" id="V9v-0G-PbD"/>
+                                        <constraint firstItem="kJT-bj-f3N" firstAttribute="top" secondItem="k5n-Wa-dEe" secondAttribute="top" id="euQ-QQ-6Wq"/>
+                                        <constraint firstAttribute="bottom" secondItem="kJT-bj-f3N" secondAttribute="bottom" id="gRU-01-4Gv"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hNq-M2-Q4h" firstAttribute="top" secondItem="gcw-uG-pud" secondAttribute="top" constant="33" id="Qmr-3n-Ak8"/>
+                            <constraint firstItem="hNq-M2-Q4h" firstAttribute="leading" secondItem="gcw-uG-pud" secondAttribute="leading" id="VYa-kB-yV5"/>
+                            <constraint firstAttribute="trailing" secondItem="hNq-M2-Q4h" secondAttribute="trailing" id="YH7-Gh-JrW"/>
+                            <constraint firstItem="L24-g5-OJX" firstAttribute="top" secondItem="hNq-M2-Q4h" secondAttribute="bottom" id="uNv-qD-Aqe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="makeUpTableView" destination="hNq-M2-Q4h" id="NHU-pM-VNc"/>
+                        <outlet property="tableHeaderView" destination="k5n-Wa-dEe" id="aas-T8-KwB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vap-IS-Hab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6c-qg-u6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5277" y="426"/>
+            <point key="canvasLocation" x="5276" y="-316"/>
         </scene>
-        <!--Wedding Controller-->
-        <scene sceneID="6Jl-sM-ZKw">
+        <!--Nails Controller-->
+        <scene sceneID="vzv-68-7Rk">
             <objects>
-                <viewController storyboardIdentifier="WeddingControllerID" id="dS7-wN-6Rh" customClass="WeddingController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NailsControllerID" id="8DO-d6-p8L" customClass="NailsController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Yr9-Bc-I0F"/>
-                        <viewControllerLayoutGuide type="bottom" id="eaG-Mt-TxL"/>
+                        <viewControllerLayoutGuide type="top" id="Ow4-lB-57U"/>
+                        <viewControllerLayoutGuide type="bottom" id="68r-ts-VXX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vWD-sr-0pe">
+                    <view key="view" contentMode="scaleToFill" id="d3g-IQ-mUo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.50249451193779071" green="1" blue="0.45395816926389831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-0n-FOW">
+                                <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="ifX-Hb-bxT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NailsHeader" translatesAutoresizingMaskIntoConstraints="NO" id="B7Y-Jc-yIf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="B7Y-Jc-yIf" firstAttribute="leading" secondItem="ifX-Hb-bxT" secondAttribute="leading" id="0c9-QL-g6T"/>
+                                        <constraint firstItem="B7Y-Jc-yIf" firstAttribute="top" secondItem="ifX-Hb-bxT" secondAttribute="top" id="2Rt-zp-3a1"/>
+                                        <constraint firstAttribute="bottom" secondItem="B7Y-Jc-yIf" secondAttribute="bottom" id="gjQ-vw-UaG"/>
+                                        <constraint firstAttribute="trailing" secondItem="B7Y-Jc-yIf" secondAttribute="trailing" id="mbJ-sO-2Jd"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vcl-0n-FOW" secondAttribute="trailing" id="2aY-SK-flq"/>
+                            <constraint firstItem="Vcl-0n-FOW" firstAttribute="top" secondItem="d3g-IQ-mUo" secondAttribute="top" constant="33" id="Eny-Nn-SK1"/>
+                            <constraint firstItem="Vcl-0n-FOW" firstAttribute="leading" secondItem="d3g-IQ-mUo" secondAttribute="leading" id="TJQ-md-S6m"/>
+                            <constraint firstItem="68r-ts-VXX" firstAttribute="top" secondItem="Vcl-0n-FOW" secondAttribute="bottom" id="ooV-uj-42T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nailTableView" destination="Vcl-0n-FOW" id="Je3-yV-9Up"/>
+                        <outlet property="tableHeaderView" destination="ifX-Hb-bxT" id="ZUA-4Q-Te1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MGi-Cw-UEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihO-km-gSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6300" y="157"/>
+            <point key="canvasLocation" x="5276" y="401"/>
         </scene>
         <!--Brow Controller-->
-        <scene sceneID="aEZ-oO-9Nl">
+        <scene sceneID="VpE-Em-3zo">
             <objects>
-                <viewController storyboardIdentifier="BrowControllerID" id="8ti-8N-wFk" customClass="BrowController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BrowControllerID" id="sKH-e0-MPP" customClass="BrowController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lHP-pl-08v"/>
-                        <viewControllerLayoutGuide type="bottom" id="qfH-QR-CZ3"/>
+                        <viewControllerLayoutGuide type="top" id="mZw-dM-am8"/>
+                        <viewControllerLayoutGuide type="bottom" id="hIy-au-BPo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aDM-db-hi5">
+                    <view key="view" contentMode="scaleToFill" id="mfe-ar-rHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.58341513632072772" green="0.96617379758934252" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ifW-Mf-jgn">
+                                <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="fcT-A7-t4m">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrowsHeader" translatesAutoresizingMaskIntoConstraints="NO" id="xwE-Wl-ltL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="xwE-Wl-ltL" firstAttribute="leading" secondItem="fcT-A7-t4m" secondAttribute="leading" id="25C-fR-0OI"/>
+                                        <constraint firstAttribute="bottom" secondItem="xwE-Wl-ltL" secondAttribute="bottom" id="hO4-rF-zhs"/>
+                                        <constraint firstAttribute="trailing" secondItem="xwE-Wl-ltL" secondAttribute="trailing" id="tKU-Rm-YLh"/>
+                                        <constraint firstItem="xwE-Wl-ltL" firstAttribute="top" secondItem="fcT-A7-t4m" secondAttribute="top" id="zW1-B2-gH6"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ifW-Mf-jgn" firstAttribute="top" secondItem="mfe-ar-rHJ" secondAttribute="top" constant="33" id="1dJ-cM-hSb"/>
+                            <constraint firstItem="hIy-au-BPo" firstAttribute="top" secondItem="ifW-Mf-jgn" secondAttribute="bottom" id="nHz-n2-FpQ"/>
+                            <constraint firstItem="ifW-Mf-jgn" firstAttribute="leading" secondItem="mfe-ar-rHJ" secondAttribute="leading" id="o7X-hl-gUu"/>
+                            <constraint firstAttribute="trailing" secondItem="ifW-Mf-jgn" secondAttribute="trailing" id="ykb-fP-atr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="browTableView" destination="ifW-Mf-jgn" id="Tpy-Ji-hRo"/>
+                        <outlet property="tableHeaderView" destination="fcT-A7-t4m" id="sXK-Vj-gaZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FSQ-CX-dAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2Z-H0-g9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6300" y="-670"/>
+            <point key="canvasLocation" x="6300" y="-678"/>
+        </scene>
+        <!--Wedding Controller-->
+        <scene sceneID="vFP-Hx-l8T">
+            <objects>
+                <viewController storyboardIdentifier="WeddingControllerID" id="x40-kE-bFh" customClass="WeddingController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iN5-0f-WMb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nao-uS-gg5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fl5-Pe-tyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="tyo-L4-fMB">
+                                <rect key="frame" x="0.0" y="33" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="m7m-27-KK0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeddingHeader" translatesAutoresizingMaskIntoConstraints="NO" id="ruJ-xi-2Ik">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ruJ-xi-2Ik" secondAttribute="bottom" id="1Og-OW-j0g"/>
+                                        <constraint firstAttribute="trailing" secondItem="ruJ-xi-2Ik" secondAttribute="trailing" id="LyC-rx-vml"/>
+                                        <constraint firstItem="ruJ-xi-2Ik" firstAttribute="leading" secondItem="m7m-27-KK0" secondAttribute="leading" id="avg-e3-qxH"/>
+                                        <constraint firstItem="ruJ-xi-2Ik" firstAttribute="top" secondItem="m7m-27-KK0" secondAttribute="top" id="biR-C2-n7Z"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tyo-L4-fMB" secondAttribute="trailing" id="JXF-5Q-CeF"/>
+                            <constraint firstItem="Nao-uS-gg5" firstAttribute="top" secondItem="tyo-L4-fMB" secondAttribute="bottom" id="RBD-J9-2jM"/>
+                            <constraint firstItem="tyo-L4-fMB" firstAttribute="leading" secondItem="fl5-Pe-tyZ" secondAttribute="leading" id="gE6-hj-H6R"/>
+                            <constraint firstItem="tyo-L4-fMB" firstAttribute="top" secondItem="fl5-Pe-tyZ" secondAttribute="top" constant="33" id="re0-Mp-bnI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableHeaderView" destination="m7m-27-KK0" id="7vB-IM-p2b"/>
+                        <outlet property="weddingTableView" destination="tyo-L4-fMB" id="fEG-Rb-uwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Liy-Qk-Jlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6300" y="163"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BrowsHeader" width="233" height="150"/>
         <image name="HairHeader" width="400" height="225"/>
         <image name="Logo-Text" width="256" height="33"/>
+        <image name="MakeupHeader" width="191" height="97"/>
+        <image name="NailsHeader" width="393" height="180"/>
+        <image name="WeddingHeader" width="200" height="133"/>
     </resources>
 </document>
