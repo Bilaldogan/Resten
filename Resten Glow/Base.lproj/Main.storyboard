@@ -824,6 +824,8 @@
         </scene>
         <!--Nails Controller-->
         <scene sceneID="3qT-fK-xLO">
+        <!--Makeup Controller-->
+        <scene sceneID="Fsl-ro-iIW">
             <objects>
                 <viewController storyboardIdentifier="MakeupControllerID" id="XNi-QD-CpT" customClass="MakeupController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
