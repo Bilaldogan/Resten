@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220865191FA95B6B00F3539A /* CustomNavigationView.xib */; };
 		222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */; };
 		222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */; };
 		222B20E21FA27D9700C4ECEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E01FA27D9700C4ECEE /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
 		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
+		22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E31DF81FA9546600784508 /* CustomNavigationView.swift */; };
 		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
 		22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326431FA2B46500077FE7 /* PagerViewCell.swift */; };
 		22E326471FA3961600077FE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326461FA3961600077FE7 /* LoginController.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220865191FA95B6B00F3539A /* CustomNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationView.xib; sourceTree = "<group>"; };
 		222B20D91FA27D9700C4ECEE /* Resten Glow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resten Glow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		222B20E81FA27D9700C4ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewCell.xib; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		22E31DF81FA9546600784508 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		22E326431FA2B46500077FE7 /* PagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerViewCell.swift; sourceTree = "<group>"; };
 		22E326461FA3961600077FE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 			children = (
 				22E326481FA39B2F00077FE7 /* CustomTextField.swift */,
 				22E326411FA2B0F300077FE7 /* CustomButton.swift */,
+				220865191FA95B6B00F3539A /* CustomNavigationView.xib */,
+				22E31DF81FA9546600784508 /* CustomNavigationView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				95D9B2E21FA9477E00F2BDC6 /* MuseoSans_500.otf in Resources */,
 				95D9B2E31FA9477E00F2BDC6 /* MuseoSans_700.otf in Resources */,
 				95D9B2E41FA9477E00F2BDC6 /* MuseoSans_900.otf in Resources */,
+				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
 				95D9B2D71FA93EB500F2BDC6 /* ProductCell.xib in Resources */,
@@ -418,6 +425,7 @@
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,
+				22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */,
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
 				95D9B2C71FA9338C00F2BDC6 /* WeddingController.swift in Sources */,
 				95D9B2D31FA93DA800F2BDC6 /* HCTableViewExt.swift in Sources */,

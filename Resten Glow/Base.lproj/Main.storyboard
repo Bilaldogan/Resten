@@ -687,6 +687,36 @@
             </objects>
             <point key="canvasLocation" x="3628" y="-290"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="VEH-Fv-kUx">
+            <objects>
+                <viewController id="iPH-qF-hdw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ODe-cV-BAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="PEN-JO-x1O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ng-5C-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Rz-sya" customClass="CustomNavigationView" customModule="Resten_Glow">
+                                <rect key="frame" x="0.0" y="20" width="375" height="53.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0eE-Rz-sya" firstAttribute="top" secondItem="ODe-cV-BAg" secondAttribute="bottom" id="Bug-wv-nKO"/>
+                            <constraint firstAttribute="trailing" secondItem="0eE-Rz-sya" secondAttribute="trailing" id="P30-Ch-DH9"/>
+                            <constraint firstItem="0eE-Rz-sya" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leading" id="QDl-QV-s43"/>
+                            <constraint firstItem="0eE-Rz-sya" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.08" id="yfb-kL-Xh2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eF-Sm-sA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3317.5999999999999" y="447.52623688155927"/>
+        </scene>
         <!--Nails Controller-->
         <scene sceneID="3qT-fK-xLO">
             <objects>
