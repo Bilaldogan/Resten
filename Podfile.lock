@@ -1,18 +1,24 @@
 PODS:
-  - FSPagerView (0.7.0)
-  - IQKeyboardManager (5.0.2)
+  - Font-Awesome-Swift (1.6.2)
+  - FSPagerView (0.5.5)
+  - IQKeyboardManager (4.0.11)
+  - TabPageViewController (0.2.7)
   - Toast-Swift (2.0.0)
 
 DEPENDENCIES:
+  - Font-Awesome-Swift
   - FSPagerView
   - IQKeyboardManager
-  - Toast-Swift (~> 2.0.0)
+  - TabPageViewController
+  - Toast-Swift
 
 SPEC CHECKSUMS:
-  FSPagerView: 7042409096ef3fc050a3f5f4ccc941e8a5a2b330
-  IQKeyboardManager: 5ab84749f20f682f784160c2c63bef4f19d10d26
+  Font-Awesome-Swift: 4dc96df73b5f32aaccdee50a454c3ec253ee4977
+  FSPagerView: 3ec72e6b201d77a48adab5ed1d33b43a8cc153d6
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  TabPageViewController: c37a1257a50c2b50712dde61bf499768eee95b67
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
-PODFILE CHECKSUM: 77610218d1ff42908fac33c5ea94d8e8921bd47e
+PODFILE CHECKSUM: ca416f2eae3e062abdd27531554b59e59b04f35b
 
 COCOAPODS: 1.2.1

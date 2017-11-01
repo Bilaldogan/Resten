@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gkO-Em-gmp">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -21,21 +21,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wYY-je-pe7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cvg-MJ-EYq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-N5-0yz" customClass="FSPagerView" customModule="FSPagerView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Text" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-29-FCG">
-                                <rect key="frame" x="82.666666666666686" y="64" width="248.66666666666663" height="82.666666666666657"/>
+                                <rect key="frame" x="75" y="64" width="225" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sFk-29-FCG" secondAttribute="height" multiplier="15:5" id="qQS-dQ-Zia"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-SQ-Fng" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="248.33333333333331" y="674.66666666666652" width="124.33333333333331" height="41.333333333333371"/>
+                                <rect key="frame" x="225" y="609.5" width="112.5" height="37.5"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KMh-SQ-Fng" secondAttribute="height" multiplier="3:1" id="Ian-Xn-X5g"/>
@@ -62,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-M3-dCK" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="41.333333333333343" y="674" width="124.33333333333331" height="42"/>
+                                <rect key="frame" x="37.5" y="609" width="112.5" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Giriş Yap">
                                     <color key="titleColor" red="0.85098039219999999" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,11 +131,11 @@
                         <viewControllerLayoutGuide type="bottom" id="t4U-5a-VQx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zpT-LN-6Zw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-oG-tWl">
-                                <rect key="frame" x="35" y="84" width="48.333333333333329" height="24"/>
+                                <rect key="frame" x="31" y="84" width="47.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +144,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-jl-BeF" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="116" width="344" height="59"/>
+                                <rect key="frame" x="31" y="116" width="313" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -159,7 +164,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-68-ck7">
-                                <rect key="frame" x="35" y="195" width="40.666666666666671" height="24"/>
+                                <rect key="frame" x="31" y="189.5" width="40" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -168,7 +173,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-7G-cVq" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="227" width="344" height="59"/>
+                                <rect key="frame" x="31" y="221.5" width="313" height="53"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -188,7 +193,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-wC-NW7">
-                                <rect key="frame" x="35" y="306" width="24.666666666666664" height="24"/>
+                                <rect key="frame" x="31" y="294.5" width="24.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,7 +202,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-wE-f6u" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="338" width="344" height="59"/>
+                                <rect key="frame" x="31" y="326.5" width="313" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -217,7 +222,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-PW-38R">
-                                <rect key="frame" x="35" y="417" width="56.333333333333329" height="24"/>
+                                <rect key="frame" x="31" y="400" width="55" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -226,7 +231,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyadınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDx-Ku-jIk" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="449" width="344" height="59"/>
+                                <rect key="frame" x="31" y="432" width="313" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -246,7 +251,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-Rp-vEv">
-                                <rect key="frame" x="0.0" y="662" width="414" height="73.666666666666629"/>
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <state key="normal" title="Kayıt Ol">
@@ -298,12 +303,11 @@
                         <outlet property="textFieldName" destination="hVN-wE-f6u" id="gMh-M0-FOC"/>
                         <outlet property="textFieldPassword" destination="CVq-7G-cVq" id="nHg-tb-rLF"/>
                         <outlet property="textFieldSurname" destination="iDx-Ku-jIk" id="7zP-Yx-tis"/>
-                        <outlet property="tezxs" destination="hVN-wE-f6u" id="aEE-zx-6m8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5e-xL-5vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772.4637681159422" y="280.43478260869568"/>
+            <point key="canvasLocation" x="1769" y="427"/>
         </scene>
         <!--Giriş Yap-->
         <scene sceneID="zTJ-24-sOR">
@@ -314,11 +318,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GFt-V8-Z8n"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jwz-5z-xTE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-8m-vf2">
-                                <rect key="frame" x="35" y="114" width="48.333333333333329" height="24"/>
+                                <rect key="frame" x="31" y="114" width="47.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -327,7 +331,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-FB-QP3" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="146" width="344" height="59"/>
+                                <rect key="frame" x="31" y="146" width="313" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -347,7 +351,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ail-H9-bW6">
-                                <rect key="frame" x="35" y="235" width="40.666666666666671" height="24"/>
+                                <rect key="frame" x="31" y="229.5" width="40" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -356,7 +360,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1x-gt-uzS" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="267" width="344" height="58.666666666666686"/>
+                                <rect key="frame" x="31" y="261.5" width="313" height="53"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -376,7 +380,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8A-R4-jw3">
-                                <rect key="frame" x="35" y="355.66666666666669" width="129" height="28"/>
+                                <rect key="frame" x="31" y="344.5" width="129" height="28"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <state key="normal" title="ŞİFREMİ UNUTTUM?">
                                     <color key="titleColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -389,7 +393,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-LL-dyn">
-                                <rect key="frame" x="0.0" y="662.33333333333348" width="414" height="73.666666666666629"/>
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="0.99859899282455444" green="0.27907872200012207" blue="0.23886942863464355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <state key="normal" title="GİRİŞ YAP">
@@ -445,11 +449,11 @@
                         <viewControllerLayoutGuide type="bottom" id="n7h-AH-5Bw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N1p-HA-bcc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aşağıya kayıtlı e-posta adresinizi yazın, şifrenizi değiştirebileceğiniz linki e-postanıza gönderelim." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-Zk-2h6">
-                                <rect key="frame" x="50" y="114" width="314" height="61"/>
+                                <rect key="frame" x="46" y="114" width="283" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -458,7 +462,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-6h-KJh">
-                                <rect key="frame" x="35" y="225" width="53" height="26.333333333333343"/>
+                                <rect key="frame" x="31" y="225" width="52" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,7 +471,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-SB-9Fb" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="35" y="259.33333333333331" width="344" height="59"/>
+                                <rect key="frame" x="31" y="259.5" width="313" height="53"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -487,7 +491,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-Os-skZ">
-                                <rect key="frame" x="0.0" y="662" width="414" height="73.666666666666629"/>
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <state key="normal" title="ONAYLA">
@@ -527,13 +531,132 @@
             </objects>
             <point key="canvasLocation" x="2518.840579710145" y="-397.01086956521743"/>
         </scene>
+        <!--Main Controller-->
+        <scene sceneID="DaF-e1-LNF">
+            <objects>
+                <viewController id="tQe-nw-HUO" customClass="MainController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VH3-g6-bcB"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMF-GU-DfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Fq-Vh-fBH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vr-K2-XG9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2k0-2X-BNM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-Pe-Pzh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.62859374999999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-4L-lsz">
+                                <rect key="frame" x="0.0" y="73.5" width="375" height="593.5"/>
+                                <color key="backgroundColor" red="1" green="0.94000865913063358" blue="0.9261252668677451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hXN-4L-lsz" firstAttribute="top" secondItem="Y0y-Pe-Pzh" secondAttribute="bottom" id="2J7-ia-yr2"/>
+                            <constraint firstAttribute="trailing" secondItem="Y0y-Pe-Pzh" secondAttribute="trailing" id="62R-Je-HoI"/>
+                            <constraint firstItem="tMF-GU-DfI" firstAttribute="top" secondItem="hXN-4L-lsz" secondAttribute="bottom" id="LL7-wi-ycl"/>
+                            <constraint firstItem="Y0y-Pe-Pzh" firstAttribute="leading" secondItem="8Fq-Vh-fBH" secondAttribute="leading" id="M7k-oH-Qe6"/>
+                            <constraint firstItem="Y0y-Pe-Pzh" firstAttribute="height" secondItem="8Fq-Vh-fBH" secondAttribute="height" multiplier="0.08" id="bmB-TG-zjb"/>
+                            <constraint firstAttribute="trailing" secondItem="hXN-4L-lsz" secondAttribute="trailing" id="gcH-N2-Gy9"/>
+                            <constraint firstItem="7vr-K2-XG9" firstAttribute="top" secondItem="8Fq-Vh-fBH" secondAttribute="top" id="oFD-CK-EAs"/>
+                            <constraint firstAttribute="trailing" secondItem="7vr-K2-XG9" secondAttribute="trailing" id="qdn-7Z-5ve"/>
+                            <constraint firstItem="hXN-4L-lsz" firstAttribute="leading" secondItem="8Fq-Vh-fBH" secondAttribute="leading" id="r4X-3p-6vf"/>
+                            <constraint firstItem="Y0y-Pe-Pzh" firstAttribute="top" secondItem="7vr-K2-XG9" secondAttribute="bottom" id="vWw-Xc-VIN"/>
+                            <constraint firstItem="7vr-K2-XG9" firstAttribute="leading" secondItem="8Fq-Vh-fBH" secondAttribute="leading" id="wou-ZC-ucT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3aq-oL-tvd"/>
+                    <connections>
+                        <outlet property="tabbarView" destination="hXN-4L-lsz" id="lw8-Jd-1dZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plt-j3-mv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4455.072463768116" y="-290.21739130434787"/>
+        </scene>
+        <!--Makeup Controller-->
+        <scene sceneID="4jY-AN-tpQ">
+            <objects>
+                <viewController storyboardIdentifier="MakeupControllerID" id="ALv-gx-Qp9" customClass="MakeupController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Khn-hc-fge"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHv-Yr-fLu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oq9-HA-zQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.47314119030700996" blue="0.53819269835258532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muc-xc-hEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5277" y="-290"/>
+        </scene>
+        <!--Hair Controller-->
+        <scene sceneID="1iN-L3-DW7">
+            <objects>
+                <viewController storyboardIdentifier="HairControllerID" id="qqN-7g-xHe" customClass="HairController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XqI-nR-N80"/>
+                        <viewControllerLayoutGuide type="bottom" id="mZH-hB-p9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tkm-bk-dUs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-Jg-Nb9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="gvl-8d-9Ss">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HairHeader" translatesAutoresizingMaskIntoConstraints="NO" id="NFH-KF-pBE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="NFH-KF-pBE" firstAttribute="top" secondItem="gvl-8d-9Ss" secondAttribute="top" id="59q-kE-ZFB"/>
+                                        <constraint firstItem="NFH-KF-pBE" firstAttribute="leading" secondItem="gvl-8d-9Ss" secondAttribute="leading" id="7tg-Qk-lpZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="NFH-KF-pBE" secondAttribute="trailing" id="B3p-Zf-RSh"/>
+                                        <constraint firstAttribute="bottom" secondItem="NFH-KF-pBE" secondAttribute="bottom" id="F6C-Ua-lpz"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.64419392695199718" blue="0.66587095382056505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mZH-hB-p9m" firstAttribute="top" secondItem="5lD-Jg-Nb9" secondAttribute="bottom" id="ERj-d7-X7E"/>
+                            <constraint firstItem="5lD-Jg-Nb9" firstAttribute="top" secondItem="tkm-bk-dUs" secondAttribute="top" id="JAO-ve-JHg"/>
+                            <constraint firstAttribute="trailing" secondItem="5lD-Jg-Nb9" secondAttribute="trailing" id="rCp-ZX-6WW"/>
+                            <constraint firstItem="5lD-Jg-Nb9" firstAttribute="leading" secondItem="tkm-bk-dUs" secondAttribute="leading" id="wr7-vh-blq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hairTableView" destination="5lD-Jg-Nb9" id="QH6-90-X2M"/>
+                        <outlet property="tableHeaderView" destination="gvl-8d-9Ss" id="Kn6-kA-ZFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0a-By-Qig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5276" y="-1004.3478260869566"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hrf-AR-FVF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cra-OR-zmI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wM6-VX-eED">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -545,8 +668,81 @@
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="-60.326086956521742"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3dh-81-eUL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gkO-Em-gmp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K0g-u1-Q84">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tQe-nw-HUO" kind="relationship" relationship="rootViewController" id="QkI-Sd-ZlI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obm-VO-byb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="-290"/>
+        </scene>
+        <!--Nails Controller-->
+        <scene sceneID="3qT-fK-xLO">
+            <objects>
+                <viewController storyboardIdentifier="NailsControllerID" id="Frg-e7-NPS" customClass="NailsController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p5z-qm-WuZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6p-hk-vPP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZB-q4-4mQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.39338511291249612" green="0.34838234377381649" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vap-IS-Hab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5277" y="426"/>
+        </scene>
+        <!--Wedding Controller-->
+        <scene sceneID="6Jl-sM-ZKw">
+            <objects>
+                <viewController storyboardIdentifier="WeddingControllerID" id="dS7-wN-6Rh" customClass="WeddingController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yr9-Bc-I0F"/>
+                        <viewControllerLayoutGuide type="bottom" id="eaG-Mt-TxL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vWD-sr-0pe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50249451193779071" green="1" blue="0.45395816926389831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGi-Cw-UEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6300" y="157"/>
+        </scene>
+        <!--Brow Controller-->
+        <scene sceneID="aEZ-oO-9Nl">
+            <objects>
+                <viewController storyboardIdentifier="BrowControllerID" id="8ti-8N-wFk" customClass="BrowController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lHP-pl-08v"/>
+                        <viewControllerLayoutGuide type="bottom" id="qfH-QR-CZ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDM-db-hi5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.58341513632072772" green="0.96617379758934252" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSQ-CX-dAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6300" y="-670"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="HairHeader" width="400" height="225"/>
         <image name="Logo-Text" width="256" height="33"/>
     </resources>
 </document>

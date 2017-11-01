@@ -34,6 +34,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MuseoSans_100.otf</string>
+		<string>MuseoSans_300.otf</string>
+		<string>MuseoSans_500.otf</string>
+		<string>MuseoSans_700.otf</string>
+		<string>MuseoSans_900.otf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

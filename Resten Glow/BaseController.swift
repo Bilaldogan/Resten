@@ -8,6 +8,7 @@
 
 import UIKit
 import Toast_Swift
+
 class BaseController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,5 +16,7 @@ class BaseController: UIViewController {
 
     }
 
+    let paralaxHeader = ParalaxHeaderClass()
    
+    let paralax_Header_Height = CalculateClass.calculateTableCellHeight(rate: CAH.TABLEVİEW_HEİGHT_RATE.rawValue)
 }
