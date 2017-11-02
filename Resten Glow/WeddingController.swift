@@ -36,6 +36,7 @@ class WeddingController: BaseController {
     //Storyboard Veriable
     @IBOutlet weak var tableHeaderView: UIView!
     @IBOutlet weak var weddingTableView: UITableView!
+   
     
     //
     var weddingStructure : WeddingStruct = WeddingStruct()

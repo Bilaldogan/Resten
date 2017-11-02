@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct ProductProperties {
     var title : String = ""
     var desc : String = ""
@@ -93,4 +94,6 @@ struct WeddingStruct {
     }
     
 }
+
+
 
