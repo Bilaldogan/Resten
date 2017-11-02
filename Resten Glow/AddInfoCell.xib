@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addInfoCell" rowHeight="102" id="atz-Zd-vjb" customClass="AddInfoCell" customModule="Resten_Glow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="atz-Zd-vjb" id="FpA-Y2-86I">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntY-wu-fp3">
+                        <rect key="frame" x="16" y="28" width="27" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ntY-wu-fp3" secondAttribute="height" multiplier="14:23" id="6kw-Sn-bgx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="28"/>
+                        <color key="textColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpQ-78-KPe">
+                        <rect key="frame" x="51" y="38" width="308" height="26"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ntY-wu-fp3" firstAttribute="top" secondItem="FpA-Y2-86I" secondAttribute="topMargin" constant="20" id="21q-Pe-7DR"/>
+                    <constraint firstItem="TpQ-78-KPe" firstAttribute="top" secondItem="FpA-Y2-86I" secondAttribute="topMargin" constant="30" id="62u-yV-6qA"/>
+                    <constraint firstItem="TpQ-78-KPe" firstAttribute="leading" secondItem="ntY-wu-fp3" secondAttribute="trailing" constant="8" id="AME-b2-Pmn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TpQ-78-KPe" secondAttribute="bottom" constant="30" id="ZNx-ot-hzH"/>
+                    <constraint firstItem="ntY-wu-fp3" firstAttribute="leading" secondItem="FpA-Y2-86I" secondAttribute="leadingMargin" constant="8" id="bc5-s5-rhv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ntY-wu-fp3" secondAttribute="bottom" constant="20" id="qaL-UE-1hS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TpQ-78-KPe" secondAttribute="trailing" constant="8" id="uFd-Oo-NUd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="TpQ-78-KPe" id="wm8-uP-Dp2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

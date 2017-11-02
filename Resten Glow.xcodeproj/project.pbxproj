@@ -15,6 +15,12 @@
 		222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E31FA27D9700C4ECEE /* Assets.xcassets */; };
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
 		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
+		224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */; };
+		224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79941FABCFA700D62D84 /* MyAccountController.swift */; };
+		224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79971FABE39B00D62D84 /* SmallProfileCell.swift */; };
+		224D799A1FABE39B00D62D84 /* SmallProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79981FABE39B00D62D84 /* SmallProfileCell.xib */; };
+		224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D799B1FABE41D00D62D84 /* AddInfoCell.swift */; };
+		224D799E1FABE41D00D62D84 /* AddInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D799C1FABE41D00D62D84 /* AddInfoCell.xib */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E31DF81FA9546600784508 /* CustomNavigationView.swift */; };
 		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
@@ -74,6 +80,12 @@
 		222B20E61FA27D9700C4ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222B20E81FA27D9700C4ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewCell.xib; sourceTree = "<group>"; };
+		224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
+		224D79941FABCFA700D62D84 /* MyAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
+		224D79971FABE39B00D62D84 /* SmallProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallProfileCell.swift; sourceTree = "<group>"; };
+		224D79981FABE39B00D62D84 /* SmallProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallProfileCell.xib; sourceTree = "<group>"; };
+		224D799B1FABE41D00D62D84 /* AddInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInfoCell.swift; sourceTree = "<group>"; };
+		224D799C1FABE41D00D62D84 /* AddInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInfoCell.xib; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22E31DF81FA9546600784508 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -174,6 +186,17 @@
 			path = "Resten Glow";
 			sourceTree = "<group>";
 		};
+		224D79961FABE33800D62D84 /* My Account Controller Cells */ = {
+			isa = PBXGroup;
+			children = (
+				224D79971FABE39B00D62D84 /* SmallProfileCell.swift */,
+				224D79981FABE39B00D62D84 /* SmallProfileCell.xib */,
+				224D799B1FABE41D00D62D84 /* AddInfoCell.swift */,
+				224D799C1FABE41D00D62D84 /* AddInfoCell.xib */,
+			);
+			name = "My Account Controller Cells";
+			sourceTree = "<group>";
+		};
 		22E326401FA2B0D200077FE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +220,7 @@
 				222B20DE1FA27D9700C4ECEE /* WelcomeController.swift */,
 				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 				22E326461FA3961600077FE7 /* LoginController.swift */,
+				224D79941FABCFA700D62D84 /* MyAccountController.swift */,
 			);
 			name = "\U0010Controller";
 			sourceTree = "<group>";
@@ -206,6 +230,7 @@
 			children = (
 				22E3264B1FA3C49400077FE7 /* RegexClass.swift */,
 				95D9B2C01FA92FFD00F2BDC6 /* Extensions.swift */,
+				224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -216,6 +241,7 @@
 				95E02E761FAA8B6D00873CB0 /* Side Menu Cell */,
 				95D9B2C91FA9357100F2BDC6 /* Main Controller Cell */,
 				95D9B2C81FA9355E00F2BDC6 /* Onboarding Cell */,
+				224D79961FABE33800D62D84 /* My Account Controller Cells */,
 			);
 			name = "Custom Cell";
 			sourceTree = "<group>";
@@ -455,6 +481,8 @@
 				95E02E911FAB8F3400873CB0 /* JosefinSans-SemiBold.ttf in Resources */,
 				95E02E921FAB8F3400873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
 				95E02E931FAB8F3400873CB0 /* JosefinSans-Thin.ttf in Resources */,
+				224D799E1FABE41D00D62D84 /* AddInfoCell.xib in Resources */,
+				224D799A1FABE39B00D62D84 /* SmallProfileCell.xib in Resources */,
 				95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
 				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
@@ -522,10 +550,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D9B2F51FA969ED00F2BDC6 /* BCTableViewExt.swift in Sources */,
+				224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */,
 				95D9B2BF1FA92DF700F2BDC6 /* MakeupController.swift in Sources */,
 				95D9B2CE1FA9390E00F2BDC6 /* CellAndHeaderHeight.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
+				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
+				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
+				224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */,
 				95D9B2C51FA9337300F2BDC6 /* BrowController.swift in Sources */,
 				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,

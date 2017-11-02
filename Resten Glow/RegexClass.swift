@@ -12,10 +12,11 @@ import UIKit
 struct RegexClass {
    
     static func validatePhone(value: String) -> Bool {
-        let PHONE_REGEX = "^\\d{11}"
-        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
-        let result =  phoneTest.evaluate(with: value)
-        return result
+        let count = value.characters.count
+        if count == 14 {
+            return true
+        }
+        return false
     }
     
     static func validateButunNumaralarSifirOlarmaz(textField : CustomTextField) -> Bool{
