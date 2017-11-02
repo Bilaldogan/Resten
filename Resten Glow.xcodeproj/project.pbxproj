@@ -40,11 +40,6 @@
 		95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2D41FA93EB500F2BDC6 /* ProductCell.swift */; };
 		95D9B2D71FA93EB500F2BDC6 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2D51FA93EB500F2BDC6 /* ProductCell.xib */; };
 		95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2D81FA944B800F2BDC6 /* ProductPrice.swift */; };
-		95D9B2E01FA9477E00F2BDC6 /* MuseoSans_100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DC1FA946EC00F2BDC6 /* MuseoSans_100.otf */; };
-		95D9B2E11FA9477E00F2BDC6 /* MuseoSans_300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DE1FA946EE00F2BDC6 /* MuseoSans_300.otf */; };
-		95D9B2E21FA9477E00F2BDC6 /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DD1FA946ED00F2BDC6 /* MuseoSans_500.otf */; };
-		95D9B2E31FA9477E00F2BDC6 /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DF1FA946EF00F2BDC6 /* MuseoSans_700.otf */; };
-		95D9B2E41FA9477E00F2BDC6 /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9B2DB1FA946EC00F2BDC6 /* MuseoSans_900.otf */; };
 		95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2EB1FA95FE200F2BDC6 /* ProductStructureClass.swift */; };
 		95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2EE1FA967E400F2BDC6 /* MUCTableViewExt.swift */; };
 		95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F11FA9691300F2BDC6 /* NCTableViewExt.swift */; };
@@ -56,6 +51,16 @@
 		95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */; };
 		95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */; };
 		95E02E801FAA952100873CB0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7F1FAA952100873CB0 /* GradientView.swift */; };
+		95E02E8B1FAB8F3400873CB0 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */; };
+		95E02E8C1FAB8F3400873CB0 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */; };
+		95E02E8D1FAB8F3400873CB0 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */; };
+		95E02E8E1FAB8F3400873CB0 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */; };
+		95E02E8F1FAB8F3400873CB0 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */; };
+		95E02E901FAB8F3400873CB0 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */; };
+		95E02E911FAB8F3400873CB0 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */; };
+		95E02E921FAB8F3400873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */; };
+		95E02E931FAB8F3400873CB0 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */; };
+		95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,11 +100,6 @@
 		95D9B2D41FA93EB500F2BDC6 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		95D9B2D51FA93EB500F2BDC6 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		95D9B2D81FA944B800F2BDC6 /* ProductPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPrice.swift; sourceTree = "<group>"; };
-		95D9B2DB1FA946EC00F2BDC6 /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
-		95D9B2DC1FA946EC00F2BDC6 /* MuseoSans_100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_100.otf; sourceTree = "<group>"; };
-		95D9B2DD1FA946ED00F2BDC6 /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
-		95D9B2DE1FA946EE00F2BDC6 /* MuseoSans_300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_300.otf; sourceTree = "<group>"; };
-		95D9B2DF1FA946EF00F2BDC6 /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
 		95D9B2EB1FA95FE200F2BDC6 /* ProductStructureClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStructureClass.swift; sourceTree = "<group>"; };
 		95D9B2EE1FA967E400F2BDC6 /* MUCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUCTableViewExt.swift; sourceTree = "<group>"; };
 		95D9B2F11FA9691300F2BDC6 /* NCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTableViewExt.swift; sourceTree = "<group>"; };
@@ -111,6 +111,16 @@
 		95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCustomCell.swift; sourceTree = "<group>"; };
 		95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCustomCell.xib; sourceTree = "<group>"; };
 		95E02E7F1FAA952100873CB0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
+		95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
+		95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
+		95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
+		95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,11 +291,16 @@
 		95D9B2DA1FA946E100F2BDC6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				95D9B2DC1FA946EC00F2BDC6 /* MuseoSans_100.otf */,
-				95D9B2DE1FA946EE00F2BDC6 /* MuseoSans_300.otf */,
-				95D9B2DD1FA946ED00F2BDC6 /* MuseoSans_500.otf */,
-				95D9B2DF1FA946EF00F2BDC6 /* MuseoSans_700.otf */,
-				95D9B2DB1FA946EC00F2BDC6 /* MuseoSans_900.otf */,
+				95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */,
+				95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */,
+				95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */,
+				95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */,
+				95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */,
+				95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */,
+				95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */,
+				95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */,
+				95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */,
+				95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -431,12 +446,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95D9B2E01FA9477E00F2BDC6 /* MuseoSans_100.otf in Resources */,
-				95D9B2E11FA9477E00F2BDC6 /* MuseoSans_300.otf in Resources */,
+				95E02E8B1FAB8F3400873CB0 /* JosefinSans-Bold.ttf in Resources */,
+				95E02E8C1FAB8F3400873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
+				95E02E8D1FAB8F3400873CB0 /* JosefinSans-Italic.ttf in Resources */,
+				95E02E8E1FAB8F3400873CB0 /* JosefinSans-Light.ttf in Resources */,
+				95E02E8F1FAB8F3400873CB0 /* JosefinSans-LightItalic.ttf in Resources */,
+				95E02E901FAB8F3400873CB0 /* JosefinSans-Regular.ttf in Resources */,
+				95E02E911FAB8F3400873CB0 /* JosefinSans-SemiBold.ttf in Resources */,
+				95E02E921FAB8F3400873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
+				95E02E931FAB8F3400873CB0 /* JosefinSans-Thin.ttf in Resources */,
+				95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
-				95D9B2E21FA9477E00F2BDC6 /* MuseoSans_500.otf in Resources */,
-				95D9B2E31FA9477E00F2BDC6 /* MuseoSans_700.otf in Resources */,
-				95D9B2E41FA9477E00F2BDC6 /* MuseoSans_900.otf in Resources */,
 				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
