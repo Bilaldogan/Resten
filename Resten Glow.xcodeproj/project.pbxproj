@@ -51,6 +51,11 @@
 		95D9B2F51FA969ED00F2BDC6 /* BCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F41FA969ED00F2BDC6 /* BCTableViewExt.swift */; };
 		95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2F71FA96AC700F2BDC6 /* WCTableViewExt.swift */; };
 		95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2FA1FA9734500F2BDC6 /* ColorUtil.swift */; };
+		95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E721FAA8AF100873CB0 /* RootViewController.swift */; };
+		95E02E751FAA8B4F00873CB0 /* LeftSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E741FAA8B4F00873CB0 /* LeftSideMenuController.swift */; };
+		95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */; };
+		95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */; };
+		95E02E801FAA952100873CB0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7F1FAA952100873CB0 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +106,11 @@
 		95D9B2F41FA969ED00F2BDC6 /* BCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCTableViewExt.swift; sourceTree = "<group>"; };
 		95D9B2F71FA96AC700F2BDC6 /* WCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCTableViewExt.swift; sourceTree = "<group>"; };
 		95D9B2FA1FA9734500F2BDC6 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		95E02E721FAA8AF100873CB0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		95E02E741FAA8B4F00873CB0 /* LeftSideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuController.swift; sourceTree = "<group>"; };
+		95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCustomCell.swift; sourceTree = "<group>"; };
+		95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCustomCell.xib; sourceTree = "<group>"; };
+		95E02E7F1FAA952100873CB0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +169,7 @@
 			children = (
 				22E326481FA39B2F00077FE7 /* CustomTextField.swift */,
 				22E326411FA2B0F300077FE7 /* CustomButton.swift */,
+				95E02E7F1FAA952100873CB0 /* GradientView.swift */,
 				220865191FA95B6B00F3539A /* CustomNavigationView.xib */,
 				22E31DF81FA9546600784508 /* CustomNavigationView.swift */,
 			);
@@ -168,6 +179,7 @@
 		22E326451FA3935000077FE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95E02E711FAA8AB600873CB0 /* Side Menu Controller */,
 				95D9B2B31FA92B2500F2BDC6 /* Main Controller */,
 				22E3264D1FA3C7C000077FE7 /* BaseController.swift */,
 				22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */,
@@ -191,6 +203,7 @@
 		95D9B2B21FA926A700F2BDC6 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				95E02E761FAA8B6D00873CB0 /* Side Menu Cell */,
 				95D9B2C91FA9357100F2BDC6 /* Main Controller Cell */,
 				95D9B2C81FA9355E00F2BDC6 /* Onboarding Cell */,
 			);
@@ -321,6 +334,24 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		95E02E711FAA8AB600873CB0 /* Side Menu Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95E02E721FAA8AF100873CB0 /* RootViewController.swift */,
+				95E02E741FAA8B4F00873CB0 /* LeftSideMenuController.swift */,
+			);
+			name = "Side Menu Controller";
+			sourceTree = "<group>";
+		};
+		95E02E761FAA8B6D00873CB0 /* Side Menu Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */,
+				95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */,
+			);
+			name = "Side Menu Cell";
+			sourceTree = "<group>";
+		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +433,7 @@
 			files = (
 				95D9B2E01FA9477E00F2BDC6 /* MuseoSans_100.otf in Resources */,
 				95D9B2E11FA9477E00F2BDC6 /* MuseoSans_300.otf in Resources */,
+				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
 				95D9B2E21FA9477E00F2BDC6 /* MuseoSans_500.otf in Resources */,
 				95D9B2E31FA9477E00F2BDC6 /* MuseoSans_700.otf in Resources */,
 				95D9B2E41FA9477E00F2BDC6 /* MuseoSans_900.otf in Resources */,
@@ -483,9 +515,11 @@
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
 				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
+				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
 				95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */,
 				95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */,
+				95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */,
 				95D9B2C11FA92FFD00F2BDC6 /* Extensions.swift in Sources */,
 				95D9B2C31FA9314100F2BDC6 /* NailsController.swift in Sources */,
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
@@ -493,9 +527,11 @@
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,
 				22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */,
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
+				95E02E801FAA952100873CB0 /* GradientView.swift in Sources */,
 				95D9B2C71FA9338C00F2BDC6 /* WeddingController.swift in Sources */,
 				95D9B2D31FA93DA800F2BDC6 /* HCTableViewExt.swift in Sources */,
 				95D9B2CB1FA938A200F2BDC6 /* CalculateClass.swift in Sources */,
+				95E02E751FAA8B4F00873CB0 /* LeftSideMenuController.swift in Sources */,
 				95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */,
 				95D9B2D01FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift in Sources */,
 				95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */,

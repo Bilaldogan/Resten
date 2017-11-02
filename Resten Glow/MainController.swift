@@ -17,7 +17,6 @@ class MainController: BaseController {
         
         
     }
-
     override func viewWillAppear(_ animated: Bool) {
         
     }
@@ -26,15 +25,30 @@ class MainController: BaseController {
         TabbarClass.createMainTabBar(tabView: tabbarView, tc: tc, viewController: self)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
+    
    //Story Board Veriable
     @IBOutlet weak var tabbarView: UIView!
     
     let tc = TabPageViewController.create()
     
 }
+
+extension MainController {
+    
+    func configure() {
+        
+    }
+    
+    
+    
+    
+}
+

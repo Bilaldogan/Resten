@@ -29,6 +29,14 @@ class CustomButton: UIButton {
         }
     }
     
+    @IBInspectable var imageColor: UIColor = UIColor.white {
+        didSet {
+            let buttonImage = self.image(for: .normal)
+            self.setImage(buttonImage?.withRenderingMode(.alwaysTemplate), for: .normal)
+            self.tintColor = imageColor
+        }
+    }
+    
         
     
     

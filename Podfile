@@ -10,6 +10,7 @@ target 'Resten Glow' do
   pod 'Toast-Swift'
   pod "TabPageViewController"
   pod 'Font-Awesome-Swift'
+  pod 'AKSideMenu'
 
   # Pods for Resten Glow
 

@@ -14,7 +14,7 @@ class ProductCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         arrowImageView.setFAIconWithName(icon: .FAAngleRight, textColor: .gray)
-        tryImageView.setFAIconWithName(icon: .FATry, textColor: .black)
+        tryImageView.setFAIconWithName(icon: .FATry, textColor: ColorUtil.purple)
         self.selectionStyle = .none
     }
 
