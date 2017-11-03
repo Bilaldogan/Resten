@@ -267,7 +267,7 @@
                                     <action selector="registerButtonTapped:" destination="4X1-3z-uPB" eventType="touchUpInside" id="2cf-e1-wCb"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-VT-5u0" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz Tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-VT-5u0" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
                                 <rect key="frame" x="31" y="264.5" width="313" height="43.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -789,7 +789,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3J-KU-JS1" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eski Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3J-KU-JS1" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
                                 <rect key="frame" x="31" y="130" width="313" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -818,7 +818,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-de-0ny" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-de-0ny" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
                                 <rect key="frame" x="31" y="226.5" width="313" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -863,9 +863,30 @@
                                     <outlet property="navDelegate" destination="iPH-qF-hdw" id="4Kn-Wd-hvE"/>
                                 </connections>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-r9-zpq" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="31" y="274" width="313" height="39.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TextFieldFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zmt-r9-zpq" firstAttribute="height" secondItem="JaA-de-0ny" secondAttribute="height" id="298-Ai-C7L"/>
                             <constraint firstItem="FPl-1W-cjT" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.1" id="2fb-YU-6SX"/>
                             <constraint firstItem="nvw-78-jng" firstAttribute="leading" secondItem="TtO-6Q-ORa" secondAttribute="leading" id="7Iv-ux-GRm"/>
                             <constraint firstItem="0eE-Rz-sya" firstAttribute="top" secondItem="ODe-cV-BAg" secondAttribute="bottom" id="Bug-wv-nKO"/>
@@ -875,8 +896,10 @@
                             <constraint firstItem="nvw-78-jng" firstAttribute="top" secondItem="H3J-KU-JS1" secondAttribute="bottom" constant="20" id="XH5-pj-DuE"/>
                             <constraint firstItem="FPl-1W-cjT" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leading" id="aEf-hQ-I55"/>
                             <constraint firstItem="JaA-de-0ny" firstAttribute="width" secondItem="H3J-KU-JS1" secondAttribute="width" id="caY-y5-bWZ"/>
+                            <constraint firstItem="zmt-r9-zpq" firstAttribute="width" secondItem="JaA-de-0ny" secondAttribute="width" id="dA5-Ou-vad"/>
                             <constraint firstItem="H3J-KU-JS1" firstAttribute="top" secondItem="TtO-6Q-ORa" secondAttribute="bottom" constant="15" id="dQs-Pl-xaf"/>
                             <constraint firstItem="TtO-6Q-ORa" firstAttribute="top" secondItem="0eE-Rz-sya" secondAttribute="bottom" constant="20" id="mDC-nn-DUR"/>
+                            <constraint firstItem="zmt-r9-zpq" firstAttribute="centerX" secondItem="JaA-de-0ny" secondAttribute="centerX" id="n9R-ZY-iv2"/>
                             <constraint firstItem="H3J-KU-JS1" firstAttribute="leading" secondItem="TtO-6Q-ORa" secondAttribute="leading" id="o4B-mT-dU7"/>
                             <constraint firstItem="TtO-6Q-ORa" firstAttribute="leading" secondItem="2Ng-5C-woN" secondAttribute="leadingMargin" constant="15" id="o8Y-25-ATZ"/>
                             <constraint firstItem="PEN-JO-x1O" firstAttribute="top" secondItem="FPl-1W-cjT" secondAttribute="bottom" id="qHW-Pv-YCZ"/>
@@ -886,10 +909,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="H3J-KU-JS1" secondAttribute="trailing" constant="15" id="u7b-lR-tQo"/>
                             <constraint firstItem="JaA-de-0ny" firstAttribute="leading" secondItem="nvw-78-jng" secondAttribute="leading" id="uwS-Ak-gzX"/>
                             <constraint firstItem="0eE-Rz-sya" firstAttribute="height" secondItem="2Ng-5C-woN" secondAttribute="height" multiplier="0.08" id="yfb-kL-Xh2"/>
+                            <constraint firstItem="zmt-r9-zpq" firstAttribute="top" secondItem="JaA-de-0ny" secondAttribute="bottom" constant="8" id="zNV-EP-EAs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="navigationView" destination="0eE-Rz-sya" id="y89-kX-tQL"/>
+                        <outlet property="textFieldConfirmNewPassword" destination="zmt-r9-zpq" id="1vm-ff-BHI"/>
                         <outlet property="textFieldNewPass" destination="JaA-de-0ny" id="qUa-O9-rl8"/>
                         <outlet property="textFieldOldPass" destination="H3J-KU-JS1" id="fcV-ln-uJm"/>
                     </connections>
@@ -977,7 +1002,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsa-uT-AyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3624.8000000000002" y="425.93703148425789"/>
+            <point key="canvasLocation" x="3681" y="455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aZz-Zl-3yZ">
+            <objects>
+                <viewController id="kCo-Cf-mna" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDL-ry-SdB"/>
+                        <viewControllerLayoutGuide type="bottom" id="wOT-2e-kox"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eBO-tl-p64">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jx2-qk-1dM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="53.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jx2-qk-1dM" firstAttribute="top" secondItem="uDL-ry-SdB" secondAttribute="bottom" id="7Im-sN-gbj"/>
+                            <constraint firstItem="Jx2-qk-1dM" firstAttribute="leading" secondItem="eBO-tl-p64" secondAttribute="leading" id="8bD-6o-pBJ"/>
+                            <constraint firstItem="Jx2-qk-1dM" firstAttribute="height" secondItem="eBO-tl-p64" secondAttribute="height" multiplier="0.08" id="ceo-WA-ozW"/>
+                            <constraint firstAttribute="trailing" secondItem="Jx2-qk-1dM" secondAttribute="trailing" id="yGI-I1-Hef"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doO-Nz-fkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3970.4000000000001" y="1154.5727136431785"/>
         </scene>
         <!--Makeup Controller-->
         <scene sceneID="Fsl-ro-iIW">
