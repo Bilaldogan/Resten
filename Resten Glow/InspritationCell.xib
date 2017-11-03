@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="539" id="KGk-i7-Jjw" customClass="InspritationCell" customModule="Resten_Glow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="538"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="537.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İLHAM AL!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBU-Fy-W18">
+                        <rect key="frame" x="28" y="23" width="319" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kılavuzumuzdan bir stil seçin veya kendi stilinizi oluşturun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-D1-0vz">
+                        <rect key="frame" x="28" y="49" width="319" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrowsHeader" translatesAutoresizingMaskIntoConstraints="NO" id="qy2-2r-AtA">
+                        <rect key="frame" x="28" y="100" width="319" height="414.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qy2-2r-AtA" secondAttribute="height" multiplier="1:1.3" id="6Wk-Hy-S7J"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RBU-Fy-W18" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0Fq-A0-a0h"/>
+                    <constraint firstItem="bfh-D1-0vz" firstAttribute="width" secondItem="RBU-Fy-W18" secondAttribute="width" id="JCu-uu-hDQ"/>
+                    <constraint firstItem="bfh-D1-0vz" firstAttribute="top" secondItem="RBU-Fy-W18" secondAttribute="bottom" constant="5" id="Qum-32-oF9"/>
+                    <constraint firstItem="qy2-2r-AtA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="b7A-bk-cCV"/>
+                    <constraint firstItem="qy2-2r-AtA" firstAttribute="top" secondItem="bfh-D1-0vz" secondAttribute="bottom" constant="15" id="eIP-q7-5M5"/>
+                    <constraint firstItem="RBU-Fy-W18" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="pys-8l-qxB"/>
+                    <constraint firstItem="RBU-Fy-W18" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.85" id="r0V-vx-QHM"/>
+                    <constraint firstItem="qy2-2r-AtA" firstAttribute="width" secondItem="bfh-D1-0vz" secondAttribute="width" id="tad-iC-Vgz"/>
+                    <constraint firstItem="bfh-D1-0vz" firstAttribute="leading" secondItem="RBU-Fy-W18" secondAttribute="leading" id="u8K-OD-zML"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="bfh-D1-0vz" id="TeP-Ic-zHv"/>
+                <outlet property="insImageView" destination="qy2-2r-AtA" id="q3u-Qt-5kM"/>
+                <outlet property="titleLabel" destination="RBU-Fy-W18" id="yGE-34-9DU"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BrowsHeader" width="233" height="150"/>
+    </resources>
+</document>

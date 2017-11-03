@@ -17,4 +17,10 @@ class CalculateClass : NSObject {
         return screenWidth * rate
     }
     
+    class func calculateContentInset(rate : CGFloat) -> CGFloat {
+        let screenSize = UIScreen.main.bounds
+        let screenHeight = screenSize.height
+        return screenHeight * rate
+    }
+    
 }

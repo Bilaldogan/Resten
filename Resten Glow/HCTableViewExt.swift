@@ -28,7 +28,7 @@ extension HairController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+       self.goto(screenID: "ProductDetailControllerID")
     }
     
     
