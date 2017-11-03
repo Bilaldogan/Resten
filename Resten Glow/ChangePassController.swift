@@ -13,6 +13,7 @@ class ChangePassController: UIViewController {
     @IBOutlet weak var navigationView: CustomNavigationView!
     @IBOutlet weak var textFieldNewPass: CustomTextField!
     @IBOutlet weak var textFieldOldPass: CustomTextField!
+    @IBOutlet weak var textFieldConfirmNewPassword: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,7 @@ class ChangePassController: UIViewController {
 
    
     @IBAction func changePassTapped(_ sender: UIButton) {
+        textFieldRegexHelp()
     }
    
 
@@ -32,4 +34,20 @@ extension ChangePassController : CustomNavigationViewDelegate {
         //back Action
     }
     
+}
+extension ChangePassController {
+    internal func textFieldRegexHelp() {
+        
+        if  textFieldNewPass.text! == "" || textFieldOldPass.text! == "" || textFieldConfirmNewPassword.text! == "" {
+            self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
+            //Popup çağır
+        }
+        else if textFieldOldPass.text! !=  textFieldConfirmNewPassword.text!  {
+            self.view.makeToast("Girdiğiniz şifreler aynı olmalı.")
+            //Popup çağır
+        }
+        else{
+            //doğru yoldasın
+        }
+    }
 }
