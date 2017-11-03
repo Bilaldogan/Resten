@@ -20,7 +20,8 @@ class LoginController: BaseController {
     override func viewWillDisappear(_ animated: Bool) {
         if (navigationController?.topViewController != self) {
             navigationController?.navigationBar.isHidden = false
-            navigationController?.navigationBar.tintColor = UIColor.black
+            navigationController?.navigationBar.tintColor = ColorUtil.textGray
+            
             let backItem = UIBarButtonItem()
             backItem.title = ""
             navigationItem.backBarButtonItem = backItem

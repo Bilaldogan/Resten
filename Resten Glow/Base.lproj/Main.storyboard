@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HcC-18-H6I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AppleColorEmoji@2x.ttc">
+            <string>AppleColorEmoji</string>
+        </array>
+        <array key="JosefinSans-Bold.ttf">
+            <string>JosefinSans-Bold</string>
+        </array>
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans</string>
+        </array>
+        <array key="KohinoorBangla.ttc">
+            <string>KohinoorBangla-Semibold</string>
+        </array>
         <array key="MuseoSans_300.otf">
             <string>MuseoSans-300</string>
         </array>
@@ -146,18 +158,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-oG-tWl">
-                                <rect key="frame" x="31" y="84" width="37" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="84" width="37" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-jl-BeF" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="117" width="313" height="43.5"/>
+                                <rect key="frame" x="31" y="115" width="313" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -175,18 +187,18 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-68-ck7">
-                                <rect key="frame" x="31" y="180.5" width="32" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="178.5" width="32" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="30"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-7G-cVq" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="213.5" width="313" height="43"/>
+                                <rect key="frame" x="31" y="209.5" width="313" height="43"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -204,18 +216,18 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İletişim Bilgileri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-wC-NW7">
-                                <rect key="frame" x="31" y="322.5" width="102.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="318.5" width="98" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-wE-f6u" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="356" width="149" height="43.5"/>
+                                <rect key="frame" x="31" y="350" width="149" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -233,9 +245,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyadınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lW-0E-wnQ" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="195" y="356" width="149" height="43.5"/>
+                                <rect key="frame" x="195" y="350" width="149" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -252,25 +264,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-Rp-vEv">
-                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                                <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                <state key="normal" title="Kayıt Ol">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                </variation>
-                                <connections>
-                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="4nj-Lq-Ltr"/>
-                                    <action selector="registerButtonTapped:" destination="4X1-3z-uPB" eventType="touchUpInside" id="2cf-e1-wCb"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-VT-5u0" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="264.5" width="313" height="43.5"/>
+                                <rect key="frame" x="31" y="260.5" width="313" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -288,9 +285,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefon Numaranız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDx-Ku-jIk" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="407.5" width="313" height="43.5"/>
+                                <rect key="frame" x="31" y="401.5" width="313" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -311,20 +308,34 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-UN-1F8">
-                                <rect key="frame" x="180" y="356" width="15" height="43.5"/>
+                                <rect key="frame" x="180" y="350" width="15" height="43.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="Aw6-wq-Nfr"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJD-Va-AUD">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
+                                <state key="normal" title="KAYIT OL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="3VL-22-3f0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xoz-wC-NW7" firstAttribute="top" secondItem="7EL-VT-5u0" secondAttribute="bottom" constant="15" id="0Mo-Bu-1qz"/>
+                            <constraint firstItem="kJD-Va-AUD" firstAttribute="leading" secondItem="zpT-LN-6Zw" secondAttribute="leading" id="0VV-lZ-dG3"/>
                             <constraint firstItem="XJg-UN-1F8" firstAttribute="leading" secondItem="hVN-wE-f6u" secondAttribute="trailing" id="48k-NF-faH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gRt-jl-BeF" secondAttribute="trailing" constant="15" id="4Mh-TB-vu9"/>
                             <constraint firstItem="iDx-Ku-jIk" firstAttribute="centerX" secondItem="7EL-VT-5u0" secondAttribute="centerX" id="6Nt-70-gJR"/>
-                            <constraint firstItem="Akd-Rp-vEv" firstAttribute="height" secondItem="zpT-LN-6Zw" secondAttribute="height" multiplier="0.1" id="7BA-me-heE"/>
                             <constraint firstItem="Xoz-wC-NW7" firstAttribute="leading" secondItem="3MQ-68-ck7" secondAttribute="leading" id="8Sy-UZ-aaa"/>
                             <constraint firstItem="3MQ-68-ck7" firstAttribute="top" secondItem="gRt-jl-BeF" secondAttribute="bottom" constant="20" id="9PO-Qh-Z3u"/>
                             <constraint firstItem="nAF-oG-tWl" firstAttribute="leading" secondItem="zpT-LN-6Zw" secondAttribute="leadingMargin" constant="15" id="Bhk-Qf-9LB"/>
@@ -333,6 +344,7 @@
                             <constraint firstItem="8lW-0E-wnQ" firstAttribute="height" secondItem="hVN-wE-f6u" secondAttribute="height" id="ERe-mk-TOt"/>
                             <constraint firstItem="CVq-7G-cVq" firstAttribute="leading" secondItem="3MQ-68-ck7" secondAttribute="leading" id="LGK-d9-OJT"/>
                             <constraint firstItem="gRt-jl-BeF" firstAttribute="top" secondItem="nAF-oG-tWl" secondAttribute="bottom" constant="15" id="NbG-BT-2u8"/>
+                            <constraint firstAttribute="trailing" secondItem="kJD-Va-AUD" secondAttribute="trailing" id="Rvn-LR-TAT"/>
                             <constraint firstItem="XJg-UN-1F8" firstAttribute="top" secondItem="hVN-wE-f6u" secondAttribute="top" id="VMk-zr-7hm"/>
                             <constraint firstItem="gRt-jl-BeF" firstAttribute="leading" secondItem="nAF-oG-tWl" secondAttribute="leading" id="WcQ-nq-ePj"/>
                             <constraint firstItem="7EL-VT-5u0" firstAttribute="centerX" secondItem="CVq-7G-cVq" secondAttribute="centerX" id="Ymb-Nq-RPj"/>
@@ -342,21 +354,20 @@
                             <constraint firstItem="iDx-Ku-jIk" firstAttribute="width" secondItem="7EL-VT-5u0" secondAttribute="width" id="day-kd-uV5"/>
                             <constraint firstItem="3MQ-68-ck7" firstAttribute="leading" secondItem="nAF-oG-tWl" secondAttribute="leading" id="e0n-aq-ZSM"/>
                             <constraint firstItem="CVq-7G-cVq" firstAttribute="top" secondItem="3MQ-68-ck7" secondAttribute="bottom" constant="15" id="eG6-zB-2oI"/>
+                            <constraint firstItem="t4U-5a-VQx" firstAttribute="top" secondItem="kJD-Va-AUD" secondAttribute="bottom" id="fRy-oE-nxN"/>
                             <constraint firstItem="iDx-Ku-jIk" firstAttribute="height" secondItem="7EL-VT-5u0" secondAttribute="height" id="fXi-FH-ZjC"/>
                             <constraint firstItem="XJg-UN-1F8" firstAttribute="bottom" secondItem="hVN-wE-f6u" secondAttribute="bottom" id="ff2-SG-8nI"/>
                             <constraint firstItem="XJg-UN-1F8" firstAttribute="centerX" secondItem="zpT-LN-6Zw" secondAttribute="centerX" id="hY4-eM-AvO"/>
                             <constraint firstItem="gRt-jl-BeF" firstAttribute="height" secondItem="zpT-LN-6Zw" secondAttribute="height" multiplier="0.065" id="hgA-xI-rEw"/>
                             <constraint firstItem="8lW-0E-wnQ" firstAttribute="top" secondItem="hVN-wE-f6u" secondAttribute="top" id="k7v-gd-r43"/>
-                            <constraint firstItem="t4U-5a-VQx" firstAttribute="top" secondItem="Akd-Rp-vEv" secondAttribute="bottom" id="nYa-qc-bYW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8lW-0E-wnQ" secondAttribute="trailing" constant="15" id="o0N-ik-bMS"/>
                             <constraint firstItem="CVq-7G-cVq" firstAttribute="height" secondItem="gRt-jl-BeF" secondAttribute="height" id="oAR-TG-wcx"/>
                             <constraint firstItem="CVq-7G-cVq" firstAttribute="width" secondItem="gRt-jl-BeF" secondAttribute="width" id="pV6-MZ-9Wf"/>
                             <constraint firstItem="7EL-VT-5u0" firstAttribute="width" secondItem="CVq-7G-cVq" secondAttribute="width" id="q9r-cr-lF9"/>
                             <constraint firstItem="8lW-0E-wnQ" firstAttribute="leading" secondItem="XJg-UN-1F8" secondAttribute="trailing" id="sXt-Cn-rTS"/>
                             <constraint firstItem="nAF-oG-tWl" firstAttribute="top" secondItem="niq-iL-i8x" secondAttribute="bottom" constant="20" id="sot-zJ-egM"/>
+                            <constraint firstItem="kJD-Va-AUD" firstAttribute="height" secondItem="zpT-LN-6Zw" secondAttribute="height" multiplier="0.1" id="usm-1J-Vur"/>
                             <constraint firstItem="7EL-VT-5u0" firstAttribute="top" secondItem="CVq-7G-cVq" secondAttribute="bottom" constant="8" id="vMf-8p-CkJ"/>
-                            <constraint firstItem="Akd-Rp-vEv" firstAttribute="leading" secondItem="zpT-LN-6Zw" secondAttribute="leading" id="vNK-K8-giG"/>
-                            <constraint firstAttribute="trailing" secondItem="Akd-Rp-vEv" secondAttribute="trailing" id="zIG-Im-gnQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kayıt Ol" id="VY6-Ti-x5X"/>
@@ -386,19 +397,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-8m-vf2">
-                                <rect key="frame" x="31" y="94" width="37" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="94" width="37" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-FB-QP3" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="127" width="313" height="43.5"/>
+                                <rect key="frame" x="31" y="125" width="313" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
@@ -415,19 +426,19 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ail-H9-bW6">
-                                <rect key="frame" x="31" y="200.5" width="32" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="198.5" width="32" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1x-gt-uzS" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="233.5" width="313" height="43"/>
+                                <rect key="frame" x="31" y="229.5" width="313" height="43.5"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
@@ -444,13 +455,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8A-R4-jw3">
-                                <rect key="frame" x="31" y="306.5" width="129" height="28"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <rect key="frame" x="31" y="293" width="104" height="23"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                 <state key="normal" title="ŞİFREMİ UNUTTUM?">
-                                    <color key="titleColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="22"/>
                                 </variation>
                                 <connections>
                                     <segue destination="pMs-Oc-Mqa" kind="show" id="KSA-aS-x0U"/>
@@ -458,13 +469,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-LL-dyn">
                                 <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                                <color key="backgroundColor" red="0.99859899282455444" green="0.27907872200012207" blue="0.23886942863464355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
                                 <state key="normal" title="GİRİŞ YAP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="35"/>
                                 </variation>
                                 <connections>
                                     <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="Rw7-09-lqq"/>
@@ -487,7 +498,7 @@
                             <constraint firstItem="uj6-FB-QP3" firstAttribute="top" secondItem="TIl-8m-vf2" secondAttribute="bottom" constant="15" id="a20-pt-R5N"/>
                             <constraint firstItem="y1x-gt-uzS" firstAttribute="top" secondItem="ail-H9-bW6" secondAttribute="bottom" constant="15" id="a7b-aO-veh"/>
                             <constraint firstItem="y1x-gt-uzS" firstAttribute="leading" secondItem="uj6-FB-QP3" secondAttribute="leading" id="hd5-90-GM1"/>
-                            <constraint firstItem="u8A-R4-jw3" firstAttribute="top" secondItem="y1x-gt-uzS" secondAttribute="bottom" constant="30" id="hlx-dM-Ozh"/>
+                            <constraint firstItem="u8A-R4-jw3" firstAttribute="top" secondItem="y1x-gt-uzS" secondAttribute="bottom" constant="20" id="hlx-dM-Ozh"/>
                             <constraint firstItem="dr6-LL-dyn" firstAttribute="leading" secondItem="Jwz-5z-xTE" secondAttribute="leading" id="jl9-jE-NME"/>
                             <constraint firstItem="TIl-8m-vf2" firstAttribute="leading" secondItem="Jwz-5z-xTE" secondAttribute="leadingMargin" constant="15" id="njp-CT-gTl"/>
                             <constraint firstItem="u8A-R4-jw3" firstAttribute="leading" secondItem="y1x-gt-uzS" secondAttribute="leading" id="rEp-g9-pda"/>
@@ -518,27 +529,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aşağıya kayıtlı e-posta adresinizi yazın, şifrenizi değiştirebileceğiniz linki e-postanıza gönderelim." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-Zk-2h6">
-                                <rect key="frame" x="36" y="114" width="303" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="36" y="114" width="303" height="60"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-6h-KJh">
-                                <rect key="frame" x="31" y="221.5" width="37" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="224" width="37" height="16"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="32"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-SB-9Fb" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="254.5" width="313" height="40"/>
+                                <rect key="frame" x="31" y="255" width="313" height="40"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -555,18 +566,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrm-Os-skZ">
-                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                                <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-Vh-U3g">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
                                 <state key="normal" title="ONAYLA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="35"/>
                                 </variation>
                                 <connections>
-                                    <action selector="submitButtonTapped:" destination="pMs-Oc-Mqa" eventType="touchUpInside" id="B2F-cw-pB4"/>
+                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="4hO-o6-p4C"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -575,16 +586,16 @@
                             <constraint firstItem="cwj-SB-9Fb" firstAttribute="top" secondItem="Dha-6h-KJh" secondAttribute="bottom" constant="15" id="1Jv-TT-f42"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NZ2-Zk-2h6" secondAttribute="trailing" constant="20" id="3EB-9X-fOi"/>
                             <constraint firstItem="Dha-6h-KJh" firstAttribute="top" secondItem="NZ2-Zk-2h6" secondAttribute="bottom" constant="50" id="Au3-81-HdH"/>
-                            <constraint firstAttribute="trailing" secondItem="Rrm-Os-skZ" secondAttribute="trailing" id="Evu-Y3-2qK"/>
-                            <constraint firstItem="Rrm-Os-skZ" firstAttribute="leading" secondItem="N1p-HA-bcc" secondAttribute="leading" id="TBL-AN-yH2"/>
-                            <constraint firstItem="n7h-AH-5Bw" firstAttribute="top" secondItem="Rrm-Os-skZ" secondAttribute="bottom" id="UFT-x2-a9z"/>
+                            <constraint firstItem="AwL-Vh-U3g" firstAttribute="leading" secondItem="N1p-HA-bcc" secondAttribute="leading" id="Gpk-E7-l8C"/>
+                            <constraint firstAttribute="trailing" secondItem="AwL-Vh-U3g" secondAttribute="trailing" id="Id5-6p-brg"/>
+                            <constraint firstItem="n7h-AH-5Bw" firstAttribute="top" secondItem="AwL-Vh-U3g" secondAttribute="bottom" id="KlB-72-frT"/>
                             <constraint firstItem="NZ2-Zk-2h6" firstAttribute="leading" secondItem="N1p-HA-bcc" secondAttribute="leadingMargin" constant="20" id="Uyz-qa-P0k"/>
                             <constraint firstItem="cwj-SB-9Fb" firstAttribute="height" secondItem="N1p-HA-bcc" secondAttribute="height" multiplier="0.06" id="Vrh-MG-i2X"/>
+                            <constraint firstItem="AwL-Vh-U3g" firstAttribute="height" secondItem="N1p-HA-bcc" secondAttribute="height" multiplier="0.1" id="WWt-4I-aoI"/>
                             <constraint firstItem="Dha-6h-KJh" firstAttribute="leading" secondItem="N1p-HA-bcc" secondAttribute="leadingMargin" constant="15" id="ddp-W5-vyd"/>
                             <constraint firstItem="NZ2-Zk-2h6" firstAttribute="top" secondItem="4mK-GR-Taa" secondAttribute="bottom" constant="50" id="hPc-wZ-yk4"/>
                             <constraint firstItem="cwj-SB-9Fb" firstAttribute="leading" secondItem="Dha-6h-KJh" secondAttribute="leading" id="lgR-7b-mZa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cwj-SB-9Fb" secondAttribute="trailing" constant="15" id="ngr-Ay-fv8"/>
-                            <constraint firstItem="Rrm-Os-skZ" firstAttribute="height" secondItem="N1p-HA-bcc" secondAttribute="height" multiplier="0.1" id="wXb-qR-pnA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Şifremi Unuttum" id="Ai7-43-Bzu"/>
@@ -611,13 +622,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-Pe-Pzh" customClass="GradientView" customModule="Resten_Glow" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESTEN GLOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-ec-iYu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REST &amp; GLOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-ec-iYu">
                                         <rect key="frame" x="94.5" y="35" width="187.5" height="40"/>
-                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="30"/>
+                                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svg-Qc-HZx" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
@@ -779,16 +790,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifreniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-6Q-ORa">
-                                <rect key="frame" x="31" y="93.5" width="60.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="93.5" width="53.5" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="15"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="30"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3J-KU-JS1" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="130" width="313" height="40"/>
+                                <rect key="frame" x="31" y="129.5" width="313" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -808,16 +819,16 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni Şifreniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvw-78-jng">
-                                <rect key="frame" x="31" y="190" width="99" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="31" y="189.5" width="88.5" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="15"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="30"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-de-0ny" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="226.5" width="313" height="39.5"/>
+                                <rect key="frame" x="31" y="225.5" width="313" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -838,7 +849,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-1W-cjT">
                                 <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                                <color key="backgroundColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <state key="normal" title="Şifreyi Değiştir">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -920,7 +931,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUA-kz-eZJ" id="895-Zk-0QG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-Fr-3dj">
@@ -1188,7 +1199,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brZ-s7-hCr">
                                 <rect key="frame" x="330" y="639" width="37" height="16"/>
                                 <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="13"/>
-                                <color key="textColor" red="0.078431372550000003" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="20"/>
@@ -1198,7 +1209,7 @@
                                 <rect key="frame" x="8" y="631" width="62" height="28"/>
                                 <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="13"/>
                                 <state key="normal" title="ÇIKIŞ YAP">
-                                    <color key="titleColor" red="0.8862745098" green="0.34901960780000002" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="20"/>
@@ -1207,7 +1218,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B.B.KARAOGUZ@GMAİL.COM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp5-Wb-PqV">
                                 <rect key="frame" x="8" y="615" width="181.5" height="16"/>
                                 <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
-                                <color key="textColor" red="0.078431372550000003" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
@@ -1419,7 +1430,7 @@
     <resources>
         <image name="BrowsHeader" width="233" height="150"/>
         <image name="HairHeader" width="400" height="225"/>
-        <image name="Logo-Text" width="256" height="33"/>
+        <image name="Logo-Text" width="148" height="25"/>
         <image name="MakeUp" width="307" height="320"/>
         <image name="MakeupHeader" width="191" height="97"/>
         <image name="NailsHeader" width="393" height="180"/>

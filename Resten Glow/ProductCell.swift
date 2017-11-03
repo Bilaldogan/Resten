@@ -13,7 +13,7 @@ class ProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        arrowImageView.setFAIconWithName(icon: .FAAngleRight, textColor: .gray)
+        arrowImageView.setFAIconWithName(icon: .FAAngleRight, textColor: ColorUtil.purple)
         self.selectionStyle = .none
     }
 
