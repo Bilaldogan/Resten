@@ -123,11 +123,11 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
         switch UIDevice.current.userInterfaceIdiom{
         case .pad:
             footerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 15))
-            footerView.backgroundColor = UIColor.gray
+            footerView.backgroundColor = ColorUtil.lightGray
 
         case .phone:
             footerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 5))
-            footerView.backgroundColor = UIColor.gray
+            footerView.backgroundColor = ColorUtil.lightGray
            
         default:
             break
@@ -174,25 +174,26 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
             switch UIDevice.current.userInterfaceIdiom{
             case .pad:
                 headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 80))
-                headerView.backgroundColor = UIColor.gray
-                headerSmallView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 1.0))
-                headerSmallView.backgroundColor = UIColor.black
+                headerView.backgroundColor = ColorUtil.lightGray
+                headerSmallView = UIView(frame: CGRect(x: self.view.frame.width * 0.3, y: 80, width: self.view.frame.width * 0.7, height: 1.0))
+                headerSmallView.backgroundColor = ColorUtil.purple
                 
                 headerLabel = UILabel(frame: CGRect(x: headerView.frame.width * 0.05, y: 0, width: headerView.frame.width * 0.9, height: 80))
                 headerLabel.backgroundColor = UIColor.clear
-                headerLabel.textAlignment = .left
-                //headerLabel.font = UIFont(name: "Quicksand-Regular", size: 20)
+                headerLabel.textColor = ColorUtil.purple
+                headerLabel.textAlignment = .right
+                headerLabel.font = UIFont(name: "JosefinSans-BoldItalic", size: 20)
                 headerLabel.minimumScaleFactor = 6.0 / 10.0
             case .phone:
                 headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
-                headerView.backgroundColor = UIColor.gray
-                headerSmallView  = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 1.0))
-                headerSmallView.backgroundColor = UIColor.black
+                headerView.backgroundColor = ColorUtil.lightGray
+                headerSmallView  = UIView(frame: CGRect(x: self.view.frame.width * 0.3, y: 40, width: self.view.frame.width * 0.7, height: 1.0))
+                headerSmallView.backgroundColor = ColorUtil.purple
                 
                 headerLabel = UILabel(frame: CGRect(x: headerView.frame.width * 0.05, y: 0, width: headerView.frame.width * 0.9, height: 40))
-                headerLabel.backgroundColor = UIColor.clear
-                headerLabel.textAlignment = .left
-                //headerLabel.font = UIFont(name: "Quicksand-Regular", size: 13)
+                headerLabel.textColor = ColorUtil.purple
+                headerLabel.textAlignment = .right
+                headerLabel.font = UIFont(name: "JosefinSans-BoldItalic", size: 13)
                 headerLabel.minimumScaleFactor = 6.0 / 10.0
             default:
                break
@@ -203,14 +204,17 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
                 headerLabel.text = ""
             case 1:
                 headerLabel.text = "İLGİLİ HİZMETLERİMİZ"
+                headerView.addSubview(headerSmallView)
+                headerView.addSubview(headerLabel)
             case 2:
                 headerLabel.text = "İSTEĞE GÖRE HİZMETLER"
+                headerView.addSubview(headerSmallView)
+                headerView.addSubview(headerLabel)
             default:
                 break
             }
             
-           // headerView.addSubview(headerSmallView)
-            headerView.addSubview(headerLabel)
+            
             
            return headerView
         }
@@ -220,15 +224,13 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
         if productDetailTableView.contentOffset.y >= 0 {
             
             UIView.animate(withDuration: 0.8, animations: {
-                self.statusBarView.alpha = 1.0
-                self.topBarView.alpha = 1.0
+                //self.topBarView.layer.opacity = 1.0
 
             })
         }
         else{
             UIView.animate(withDuration: 0.8, animations: {
-                self.statusBarView.alpha = 0
-                self.topBarView.alpha = 0
+                //self.topBarView.layer.opacity = 0
                 
             })
         }
