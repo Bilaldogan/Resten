@@ -31,19 +31,23 @@ class GradientView: UIView {
     
     private func setupView(){
 
-        let colors:Array = [startColor.cgColor, endColor.cgColor]
+        let colours:Array = [startColor.cgColor, endColor.cgColor]
         guard let gradientLayer = self.layer as? CAGradientLayer else {
             return;
         }
         
-        gradientLayer.colors = colors
-
+        gradientLayer.colors = colours.map { $0 }
+        
+        
         if (isHorizontal){
-            gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 0.9, y: 0.4)
         }else{
             gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         }
 
+     
+        
+        
         self.setNeedsDisplay()
 
     }

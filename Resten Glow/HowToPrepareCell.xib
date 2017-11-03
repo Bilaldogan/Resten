@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="HowToPrepareCell" customModule="Resten_Glow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkJ-9c-YU8">
+                        <rect key="frame" x="0.0" y="0.0" width="341" height="117.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasıl hazırlanmalı?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-pp-XXv">
+                        <rect key="frame" x="26" y="23" width="290" height="23.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-T8-w4m">
+                        <rect key="frame" x="25.5" y="54.5" width="290" height="40"/>
+                        <string key="text">Saçın ne kadar temizse o kadar iyi, yeni mi yıkamıştın, e şahane! Oturacağın yerin prize yakın olmasından emin ol yeter, gerisini saç stilistimiz halleder.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5T-VX-WzY">
+                        <rect key="frame" x="0.0" y="116.5" width="341" height="1"/>
+                        <color key="backgroundColor" red="0.86262848140000004" green="0.86262848140000004" blue="0.86262848140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ak6-MZ-AjP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="tkJ-9c-YU8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CXm-Lk-AEx"/>
+                    <constraint firstItem="Aw3-T8-w4m" firstAttribute="top" secondItem="gEg-pp-XXv" secondAttribute="bottom" constant="8" id="FRa-SN-rvT"/>
+                    <constraint firstItem="tkJ-9c-YU8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HVl-QK-tfo"/>
+                    <constraint firstItem="Aw3-T8-w4m" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IJD-ZL-Y7B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Aw3-T8-w4m" secondAttribute="bottom" constant="15" id="QSe-Lo-jFL"/>
+                    <constraint firstAttribute="bottom" secondItem="d5T-VX-WzY" secondAttribute="bottom" id="T3A-Qv-xad"/>
+                    <constraint firstItem="gEg-pp-XXv" firstAttribute="width" secondItem="Aw3-T8-w4m" secondAttribute="width" id="UOY-Xz-wTg"/>
+                    <constraint firstAttribute="trailing" secondItem="tkJ-9c-YU8" secondAttribute="trailing" id="Uhy-gw-qdR"/>
+                    <constraint firstAttribute="trailing" secondItem="d5T-VX-WzY" secondAttribute="trailing" id="fZi-nQ-nTE"/>
+                    <constraint firstItem="gEg-pp-XXv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fxO-Ka-Rwo"/>
+                    <constraint firstItem="gEg-pp-XXv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="gfo-hK-djl"/>
+                    <constraint firstItem="gEg-pp-XXv" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="rBl-ub-TK7"/>
+                    <constraint firstItem="Aw3-T8-w4m" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.85" id="uYK-2a-SQK"/>
+                    <constraint firstAttribute="bottom" secondItem="tkJ-9c-YU8" secondAttribute="bottom" id="uoj-R6-J3s"/>
+                    <constraint firstItem="d5T-VX-WzY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xAm-CK-7bF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="0.75036168981481477" alpha="0.0" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="44.5" y="110"/>
+        </tableViewCell>
+    </objects>
+</document>

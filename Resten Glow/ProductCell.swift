@@ -14,7 +14,6 @@ class ProductCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         arrowImageView.setFAIconWithName(icon: .FAAngleRight, textColor: .gray)
-        tryImageView.setFAIconWithName(icon: .FATry, textColor: ColorUtil.purple)
         self.selectionStyle = .none
     }
 
@@ -25,9 +24,6 @@ class ProductCell: UITableViewCell {
     }
     
     func cellConfigure(Product item : ProductProperties){
-        if item.title == "" {
-            self.tryImageView.isHidden = true
-        }
         titleLabel.text = item.title
         DescLabel.text = item.desc
     }
@@ -35,6 +31,6 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var arrowImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var DescLabel: UILabel!
-    @IBOutlet weak var tryImageView: UIImageView!
+    
     
 }

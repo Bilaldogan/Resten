@@ -51,16 +51,24 @@
 		95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */; };
 		95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */; };
 		95E02E801FAA952100873CB0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E7F1FAA952100873CB0 /* GradientView.swift */; };
-		95E02E8B1FAB8F3400873CB0 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */; };
-		95E02E8C1FAB8F3400873CB0 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */; };
-		95E02E8D1FAB8F3400873CB0 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */; };
-		95E02E8E1FAB8F3400873CB0 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */; };
-		95E02E8F1FAB8F3400873CB0 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */; };
-		95E02E901FAB8F3400873CB0 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */; };
-		95E02E911FAB8F3400873CB0 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */; };
-		95E02E921FAB8F3400873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */; };
-		95E02E931FAB8F3400873CB0 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */; };
-		95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */; };
+		95E02E971FAB947C00873CB0 /* ProductDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E961FAB947C00873CB0 /* ProductDetailController.swift */; };
+		95E02E991FAB94EC00873CB0 /* PDTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E981FAB94EC00873CB0 /* PDTableViewExt.swift */; };
+		95E02E9D1FAB95FB00873CB0 /* HowToPrepareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E9B1FAB95FB00873CB0 /* HowToPrepareCell.swift */; };
+		95E02E9E1FAB95FB00873CB0 /* HowToPrepareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02E9C1FAB95FB00873CB0 /* HowToPrepareCell.xib */; };
+		95E02EA11FABB04200873CB0 /* OptionalPropertiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02E9F1FABB04200873CB0 /* OptionalPropertiesCell.swift */; };
+		95E02EA21FABB04200873CB0 /* OptionalPropertiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02EA01FABB04200873CB0 /* OptionalPropertiesCell.xib */; };
+		95E02EA51FABC7DD00873CB0 /* InspritationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E02EA31FABC7DD00873CB0 /* InspritationCell.swift */; };
+		95E02EA61FABC7DD00873CB0 /* InspritationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E02EA41FABC7DD00873CB0 /* InspritationCell.xib */; };
+		95E02ED91FABE34A00873CB0 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ECF1FABE0E400873CB0 /* JosefinSans-Bold.ttf */; };
+		95E02EDA1FABE34A00873CB0 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED01FABE14500873CB0 /* JosefinSans-BoldItalic.ttf */; };
+		95E02EDB1FABE34A00873CB0 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED11FABE14F00873CB0 /* JosefinSans-Italic.ttf */; };
+		95E02EDC1FABE34A00873CB0 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED21FABE15D00873CB0 /* JosefinSans-Light.ttf */; };
+		95E02EDD1FABE34A00873CB0 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED31FABE16700873CB0 /* JosefinSans-LightItalic.ttf */; };
+		95E02EDE1FABE34A00873CB0 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED41FABE17200873CB0 /* JosefinSans-Regular.ttf */; };
+		95E02EDF1FABE34A00873CB0 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED51FABE17A00873CB0 /* JosefinSans-SemiBold.ttf */; };
+		95E02EE01FABE34A00873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED61FABE18100873CB0 /* JosefinSans-SemiBoldItalic.ttf */; };
+		95E02EE11FABE34A00873CB0 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED71FABE18900873CB0 /* JosefinSans-Thin.ttf */; };
+		95E02EE21FABE34A00873CB0 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED81FABE18F00873CB0 /* JosefinSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,16 +119,24 @@
 		95E02E7B1FAA8C8C00873CB0 /* MenuCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCustomCell.swift; sourceTree = "<group>"; };
 		95E02E7C1FAA8C8C00873CB0 /* MenuCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCustomCell.xib; sourceTree = "<group>"; };
 		95E02E7F1FAA952100873CB0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
-		95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
-		95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
-		95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
-		95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
-		95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
+		95E02E961FAB947C00873CB0 /* ProductDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailController.swift; sourceTree = "<group>"; };
+		95E02E981FAB94EC00873CB0 /* PDTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDTableViewExt.swift; sourceTree = "<group>"; };
+		95E02E9B1FAB95FB00873CB0 /* HowToPrepareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPrepareCell.swift; sourceTree = "<group>"; };
+		95E02E9C1FAB95FB00873CB0 /* HowToPrepareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowToPrepareCell.xib; sourceTree = "<group>"; };
+		95E02E9F1FABB04200873CB0 /* OptionalPropertiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalPropertiesCell.swift; sourceTree = "<group>"; };
+		95E02EA01FABB04200873CB0 /* OptionalPropertiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionalPropertiesCell.xib; sourceTree = "<group>"; };
+		95E02EA31FABC7DD00873CB0 /* InspritationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspritationCell.swift; sourceTree = "<group>"; };
+		95E02EA41FABC7DD00873CB0 /* InspritationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspritationCell.xib; sourceTree = "<group>"; };
+		95E02ECF1FABE0E400873CB0 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
+		95E02ED01FABE14500873CB0 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		95E02ED11FABE14F00873CB0 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
+		95E02ED21FABE15D00873CB0 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
+		95E02ED31FABE16700873CB0 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		95E02ED41FABE17200873CB0 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
+		95E02ED51FABE17A00873CB0 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		95E02ED61FABE18100873CB0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		95E02ED71FABE18900873CB0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
+		95E02ED81FABE18F00873CB0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +205,7 @@
 		22E326451FA3935000077FE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95E02E951FAB92D500873CB0 /* Product detail */,
 				95E02E711FAA8AB600873CB0 /* Side Menu Controller */,
 				95D9B2B31FA92B2500F2BDC6 /* Main Controller */,
 				22E3264D1FA3C7C000077FE7 /* BaseController.swift */,
@@ -213,6 +230,7 @@
 		95D9B2B21FA926A700F2BDC6 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				95E02E9A1FAB95B300873CB0 /* ProductDetail Cell */,
 				95E02E761FAA8B6D00873CB0 /* Side Menu Cell */,
 				95D9B2C91FA9357100F2BDC6 /* Main Controller Cell */,
 				95D9B2C81FA9355E00F2BDC6 /* Onboarding Cell */,
@@ -291,16 +309,16 @@
 		95D9B2DA1FA946E100F2BDC6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				95E02E861FAB8EC900873CB0 /* JosefinSans-Bold.ttf */,
-				95E02E841FAB8EC800873CB0 /* JosefinSans-BoldItalic.ttf */,
-				95E02E851FAB8EC900873CB0 /* JosefinSans-Italic.ttf */,
-				95E02E821FAB8EC800873CB0 /* JosefinSans-Light.ttf */,
-				95E02E881FAB8EC900873CB0 /* JosefinSans-LightItalic.ttf */,
-				95E02E891FAB8EC900873CB0 /* JosefinSans-Regular.ttf */,
-				95E02E831FAB8EC800873CB0 /* JosefinSans-SemiBold.ttf */,
-				95E02E871FAB8EC900873CB0 /* JosefinSans-SemiBoldItalic.ttf */,
-				95E02E8A1FAB8EC900873CB0 /* JosefinSans-Thin.ttf */,
-				95E02E811FAB8EC800873CB0 /* JosefinSans-ThinItalic.ttf */,
+				95E02ECF1FABE0E400873CB0 /* JosefinSans-Bold.ttf */,
+				95E02ED01FABE14500873CB0 /* JosefinSans-BoldItalic.ttf */,
+				95E02ED11FABE14F00873CB0 /* JosefinSans-Italic.ttf */,
+				95E02ED21FABE15D00873CB0 /* JosefinSans-Light.ttf */,
+				95E02ED31FABE16700873CB0 /* JosefinSans-LightItalic.ttf */,
+				95E02ED41FABE17200873CB0 /* JosefinSans-Regular.ttf */,
+				95E02ED51FABE17A00873CB0 /* JosefinSans-SemiBold.ttf */,
+				95E02ED61FABE18100873CB0 /* JosefinSans-SemiBoldItalic.ttf */,
+				95E02ED71FABE18900873CB0 /* JosefinSans-Thin.ttf */,
+				95E02ED81FABE18F00873CB0 /* JosefinSans-ThinItalic.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -367,6 +385,28 @@
 			name = "Side Menu Cell";
 			sourceTree = "<group>";
 		};
+		95E02E951FAB92D500873CB0 /* Product detail */ = {
+			isa = PBXGroup;
+			children = (
+				95E02E961FAB947C00873CB0 /* ProductDetailController.swift */,
+				95E02E981FAB94EC00873CB0 /* PDTableViewExt.swift */,
+			);
+			name = "Product detail";
+			sourceTree = "<group>";
+		};
+		95E02E9A1FAB95B300873CB0 /* ProductDetail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95E02E9B1FAB95FB00873CB0 /* HowToPrepareCell.swift */,
+				95E02E9C1FAB95FB00873CB0 /* HowToPrepareCell.xib */,
+				95E02E9F1FABB04200873CB0 /* OptionalPropertiesCell.swift */,
+				95E02EA01FABB04200873CB0 /* OptionalPropertiesCell.xib */,
+				95E02EA31FABC7DD00873CB0 /* InspritationCell.swift */,
+				95E02EA41FABC7DD00873CB0 /* InspritationCell.xib */,
+			);
+			name = "ProductDetail Cell";
+			sourceTree = "<group>";
+		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +459,7 @@
 				TargetAttributes = {
 					222B20D81FA27D9600C4ECEE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K28P236TA3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -446,16 +487,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E02E8B1FAB8F3400873CB0 /* JosefinSans-Bold.ttf in Resources */,
-				95E02E8C1FAB8F3400873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
-				95E02E8D1FAB8F3400873CB0 /* JosefinSans-Italic.ttf in Resources */,
-				95E02E8E1FAB8F3400873CB0 /* JosefinSans-Light.ttf in Resources */,
-				95E02E8F1FAB8F3400873CB0 /* JosefinSans-LightItalic.ttf in Resources */,
-				95E02E901FAB8F3400873CB0 /* JosefinSans-Regular.ttf in Resources */,
-				95E02E911FAB8F3400873CB0 /* JosefinSans-SemiBold.ttf in Resources */,
-				95E02E921FAB8F3400873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
-				95E02E931FAB8F3400873CB0 /* JosefinSans-Thin.ttf in Resources */,
-				95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
+				95E02ED91FABE34A00873CB0 /* JosefinSans-Bold.ttf in Resources */,
+				95E02EDA1FABE34A00873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
+				95E02EDB1FABE34A00873CB0 /* JosefinSans-Italic.ttf in Resources */,
+				95E02EDC1FABE34A00873CB0 /* JosefinSans-Light.ttf in Resources */,
+				95E02EDD1FABE34A00873CB0 /* JosefinSans-LightItalic.ttf in Resources */,
+				95E02EDE1FABE34A00873CB0 /* JosefinSans-Regular.ttf in Resources */,
+				95E02EDF1FABE34A00873CB0 /* JosefinSans-SemiBold.ttf in Resources */,
+				95E02EE01FABE34A00873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
+				95E02EE11FABE34A00873CB0 /* JosefinSans-Thin.ttf in Resources */,
+				95E02EE21FABE34A00873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
+				95E02EA21FABB04200873CB0 /* OptionalPropertiesCell.xib in Resources */,
+				95E02E9E1FAB95FB00873CB0 /* HowToPrepareCell.xib in Resources */,
+				95E02EA61FABC7DD00873CB0 /* InspritationCell.xib in Resources */,
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
 				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
@@ -535,9 +579,11 @@
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
 				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
+				95E02EA51FABC7DD00873CB0 /* InspritationCell.swift in Sources */,
 				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
 				95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */,
+				95E02E9D1FAB95FB00873CB0 /* HowToPrepareCell.swift in Sources */,
 				95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */,
 				95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */,
 				95D9B2C11FA92FFD00F2BDC6 /* Extensions.swift in Sources */,
@@ -545,13 +591,16 @@
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,
+				95E02E971FAB947C00873CB0 /* ProductDetailController.swift in Sources */,
 				22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */,
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
 				95E02E801FAA952100873CB0 /* GradientView.swift in Sources */,
 				95D9B2C71FA9338C00F2BDC6 /* WeddingController.swift in Sources */,
+				95E02E991FAB94EC00873CB0 /* PDTableViewExt.swift in Sources */,
 				95D9B2D31FA93DA800F2BDC6 /* HCTableViewExt.swift in Sources */,
 				95D9B2CB1FA938A200F2BDC6 /* CalculateClass.swift in Sources */,
 				95E02E751FAA8B4F00873CB0 /* LeftSideMenuController.swift in Sources */,
+				95E02EA11FABB04200873CB0 /* OptionalPropertiesCell.swift in Sources */,
 				95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */,
 				95D9B2D01FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift in Sources */,
 				95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */,
@@ -680,7 +729,9 @@
 			baseConfigurationReference = D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K28P236TA3;
 				INFOPLIST_FILE = "Resten Glow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CodingMind.Resten-Glow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -693,7 +744,9 @@
 			baseConfigurationReference = 30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K28P236TA3;
 				INFOPLIST_FILE = "Resten Glow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CodingMind.Resten-Glow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
