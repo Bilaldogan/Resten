@@ -21,6 +21,8 @@
 		224D799A1FABE39B00D62D84 /* SmallProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79981FABE39B00D62D84 /* SmallProfileCell.xib */; };
 		224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D799B1FABE41D00D62D84 /* AddInfoCell.swift */; };
 		224D799E1FABE41D00D62D84 /* AddInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D799C1FABE41D00D62D84 /* AddInfoCell.xib */; };
+		224D79A11FABEB2600D62D84 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D799F1FABEB2600D62D84 /* AdressCell.swift */; };
+		224D79A21FABEB2600D62D84 /* AdressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79A01FABEB2600D62D84 /* AdressCell.xib */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E31DF81FA9546600784508 /* CustomNavigationView.swift */; };
 		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
@@ -86,6 +88,8 @@
 		224D79981FABE39B00D62D84 /* SmallProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallProfileCell.xib; sourceTree = "<group>"; };
 		224D799B1FABE41D00D62D84 /* AddInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInfoCell.swift; sourceTree = "<group>"; };
 		224D799C1FABE41D00D62D84 /* AddInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInfoCell.xib; sourceTree = "<group>"; };
+		224D799F1FABEB2600D62D84 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
+		224D79A01FABEB2600D62D84 /* AdressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22E31DF81FA9546600784508 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				224D79981FABE39B00D62D84 /* SmallProfileCell.xib */,
 				224D799B1FABE41D00D62D84 /* AddInfoCell.swift */,
 				224D799C1FABE41D00D62D84 /* AddInfoCell.xib */,
+				224D799F1FABEB2600D62D84 /* AdressCell.swift */,
+				224D79A01FABEB2600D62D84 /* AdressCell.xib */,
 			);
 			name = "My Account Controller Cells";
 			sourceTree = "<group>";
@@ -485,6 +491,7 @@
 				224D799A1FABE39B00D62D84 /* SmallProfileCell.xib in Resources */,
 				95E02E941FAB8F3400873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
+				224D79A21FABEB2600D62D84 /* AdressCell.xib in Resources */,
 				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
@@ -585,6 +592,7 @@
 				95D9B2CB1FA938A200F2BDC6 /* CalculateClass.swift in Sources */,
 				95E02E751FAA8B4F00873CB0 /* LeftSideMenuController.swift in Sources */,
 				95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */,
+				224D79A11FABEB2600D62D84 /* AdressCell.swift in Sources */,
 				95D9B2D01FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift in Sources */,
 				95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */,
 				95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */,
