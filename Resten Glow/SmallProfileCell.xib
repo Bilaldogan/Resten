@@ -45,7 +45,7 @@
                         <rect key="frame" x="147.5" y="125" width="79" height="45"/>
                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                         <state key="normal" title="DÜZENLE">
-                            <color key="titleColor" red="0.99859899279999997" green="0.279078722" blue="0.23886942859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleColor" red="0.52156862745098043" green="0.16862745098039217" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <connections>
                             <action selector="editButtonTappedWithSender:" destination="Y67-Js-gez" eventType="touchUpInside" id="fCR-ab-Nn0"/>
