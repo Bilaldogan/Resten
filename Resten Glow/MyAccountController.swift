@@ -11,6 +11,7 @@ import UIKit
 class MyAccountController: BaseController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var customNavigation: CustomNavigationView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "SmallProfileCell", bundle: nil), forCellReuseIdentifier: "profileCell")
@@ -18,6 +19,7 @@ class MyAccountController: BaseController {
          tableView.register(UINib(nibName: "AdressCell", bundle: nil), forCellReuseIdentifier: "addressCell")
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+        self.customNavigation.navDelegate = self
     }
 
    
@@ -26,7 +28,9 @@ class MyAccountController: BaseController {
 extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 && indexPath.row == 0 {
-            return  tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! SmallProfileCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! SmallProfileCell
+            cell.delegate = self
+            return cell
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
@@ -46,6 +50,13 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         
+        } else if indexPath.section == 3 && indexPath.row == 0 {
+            let cell = UITableViewCell()
+            cell.textLabel?.font = UIFont(name: "JosefinSans-Bold", size: 17)
+            cell.textLabel?.textColor = ColorUtil.purple
+            cell.textLabel?.textAlignment = .center
+            cell.textLabel?.text = "Şifre Değiştir"
+            return cell
         }
         return UITableViewCell()
     }
@@ -62,15 +73,29 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         return 0
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-       return 3
+       return 4
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1 {
             return "Adresleri"
         } else if section == 2 {
             return "Ödeme Bilgileri"
+        } else if section == 3 {
+            return  " "
         }
         return ""
     }
+    
+}
+extension MyAccountController : SmallProfileCellDelegate {
+    func editTapped() {
+        self.goto(screenID: "EditProfileID")
+    }
+}
+extension MyAccountController : CustomNavigationViewDelegate {
+    internal func backButtonTapped() {
+        self.back()
+    }
+
     
 }

@@ -22,6 +22,9 @@
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22AFE5E61FAC116F00EF0E63 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */; };
 		22AFE5E71FAC116F00EF0E63 /* AdressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */; };
+		22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */; };
+		22AFE5EA1FAC1E8D00EF0E63 /* SmallProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79981FABE39B00D62D84 /* SmallProfileCell.xib */; };
+		22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D799C1FABE41D00D62D84 /* AddInfoCell.xib */; };
 		22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E31DF81FA9546600784508 /* CustomNavigationView.swift */; };
 		22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326411FA2B0F300077FE7 /* CustomButton.swift */; };
 		22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E326431FA2B46500077FE7 /* PagerViewCell.swift */; };
@@ -97,6 +100,7 @@
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
 		22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
+		22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		22E31DF81FA9546600784508 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		22E326411FA2B0F300077FE7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		22E326431FA2B46500077FE7 /* PagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerViewCell.swift; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 				22E326461FA3961600077FE7 /* LoginController.swift */,
 				224D79941FABCFA700D62D84 /* MyAccountController.swift */,
+				22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */,
 			);
 			name = "\U0010Controller";
 			sourceTree = "<group>";
@@ -517,6 +522,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AFE5EA1FAC1E8D00EF0E63 /* SmallProfileCell.xib in Resources */,
+				22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */,
 				95E02ED91FABE34A00873CB0 /* JosefinSans-Bold.ttf in Resources */,
 				95E02EDA1FABE34A00873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
 				95E02EDB1FABE34A00873CB0 /* JosefinSans-Italic.ttf in Resources */,
@@ -610,6 +617,7 @@
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
+				22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */,
 				2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
 				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,

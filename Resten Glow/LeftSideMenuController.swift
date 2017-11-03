@@ -90,7 +90,12 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
-       
+        switch  indexPath.row {
+        case 1:
+            goToAccountDetailController()
+        default:
+            break
+        }
         
         
     }
@@ -103,6 +108,14 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 //        obj .pushViewController(myProfileVC, animated: true)
 //        self.sideMenuViewController!.hideMenuViewController()
 //    }
+    func goToAccountDetailController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: "MyAcoountControllerID") as! MyAccountController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+    }
     
    
     

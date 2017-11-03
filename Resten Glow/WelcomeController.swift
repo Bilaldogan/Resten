@@ -10,6 +10,7 @@ import UIKit
 import FSPagerView
 class   WelcomeController: BaseController {
 
+    @IBOutlet weak var pageControl: UIPageControl!
     let images = ["MakeUp","Hair-Cut-1","manikur"]
     let descTexts = ["Ünlü yıldızlar kahvenin hangi tonlarını kullanıyor? Saçlarında değişim olsun ama bu değişim son derece doğal görünsün istiyorsan kahve saç renkleri senin için ideal! Hatta kahve saçlar ünlü yıldızların da favori saç renklerinden. Şimdi, onların görünümlerinden ilham almaya ne dersin?","DOĞAL MAKYAJ Makyajınızın günlük hayatta doğal ve sade görünmesi çok önemli! Doğru renk tonlarında yokmuş gibi makyaj uygulaması için hemen tıklayın!","TIRNAKLAR Daha sağlıklı görünen, kırılmadan istediğiniz gibi uzayan gösterişli tırnaklara sahip olmanın ipuçları ve tırnak konusunda tüm öneriler makyaj.com'da"]
     @IBOutlet var pagerView: FSPagerView!{
@@ -56,6 +57,7 @@ public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSP
     cell.imageView?.clipsToBounds = true
    cell.backImageView?.image = UIImage(named: images[index])
    cell.label.text = descTexts[index]
+    self.pageControl.currentPage = index
     return cell
 }
 }
