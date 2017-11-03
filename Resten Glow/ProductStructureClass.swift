@@ -17,7 +17,7 @@ struct ProductProperties {
 
 struct HairStruct {
     var hairList : [ProductProperties] = []
-    let productDictionary : [String : String] = ["Fön ₺50": "Düz, dalgalı fön veya maşa, saçlarınızın hangisiyle daha güzel olacağını düşüyorsanız (45 dk.).", "Topuz ₺85" : "Klasikliğin vazgeçilmezliği mi yoksa dağınık topuzun kendinden eminliği mi, karar sizin (60dk.)."]
+    let productDictionary : [String : String] = ["Fön 50₺": "Düz, dalgalı fön veya maşa, saçlarınızın hangisiyle daha güzel olacağını düşünüyorsanız (45 dk.).", "Topuz 85₺" : "Klasikliğin vazgeçilmezliği mi yoksa dağınık topuzun kendinden eminliği mi, karar sizin (60dk.)."]
     
     init() {
         var productProperties : ProductProperties = ProductProperties()
@@ -33,7 +33,7 @@ struct HairStruct {
 
 struct MakeUpStruct {
     var makeUpList : [ProductProperties] = []
-    let productDictionary : [String : String] = ["Makyaj ₺75": "Doğal, seksi veya hüzünlü. Sana ve moduna en uygun olanı yaratalım. (60dk.)"]
+    let productDictionary : [String : String] = ["Makyaj 75₺": "Doğal, seksi veya hüzünlü. Sana ve moduna en uygun olanı yaratalım. (60dk.)"]
     
     init() {
         var productProperties : ProductProperties = ProductProperties()
@@ -49,7 +49,7 @@ struct MakeUpStruct {
 
 struct NailStruct {
     var nailList : [ProductProperties] = []
-    let productDictionary : [String : String] = ["Manikür ₺35" : "Kusursuz ve hijyenik. İstersen hizmetlere kalıcı oje ekleyebilirsin. (45 dk.)", "Pedikür ₺50" : "Tecrübeli uzmanlarımızdan kusursuz ve hijyenik hizmet. İstersen hizmetlere kalıcı oje ekleyebilirsin.(60 dk.)", "Manikür ve Pedikür ₺75" : "Kusursuz ve hijyenik hizmet. İstersen hizmetlere kalıcı oje ekleyebilirsin.(90 dk.)"]
+    let productDictionary : [String : String] = ["Manikür 35₺" : "Kusursuz ve hijyenik. İstersen hizmetlere kalıcı oje ekleyebilirsin. (45 dk.)", "Pedikür 50₺" : "Tecrübeli uzmanlarımızdan kusursuz ve hijyenik hizmet. İstersen hizmetlere kalıcı oje ekleyebilirsin.(60 dk.)", "Manikür ve Pedikür 75₺" : "Kusursuz ve hijyenik hizmet. İstersen hizmetlere kalıcı oje ekleyebilirsin.(90 dk.)"]
     
     init() {
         var productProperties : ProductProperties = ProductProperties()
@@ -65,7 +65,7 @@ struct NailStruct {
 
 struct BrowStruct {
     var browUpList : [ProductProperties] = []
-     let productDictionary : [String : String] = ["Kaş alma-şekillendirme ₺30": "Tecrübeli uzmanlarımızdan kaş alımı, dudak üstü alımını da ekleyebilirsin. (20 dk.)"]
+     let productDictionary : [String : String] = ["Kaş alma-şekillendirme 30₺": "Tecrübeli uzmanlarımızdan kaş alımı, dudak üstü alımını da ekleyebilirsin. (20 dk.)"]
     
     init() {
         var productProperties : ProductProperties = ProductProperties()
