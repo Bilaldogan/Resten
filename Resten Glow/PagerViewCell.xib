@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -24,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="358" height="538"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DkK-hn-8Jx">
-                        <rect key="frame" x="50" y="347.5" width="258" height="118"/>
+                        <rect key="frame" x="50" y="327.5" width="258" height="118"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -33,7 +32,7 @@
                         </variation>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-Wp-SbH">
-                        <rect key="frame" x="30" y="480.5" width="298" height="37.5"/>
+                        <rect key="frame" x="30" y="460.5" width="298" height="57.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
@@ -46,7 +45,7 @@
                 <constraint firstItem="DkK-hn-8Jx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="Eeu-2T-iaG"/>
                 <constraint firstItem="Mcx-XD-4eI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QGP-CN-TkZ"/>
                 <constraint firstAttribute="trailing" secondItem="Mcx-XD-4eI" secondAttribute="trailing" id="X5I-Eo-QLa"/>
-                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.105" id="gFb-BX-zmG"/>
+                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.105" constant="20" id="gFb-BX-zmG"/>
                 <constraint firstItem="5Yk-Wp-SbH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="kTj-PM-kOH"/>
                 <constraint firstAttribute="bottom" secondItem="5Yk-Wp-SbH" secondAttribute="bottom" constant="20" id="nL9-B1-Gzg">
                     <variation key="heightClass=regular-widthClass=regular" constant="60"/>

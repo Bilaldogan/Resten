@@ -7,18 +7,22 @@
 //
 
 import UIKit
-
+protocol SmallProfileCellDelegate {
+    func editTapped()
+}
 class SmallProfileCell: UITableViewCell {
 
+    var delegate  : SmallProfileCellDelegate?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func editButtonTapped(sender: AnyObject) {
+        delegate?.editTapped()
     }
+
+    
     
 }
