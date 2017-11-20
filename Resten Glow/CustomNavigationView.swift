@@ -46,7 +46,10 @@ import UIKit
     
     private func setupView(){
         
-        let colours:Array = [startColor.cgColor, endColor.cgColor]
+        
+        //let colours:Array = [startColor.cgColor, endColor.cgColor]
+        let colours:Array = [ColorUtil.lightYellow,ColorUtil.highLightYellow,ColorUtil.lightPurple,ColorUtil.highlightPurple]
+        
         guard let gradientLayer = self.layer as? CAGradientLayer else {
             return;
         }

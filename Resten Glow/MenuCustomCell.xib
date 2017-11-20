@@ -12,8 +12,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="JosefinSans-Bold.ttf">
-            <string>JosefinSans-Bold</string>
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
         </array>
     </customFonts>
     <objects>
@@ -27,17 +27,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASAYFA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-ao-3Fh">
-                        <rect key="frame" x="23" y="19" width="81" height="23"/>
-                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="23" y="21.5" width="78.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
                             <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="28"/>
                         </variation>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-J1-O4p">
-                        <rect key="frame" x="23" y="58.5" width="300" height="1"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="23" y="58.5" width="225" height="1"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="0.49500668960244648" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="E81-QV-lwl"/>
                         </constraints>
@@ -48,7 +48,7 @@
                     <constraint firstAttribute="bottom" secondItem="acZ-J1-O4p" secondAttribute="bottom" id="Gtx-F9-1gK"/>
                     <constraint firstItem="Unz-ao-3Fh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tys-WW-e3U"/>
                     <constraint firstItem="acZ-J1-O4p" firstAttribute="leading" secondItem="Unz-ao-3Fh" secondAttribute="leading" id="anh-DD-A0x"/>
-                    <constraint firstItem="acZ-J1-O4p" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="yUW-Zu-edR"/>
+                    <constraint firstItem="acZ-J1-O4p" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="yUW-Zu-edR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

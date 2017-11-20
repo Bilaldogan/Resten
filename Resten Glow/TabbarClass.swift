@@ -32,6 +32,7 @@ class TabbarClass {
         var option = TabPageOption()
         option.tabMargin = 10.0
         option.tabWidth = (tabView.width / 5)
+        option.tabHeight = 45
         option.fontSize = 13.0
         //option.tabBackgroundColor = ColorUtil.backGroundColor
         //option.pageBackgoundColor =  ColorUtil.backGroundColor

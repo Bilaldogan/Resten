@@ -31,7 +31,8 @@ class GradientView: UIView {
     
     private func setupView(){
 
-        let colours:Array = [startColor.cgColor, endColor.cgColor]
+        //let colours:Array = [startColor.cgColor, endColor.cgColor]
+        let colours:Array = [ColorUtil.lightYellow.cgColor,ColorUtil.highLightYellow.cgColor,ColorUtil.lightPurple.cgColor,ColorUtil.highlightPurple.cgColor]
         guard let gradientLayer = self.layer as? CAGradientLayer else {
             return;
         }
@@ -40,11 +41,11 @@ class GradientView: UIView {
         
         
         if (isHorizontal){
-            gradientLayer.endPoint = CGPoint(x: 0.9, y: 0.4)
+            gradientLayer.endPoint = CGPoint(x: 0.9, y: 0.5)
         }else{
             gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         }
-
+        gradientLayer.drawsAsynchronously = true
      
         
         

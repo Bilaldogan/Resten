@@ -12,7 +12,8 @@ class   WelcomeController: BaseController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     let images = ["MakeUp","Hair-Cut-1","manikur"]
-    let descTexts = ["Ünlü yıldızlar kahvenin hangi tonlarını kullanıyor? Saçlarında değişim olsun ama bu değişim son derece doğal görünsün istiyorsan kahve saç renkleri senin için ideal! Hatta kahve saçlar ünlü yıldızların da favori saç renklerinden. Şimdi, onların görünümlerinden ilham almaya ne dersin?","DOĞAL MAKYAJ Makyajınızın günlük hayatta doğal ve sade görünmesi çok önemli! Doğru renk tonlarında yokmuş gibi makyaj uygulaması için hemen tıklayın!","TIRNAKLAR Daha sağlıklı görünen, kırılmadan istediğiniz gibi uzayan gösterişli tırnaklara sahip olmanın ipuçları ve tırnak konusunda tüm öneriler makyaj.com'da"]
+    let descTexts = ["Yetenekli güzellik uzmanlarımız istediğin güzellik hizmetini sana getirecek.","Hizmet almak istediğin saati, yeri ve ödeme tipini seç, biz detaylarla ilgili mailini gönderelim.","Yetenekli güzellik uzmanlarımız, kaliteli ürünlerle kapında belirsin ve seni istediğin bakıma ulaştırsın."]
+    let headerTexts = ["Hayal et!","Rezervasyon yap!","Gerçekleştir!"]
     @IBOutlet var pagerView: FSPagerView!{
         didSet {
             self.pagerView.register(UINib(nibName: "PagerViewCell", bundle: nil), forCellWithReuseIdentifier: "pagerViewCell")
@@ -22,7 +23,7 @@ class   WelcomeController: BaseController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -55,8 +56,9 @@ public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSP
     let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "pagerViewCell", at: index) as! PagerViewCell
     cell.imageView?.contentMode = .scaleAspectFill
     cell.imageView?.clipsToBounds = true
-   cell.backImageView?.image = UIImage(named: images[index])
-   cell.label.text = descTexts[index]
+    cell.backImageView?.image = UIImage(named: images[index])
+    cell.label.text = descTexts[index]
+    cell.headerLabel.text = headerTexts[index]
     self.pageControl.currentPage = index
     return cell
 }

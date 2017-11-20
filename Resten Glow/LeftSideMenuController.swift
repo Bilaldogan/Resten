@@ -93,6 +93,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         switch  indexPath.row {
         case 1:
             goToAccountDetailController()
+        case 2:
+            goToContactController()
         default:
             break
         }
@@ -112,6 +114,16 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let myProfileVC = storyboard.instantiateViewController(withIdentifier: "MyAcoountControllerID") as! MyAccountController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+        
+    }
+    
+    func goToContactController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: "ContactControllerID")
         let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
         obj .pushViewController(myProfileVC, animated: true)
         self.sideMenuViewController!.hideMenuViewController()
@@ -146,7 +158,7 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 
     
     let imageArray : Array = ["ev","liste","kilit","question","odul","cikis"]
-    let labelTextArray : Array = ["ANASAYFA","RANDEVUM","PROFİLİM","PROMOSYONLAR","PAYLAŞ","YARDIM"]
+    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","İLETİŞİM","PROMOSYONLAR","PAYLAŞ","YARDIM"]
     let menuItemCount : CGFloat = 6
     
     

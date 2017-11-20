@@ -24,8 +24,8 @@ class ProductCell: UITableViewCell {
     }
     
     func cellConfigure(Product item : ProductProperties){
-        titleLabel.text = item.title
-        DescLabel.text = item.desc
+        titleLabel.text = item.title.lowercased()
+        DescLabel.text = item.desc.lowercased()
     }
     
     @IBOutlet weak var arrowImageView: UIImageView!

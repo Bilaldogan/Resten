@@ -34,6 +34,7 @@
 		22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264D1FA3C7C000077FE7 /* BaseController.swift */; };
 		22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */; };
 		315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */; };
+		950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A2D991FAC354E00659126 /* ContactUsController.swift */; };
 		95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */; };
 		95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */; };
 		95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2BC1FA92DDA00F2BDC6 /* HairController.swift */; };
@@ -111,6 +112,7 @@
 		22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.release.xcconfig"; sourceTree = "<group>"; };
 		8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resten_Glow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950A2D991FAC354E00659126 /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
 		95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarClass.swift; sourceTree = "<group>"; };
 		95D9B2BC1FA92DDA00F2BDC6 /* HairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		22E326451FA3935000077FE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				950A2D961FAC350400659126 /* Contact us Controller */,
 				95E02E951FAB92D500873CB0 /* Product detail */,
 				95E02E711FAA8AB600873CB0 /* Side Menu Controller */,
 				95D9B2B31FA92B2500F2BDC6 /* Main Controller */,
@@ -259,6 +262,14 @@
 				224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		950A2D961FAC350400659126 /* Contact us Controller */ = {
+			isa = PBXGroup;
+			children = (
+				950A2D991FAC354E00659126 /* ContactUsController.swift */,
+			);
+			name = "Contact us Controller";
 			sourceTree = "<group>";
 		};
 		95D9B2B21FA926A700F2BDC6 /* Custom Cell */ = {
@@ -631,6 +642,7 @@
 				95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */,
 				95D9B2C11FA92FFD00F2BDC6 /* Extensions.swift in Sources */,
 				95D9B2C31FA9314100F2BDC6 /* NailsController.swift in Sources */,
+				950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */,
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,

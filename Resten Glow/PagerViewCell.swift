@@ -12,6 +12,7 @@ class PagerViewCell: FSPagerViewCell {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var headerLabel: UILabel!
     
     var isgradLayerAdded = false
     override public func layoutSubviews() {
