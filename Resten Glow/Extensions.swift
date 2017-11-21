@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 private var dataAssocKey = 0
-
+extension UIViewController {
+   
+}
 extension UIViewController {
     
     var data:AnyObject? {
