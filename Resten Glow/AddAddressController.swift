@@ -49,7 +49,7 @@ extension AddAddressController : DistrictListDelegate {
         addChildViewController(controller)
         // Add the child's View as a subview
         self.view.addSubview(controller.view)
-        controller.view.frame = CGRect(x: self.view.bounds.minX + 30 , y: self.view.bounds.minY + 60 , width: self.view.bounds.width - 60 , height: self.view.bounds.height - 100 )
+        controller.view.frame = CGRect(x: self.view.bounds.minX + 20 , y: self.view.bounds.minY + 40 , width: self.view.bounds.width - 40 , height: self.view.bounds.height - 80 )
         controller.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // tell the childviewcontroller it's contained in it's parent
