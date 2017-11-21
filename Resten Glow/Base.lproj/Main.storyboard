@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -948,6 +949,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                         <color key="value" red="0.19215686269999999" green="0.1529411765" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -1004,6 +1008,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MEg-xC-NXY" firstAttribute="height" secondItem="IVj-kX-vz5" secondAttribute="height" multiplier="0.12" id="1lz-xR-Tlu"/>
+                            <constraint firstItem="MEg-xC-NXY" firstAttribute="top" secondItem="IVj-kX-vz5" secondAttribute="top" id="7rK-2z-f1K"/>
                             <constraint firstItem="Iwp-EJ-pN4" firstAttribute="leading" secondItem="IVj-kX-vz5" secondAttribute="leading" id="D4f-Xo-pjv"/>
                             <constraint firstItem="MEg-xC-NXY" firstAttribute="top" secondItem="IVj-kX-vz5" secondAttribute="top" id="QUl-dS-bKK"/>
                             <constraint firstAttribute="trailing" secondItem="Iwp-EJ-pN4" secondAttribute="trailing" id="QXW-bl-ywO"/>
