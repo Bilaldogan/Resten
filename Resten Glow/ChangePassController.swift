@@ -16,7 +16,7 @@ class ChangePassController: UIViewController {
     @IBOutlet weak var textFieldConfirmNewPassword: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationView.navDelegate = self
       
     }
 
@@ -30,8 +30,7 @@ class ChangePassController: UIViewController {
 }
 extension ChangePassController : CustomNavigationViewDelegate {
     func backButtonTapped() {
-        print("backTapped")
-        //back Action
+        self.back()
     }
     
 }

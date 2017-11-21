@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220719A41FC48AFD00A1872A /* AddAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220719A31FC48AFD00A1872A /* AddAddressController.swift */; };
+		220719A61FC49CC500A1872A /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220719A51FC49CC500A1872A /* CustomView.swift */; };
+		220719AC1FC4A3D500A1872A /* DistrictListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220719AB1FC4A3D400A1872A /* DistrictListController.swift */; };
+		220719AE1FC4B5D000A1872A /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220719AD1FC4B5D000A1872A /* CustomTextView.swift */; };
 		2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220865191FA95B6B00F3539A /* CustomNavigationView.xib */; };
 		2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208651B1FA9615E00F3539A /* ChangePassController.swift */; };
 		222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B20DC1FA27D9700C4ECEE /* AppDelegate.swift */; };
@@ -82,6 +86,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220719A31FC48AFD00A1872A /* AddAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressController.swift; sourceTree = "<group>"; };
+		220719A51FC49CC500A1872A /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		220719AB1FC4A3D400A1872A /* DistrictListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictListController.swift; sourceTree = "<group>"; };
+		220719AD1FC4B5D000A1872A /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		220865191FA95B6B00F3539A /* CustomNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationView.xib; sourceTree = "<group>"; };
 		2208651B1FA9615E00F3539A /* ChangePassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassController.swift; sourceTree = "<group>"; };
 		222B20D91FA27D9700C4ECEE /* Resten Glow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resten Glow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				22E326481FA39B2F00077FE7 /* CustomTextField.swift */,
+				220719AD1FC4B5D000A1872A /* CustomTextView.swift */,
+				220719A51FC49CC500A1872A /* CustomView.swift */,
 				22E326411FA2B0F300077FE7 /* CustomButton.swift */,
 				95E02E7F1FAA952100873CB0 /* GradientView.swift */,
 				220865191FA95B6B00F3539A /* CustomNavigationView.xib */,
@@ -250,6 +260,8 @@
 				22E326461FA3961600077FE7 /* LoginController.swift */,
 				224D79941FABCFA700D62D84 /* MyAccountController.swift */,
 				22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */,
+				220719A31FC48AFD00A1872A /* AddAddressController.swift */,
+				220719AB1FC4A3D400A1872A /* DistrictListController.swift */,
 			);
 			name = "\U0010Controller";
 			sourceTree = "<group>";
@@ -618,6 +630,7 @@
 				224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */,
 				95D9B2BF1FA92DF700F2BDC6 /* MakeupController.swift in Sources */,
 				95D9B2CE1FA9390E00F2BDC6 /* CellAndHeaderHeight.swift in Sources */,
+				220719AC1FC4A3D500A1872A /* DistrictListController.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
 				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
@@ -634,10 +647,12 @@
 				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
 				95E02EA51FABC7DD00873CB0 /* InspritationCell.swift in Sources */,
+				220719A41FC48AFD00A1872A /* AddAddressController.swift in Sources */,
 				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
 				95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */,
 				95E02E9D1FAB95FB00873CB0 /* HowToPrepareCell.swift in Sources */,
+				220719AE1FC4B5D000A1872A /* CustomTextView.swift in Sources */,
 				95D9B2EC1FA95FE200F2BDC6 /* ProductStructureClass.swift in Sources */,
 				95E02E7D1FAA8C8C00873CB0 /* MenuCustomCell.swift in Sources */,
 				95D9B2C11FA92FFD00F2BDC6 /* Extensions.swift in Sources */,
@@ -658,6 +673,7 @@
 				95E02EA11FABB04200873CB0 /* OptionalPropertiesCell.swift in Sources */,
 				95D9B2D61FA93EB500F2BDC6 /* ProductCell.swift in Sources */,
 				95D9B2D01FA93C4D00F2BDC6 /* ParallaxHeaderClass.swift in Sources */,
+				220719A61FC49CC500A1872A /* CustomView.swift in Sources */,
 				95D9B2F21FA9691300F2BDC6 /* NCTableViewExt.swift in Sources */,
 				95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */,
 				22E326471FA3961600077FE7 /* LoginController.swift in Sources */,

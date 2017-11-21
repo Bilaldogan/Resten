@@ -959,7 +959,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUA-kz-eZJ" id="895-Zk-0QG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-Fr-3dj">
@@ -975,7 +975,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-Bi-CdL">
-                                                    <rect key="frame" x="51" y="37.5" width="308" height="26"/>
+                                                    <rect key="frame" x="51" y="38" width="308" height="26"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1022,6 +1022,187 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsa-uT-AyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4620" y="454.72263868065971"/>
+        </scene>
+        <!--Add Address Controller-->
+        <scene sceneID="E1l-9r-lQb">
+            <objects>
+                <viewController storyboardIdentifier="addAdressControllerID" id="X43-Hy-ebD" customClass="AddAddressController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wYW-GW-bza"/>
+                        <viewControllerLayoutGuide type="bottom" id="YAR-Ka-BZK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pCy-j1-IZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-sT-B2V" customClass="CustomNavigationView" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Adres Ekle"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.19215686269999999" green="0.1529411765" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkiye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-bZ-RW6">
+                                <rect key="frame" x="31" y="88" width="56" height="24.5"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-tu-dLR">
+                                <rect key="frame" x="31" y="127.5" width="62.5" height="33"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-dY-cgy" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="27" y="175.5" width="317" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlçe Seçiniz ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELM-IB-76s">
+                                        <rect key="frame" x="4" y="0.0" width="276" height="33"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-icon" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-em-VhT">
+                                        <rect key="frame" x="280" y="2" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jWj-em-VhT" secondAttribute="height" multiplier="1:1" id="OcP-uI-hNe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ELM-IB-76s" firstAttribute="leading" secondItem="OBH-dY-cgy" secondAttribute="leading" constant="4" id="CC4-e6-iso"/>
+                                    <constraint firstAttribute="trailing" secondItem="jWj-em-VhT" secondAttribute="trailing" constant="5" id="GS0-ed-l8H"/>
+                                    <constraint firstItem="jWj-em-VhT" firstAttribute="leading" secondItem="ELM-IB-76s" secondAttribute="trailing" id="H1v-27-U3L"/>
+                                    <constraint firstAttribute="bottom" secondItem="ELM-IB-76s" secondAttribute="bottom" constant="3" id="jgP-pL-lAD"/>
+                                    <constraint firstItem="jWj-em-VhT" firstAttribute="top" secondItem="OBH-dY-cgy" secondAttribute="top" constant="2" id="mGx-2j-Lan"/>
+                                    <constraint firstAttribute="bottom" secondItem="jWj-em-VhT" secondAttribute="bottom" constant="2" id="oti-IA-ITH"/>
+                                    <constraint firstItem="ELM-IB-76s" firstAttribute="top" secondItem="OBH-dY-cgy" secondAttribute="top" id="rSw-fs-mS1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueV-dd-rdO">
+                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="20"/>
+                                <state key="normal" title="ADRESİ KAYDET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loginButtonTApped:" destination="dff-xg-t9g" eventType="touchUpInside" id="wbl-VN-uoH"/>
+                                    <action selector="saveAdressTapped:" destination="X43-Hy-ebD" eventType="touchUpInside" id="G7w-8D-Z2c"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Gg-WA-BXR" customClass="CustomTextView" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="27" y="241.5" width="321" height="133.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="15" id="05F-HW-3Hn"/>
+                            <constraint firstItem="3Gg-WA-BXR" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.2" id="0b9-2H-ggE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Gg-WA-BXR" secondAttribute="trailing" constant="11" id="66m-4X-HHx"/>
+                            <constraint firstItem="ueV-dd-rdO" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leading" id="6M2-HN-1Tr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OBH-dY-cgy" secondAttribute="trailing" constant="15" id="Abv-Wa-kTb"/>
+                            <constraint firstItem="3Gg-WA-BXR" firstAttribute="top" secondItem="OBH-dY-cgy" secondAttribute="bottom" constant="30" id="J0B-cW-ZCW"/>
+                            <constraint firstItem="Hu8-sT-B2V" firstAttribute="top" secondItem="pCy-j1-IZZ" secondAttribute="top" id="JbV-EO-jKx"/>
+                            <constraint firstItem="wRb-tu-dLR" firstAttribute="top" secondItem="LFJ-bZ-RW6" secondAttribute="bottom" constant="15" id="KbU-Ms-1Qq"/>
+                            <constraint firstAttribute="trailing" secondItem="ueV-dd-rdO" secondAttribute="trailing" id="RVL-N7-kxO"/>
+                            <constraint firstAttribute="trailing" secondItem="Hu8-sT-B2V" secondAttribute="trailing" id="WOx-ij-YpU"/>
+                            <constraint firstItem="OBH-dY-cgy" firstAttribute="top" secondItem="wRb-tu-dLR" secondAttribute="bottom" constant="15" id="WmU-vm-QoC"/>
+                            <constraint firstItem="wRb-tu-dLR" firstAttribute="leading" secondItem="LFJ-bZ-RW6" secondAttribute="leading" id="kY4-jt-IXj"/>
+                            <constraint firstItem="3Gg-WA-BXR" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="lP1-CG-fkg"/>
+                            <constraint firstItem="OBH-dY-cgy" firstAttribute="height" secondItem="wRb-tu-dLR" secondAttribute="height" constant="3" id="ljq-Sj-k69"/>
+                            <constraint firstItem="OBH-dY-cgy" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="oO9-JK-oXR"/>
+                            <constraint firstItem="ueV-dd-rdO" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.1" id="oVf-2s-cEU"/>
+                            <constraint firstItem="Hu8-sT-B2V" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leading" id="pNP-fh-vid"/>
+                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="top" secondItem="Hu8-sT-B2V" secondAttribute="bottom" constant="8" id="rJU-EU-1dn"/>
+                            <constraint firstItem="Hu8-sT-B2V" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.12" id="sJe-mK-zs6"/>
+                            <constraint firstItem="YAR-Ka-BZK" firstAttribute="top" secondItem="ueV-dd-rdO" secondAttribute="bottom" id="wLW-YK-Vyk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigation" destination="Hu8-sT-B2V" id="gtH-51-AST"/>
+                        <outlet property="districtView" destination="OBH-dY-cgy" id="6eT-al-mPR"/>
+                        <outlet property="lblAdressDetail" destination="3Gg-WA-BXR" id="fK0-JL-vLj"/>
+                        <outlet property="lblDistrict" destination="ELM-IB-76s" id="KiG-lJ-Mo1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGS-np-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3760.8000000000002" y="1172.5637181409297"/>
+        </scene>
+        <!--District List Controller-->
+        <scene sceneID="XgH-uG-MVZ">
+            <objects>
+                <tableViewController storyboardIdentifier="districtControllerID" id="hgH-pE-Qea" customClass="DistrictListController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Q8-qU-puE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v4t-gP-o7n">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v4t-gP-o7n" id="Jyy-Pc-9Mm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hgH-pE-Qea" id="T2m-fh-s08"/>
+                            <outlet property="delegate" destination="hgH-pE-Qea" id="b3t-Pe-LPH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCr-qK-DvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3761" y="1885"/>
         </scene>
         <!--Edit Profile Controller-->
         <scene sceneID="aZz-Zl-3yZ">
@@ -1194,7 +1375,6 @@
                             <constraint firstItem="Jx2-qk-1dM" firstAttribute="height" secondItem="eBO-tl-p64" secondAttribute="height" multiplier="0.12" id="ceo-WA-ozW"/>
                             <constraint firstItem="6ij-oQ-3oD" firstAttribute="height" secondItem="YZB-ir-r75" secondAttribute="height" id="cge-an-3Cf"/>
                             <constraint firstItem="YZB-ir-r75" firstAttribute="leading" secondItem="eHz-Yl-QFh" secondAttribute="leading" id="djN-sZ-Bvb"/>
-                            <constraint firstItem="Jx2-qk-1dM" firstAttribute="top" secondItem="eBO-tl-p64" secondAttribute="top" id="gZj-3x-if0"/>
                             <constraint firstItem="7y7-L3-tzs" firstAttribute="leading" secondItem="Yj5-yu-NIr" secondAttribute="leading" id="hxx-lU-R8B"/>
                             <constraint firstItem="Yj5-yu-NIr" firstAttribute="top" secondItem="6ij-oQ-3oD" secondAttribute="bottom" constant="20" id="kZl-17-Hnn"/>
                             <constraint firstAttribute="trailing" secondItem="Kk8-Yp-z3e" secondAttribute="trailing" id="mz2-qJ-ybb"/>
@@ -1465,7 +1645,7 @@
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B.B.KARAOGUZ@GMAİL.COM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp5-Wb-PqV">
-                                <rect key="frame" x="8" y="618" width="175.5" height="14"/>
+                                <rect key="frame" x="8" y="618" width="176" height="14"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
                                 <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1683,6 +1863,7 @@
         <image name="MakeupHeader" width="191" height="97"/>
         <image name="NailsHeader" width="393" height="180"/>
         <image name="WeddingHeader" width="200" height="133"/>
+        <image name="down-icon" width="32" height="32"/>
         <image name="menu" width="100" height="100"/>
         <image name="rgsite" width="368" height="69"/>
     </resources>
