@@ -39,8 +39,7 @@ class MainController: BaseController {
     @IBOutlet weak var tabbarView: UIView!
     @IBOutlet weak var navBarView: UIView!
     var selectedIndex : Int = 0
-    let tc = TabPageViewController.create()
-    
+    let tc = TabPageViewController.init()
 }
 
 extension MainController {

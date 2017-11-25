@@ -1,27 +1,42 @@
 PODS:
   - AKSideMenu (1.4.0)
+  - CreditCardForm (0.1.3)
   - Font-Awesome-Swift (1.6.2)
   - FSPagerView (0.5.5)
   - IQKeyboardManager (4.0.11)
+  - Stripe (11.4.0)
   - TabPageViewController (0.2.7)
   - Toast-Swift (2.0.0)
 
 DEPENDENCIES:
   - AKSideMenu
+  - CreditCardForm
   - Font-Awesome-Swift
   - FSPagerView
   - IQKeyboardManager
-  - TabPageViewController
+  - Stripe
+  - TabPageViewController (from `https://github.com/barankaraoguzzz/TabPageViewController.git`)
   - Toast-Swift
+
+EXTERNAL SOURCES:
+  TabPageViewController:
+    :git: https://github.com/barankaraoguzzz/TabPageViewController.git
+
+CHECKOUT OPTIONS:
+  TabPageViewController:
+    :commit: 4a6fea32f963cf46c8404c4a6d80e376757dda01
+    :git: https://github.com/barankaraoguzzz/TabPageViewController.git
 
 SPEC CHECKSUMS:
   AKSideMenu: c2f5b367529450e95e9fa3f000671cb2a14daf17
+  CreditCardForm: 2dd4385c5b5dbff4d29cc02d2002205c0a397ed0
   Font-Awesome-Swift: 4dc96df73b5f32aaccdee50a454c3ec253ee4977
   FSPagerView: 3ec72e6b201d77a48adab5ed1d33b43a8cc153d6
   IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
-  TabPageViewController: c37a1257a50c2b50712dde61bf499768eee95b67
+  Stripe: dc8396620ab86a36221fc8df72ba9f5d317d174c
+  TabPageViewController: c1ca3d77dd3e6b55fb4d79b13d7d4b9a799cd398
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
-PODFILE CHECKSUM: 86ea55c501d9663e41d91ee225f85adcb894173b
+PODFILE CHECKSUM: 39200d2ef8573ecede7f1385449076dc700fc03e
 
 COCOAPODS: 1.2.1
