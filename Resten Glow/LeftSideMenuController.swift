@@ -91,6 +91,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
         switch  indexPath.row {
+        case 0:
+            self.goToAllProductController()
         case 1:
             goToAccountDetailController()
         case 2:
@@ -110,6 +112,17 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 //        obj .pushViewController(myProfileVC, animated: true)
 //        self.sideMenuViewController!.hideMenuViewController()
 //    }
+    
+    func goToAllProductController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: ScrennID.ALL_PRODUCT_CONTROLLER_ID.rawValue) as! AllProductsController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+        
+    }
+    
     func goToAccountDetailController(){
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

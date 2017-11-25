@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,8 +14,8 @@
         <array key="JosefinSans-Bold.ttf">
             <string>JosefinSans-Bold</string>
         </array>
-        <array key="JosefinSans-SemiBold.ttf">
-            <string>JosefinSans-SemiBold</string>
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -30,47 +31,50 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mcx-XD-4eI">
                         <rect key="frame" x="0.0" y="0.0" width="358" height="538"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boa-js-jZy">
-                        <rect key="frame" x="53" y="401" width="251" height="0.0"/>
-                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTESTEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boa-js-jZy">
+                        <rect key="frame" x="35.5" y="318.5" width="286" height="32"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="21"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
                             <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DkK-hn-8Jx">
-                        <rect key="frame" x="53.5" y="416.5" width="251" height="0.0"/>
-                        <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yetenekli güzellik uzmanlarımız istediğin güzellik hizmetini sana getirecek." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DkK-hn-8Jx">
+                        <rect key="frame" x="36" y="366" width="286" height="43.5"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
-                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="23"/>
+                            <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="23"/>
                         </variation>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-Wp-SbH">
-                        <rect key="frame" x="30" y="461.5" width="298" height="56.5"/>
+                        <rect key="frame" x="102" y="479.5" width="154" height="38.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5Yk-Wp-SbH" secondAttribute="height" multiplier="4:1" id="T8M-uq-tdL"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Mcx-XD-4eI" secondAttribute="bottom" id="2li-uI-DZ0"/>
-                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="top" secondItem="DkK-hn-8Jx" secondAttribute="bottom" constant="45" id="5UQ-o6-amg"/>
+                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="top" secondItem="DkK-hn-8Jx" secondAttribute="bottom" constant="70" id="5UQ-o6-amg"/>
                 <constraint firstItem="Mcx-XD-4eI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BM4-97-dK5"/>
                 <constraint firstItem="boa-js-jZy" firstAttribute="centerX" secondItem="Mcx-XD-4eI" secondAttribute="centerX" id="BjA-iP-hwZ"/>
-                <constraint firstItem="DkK-hn-8Jx" firstAttribute="width" secondItem="Mcx-XD-4eI" secondAttribute="width" multiplier="0.7" id="HDY-JW-efK"/>
+                <constraint firstItem="DkK-hn-8Jx" firstAttribute="width" secondItem="Mcx-XD-4eI" secondAttribute="width" multiplier="0.8" id="HDY-JW-efK"/>
                 <constraint firstItem="DkK-hn-8Jx" firstAttribute="centerX" secondItem="Mcx-XD-4eI" secondAttribute="centerX" id="JSx-BB-Dhj"/>
                 <constraint firstItem="DkK-hn-8Jx" firstAttribute="top" secondItem="boa-js-jZy" secondAttribute="bottom" constant="15" id="JqE-Ep-3rL"/>
-                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="height" secondItem="Mcx-XD-4eI" secondAttribute="height" multiplier="0.105" id="KBe-YG-Ao2"/>
+                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="centerX" secondItem="Mcx-XD-4eI" secondAttribute="centerX" id="NkE-7g-kzK"/>
                 <constraint firstItem="Mcx-XD-4eI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QGP-CN-TkZ"/>
                 <constraint firstAttribute="trailing" secondItem="Mcx-XD-4eI" secondAttribute="trailing" id="X5I-Eo-QLa"/>
-                <constraint firstItem="boa-js-jZy" firstAttribute="width" secondItem="Mcx-XD-4eI" secondAttribute="width" multiplier="0.7" id="fb5-wM-LQG"/>
-                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="kTj-PM-kOH"/>
+                <constraint firstItem="boa-js-jZy" firstAttribute="width" secondItem="Mcx-XD-4eI" secondAttribute="width" multiplier="0.8" id="fb5-wM-LQG"/>
+                <constraint firstItem="5Yk-Wp-SbH" firstAttribute="width" secondItem="Mcx-XD-4eI" secondAttribute="width" multiplier="0.43" id="fcc-Z2-S0O"/>
                 <constraint firstAttribute="bottom" secondItem="5Yk-Wp-SbH" secondAttribute="bottom" constant="20" id="nL9-B1-Gzg">
                     <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                 </constraint>
-                <constraint firstAttribute="trailing" secondItem="5Yk-Wp-SbH" secondAttribute="trailing" constant="30" id="q7k-HK-Nj6"/>
             </constraints>
             <size key="customSize" width="358" height="538"/>
             <connections>

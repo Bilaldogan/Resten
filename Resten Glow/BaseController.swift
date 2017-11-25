@@ -16,8 +16,23 @@ class BaseController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
+    func transitionToBack(){
+        if let navigationController = self.navigationController
+        {
+            let _ = navigationController.popViewController(animated: true)
+        }
+    }
+    
+    func blurEffect(customView: UIView){
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        //blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        customView.addSubview(blurEffectView)
+    }
+    
+    
     let paralaxHeader = ParalaxHeaderClass()
-   
     let paralax_Header_Height = CalculateClass.calculateTableCellHeight(rate: CAH.TABLEVİEW_HEİGHT_RATE.rawValue)
 }

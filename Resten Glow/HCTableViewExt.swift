@@ -21,7 +21,7 @@ extension HairController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
-        cell.cellConfigure(Product: hairStructure.hairList[indexPath.row])
+        //cell.cellConfigure(Product: hairStructure.hairList[indexPath.row])
                 
         return cell
         

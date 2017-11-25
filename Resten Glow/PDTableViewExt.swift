@@ -28,7 +28,6 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
         default:
             return 0
         }
-        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -222,16 +221,13 @@ extension ProductDetailController : UITableViewDelegate, UITableViewDataSource{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        print(self.productDetailTableView.contentOffset.y)
         if productDetailTableView.contentOffset.y >= 0 {
-            
             UIView.animate(withDuration: 0.8, animations: {
-                //self.topBarView.layer.opacity = 1.0
-
+                self.topBarView.backgroundColor = UIColor(white: 1, alpha: 1.0)
             })
         }
         else{
             UIView.animate(withDuration: 0.8, animations: {
-                //self.topBarView.layer.opacity = 0
-                
+                self.topBarView.backgroundColor = UIColor(white: 1, alpha: 0.0)
             })
         }
     }

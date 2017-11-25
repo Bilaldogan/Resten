@@ -31,6 +31,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var arrowImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var DescLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     
 }

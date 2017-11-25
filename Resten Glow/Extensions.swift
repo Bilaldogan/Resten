@@ -186,10 +186,27 @@ extension UIView {
     }
     
     func addShadow() {
-        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.05).cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowRadius = 8.0
         self.layer.shadowOpacity = 0.3
+    }
+    
+    func addShadow(offset: CGSize, color: UIColor = .black, opacity: Float = 0.5, radius: CGFloat = 5.0) {
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = offset
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowRadius = radius
+    }
+    
+    func addShadow(location: VerticalLocation, color: UIColor = .black, opacity: Float = 0.5, radius: CGFloat = 5.0) {
+        switch location {
+        case .bottom:
+            addShadow(offset: CGSize(width: 0, height: 10), color: color, opacity: opacity, radius: radius)
+        case .top:
+            addShadow(offset: CGSize(width: 0, height: -10), color: color, opacity: opacity, radius: radius)
+        }
     }
     
     func circle() {
@@ -368,6 +385,10 @@ extension UIButton {
     
 }
 
+enum VerticalLocation: String {
+    case bottom
+    case top
+}
 
 
 

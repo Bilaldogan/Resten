@@ -11,7 +11,7 @@ import FSPagerView
 class   WelcomeController: BaseController {
 
     @IBOutlet weak var pageControl: UIPageControl!
-    let images = ["MakeUp","Hair-Cut-1","manikur"]
+    let images = ["scarlett","Hair-Cut-1","manikur"]
     let descTexts = ["Yetenekli güzellik uzmanlarımız istediğin güzellik hizmetini sana getirecek.","Hizmet almak istediğin saati, yeri ve ödeme tipini seç, biz detaylarla ilgili mailini gönderelim.","Yetenekli güzellik uzmanlarımız, kaliteli ürünlerle kapında belirsin ve seni istediğin bakıma ulaştırsın."]
     let headerTexts = ["Hayal et!","Rezervasyon yap!","Gerçekleştir!"]
     @IBOutlet var pagerView: FSPagerView!{
@@ -23,7 +23,7 @@ class   WelcomeController: BaseController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        pagerView.transformer = FSPagerViewTransformer(type: .cubic)
     }
 
     override func viewWillAppear(_ animated: Bool) {

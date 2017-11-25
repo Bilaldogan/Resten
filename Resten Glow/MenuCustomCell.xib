@@ -8,12 +8,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -27,12 +27,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASAYFA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-ao-3Fh">
-                        <rect key="frame" x="23" y="21.5" width="78.5" height="17.5"/>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <rect key="frame" x="23" y="19" width="80.5" height="22"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
                         <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
-                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="28"/>
+                            <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="25"/>
                         </variation>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-J1-O4p">

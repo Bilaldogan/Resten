@@ -39,6 +39,18 @@
 		22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */; };
 		315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */; };
 		950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A2D991FAC354E00659126 /* ContactUsController.swift */; };
+		953BF76C1FC56FED002721A5 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF76A1FC56FED002721A5 /* AddProductCell.swift */; };
+		953BF76D1FC56FED002721A5 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953BF76B1FC56FED002721A5 /* AddProductCell.xib */; };
+		953BF7701FC570ED002721A5 /* MyBagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF76F1FC570ED002721A5 /* MyBagController.swift */; };
+		953BF7721FC57242002721A5 /* MBCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF7711FC57242002721A5 /* MBCTableViewExt.swift */; };
+		95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AA91FC53912005B6B6C /* AllProducImageViewtCell.swift */; };
+		95A50AAC1FC53912005B6B6C /* AllProducImageViewtCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A50AAA1FC53912005B6B6C /* AllProducImageViewtCell.xib */; };
+		95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AAD1FC539A1005B6B6C /* AllProductsController.swift */; };
+		95A50AB01FC53D2F005B6B6C /* ScreedID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AAF1FC53D2F005B6B6C /* ScreedID.swift */; };
+		95A50AB41FC5557E005B6B6C /* ProductPropertiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AB21FC5557E005B6B6C /* ProductPropertiesCell.swift */; };
+		95A50AB51FC5557E005B6B6C /* ProductPropertiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A50AB31FC5557E005B6B6C /* ProductPropertiesCell.xib */; };
+		95A50AB81FC556D6005B6B6C /* ServiceOptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AB71FC556D6005B6B6C /* ServiceOptionController.swift */; };
+		95A50ABA1FC55838005B6B6C /* SOCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AB91FC55838005B6B6C /* SOCTableViewExt.swift */; };
 		95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */; };
 		95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */; };
 		95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2BC1FA92DDA00F2BDC6 /* HairController.swift */; };
@@ -83,6 +95,7 @@
 		95E02EE01FABE34A00873CB0 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED61FABE18100873CB0 /* JosefinSans-SemiBoldItalic.ttf */; };
 		95E02EE11FABE34A00873CB0 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED71FABE18900873CB0 /* JosefinSans-Thin.ttf */; };
 		95E02EE21FABE34A00873CB0 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E02ED81FABE18F00873CB0 /* JosefinSans-ThinItalic.ttf */; };
+		95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +134,18 @@
 		30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.release.xcconfig"; sourceTree = "<group>"; };
 		8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resten_Glow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950A2D991FAC354E00659126 /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
+		953BF76A1FC56FED002721A5 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCell.swift; sourceTree = "<group>"; };
+		953BF76B1FC56FED002721A5 /* AddProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductCell.xib; sourceTree = "<group>"; };
+		953BF76F1FC570ED002721A5 /* MyBagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagController.swift; sourceTree = "<group>"; };
+		953BF7711FC57242002721A5 /* MBCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCTableViewExt.swift; sourceTree = "<group>"; };
+		95A50AA91FC53912005B6B6C /* AllProducImageViewtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProducImageViewtCell.swift; sourceTree = "<group>"; };
+		95A50AAA1FC53912005B6B6C /* AllProducImageViewtCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllProducImageViewtCell.xib; sourceTree = "<group>"; };
+		95A50AAD1FC539A1005B6B6C /* AllProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsController.swift; sourceTree = "<group>"; };
+		95A50AAF1FC53D2F005B6B6C /* ScreedID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreedID.swift; sourceTree = "<group>"; };
+		95A50AB21FC5557E005B6B6C /* ProductPropertiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPropertiesCell.swift; sourceTree = "<group>"; };
+		95A50AB31FC5557E005B6B6C /* ProductPropertiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductPropertiesCell.xib; sourceTree = "<group>"; };
+		95A50AB71FC556D6005B6B6C /* ServiceOptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOptionController.swift; sourceTree = "<group>"; };
+		95A50AB91FC55838005B6B6C /* SOCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCTableViewExt.swift; sourceTree = "<group>"; };
 		95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarClass.swift; sourceTree = "<group>"; };
 		95D9B2BC1FA92DDA00F2BDC6 /* HairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairController.swift; sourceTree = "<group>"; };
@@ -165,6 +190,7 @@
 		95E02ED61FABE18100873CB0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		95E02ED71FABE18900873CB0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
 		95E02ED81FABE18F00873CB0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagPopupController.swift; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +274,8 @@
 		22E326451FA3935000077FE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				953BF76E1FC570C6002721A5 /* My Bag Controller */,
+				95A50AB61FC556A1005B6B6C /* Service Option Controller */,
 				950A2D961FAC350400659126 /* Contact us Controller */,
 				95E02E951FAB92D500873CB0 /* Product detail */,
 				95E02E711FAA8AB600873CB0 /* Side Menu Controller */,
@@ -284,9 +312,58 @@
 			name = "Contact us Controller";
 			sourceTree = "<group>";
 		};
+		953BF7691FC56FB9002721A5 /* Add Product Cell */ = {
+			isa = PBXGroup;
+			children = (
+				953BF76A1FC56FED002721A5 /* AddProductCell.swift */,
+				953BF76B1FC56FED002721A5 /* AddProductCell.xib */,
+			);
+			name = "Add Product Cell";
+			sourceTree = "<group>";
+		};
+		953BF76E1FC570C6002721A5 /* My Bag Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95F0C00E1FC86A7800796E5E /* My Bag Popup */,
+				953BF76F1FC570ED002721A5 /* MyBagController.swift */,
+				953BF7711FC57242002721A5 /* MBCTableViewExt.swift */,
+			);
+			name = "My Bag Controller";
+			sourceTree = "<group>";
+		};
+		95A50AA41FC538BF005B6B6C /* All Product Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95A50AA91FC53912005B6B6C /* AllProducImageViewtCell.swift */,
+				95A50AAA1FC53912005B6B6C /* AllProducImageViewtCell.xib */,
+			);
+			name = "All Product Cell";
+			sourceTree = "<group>";
+		};
+		95A50AB11FC55549005B6B6C /* Product Properties Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95A50AB21FC5557E005B6B6C /* ProductPropertiesCell.swift */,
+				95A50AB31FC5557E005B6B6C /* ProductPropertiesCell.xib */,
+			);
+			name = "Product Properties Cell";
+			sourceTree = "<group>";
+		};
+		95A50AB61FC556A1005B6B6C /* Service Option Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95A50AB71FC556D6005B6B6C /* ServiceOptionController.swift */,
+				95A50AB91FC55838005B6B6C /* SOCTableViewExt.swift */,
+			);
+			name = "Service Option Controller";
+			sourceTree = "<group>";
+		};
 		95D9B2B21FA926A700F2BDC6 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				953BF7691FC56FB9002721A5 /* Add Product Cell */,
+				95A50AB11FC55549005B6B6C /* Product Properties Cell */,
+				95A50AA41FC538BF005B6B6C /* All Product Cell */,
 				95E02E9A1FAB95B300873CB0 /* ProductDetail Cell */,
 				95E02E761FAA8B6D00873CB0 /* Side Menu Cell */,
 				95D9B2C91FA9357100F2BDC6 /* Main Controller Cell */,
@@ -299,6 +376,7 @@
 		95D9B2B31FA92B2500F2BDC6 /* Main Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95A50AAD1FC539A1005B6B6C /* AllProductsController.swift */,
 				95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */,
 				95D9B2B91FA92DA900F2BDC6 /* Main Controller Childs */,
 			);
@@ -351,6 +429,7 @@
 			children = (
 				95D9B2CD1FA9390E00F2BDC6 /* CellAndHeaderHeight.swift */,
 				95D9B2D81FA944B800F2BDC6 /* ProductPrice.swift */,
+				95A50AAF1FC53D2F005B6B6C /* ScreedID.swift */,
 			);
 			name = Enum;
 			sourceTree = "<group>";
@@ -465,6 +544,14 @@
 			name = "ProductDetail Cell";
 			sourceTree = "<group>";
 		};
+		95F0C00E1FC86A7800796E5E /* My Bag Popup */ = {
+			isa = PBXGroup;
+			children = (
+				95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */,
+			);
+			name = "My Bag Popup";
+			sourceTree = "<group>";
+		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +636,8 @@
 				22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */,
 				95E02ED91FABE34A00873CB0 /* JosefinSans-Bold.ttf in Resources */,
 				95E02EDA1FABE34A00873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
+				95A50AB51FC5557E005B6B6C /* ProductPropertiesCell.xib in Resources */,
+				95A50AAC1FC53912005B6B6C /* AllProducImageViewtCell.xib in Resources */,
 				95E02EDB1FABE34A00873CB0 /* JosefinSans-Italic.ttf in Resources */,
 				95E02EDC1FABE34A00873CB0 /* JosefinSans-Light.ttf in Resources */,
 				95E02EDD1FABE34A00873CB0 /* JosefinSans-LightItalic.ttf in Resources */,
@@ -564,6 +653,7 @@
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
 				2208651A1FA95B6B00F3539A /* CustomNavigationView.xib in Resources */,
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
+				953BF76D1FC56FED002721A5 /* AddProductCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
 				95D9B2D71FA93EB500F2BDC6 /* ProductCell.xib in Resources */,
 				222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */,
@@ -631,11 +721,15 @@
 				95D9B2BF1FA92DF700F2BDC6 /* MakeupController.swift in Sources */,
 				95D9B2CE1FA9390E00F2BDC6 /* CellAndHeaderHeight.swift in Sources */,
 				220719AC1FC4A3D500A1872A /* DistrictListController.swift in Sources */,
+				95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */,
+				95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
+				95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */,
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
 				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
 				224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */,
+				953BF7721FC57242002721A5 /* MBCTableViewExt.swift in Sources */,
 				95D9B2C51FA9337300F2BDC6 /* BrowController.swift in Sources */,
 				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
@@ -644,9 +738,12 @@
 				22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */,
 				2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
+				95A50AB41FC5557E005B6B6C /* ProductPropertiesCell.swift in Sources */,
 				95D9B2EF1FA967E400F2BDC6 /* MUCTableViewExt.swift in Sources */,
+				953BF76C1FC56FED002721A5 /* AddProductCell.swift in Sources */,
 				22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */,
 				95E02EA51FABC7DD00873CB0 /* InspritationCell.swift in Sources */,
+				95A50AB81FC556D6005B6B6C /* ServiceOptionController.swift in Sources */,
 				220719A41FC48AFD00A1872A /* AddAddressController.swift in Sources */,
 				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
@@ -661,7 +758,9 @@
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,
+				953BF7701FC570ED002721A5 /* MyBagController.swift in Sources */,
 				95E02E971FAB947C00873CB0 /* ProductDetailController.swift in Sources */,
+				95A50AB01FC53D2F005B6B6C /* ScreedID.swift in Sources */,
 				22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */,
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
 				95E02E801FAA952100873CB0 /* GradientView.swift in Sources */,
@@ -678,6 +777,7 @@
 				95D9B2F81FA96AC700F2BDC6 /* WCTableViewExt.swift in Sources */,
 				22E326471FA3961600077FE7 /* LoginController.swift in Sources */,
 				22AFE5E61FAC116F00EF0E63 /* AdressCell.swift in Sources */,
+				95A50ABA1FC55838005B6B6C /* SOCTableViewExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,11 +11,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="AppleColorEmoji@2x.ttc">
-            <string>AppleColorEmoji</string>
-        </array>
         <array key="JosefinSans-Bold.ttf">
             <string>JosefinSans-Bold</string>
+        </array>
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -33,15 +33,21 @@
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ntY-wu-fp3" secondAttribute="height" multiplier="1:1" id="6kw-Sn-bgx"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="28"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="28"/>
                         <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="40"/>
+                        </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpQ-78-KPe">
                         <rect key="frame" x="61" y="18" width="298" height="37.5"/>
                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                         <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="27"/>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
