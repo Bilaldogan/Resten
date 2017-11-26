@@ -1013,7 +1013,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUA-kz-eZJ" id="895-Zk-0QG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-Fr-3dj">
@@ -1029,7 +1029,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-Bi-CdL">
-                                                    <rect key="frame" x="51" y="39" width="308" height="23"/>
+                                                    <rect key="frame" x="51" y="39.5" width="308" height="23"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                                     <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1105,7 +1105,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-S2-6Kq" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="57.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="58" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1311,10 +1311,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wFE-0w-sTw">
-                                <rect key="frame" x="20" y="307" width="335" height="17"/>
+                                <rect key="frame" x="20" y="307" width="335" height="32"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Kart Sahibinin Adı Soyadı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-1p-fA5" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="28"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
@@ -1340,7 +1340,7 @@
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Sl-gix">
-                                        <rect key="frame" x="0.0" y="16" width="335" height="1"/>
+                                        <rect key="frame" x="0.0" y="31" width="335" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="PBH-Ym-m00"/>
@@ -1407,7 +1407,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v4t-gP-o7n" id="Jyy-Pc-9Mm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1857,7 +1857,7 @@
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B.B.KARAOGUZ@GMAİL.COM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp5-Wb-PqV">
-                                <rect key="frame" x="8" y="608" width="175" height="19"/>
+                                <rect key="frame" x="8" y="608.5" width="175" height="18.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                 <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2331,7 +2331,7 @@
                                 <rect key="frame" x="0.0" y="547" width="375" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARA TOPLAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-J0-b8a">
-                                        <rect key="frame" x="151.5" y="8" width="73" height="16"/>
+                                        <rect key="frame" x="151" y="8" width="73" height="16"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2340,7 +2340,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50₺ ● 45 dk " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iu-Cw-1CK">
-                                        <rect key="frame" x="136.5" y="32" width="103" height="26"/>
+                                        <rect key="frame" x="136" y="32" width="103" height="26"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
