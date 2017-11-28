@@ -20,6 +20,7 @@ class AddCardContoller: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCardView()
+        customNavigation.navDelegate = self
     }
     @IBAction func nameTextFieldChanged(_ sender: CustomTextField) {
         if let text = sender.text {
@@ -36,8 +37,8 @@ class AddCardContoller: BaseController {
 extension AddCardContoller : STPPaymentCardTextFieldDelegate {
     func configureCardView() {
         paymentTextField.delegate = self
-        creditCardForm.cardHolderPlaceholderString = "Adı Soyadı"
-        creditCardForm.expireDatePlaceholderText = "VALID THRU"
+       // creditCardForm.cardHolderPlaceholderString = "Adı Soyadı"
+       // creditCardForm.expireDatePlaceholderText = "VALID THRU"
         paymentTextField.frame = CGRect(x: 15, y: 250, width: self.view.frame.size.width - 30, height: 44)
         paymentTextField.translatesAutoresizingMaskIntoConstraints = false
         paymentTextField.borderWidth = 0
@@ -55,7 +56,7 @@ extension AddCardContoller : STPPaymentCardTextFieldDelegate {
         NSLayoutConstraint.activate([
             paymentTextField.topAnchor.constraint(equalTo: nameStackView.bottomAnchor, constant: 10),
             paymentTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            paymentTextField.widthAnchor.constraint(equalToConstant: self.view.frame.size.width-20),
+            paymentTextField.widthAnchor.constraint(equalToConstant: self.creditCardForm.frame.size.width),
             paymentTextField.heightAnchor.constraint(equalToConstant: 44)
             ])
     }

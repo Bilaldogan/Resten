@@ -97,6 +97,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
             goToAccountDetailController()
         case 2:
             goToContactController()
+        case 5:
+            goToHelpController()
         default:
             break
         }
@@ -142,7 +144,16 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         self.sideMenuViewController!.hideMenuViewController()
     }
     
-   
+    func goToHelpController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: ScrennID.HELP_CONTROLLER_ID.rawValue) as! HelpController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+        
+    }
+
     
 
     func goToExitApp() {
