@@ -11,6 +11,9 @@ target 'Resten Glow' do
   pod "TabPageViewController", :git => 'https://github.com/barankaraoguzzz/TabPageViewController.git'
   pod 'Font-Awesome-Swift'
   pod 'AKSideMenu'
+  pod "CreditCardForm"
+  pod 'Stripe'
+
 
   # Pods for Resten Glow
 

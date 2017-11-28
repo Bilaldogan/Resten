@@ -14,6 +14,7 @@ class MyAccountController: BaseController {
     @IBOutlet weak var customNavigation: CustomNavigationView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        customNavigation.navDelegate = self
         tableView.register(UINib(nibName: "SmallProfileCell", bundle: nil), forCellReuseIdentifier: "profileCell")
         tableView.register(UINib(nibName: "AddInfoCell", bundle: nil), forCellReuseIdentifier: "addInfoCell")
          tableView.register(UINib(nibName: "AdressCell", bundle: nil), forCellReuseIdentifier: "addressCell")
@@ -88,6 +89,8 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 && indexPath.row == 1 {
            self.goto(screenID: "addAdressControllerID")
+        } else if indexPath.section == 2 && indexPath.row == 1 {
+            self.goto(screenID: "addCardControllerID" )
         } else if indexPath.section == 3 && indexPath.row == 0 {
             self.goto(screenID: "ChangePasswordID")
         }
