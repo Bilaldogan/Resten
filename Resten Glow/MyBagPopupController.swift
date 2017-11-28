@@ -15,7 +15,15 @@ class MyBagPopupController: BaseController {
         tableViewConfigure()
         configure()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.shadowViewBottomConstraint.constant = -self.shadowView.frame.height
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+            self.shadowViewBottomConstraint.constant = 0
+            self.view.layoutIfNeeded()
+            }, completion: nil)
+    }
     @IBAction func closePopupAct(_ sender: UIButton) {
         self.back(animated: true, isModal: true)
     }
@@ -23,10 +31,12 @@ class MyBagPopupController: BaseController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var shadowView: UIView!
+    @IBOutlet weak var blurView: UIView!
+    @IBOutlet weak var shadowViewBottomConstraint: NSLayoutConstraint!
     
 }
 
@@ -39,7 +49,9 @@ extension MyBagPopupController {
     }
     
     func configure(){
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        self.view.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        self.blurView.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        self.blurEffect(customView: blurView)
         self.shadowView.addShadow(location: .top)
     }
     

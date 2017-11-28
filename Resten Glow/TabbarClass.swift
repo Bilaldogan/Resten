@@ -41,7 +41,7 @@ class TabbarClass {
         option.lineColor = ColorUtil.pink
         
         //option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
-        option.hidesTabBarOnSwipe = true
+        //option.hidesTabBarOnSwipe = true
         
         
         tc.option = option

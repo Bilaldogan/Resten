@@ -39,7 +39,7 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.goto(screenID: "MyBagPopupControllerID", animated: true, data: nil, isModal: true)
+        self.goto(screenID: "MyBagPopupControllerID", animated: false, data: nil, isModal: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -11,17 +11,26 @@ DEPENDENCIES:
   - Font-Awesome-Swift
   - FSPagerView
   - IQKeyboardManager
-  - TabPageViewController
+  - TabPageViewController (from `https://github.com/barankaraoguzzz/TabPageViewController.git`)
   - Toast-Swift
+
+EXTERNAL SOURCES:
+  TabPageViewController:
+    :git: https://github.com/barankaraoguzzz/TabPageViewController.git
+
+CHECKOUT OPTIONS:
+  TabPageViewController:
+    :commit: 4a6fea32f963cf46c8404c4a6d80e376757dda01
+    :git: https://github.com/barankaraoguzzz/TabPageViewController.git
 
 SPEC CHECKSUMS:
   AKSideMenu: c2f5b367529450e95e9fa3f000671cb2a14daf17
   Font-Awesome-Swift: 4dc96df73b5f32aaccdee50a454c3ec253ee4977
   FSPagerView: 3ec72e6b201d77a48adab5ed1d33b43a8cc153d6
   IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
-  TabPageViewController: c37a1257a50c2b50712dde61bf499768eee95b67
+  TabPageViewController: c1ca3d77dd3e6b55fb4d79b13d7d4b9a799cd398
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
-PODFILE CHECKSUM: 86ea55c501d9663e41d91ee225f85adcb894173b
+PODFILE CHECKSUM: bce64508f0b5b5dae3cd3b1bbb0d4d3ff177d8a3
 
 COCOAPODS: 1.2.1

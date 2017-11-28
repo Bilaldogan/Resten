@@ -8,7 +8,7 @@ target 'Resten Glow' do
   pod 'FSPagerView'
   pod 'IQKeyboardManager'
   pod 'Toast-Swift'
-  pod "TabPageViewController"
+  pod "TabPageViewController", :git => 'https://github.com/barankaraoguzzz/TabPageViewController.git'
   pod 'Font-Awesome-Swift'
   pod 'AKSideMenu'
 
