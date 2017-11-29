@@ -18,6 +18,7 @@ class RegisterController: BaseController {
     @IBOutlet weak var textFieldPhoneNumber: CustomTextField!
     
     var shouldAttemptFormat: Bool = true
+    var registerService = RegisterService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,17 @@ class RegisterController: BaseController {
         // Do any additional setup after loading the view.
     }
 
+    func startRegisterService(){
+        self.registerService.serviceDelegate = self
+        var sendModel = RegisterSendModel()
+        sendModel.Email = textFieldEmail.text!
+        sendModel.Pass = textFieldPassword.text!
+        sendModel.Name = textFieldName.text!
+        sendModel.SurName = textFieldSurname.text!
+        self.registerService.connectService(model: sendModel)
+        self.SHOW_SIC()
+    }
+    
     @IBAction func registerButtonTapped(_ sender: UIButton) {
         textFieldRegexHelp()
     }
@@ -53,6 +65,7 @@ extension RegisterController{
             self.view.makeToast("Lütfen geçerli bir telefon numarası giriniz")
         }
         else{
+            self.startRegisterService()
             //doğru yoldasın
         }
     }
@@ -74,4 +87,28 @@ extension RegisterController : UITextFieldDelegate {
         }
     }
     
+}
+
+//Service Extension..
+
+extension RegisterController : RegisterDelegate {
+    func getError(errorMessage: String) {
+        print(errorMessage)
+        self.HIDE_SIC(customView: self.view)
+    }
+    func getResponse(response: RegisterResponseModel) {
+        print(response)
+        self.HIDE_SIC(customView: self.view)
+        if response.Error == "true" {
+            self.view.makeToast(response.Message)
+        }
+        else{
+            UserPrefence.setUserId(id: response.Id)
+            UserPrefence.setGSM(id: response.Gsm)
+            UserPrefence.setUserName(id: response.Name)
+            UserPrefence.setUserMail(mail: response.Email)
+            UserPrefence.setUserLoginStatus(isLogin: true)
+            self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
+        }
+    }
 }

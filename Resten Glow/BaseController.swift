@@ -29,6 +29,26 @@ class BaseController: UIViewController {
         customView.addSubview(blurEffectView)
     }
     
+    func SHOW_SIC(){
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SICID") as! SIC
+        popOverVC.view.tag = 101
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    func HIDE_SIC(customView: UIView){
+        DispatchQueue.main.async {
+            //print("Start remove sibview")
+            if let viewWithTag = customView.viewWithTag(101) {
+                viewWithTag.removeFromSuperview()
+            }else{
+                print("No!")
+            }
+        }
+    }
+    
+    
     
     let paralaxHeader = ParalaxHeaderClass()
     let paralax_Header_Height = CalculateClass.calculateTableCellHeight(rate: CAH.TABLEVİEW_HEİGHT_RATE.rawValue)

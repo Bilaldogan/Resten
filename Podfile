@@ -13,6 +13,8 @@ target 'Resten Glow' do
   pod 'AKSideMenu'
   pod "CreditCardForm"
   pod 'Stripe'
+  pod 'SDWebImage'
+  pod 'SWXMLHash', '~> 4.0.0'
 
 
   # Pods for Resten Glow
