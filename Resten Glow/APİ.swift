@@ -14,6 +14,7 @@ enum API : String {
     case loginURL = "LoginService"
     case registerURL = "RegisterService"
     case getByMemberURL = "GetByMemberService"
+    case updateProfile = "UpdateProfilService"
 }
 
 enum ADMIN : String {

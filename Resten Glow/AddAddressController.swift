@@ -14,6 +14,9 @@ class AddAddressController: BaseController {
     @IBOutlet weak var districtView: CustomView!
     @IBOutlet weak var lblDistrict: UILabel!
     @IBOutlet weak var lblAdressDetail: CustomTextView!
+    
+    var addAddressService = AddAddressService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customNavigation.navDelegate = self
@@ -21,6 +24,15 @@ class AddAddressController: BaseController {
     }
     @IBAction func saveAdressTapped(_ sender: Any) {
         self.back()
+    }
+    func startAddAddressService () {
+        self.addAddressService.serviceDelegate = self
+        var sendModel = AddAddressSendModel()
+        sendModel.Title = "adress" //
+        sendModel.Description = lblAdressDetail.text! + lblDistrict.text!
+        sendModel.MemberId = UserPrefence.getUserId()
+        self.addAddressService.connectService(model: sendModel)
+        self.SHOW_SIC()
     }
     func addTappedTo() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(districtViewTapped))
@@ -33,10 +45,35 @@ class AddAddressController: BaseController {
         self.addDistrictVC()
     }
 }
+
+extension AddAddressController : AddAddressDelegate {
+    func getError(errorMessage: String) {
+        
+    }
+    func getResponse(response: AddAddressResponse) {
+        
+    }
+}
+
 extension AddAddressController : CustomNavigationViewDelegate {
     func backButtonTapped() {
         self.back()
     }
+}
+extension AddAddressController{
+    internal func textFieldRegexHelp() {
+        
+        if  lblDistrict.text! == "" ||
+            lblAdressDetail.text! == "" {
+            self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
+            //Popup çağır
+        }
+        else{
+            self.startAddAddressService()
+            //doğru yoldasın
+        }
+    }
+    
 }
 extension AddAddressController : DistrictListDelegate {
     func districtSelected(selectedDistrict: String) {
