@@ -18,7 +18,7 @@ class BaseController: UIViewController {
     }
     
     func transitionToBack(){
-        self.back(animated: true, isModal: true)
+        self.back(animated: true, isModal: false)
     }
     
     func blurEffect(customView: UIView){

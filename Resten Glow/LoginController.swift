@@ -39,6 +39,7 @@ class LoginController: BaseController {
     }
     
     @IBAction func loginButtonTApped(_ sender: UIButton) {
+        self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
         textFieldRegexHelp()
     }
     

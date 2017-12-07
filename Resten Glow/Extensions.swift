@@ -51,6 +51,7 @@ extension UIViewController {
         }
         else {
             self.navigationController?.pushViewController(vc, animated: animated)
+            self.navigationController?.setNavigationBarHidden(true, animated: false) // Navigation Barı Saklar.
         }
     }
     
