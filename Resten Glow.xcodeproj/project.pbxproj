@@ -32,6 +32,7 @@
 		22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */; };
 		22AFE5EA1FAC1E8D00EF0E63 /* SmallProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79981FABE39B00D62D84 /* SmallProfileCell.xib */; };
 		22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D799C1FABE41D00D62D84 /* AddInfoCell.xib */; };
+		22B2D5561FD4E25B00A8327B /* AddAddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D5551FD4E25B00A8327B /* AddAddressService.swift */; };
 		22DA907A1FCC622E007102DF /* CollapsibleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA90791FCC622E007102DF /* CollapsibleTableSectionViewController.swift */; };
 		22DA907C1FCC6233007102DF /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA907B1FCC6233007102DF /* CollapsibleTableViewHeader.swift */; };
 		22DA907F1FCC628A007102DF /* HelpControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA907E1FCC628A007102DF /* HelpControllerData.swift */; };
@@ -44,6 +45,7 @@
 		22E3264C1FA3C49400077FE7 /* RegexClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264B1FA3C49400077FE7 /* RegexClass.swift */; };
 		22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264D1FA3C7C000077FE7 /* BaseController.swift */; };
 		22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */; };
+		22F6F8301FD4D06C0044F40D /* UpdateProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */; };
 		315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */; };
 		950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A2D991FAC354E00659126 /* ContactUsController.swift */; };
 		953BF76C1FC56FED002721A5 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF76A1FC56FED002721A5 /* AddProductCell.swift */; };
@@ -158,6 +160,7 @@
 		22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
 		22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
 		22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		22B2D5551FD4E25B00A8327B /* AddAddressService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressService.swift; sourceTree = "<group>"; };
 		22DA90791FCC622E007102DF /* CollapsibleTableSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableSectionViewController.swift; sourceTree = "<group>"; };
 		22DA907B1FCC6233007102DF /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		22DA907E1FCC628A007102DF /* HelpControllerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpControllerData.swift; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 		22E3264B1FA3C49400077FE7 /* RegexClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexClass.swift; sourceTree = "<group>"; };
 		22E3264D1FA3C7C000077FE7 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		22E3264F1FA3C9A100077FE7 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileService.swift; sourceTree = "<group>"; };
 		30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.release.xcconfig"; sourceTree = "<group>"; };
 		8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resten_Glow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950A2D991FAC354E00659126 /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
@@ -385,6 +389,7 @@
 			children = (
 				95E151551FCEEE1F0021F06F /* Indicator Controller */,
 				95E1515F1FCEF9C00021F06F /* Register Controller */,
+				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 				95E151541FCEEC080021F06F /* Login Controller */,
 				95B884441FCA3514002E5DC1 /* Date & Hour Controller */,
 				953BF76E1FC570C6002721A5 /* My Bag Controller */,
@@ -758,6 +763,8 @@
 			children = (
 				95E1514D1FCEE7860021F06F /* LoginService.swift */,
 				95E1514F1FCEEA370021F06F /* RegisterService.swift */,
+				22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */,
+				22B2D5551FD4E25B00A8327B /* AddAddressService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -789,7 +796,6 @@
 		95E1515F1FCEF9C00021F06F /* Register Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2291AF8B1FA68925009680DE /* RegisterController.swift */,
 			);
 			name = "Register Controller";
 			sourceTree = "<group>";
@@ -995,6 +1001,7 @@
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
+				22F6F8301FD4D06C0044F40D /* UpdateProfileService.swift in Sources */,
 				22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */,
 				2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
@@ -1015,6 +1022,7 @@
 				95B884381FCA296B002E5DC1 /* FSCalendarWeekdayView.m in Sources */,
 				95B884331FCA296B002E5DC1 /* FSCalendarAppearance.m in Sources */,
 				95D9B2BD1FA92DDA00F2BDC6 /* HairController.swift in Sources */,
+				22B2D5561FD4E25B00A8327B /* AddAddressService.swift in Sources */,
 				95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */,
 				95E02E9D1FAB95FB00873CB0 /* HowToPrepareCell.swift in Sources */,
 				220719AE1FC4B5D000A1872A /* CustomTextView.swift in Sources */,

@@ -44,9 +44,9 @@
 {
     self.scrollsToTop = NO;
     self.contentInset = UIEdgeInsetsZero;
-    if (@available(iOS 9.0, *)) self.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
-    if (@available(iOS 10.0, *)) self.prefetchingEnabled = NO;
-    if (@available(iOS 11.0, *)) self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
+    self.prefetchingEnabled = NO;
+    //self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
 }
 
 - (void)setContentInset:(UIEdgeInsets)contentInset
@@ -82,6 +82,3 @@
 }
 
 @end
-
-
-
