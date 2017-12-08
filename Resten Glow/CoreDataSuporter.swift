@@ -87,6 +87,14 @@ class CoreDataSupporter {
                 for object in result {
                     context.delete(object as! NSManagedObject)
                 }
+                do {
+                    try context.save()
+                    print("saved!")
+                } catch let error as NSError  {
+                    print("Could not save \(error), \(error.userInfo)")
+                } catch {
+                    
+                }
             }
         } catch {
             print("ERROR! Removed")
@@ -94,6 +102,41 @@ class CoreDataSupporter {
         }
     }
     
+    class func removeSelectedData(objectID: String){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Product")
+        request.returnsObjectsAsFaults = false
+        
+        do {
+            let results = try context.fetch(request)
+            if results.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let id = result.value(forKey: "id") as? String {
+                        if id == objectID {
+                            context.delete(result)
+                            
+                            do {
+                                try context.save()
+                                print("saved!")
+                            } catch let error as NSError  {
+                                print("Could not save \(error), \(error.userInfo)")
+                            } catch {
+                                
+                            }
+                            print("Delete selected object")
+                        }
+                        else{
+                            print("Error delete object")
+                        }
+                    }
+                }
+            }
+        } catch {
+            
+        }
+    }
     
     
     

@@ -51,7 +51,7 @@
 		22F6F8301FD4D06C0044F40D /* UpdateProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */; };
 		315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */; };
 		95022DA31FD9CF6200819372 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95022DA11FD9CF6200819372 /* Model.xcdatamodeld */; };
-		95022DA61FD9CF9100819372 /* CoreDataSuporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022DA51FD9CF9100819372 /* CoreDataSuporter.swift */; };
+		95022DA81FD9D66E00819372 /* CoreDataSuporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022DA71FD9D66E00819372 /* CoreDataSuporter.swift */; };
 		950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A2D991FAC354E00659126 /* ContactUsController.swift */; };
 		953BF76C1FC56FED002721A5 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF76A1FC56FED002721A5 /* AddProductCell.swift */; };
 		953BF76D1FC56FED002721A5 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953BF76B1FC56FED002721A5 /* AddProductCell.xib */; };
@@ -185,7 +185,7 @@
 		30946EB5F3D736C2F2A9F95B /* Pods-Resten Glow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.release.xcconfig"; sourceTree = "<group>"; };
 		8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resten_Glow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95022DA21FD9CF6200819372 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		95022DA51FD9CF9100819372 /* CoreDataSuporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSuporter.swift; sourceTree = "<group>"; };
+		95022DA71FD9D66E00819372 /* CoreDataSuporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSuporter.swift; sourceTree = "<group>"; };
 		950A2D991FAC354E00659126 /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
 		953BF76A1FC56FED002721A5 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCell.swift; sourceTree = "<group>"; };
 		953BF76B1FC56FED002721A5 /* AddProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductCell.xib; sourceTree = "<group>"; };
@@ -447,7 +447,7 @@
 		95022DA41FD9CF8600819372 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				95022DA51FD9CF9100819372 /* CoreDataSuporter.swift */,
+				95022DA71FD9D66E00819372 /* CoreDataSuporter.swift */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -1065,7 +1065,7 @@
 				95D9B2C31FA9314100F2BDC6 /* NailsController.swift in Sources */,
 				950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */,
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
-				95022DA61FD9CF9100819372 /* CoreDataSuporter.swift in Sources */,
+				95022DA81FD9D66E00819372 /* CoreDataSuporter.swift in Sources */,
 				95022DA31FD9CF6200819372 /* Model.xcdatamodeld in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95B8842E1FCA296B002E5DC1 /* FSCalendarCollectionViewLayout.m in Sources */,
