@@ -21,6 +21,9 @@
 		222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E31FA27D9700C4ECEE /* Assets.xcassets */; };
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
 		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
+		22404E841FD9D73A000A5706 /* AddressListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22404E831FD9D73A000A5706 /* AddressListService.swift */; };
+		22404E891FD9F5B0000A5706 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22404E881FD9F59E000A5706 /* SystemConfiguration.framework */; };
+		22404E8E1FDAB18D000A5706 /* NoConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */; };
 		224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */; };
 		224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79941FABCFA700D62D84 /* MyAccountController.swift */; };
 		224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79971FABE39B00D62D84 /* SmallProfileCell.swift */; };
@@ -151,6 +154,9 @@
 		222B20E61FA27D9700C4ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222B20E81FA27D9700C4ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewCell.xib; sourceTree = "<group>"; };
+		22404E831FD9D73A000A5706 /* AddressListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListService.swift; sourceTree = "<group>"; };
+		22404E881FD9F59E000A5706 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionController.swift; sourceTree = "<group>"; };
 		224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
 		224D79941FABCFA700D62D84 /* MyAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
 		224D79971FABE39B00D62D84 /* SmallProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallProfileCell.swift; sourceTree = "<group>"; };
@@ -288,6 +294,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22404E891FD9F5B0000A5706 /* SystemConfiguration.framework in Frameworks */,
 				315ED92E4F1116F649D5D058 /* Pods_Resten_Glow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +342,13 @@
 				222B20E81FA27D9700C4ECEE /* Info.plist */,
 			);
 			path = "Resten Glow";
+			sourceTree = "<group>";
+		};
+		22404E871FD9F178000A5706 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		224D79961FABE33800D62D84 /* My Account Controller Cells */ = {
@@ -415,6 +429,7 @@
 				226EE7491FCA097600380281 /* AddCardContoller.swift */,
 				221C03001FCA4F7D00E33742 /* HelpController.swift */,
 				221C03021FCA575800E33742 /* DetailHelpController.swift */,
+				22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */,
 			);
 			name = "\U0010Controller";
 			sourceTree = "<group>";
@@ -496,6 +511,7 @@
 			children = (
 				95B884471FCA361C002E5DC1 /* Resten_Glow-Bridging-Header.h */,
 				95B8840B1FCA2950002E5DC1 /* FSCalendar */,
+				22404E871FD9F178000A5706 /* Reachability */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -779,6 +795,7 @@
 				95E1514F1FCEEA370021F06F /* RegisterService.swift */,
 				22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */,
 				22B2D5551FD4E25B00A8327B /* AddAddressService.swift */,
+				22404E831FD9D73A000A5706 /* AddressListService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -834,6 +851,7 @@
 		FCBE4B651F878FC1750EA8D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22404E881FD9F59E000A5706 /* SystemConfiguration.framework */,
 				8411918E6F6464F34C53A4C3 /* Pods_Resten_Glow.framework */,
 			);
 			name = Frameworks;
@@ -1000,6 +1018,7 @@
 				22DA907F1FCC628A007102DF /* HelpControllerData.swift in Sources */,
 				95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */,
 				95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */,
+				22404E841FD9D73A000A5706 /* AddressListService.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
 				95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */,
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
@@ -1053,6 +1072,7 @@
 				95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */,
 				95B8842F1FCA296B002E5DC1 /* FSCalendarDelegationProxy.m in Sources */,
 				22DA90821FCCC32D007102DF /* CustomCell.swift in Sources */,
+				22404E8E1FDAB18D000A5706 /* NoConnectionController.swift in Sources */,
 				953BF7701FC570ED002721A5 /* MyBagController.swift in Sources */,
 				95B8843A1FCA296B002E5DC1 /* FSCalendarCalculator.m in Sources */,
 				95E02E971FAB947C00873CB0 /* ProductDetailController.swift in Sources */,

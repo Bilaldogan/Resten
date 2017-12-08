@@ -12,6 +12,11 @@ class MyAccountController: BaseController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var customNavigation: CustomNavigationView!
+    
+    var addressListService = AddressListService()
+    
+    var userAddressList : [UserAddress] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customNavigation.navDelegate = self
@@ -21,11 +26,14 @@ class MyAccountController: BaseController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
         self.customNavigation.navDelegate = self
+        addressListService.serviceDelegate = self
+        addressListService.connectService(memberID: UserPrefence.getUserId())
     }
 
    
 
 }
+
 extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 && indexPath.row == 0 {
@@ -33,10 +41,14 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
             cell.delegate = self
             return cell
         } else if indexPath.section == 1 {
-            if indexPath.row == 0 {
+            if indexPath.row < userAddressList.count {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
+                cell.configureWithItem(type: .address)
+                cell.labelAddressType.text = self.userAddressList[indexPath.row].Title
+                cell.labelAddress.text = self.userAddressList[indexPath.row].Description
+                cell.id = self.userAddressList[indexPath.row].Id
                 return cell
-            } else if indexPath.row == 1 {
+            } else if indexPath.row == userAddressList.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "addInfoCell", for: indexPath) as! AddInfoCell
             return cell
             }
@@ -65,7 +77,7 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         } else if section == 1 {
-            return 2
+            return userAddressList.count + 1
         } else if section == 2 {
             return 2
         } else if section == 3{
@@ -87,7 +99,7 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         return ""
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 && indexPath.row == 1 {
+        if indexPath.section == 1 && indexPath.row == userAddressList.count {
            self.goto(screenID: "addAdressControllerID")
         } else if indexPath.section == 2 && indexPath.row == 1 {
             self.goto(screenID: "addCardControllerID" )
@@ -96,6 +108,15 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+}
+extension MyAccountController : AddressListDelegate {
+    func getResponse(response: UserAddressResponse) {
+        userAddressList = response.addressList
+        tableView.reloadData()
+    }
+    func getError(errorMessage: String) {
+        
+    }
 }
 extension MyAccountController : SmallProfileCellDelegate {
     func editTapped() {

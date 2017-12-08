@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -1043,11 +1044,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUA-kz-eZJ" id="895-Zk-0QG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-Fr-3dj">
-                                                    <rect key="frame" x="16" y="28" width="27" height="45"/>
+                                                    <rect key="frame" x="23" y="31" width="24" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="L6J-Fr-3dj" secondAttribute="height" multiplier="14:23" id="14a-1l-l6L"/>
                                                     </constraints>
@@ -1059,7 +1060,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-Bi-CdL">
-                                                    <rect key="frame" x="51" y="39" width="308" height="23"/>
+                                                    <rect key="frame" x="55" y="40" width="297" height="23"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                                     <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1135,7 +1136,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-S2-6Kq" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="58.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="125" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1150,7 +1151,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkiye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-bZ-RW6">
-                                <rect key="frame" x="31" y="62" width="56" height="24.5"/>
+                                <rect key="frame" x="31" y="131.5" width="52" height="19"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1159,7 +1160,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1s-8a-9Xg" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="101.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="165.5" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1174,7 +1175,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-tu-dLR">
-                                <rect key="frame" x="31" y="101.5" width="62.5" height="33"/>
+                                <rect key="frame" x="31" y="165.5" width="57" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1183,7 +1184,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-dY-cgy" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="149.5" width="317" height="36"/>
+                                <rect key="frame" x="27" y="213.5" width="317" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlçe Seçiniz ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELM-IB-76s">
                                         <rect key="frame" x="4" y="0.0" width="276" height="33"/>
@@ -1239,7 +1240,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Gg-WA-BXR" customClass="CustomTextView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="215.5" width="321" height="133.5"/>
+                                <rect key="frame" x="27" y="279.5" width="321" height="133.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1255,12 +1256,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-hd-W2j">
+                                <rect key="frame" x="31" y="62" width="77.5" height="19"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-Ni-NDl" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="27" y="88.5" width="317" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LFJ-bZ-RW6" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="15" id="05F-HW-3Hn"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="trailing" secondItem="V1s-8a-9Xg" secondAttribute="trailing" id="0Rz-i8-olO"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.2" id="0b9-2H-ggE"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="leading" secondItem="jIp-S2-6Kq" secondAttribute="leading" id="36R-bc-Nbn"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="leading" secondItem="V1s-8a-9Xg" secondAttribute="leading" id="4Pl-0M-nrz"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="height" secondItem="V1s-8a-9Xg" secondAttribute="height" id="60H-Z5-UbP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3Gg-WA-BXR" secondAttribute="trailing" constant="11" id="66m-4X-HHx"/>
@@ -1268,13 +1296,18 @@
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="centerY" secondItem="LFJ-bZ-RW6" secondAttribute="centerY" id="6md-ZR-7x3"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="centerY" secondItem="wRb-tu-dLR" secondAttribute="centerY" id="8m8-VA-TLa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OBH-dY-cgy" secondAttribute="trailing" constant="15" id="Abv-Wa-kTb"/>
+                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="top" secondItem="P0e-Ni-NDl" secondAttribute="bottom" constant="10" id="Fxn-Vh-3Ys"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="top" secondItem="vVS-hd-W2j" secondAttribute="bottom" constant="8" id="Hiz-Bh-6hP"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="top" secondItem="OBH-dY-cgy" secondAttribute="bottom" constant="30" id="J0B-cW-ZCW"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="top" secondItem="pCy-j1-IZZ" secondAttribute="top" id="JbV-EO-jKx"/>
                             <constraint firstItem="wRb-tu-dLR" firstAttribute="top" secondItem="LFJ-bZ-RW6" secondAttribute="bottom" constant="15" id="KbU-Ms-1Qq"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="height" secondItem="jIp-S2-6Kq" secondAttribute="height" id="Lvy-A8-MrI"/>
+                            <constraint firstItem="vVS-hd-W2j" firstAttribute="top" secondItem="Hu8-sT-B2V" secondAttribute="bottom" constant="8" id="Ore-a3-Fbb"/>
                             <constraint firstAttribute="trailing" secondItem="ueV-dd-rdO" secondAttribute="trailing" id="RVL-N7-kxO"/>
                             <constraint firstAttribute="trailing" secondItem="Hu8-sT-B2V" secondAttribute="trailing" id="WOx-ij-YpU"/>
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="top" secondItem="wRb-tu-dLR" secondAttribute="bottom" constant="15" id="WmU-vm-QoC"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="trailing" secondItem="OBH-dY-cgy" secondAttribute="trailing" id="Y6s-Jx-fKz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P0e-Ni-NDl" secondAttribute="trailing" constant="15" id="bGN-Ep-KAL"/>
                             <constraint firstItem="wRb-tu-dLR" firstAttribute="leading" secondItem="LFJ-bZ-RW6" secondAttribute="leading" id="kY4-jt-IXj"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="lP1-CG-fkg"/>
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="height" secondItem="wRb-tu-dLR" secondAttribute="height" constant="3" id="ljq-Sj-k69"/>
@@ -1282,9 +1315,9 @@
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="oO9-JK-oXR"/>
                             <constraint firstItem="ueV-dd-rdO" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.08" id="oVf-2s-cEU"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leading" id="pNP-fh-vid"/>
-                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="top" secondItem="Hu8-sT-B2V" secondAttribute="bottom" constant="8" id="rJU-EU-1dn"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.08" id="sJe-mK-zs6"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="leading" secondItem="OBH-dY-cgy" secondAttribute="leading" id="sYj-FH-fO0"/>
+                            <constraint firstItem="vVS-hd-W2j" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="15" id="sf1-zh-bEc"/>
                             <constraint firstItem="YAR-Ka-BZK" firstAttribute="top" secondItem="ueV-dd-rdO" secondAttribute="bottom" id="wLW-YK-Vyk"/>
                         </constraints>
                     </view>
@@ -1293,6 +1326,7 @@
                         <outlet property="districtView" destination="OBH-dY-cgy" id="6eT-al-mPR"/>
                         <outlet property="lblAdressDetail" destination="3Gg-WA-BXR" id="fK0-JL-vLj"/>
                         <outlet property="lblDistrict" destination="ELM-IB-76s" id="KiG-lJ-Mo1"/>
+                        <outlet property="textFiedlAddressTittle" destination="P0e-Ni-NDl" id="SeP-vg-gGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGS-np-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1341,10 +1375,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wFE-0w-sTw">
-                                <rect key="frame" x="38" y="284" width="300" height="17"/>
+                                <rect key="frame" x="38" y="284" width="300" height="32"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Kart Sahibinin Adı Soyadı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-1p-fA5" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="28"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
@@ -1370,7 +1404,7 @@
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Sl-gix">
-                                        <rect key="frame" x="0.0" y="16" width="283" height="1"/>
+                                        <rect key="frame" x="0.0" y="31" width="283" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="PBH-Ym-m00"/>
@@ -1630,7 +1664,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v4t-gP-o7n" id="Jyy-Pc-9Mm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1644,6 +1678,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCr-qK-DvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3761" y="1885"/>
+        </scene>
+        <!--No Connection Controller-->
+        <scene sceneID="iOp-4y-nk8">
+            <objects>
+                <viewController storyboardIdentifier="noConnectionControllerID" id="wUT-Wn-slv" customClass="NoConnectionController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Kk-MF-YWM"/>
+                        <viewControllerLayoutGuide type="bottom" id="HJW-6O-eNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hcZ-f6-eVa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0A-Z6-4aK" customClass="CustomNavigationView" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value=" "/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="top" secondItem="hcZ-f6-eVa" secondAttribute="top" id="2Z3-N8-QMh"/>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="leading" secondItem="hcZ-f6-eVa" secondAttribute="leading" id="GXR-ku-hpL"/>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="height" secondItem="hcZ-f6-eVa" secondAttribute="height" multiplier="0.1" id="tnm-3W-gWD"/>
+                            <constraint firstAttribute="trailing" secondItem="v0A-Z6-4aK" secondAttribute="trailing" id="yim-5D-1Jj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigation" destination="v0A-Z6-4aK" id="eD7-hw-BtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQi-N3-L3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5777" y="2160"/>
         </scene>
         <!--Edit Profile Controller-->
         <scene sceneID="aZz-Zl-3yZ">
@@ -2553,7 +2623,7 @@
                                 <rect key="frame" x="0.0" y="547" width="375" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARA TOPLAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-J0-b8a">
-                                        <rect key="frame" x="151" y="8" width="73" height="16"/>
+                                        <rect key="frame" x="153.5" y="8" width="69.5" height="13"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2562,7 +2632,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50₺ ● 45 dk " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iu-Cw-1CK">
-                                        <rect key="frame" x="136" y="32" width="103" height="26"/>
+                                        <rect key="frame" x="137.5" y="29" width="101.5" height="21"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2739,7 +2809,7 @@
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ne eklemek istersiniz?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-Jf-omM">
-                                        <rect key="frame" x="98.5" y="4" width="179" height="41"/>
+                                        <rect key="frame" x="98" y="4" width="180" height="41"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2980,7 +3050,7 @@
                                 <rect key="frame" x="0.0" y="467" width="375" height="146.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MQ2-BF-vKd">
-                                        <rect key="frame" x="56" y="101.5" width="263.5" height="31"/>
+                                        <rect key="frame" x="56" y="103.5" width="263.5" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     </slider>
@@ -3000,7 +3070,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşleminizi saat 9:00 civarında gerçekleştireceğiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-N5-PIB">
-                                        <rect key="frame" x="60" y="53.5" width="256" height="17.5"/>
+                                        <rect key="frame" x="61" y="53.5" width="253.5" height="14"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3009,25 +3079,25 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-jK-Ol9">
-                                        <rect key="frame" x="8" y="106" width="34" height="20.5"/>
+                                        <rect key="frame" x="8" y="110" width="34" height="16.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-Dk-34n">
-                                        <rect key="frame" x="333.5" y="106" width="33.5" height="20.5"/>
+                                        <rect key="frame" x="333.5" y="110" width="33.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-3F-1cC">
-                                        <rect key="frame" x="16.5" y="80.5" width="17" height="17"/>
+                                        <rect key="frame" x="16.5" y="84.5" width="17" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MMQ-3F-1cC" secondAttribute="height" id="p2L-fa-bvH"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-1b-6pn">
-                                        <rect key="frame" x="341" y="81" width="17" height="17"/>
+                                        <rect key="frame" x="341" y="85" width="17" height="17"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

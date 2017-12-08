@@ -8,14 +8,25 @@
 
 import UIKit
 import Toast_Swift
-
+import Reachability
 
 class BaseController: UIViewController {
-
+    var isNoConnection = false
+    
+    var reachability =  Reachability()!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupReachability()
     }
+   
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        reachability.stopNotifier()
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("reachabilityChanged"), object: reachability)
+    }
+    
     
     func transitionToBack(){
         self.back(animated: true, isModal: false)
@@ -48,8 +59,29 @@ class BaseController: UIViewController {
         }
     }
     
-    
-    
+    func setupReachability() {
+        if isNoConnection {
+            return
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(internetChanged(note:)), name: Notification.Name("reachabilityChanged") , object: reachability)
+        do{
+            try reachability.startNotifier()
+        } catch {
+            print("could not start notifier")
+        }
+    }
+    func internetChanged(note: Notification) {
+        let reachability = note.object as! Reachability
+        if reachability.isReachable {
+            print("REachable")
+        } else {
+            DispatchQueue.main.async {
+                if !self.isNoConnection {
+                self.goto(screenID: "noConnectionControllerID")
+                }
+            }
+        }
+    }
     let paralaxHeader = ParalaxHeaderClass()
     let paralax_Header_Height = CalculateClass.calculateTableCellHeight(rate: CAH.TABLEVİEW_HEİGHT_RATE.rawValue)
 }
