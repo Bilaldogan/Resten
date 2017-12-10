@@ -18,16 +18,16 @@ class AddAddressService : ConnectionDelegate
     {
         var soapMessage : String = "<?xml version='1.0' encoding='utf-8'?>"
         soapMessage += "<soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>"
-        soapMessage += "<soap:Body><RegisterService xmlns='http://tempuri.org/'>"
+        soapMessage += "<soap:Body><AddAddressService xmlns='http://tempuri.org/'>"
         soapMessage += "<AdminEmail>\(ADMIN.AdminEmail.rawValue)</AdminEmail>"
         soapMessage += "<AdminPass>\(ADMIN.AdminPass.rawValue)</AdminPass>"
         soapMessage += "<MemberId>\(model.MemberId)</MemberId>"
         soapMessage += "<Description>\(model.Description)</Description>"
         soapMessage += "<Title>\(model.Title)</Title>"
-        soapMessage += "</RegisterService>"
+        soapMessage += "</AddAddressService>"
         soapMessage += "</soap:Body></soap:Envelope>"
         
-        let serviceUrl : String = API.baseURL.rawValue + API.registerURL.rawValue
+        let serviceUrl : String = API.baseURL.rawValue + API.addAddress.rawValue
         connection.PostConnection(soapMessage: soapMessage, serviceUrl: serviceUrl)
     }
     

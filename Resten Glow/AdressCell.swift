@@ -13,6 +13,8 @@ class AdressCell: UITableViewCell {
     @IBOutlet weak var imageViewIcon: UIImageView!
     @IBOutlet weak var labelAddressType: UILabel!
     @IBOutlet weak var labelAddress: UILabel!
+    
+    var id = ""
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

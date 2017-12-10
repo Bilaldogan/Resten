@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 1.0)
         IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().toolbarTintColor = UIColor.black
         return true
     }
 
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    // MARK: - Core Data stack
+    
     
     lazy var persistentContainer: NSPersistentContainer = {
         /*

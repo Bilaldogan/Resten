@@ -1049,7 +1049,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-Fr-3dj">
-                                                    <rect key="frame" x="16" y="28" width="27" height="45"/>
+                                                    <rect key="frame" x="23" y="31" width="24" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="L6J-Fr-3dj" secondAttribute="height" multiplier="14:23" id="14a-1l-l6L"/>
                                                     </constraints>
@@ -1061,7 +1061,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADRES EKLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-Bi-CdL">
-                                                    <rect key="frame" x="51" y="39" width="308" height="23"/>
+                                                    <rect key="frame" x="55" y="40" width="297" height="23"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                                     <color key="textColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1257,12 +1257,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-hd-W2j">
+                                <rect key="frame" x="31" y="62" width="77.5" height="19"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-Ni-NDl" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="27" y="88.5" width="317" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LFJ-bZ-RW6" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="15" id="05F-HW-3Hn"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="trailing" secondItem="V1s-8a-9Xg" secondAttribute="trailing" id="0Rz-i8-olO"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.2" id="0b9-2H-ggE"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="leading" secondItem="jIp-S2-6Kq" secondAttribute="leading" id="36R-bc-Nbn"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="leading" secondItem="V1s-8a-9Xg" secondAttribute="leading" id="4Pl-0M-nrz"/>
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="height" secondItem="V1s-8a-9Xg" secondAttribute="height" id="60H-Z5-UbP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3Gg-WA-BXR" secondAttribute="trailing" constant="11" id="66m-4X-HHx"/>
@@ -1270,13 +1297,18 @@
                             <constraint firstItem="jIp-S2-6Kq" firstAttribute="centerY" secondItem="LFJ-bZ-RW6" secondAttribute="centerY" id="6md-ZR-7x3"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="centerY" secondItem="wRb-tu-dLR" secondAttribute="centerY" id="8m8-VA-TLa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OBH-dY-cgy" secondAttribute="trailing" constant="15" id="Abv-Wa-kTb"/>
+                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="top" secondItem="P0e-Ni-NDl" secondAttribute="bottom" constant="10" id="Fxn-Vh-3Ys"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="top" secondItem="vVS-hd-W2j" secondAttribute="bottom" constant="8" id="Hiz-Bh-6hP"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="top" secondItem="OBH-dY-cgy" secondAttribute="bottom" constant="30" id="J0B-cW-ZCW"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="top" secondItem="pCy-j1-IZZ" secondAttribute="top" id="JbV-EO-jKx"/>
                             <constraint firstItem="wRb-tu-dLR" firstAttribute="top" secondItem="LFJ-bZ-RW6" secondAttribute="bottom" constant="15" id="KbU-Ms-1Qq"/>
+                            <constraint firstItem="P0e-Ni-NDl" firstAttribute="height" secondItem="jIp-S2-6Kq" secondAttribute="height" id="Lvy-A8-MrI"/>
+                            <constraint firstItem="vVS-hd-W2j" firstAttribute="top" secondItem="Hu8-sT-B2V" secondAttribute="bottom" constant="8" id="Ore-a3-Fbb"/>
                             <constraint firstAttribute="trailing" secondItem="ueV-dd-rdO" secondAttribute="trailing" id="RVL-N7-kxO"/>
                             <constraint firstAttribute="trailing" secondItem="Hu8-sT-B2V" secondAttribute="trailing" id="WOx-ij-YpU"/>
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="top" secondItem="wRb-tu-dLR" secondAttribute="bottom" constant="15" id="WmU-vm-QoC"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="trailing" secondItem="OBH-dY-cgy" secondAttribute="trailing" id="Y6s-Jx-fKz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P0e-Ni-NDl" secondAttribute="trailing" constant="15" id="bGN-Ep-KAL"/>
                             <constraint firstItem="wRb-tu-dLR" firstAttribute="leading" secondItem="LFJ-bZ-RW6" secondAttribute="leading" id="kY4-jt-IXj"/>
                             <constraint firstItem="3Gg-WA-BXR" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="lP1-CG-fkg"/>
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="height" secondItem="wRb-tu-dLR" secondAttribute="height" constant="3" id="ljq-Sj-k69"/>
@@ -1284,9 +1316,9 @@
                             <constraint firstItem="OBH-dY-cgy" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="11" id="oO9-JK-oXR"/>
                             <constraint firstItem="ueV-dd-rdO" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.08" id="oVf-2s-cEU"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leading" id="pNP-fh-vid"/>
-                            <constraint firstItem="LFJ-bZ-RW6" firstAttribute="top" secondItem="Hu8-sT-B2V" secondAttribute="bottom" constant="8" id="rJU-EU-1dn"/>
                             <constraint firstItem="Hu8-sT-B2V" firstAttribute="height" secondItem="pCy-j1-IZZ" secondAttribute="height" multiplier="0.08" id="sJe-mK-zs6"/>
                             <constraint firstItem="V1s-8a-9Xg" firstAttribute="leading" secondItem="OBH-dY-cgy" secondAttribute="leading" id="sYj-FH-fO0"/>
+                            <constraint firstItem="vVS-hd-W2j" firstAttribute="leading" secondItem="pCy-j1-IZZ" secondAttribute="leadingMargin" constant="15" id="sf1-zh-bEc"/>
                             <constraint firstItem="YAR-Ka-BZK" firstAttribute="top" secondItem="ueV-dd-rdO" secondAttribute="bottom" id="wLW-YK-Vyk"/>
                         </constraints>
                     </view>
@@ -1295,6 +1327,7 @@
                         <outlet property="districtView" destination="OBH-dY-cgy" id="6eT-al-mPR"/>
                         <outlet property="lblAdressDetail" destination="3Gg-WA-BXR" id="fK0-JL-vLj"/>
                         <outlet property="lblDistrict" destination="ELM-IB-76s" id="KiG-lJ-Mo1"/>
+                        <outlet property="textFiedlAddressTittle" destination="P0e-Ni-NDl" id="SeP-vg-gGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGS-np-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1646,6 +1679,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCr-qK-DvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3761" y="1885"/>
+        </scene>
+        <!--No Connection Controller-->
+        <scene sceneID="iOp-4y-nk8">
+            <objects>
+                <viewController storyboardIdentifier="noConnectionControllerID" id="wUT-Wn-slv" customClass="NoConnectionController" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Kk-MF-YWM"/>
+                        <viewControllerLayoutGuide type="bottom" id="HJW-6O-eNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hcZ-f6-eVa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0A-Z6-4aK" customClass="CustomNavigationView" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value=" "/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="top" secondItem="hcZ-f6-eVa" secondAttribute="top" id="2Z3-N8-QMh"/>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="leading" secondItem="hcZ-f6-eVa" secondAttribute="leading" id="GXR-ku-hpL"/>
+                            <constraint firstItem="v0A-Z6-4aK" firstAttribute="height" secondItem="hcZ-f6-eVa" secondAttribute="height" multiplier="0.1" id="tnm-3W-gWD"/>
+                            <constraint firstAttribute="trailing" secondItem="v0A-Z6-4aK" secondAttribute="trailing" id="yim-5D-1Jj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigation" destination="v0A-Z6-4aK" id="eD7-hw-BtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQi-N3-L3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5777" y="2160"/>
         </scene>
         <!--Edit Profile Controller-->
         <scene sceneID="aZz-Zl-3yZ">

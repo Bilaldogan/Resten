@@ -15,8 +15,7 @@ target 'Resten Glow' do
   pod 'Stripe'
   pod 'SDWebImage'
   pod 'SWXMLHash', '~> 4.0.0'
-
-
+  pod 'ReachabilitySwift'
   # Pods for Resten Glow
 
 end

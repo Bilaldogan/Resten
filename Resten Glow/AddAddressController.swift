@@ -11,6 +11,7 @@ import UIKit
 class AddAddressController: BaseController {
     @IBOutlet weak var customNavigation: CustomNavigationView!
 
+    @IBOutlet weak var textFiedlAddressTittle: CustomTextField!
     @IBOutlet weak var districtView: CustomView!
     @IBOutlet weak var lblDistrict: UILabel!
     @IBOutlet weak var lblAdressDetail: CustomTextView!
@@ -23,12 +24,13 @@ class AddAddressController: BaseController {
         addTappedTo()
     }
     @IBAction func saveAdressTapped(_ sender: Any) {
-        self.back()
+       textFieldRegexHelp()
+        
     }
     func startAddAddressService () {
         self.addAddressService.serviceDelegate = self
         var sendModel = AddAddressSendModel()
-        sendModel.Title = "adress" //
+        sendModel.Title = textFiedlAddressTittle.text!
         sendModel.Description = lblAdressDetail.text! + lblDistrict.text!
         sendModel.MemberId = UserPrefence.getUserId()
         self.addAddressService.connectService(model: sendModel)
@@ -48,10 +50,12 @@ class AddAddressController: BaseController {
 
 extension AddAddressController : AddAddressDelegate {
     func getError(errorMessage: String) {
-        
+        self.HIDE_SIC(customView: self.view)
     }
     func getResponse(response: AddAddressResponse) {
-        
+        self.HIDE_SIC(customView: self.view)
+        self.back()
+        self.view.makeToast(response.Message)
     }
 }
 
@@ -64,7 +68,8 @@ extension AddAddressController{
     internal func textFieldRegexHelp() {
         
         if  lblDistrict.text! == "" ||
-            lblAdressDetail.text! == "" {
+            lblAdressDetail.text! == ""  ||
+            textFiedlAddressTittle.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
             //Popup çağır
         }
