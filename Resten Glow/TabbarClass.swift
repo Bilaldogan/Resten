@@ -12,23 +12,15 @@ import TabPageViewController
 class TabbarClass {
     
     
-    class func createMainTabBar(tabView : UIView, tc : TabPageViewController, viewController : UIViewController, selectedIndex: Int){
+    class func createMainTabBar(tabView : UIView, tc : TabPageViewController, viewController : UIViewController, selectedIndex: Int, categoryArray: [CategoryList]){
        
-        let vcHair = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HairControllerID") as! HairController
-        tc.tabItems.append((vcHair, "SAÇ"))
-        
-        let vcMakeup = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MakeupControllerID") as! MakeupController
-        tc.tabItems.append((vcMakeup, "MAKYAJ"))
-        
-        let vcNails = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NailsControllerID") as! NailsController
-        tc.tabItems.append((vcNails, "TIRNAK"))
-        
-        //let vcBrow = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BrowControllerID") as! BrowController
-        //tc.tabItems.append((vcBrow, "KAŞ"))
-        
-        let vcWedding = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WeddingControllerID") as! WeddingController
-        tc.tabItems.append((vcWedding, "DÜĞÜN"))
-        
+        for category in categoryArray {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabbarChildControllerID") as! TabbarChildController
+            tc.tabItems.append((vc, category.CategoryName))
+            vc.categoryName = category.CategoryName
+            vc.categoryImageURL = category.ImagePath
+        }
+            
         var option = TabPageOption()
         option.tabMargin = 10.0
         option.tabWidth = (tabView.width / 4)

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 private var dataAssocKey = 0
 extension UIViewController {
@@ -248,11 +249,9 @@ extension UIView {
 
 extension UIImageView {
     func loadImage(url:String!) {
-        //        Alamofire.request(.GET, url).responseImage { response in
-        //            if let image = response.result.value {
-        //                self.image = image
-        //            }
-        //        }
+        self.sd_setShowActivityIndicatorView(true)
+        self.sd_setIndicatorStyle(.gray)
+        self.sd_setImage(with: NSURL(string: url)! as URL)
     }
     
     func setBase64Image(base64String:String!) {

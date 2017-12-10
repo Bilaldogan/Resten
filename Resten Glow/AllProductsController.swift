@@ -15,7 +15,7 @@ class AllProductsController: BaseController {
         super.viewDidLoad()
         configure()
         tableViewConfigure()
-        
+        startService()
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -40,6 +40,10 @@ class AllProductsController: BaseController {
     @IBOutlet weak var navBarView: UIView!
     var productImageArray = [#imageLiteral(resourceName: "HairHeader"),#imageLiteral(resourceName: "MakeupHeader"),#imageLiteral(resourceName: "NailsHeader"),#imageLiteral(resourceName: "WeddingHeader")]
     
+    //Service Veriable
+    var categoryListService = CategoryListService()
+    //Service Response
+    var categoryList = [CategoryList]()
     
 }
 extension AllProductsController {
@@ -57,6 +61,11 @@ extension AllProductsController {
         allProductTableView.separatorStyle = .none
     }
     
+    func startService(){
+        categoryListService.serviceDelegate = self
+        categoryListService.connectService()
+        self.SHOW_SIC()
+    }
     
 }
 
@@ -67,19 +76,19 @@ extension AllProductsController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productImageArray.count
+        return categoryList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = Bundle.main.loadNibNamed("AllProducImageViewtCell", owner: self, options: nil)?.first as! AllProducImageViewtCell
-        cell.productImageView.image = productImageArray[indexPath.row]
+        cell.configure(imageURL: categoryList[indexPath.row].ImagePath)
         
         return cell
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: ScrennID.MAIN_CONTROLLER_ID.rawValue) as! MainController
         vc.selectedIndex = indexPath.row
+        vc.categoryList = self.categoryList
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,7 +96,25 @@ extension AllProductsController : UITableViewDelegate, UITableViewDataSource{
     }
 }
 
-
+extension AllProductsController : CategoryListDelegate {
+    func getResponse(response: CategoryListResponseModel) {
+        if response.Error == "false" {
+            if !response.categoryList.isEmpty {
+                categoryList = response.categoryList
+                allProductTableView.reloadData()
+            }
+        }
+        else{
+            self.view.makeToast(response.Message)
+        }
+        self.HIDE_SIC(customView: self.view)
+    }
+    
+    func getError(errorMessage: String) {
+        print(errorMessage)
+        self.HIDE_SIC(customView: self.view)
+    }
+}
 
 
 

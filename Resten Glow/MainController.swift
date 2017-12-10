@@ -15,7 +15,7 @@ class MainController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        TabbarClass.createMainTabBar(tabView: tabbarView, tc: tc, viewController: self,selectedIndex: self.selectedIndex)
+        TabbarClass.createMainTabBar(tabView: tabbarView, tc: tc, viewController: self,selectedIndex: self.selectedIndex, categoryArray: categoryList)
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -39,6 +39,7 @@ class MainController: BaseController {
     @IBOutlet weak var tabbarView: UIView!
     @IBOutlet weak var navBarView: UIView!
     var selectedIndex : Int = 0
+    var categoryList = [CategoryList]()
     let tc = TabPageViewController.init()
     
 }
@@ -47,11 +48,6 @@ extension MainController {
     
     func configure() {
         navBarView.addShadow()
-//        navBarView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.05).cgColor
-//        navBarView.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-//        navBarView.layer.shadowOpacity = 0.5
-//        navBarView.layer.shadowRadius = 0.0
-//        navBarView.layer.masksToBounds = false
     }
     
     

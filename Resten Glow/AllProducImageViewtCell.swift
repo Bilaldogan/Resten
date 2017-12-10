@@ -20,6 +20,11 @@ class AllProducImageViewtCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configure(imageURL: String){
+        productImageView.loadImage(url: imageURL)
+    }
+    
     @IBOutlet weak var productImageView: UIImageView!
     
 }

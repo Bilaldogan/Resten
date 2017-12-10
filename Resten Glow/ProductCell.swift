@@ -23,9 +23,10 @@ class ProductCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func cellConfigure(Product item : ProductProperties){
-        titleLabel.text = item.title.lowercased()
-        DescLabel.text = item.desc.lowercased()
+    func cellConfigure(Product item : ProductList){
+        titleLabel.text = item.ProductName
+        DescLabel.text = item.Description
+        priceLabel.text = item.Price
     }
     
     @IBOutlet weak var arrowImageView: UIImageView!

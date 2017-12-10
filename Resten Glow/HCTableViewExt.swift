@@ -9,22 +9,20 @@
 import Foundation
 import UIKit
 
-extension HairController : UITableViewDelegate, UITableViewDataSource{
+extension TabbarChildController : UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hairStructure.hairList.count
+        return productResponse.productList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
-        //cell.cellConfigure(Product: hairStructure.hairList[indexPath.row])
-                
+        cell.cellConfigure(Product: productResponse.productList[indexPath.row])
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
