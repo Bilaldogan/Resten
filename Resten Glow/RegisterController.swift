@@ -34,6 +34,7 @@ class RegisterController: BaseController {
         sendModel.Pass = textFieldPassword.text!
         sendModel.Name = textFieldName.text!
         sendModel.SurName = textFieldSurname.text!
+        sendModel.PhoneNumber = textFieldPhoneNumber.text!
         self.registerService.connectService(model: sendModel)
         self.SHOW_SIC()
     }
@@ -50,13 +51,16 @@ extension RegisterController{
         if  textFieldEmail.text! == "" ||
             textFieldPassword.text! == "" ||
             textFieldName.text! == "" ||
-            textFieldSurname.text! == "" {
+            textFieldSurname.text! == "" ||
+            textFieldPhoneNumber.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
             //Popup çağır
         }
         else if RegexClass.isValidEmail(testStr: self.textFieldEmail.text!) == false {
             self.view.makeToast("Lütfen geçerli bir email adresi giriniz.")
             //Popup çağır
+        } else if RegexClass.validatePhone(value: self.textFieldPhoneNumber.text!) == false {
+            self.view.makeToast("Lütfen geçerli bir telefon numarası giriniz.")
         }
         else if self.textFieldPassword.text != self.textFieldConfirmPassword.text {
             self.view.makeToast("Girdiğiniz şifreler aynı olmalı")

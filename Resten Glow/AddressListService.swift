@@ -84,10 +84,6 @@ class AddressListService : ConnectionDelegate
             responseData.addressList.append(userAddress)
         }
         
-      
-        
-        
-        
         
         if  self.serviceDelegate != nil {
             self.serviceDelegate?.getResponse(response: responseData)
