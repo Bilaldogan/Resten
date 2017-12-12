@@ -61,10 +61,7 @@ extension RegisterController{
         else if self.textFieldPassword.text != self.textFieldConfirmPassword.text {
             self.view.makeToast("Girdiğiniz şifreler aynı olmalı")
         }
-        else if RegexClass.validatePhone(value: self.textFieldPhoneNumber.text!) == false {
-            self.view.makeToast("Lütfen geçerli bir telefon numarası giriniz")
-        }
-        else{
+        else {
             self.startRegisterService()
             //doğru yoldasın
         }
@@ -106,6 +103,7 @@ extension RegisterController : RegisterDelegate {
             UserPrefence.setUserId(id: response.Id)
             UserPrefence.setGSM(id: response.Gsm)
             UserPrefence.setUserName(id: response.Name)
+            UserPrefence.setUserSurname(surname: response.SurName)
             UserPrefence.setUserMail(mail: response.Email)
             UserPrefence.setUserLoginStatus(isLogin: true)
             self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)

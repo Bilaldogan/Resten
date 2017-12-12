@@ -14,6 +14,8 @@ class SmallProfileCell: UITableViewCell {
 
     var delegate  : SmallProfileCellDelegate?
     
+    @IBOutlet weak var lblUserName: UILabel!
+    @IBOutlet weak var lblUserMail: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

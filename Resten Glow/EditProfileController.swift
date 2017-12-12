@@ -22,9 +22,14 @@ class EditProfileController: BaseController {
         super.viewDidLoad()
         self.customNavigation.navDelegate = self
         self.textFieldName.text = UserPrefence.getUserName()
+        self.textFieldSurname.text = UserPrefence.getUserSurname()
         self.textFielfEmail.text = UserPrefence.getUserMail()
+        self.textFieldPhoneNumber.text = UserPrefence.getGSM()
     }
     
+    @IBAction func updateProfileTapped(_ sender: UIButton) {
+        textFieldRegexHelp()
+    }
     
     func startUpdateProfileService() {
         self.updateService.serviceDelegate = self
@@ -56,6 +61,7 @@ extension EditProfileController : RegisterDelegate {
             UserPrefence.setUserId(id: response.Id)
             UserPrefence.setGSM(id: response.Gsm)
             UserPrefence.setUserName(id: response.Name)
+            UserPrefence.setUserSurname(surname: response.SurName)
             UserPrefence.setUserMail(mail: response.Email)
             UserPrefence.setUserLoginStatus(isLogin: true)
             self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
@@ -75,16 +81,10 @@ extension EditProfileController {
             textFieldSurname.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
             //Popup çağır
-        }
-        else if RegexClass.isValidEmail(testStr: self.textFielfEmail.text!) == false {
+        } else if RegexClass.isValidEmail(testStr: self.textFielfEmail.text!) == false {
             self.view.makeToast("Lütfen geçerli bir email adresi giriniz.")
             //Popup çağır
-        }
-        
-        else if RegexClass.validatePhone(value: self.textFieldPhoneNumber.text!) == false {
-            self.view.makeToast("Lütfen geçerli bir telefon numarası giriniz")
-        }
-        else{
+        } else{
             self.startUpdateProfileService()
             //doğru yoldasın
         }

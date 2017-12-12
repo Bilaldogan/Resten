@@ -21,13 +21,13 @@
 		222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E31FA27D9700C4ECEE /* Assets.xcassets */; };
 		222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222B20E51FA27D9700C4ECEE /* LaunchScreen.storyboard */; };
 		222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B20F11FA2889A00C4ECEE /* PagerViewCell.xib */; };
-		22404E841FD9D73A000A5706 /* AddressListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22404E831FD9D73A000A5706 /* AddressListService.swift */; };
 		22404E891FD9F5B0000A5706 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22404E881FD9F59E000A5706 /* SystemConfiguration.framework */; };
 		22404E8E1FDAB18D000A5706 /* NoConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */; };
 		224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79921FABA10000D62D84 /* PhoneNumberValidator.swift */; };
 		224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79941FABCFA700D62D84 /* MyAccountController.swift */; };
 		224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79971FABE39B00D62D84 /* SmallProfileCell.swift */; };
 		224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D799B1FABE41D00D62D84 /* AddInfoCell.swift */; };
+		22651BFF1FE0245E00A5737A /* AddressListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22651BFE1FE0245D00A5737A /* AddressListService.swift */; };
 		226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EE7491FCA097600380281 /* AddCardContoller.swift */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22AFE5E61FAC116F00EF0E63 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */; };
@@ -157,6 +157,7 @@
 		224D79981FABE39B00D62D84 /* SmallProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallProfileCell.xib; sourceTree = "<group>"; };
 		224D799B1FABE41D00D62D84 /* AddInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInfoCell.swift; sourceTree = "<group>"; };
 		224D799C1FABE41D00D62D84 /* AddInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInfoCell.xib; sourceTree = "<group>"; };
+		22651BFE1FE0245D00A5737A /* AddressListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListService.swift; sourceTree = "<group>"; };
 		226EE7491FCA097600380281 /* AddCardContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardContoller.swift; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 				222B20DA1FA27D9700C4ECEE /* Products */,
 				F627086D54E0C77B8FD3711A /* Pods */,
 				FCBE4B651F878FC1750EA8D0 /* Frameworks */,
+				22651BFD1FE0243400A5737A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +352,14 @@
 				22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */,
 			);
 			name = "My Account Controller Cells";
+			sourceTree = "<group>";
+		};
+		22651BFD1FE0243400A5737A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				22404E831FD9D73A000A5706 /* AddressListService.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		22DA90781FCC6217007102DF /* DetailHelp */ = {
@@ -735,6 +745,7 @@
 				22F6F82F1FD4D06C0044F40D /* UpdateProfileService.swift */,
 				22B2D5551FD4E25B00A8327B /* AddAddressService.swift */,
 				95022DAB1FD9E35400819372 /* ProductService.swift */,
+				22651BFE1FE0245D00A5737A /* AddressListService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -958,7 +969,6 @@
 				22DA907F1FCC628A007102DF /* HelpControllerData.swift in Sources */,
 				95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */,
 				95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */,
-				22404E841FD9D73A000A5706 /* AddressListService.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,
 				95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */,
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
@@ -1022,6 +1032,7 @@
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
 				95E02E801FAA952100873CB0 /* GradientView.swift in Sources */,
 				95E02E991FAB94EC00873CB0 /* PDTableViewExt.swift in Sources */,
+				22651BFF1FE0245E00A5737A /* AddressListService.swift in Sources */,
 				95D9B2D31FA93DA800F2BDC6 /* HCTableViewExt.swift in Sources */,
 				95B884301FCA296B002E5DC1 /* FSCalendarExtensions.m in Sources */,
 				22DA907A1FCC622E007102DF /* CollapsibleTableSectionViewController.swift in Sources */,

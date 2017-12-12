@@ -11,16 +11,16 @@ class UserPrefence {
     static let userDefaults = UserDefaults.standard
     
     static func setUserMail(mail : String) {
-        self.userDefaults.setValue(mail, forKey: mail)
+        self.userDefaults.setValue(mail, forKey: self.mail)
     }
     static func getUserMail() -> String {
-        if let mail = userDefaults.value(forKeyPath: mail) as? String {
+        if let mail = userDefaults.value(forKeyPath: self.mail) as? String {
             return mail
         }
         return ""
     }
     static func removeUserMail(){
-        UserDefaults.standard.removeObject(forKey: mail)
+        UserDefaults.standard.removeObject(forKey: self.mail)
     }
     
     static func setUserLoginStatus(isLogin : Bool) {
@@ -74,7 +74,15 @@ class UserPrefence {
         }
         return ""
     }
-    
+    static func setUserSurname(surname: String) {
+        self.userDefaults.set(surname, forKey: self.surname)
+    }
+    static func getUserSurname() -> String {
+        if let surname = userDefaults.value(forKeyPath: self.surname) as? String {
+            return surname
+        }
+        return ""
+    }
     static func setGSM(id: String) {
         self.userDefaults.set(id, forKey: gsm)
     }
@@ -91,6 +99,7 @@ class UserPrefence {
     
     private static let gsm = "gsm"
     private static let name = "name"
+    private static let surname = "surname"
     private static let mail = "userMail"
     private static let password = "userPassword"
     private static let isLoginned = "isLoginned"

@@ -26,7 +26,7 @@ class AddressListService : ConnectionDelegate
         soapMessage += "</UserAddressListService>"
         soapMessage += "</soap:Body></soap:Envelope>"
         
-        let serviceUrl : String = API.baseURL.rawValue + API.addresssList.rawValue
+        let serviceUrl : String = API.baseURL.rawValue + API.addressList.rawValue
         connection.PostConnection(soapMessage: soapMessage, serviceUrl: serviceUrl)
     }
     

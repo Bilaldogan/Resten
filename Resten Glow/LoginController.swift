@@ -39,7 +39,7 @@ class LoginController: BaseController {
     }
     
     @IBAction func loginButtonTApped(_ sender: UIButton) {
-        self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
+        //self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
         textFieldRegexHelp()
     }
     
@@ -76,6 +76,7 @@ extension LoginController : LoginDelegate {
             UserPrefence.setUserId(id: response.Id)
             UserPrefence.setGSM(id: response.Gsm)
             UserPrefence.setUserName(id: response.Name)
+            UserPrefence.setUserSurname(surname: response.SurName)
             UserPrefence.setUserMail(mail: response.Email)
             UserPrefence.setUserLoginStatus(isLogin: true)
             self.goto(screenID: ScrennID.ROOT_CONTROLLER_ID.rawValue)
