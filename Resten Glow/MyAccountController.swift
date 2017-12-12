@@ -45,10 +45,7 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 1 {
             if indexPath.row < userAddressList.count {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
-                cell.configureWithItem(type: .address)
-                cell.labelAddressType.text = self.userAddressList[indexPath.row].Title
-                cell.labelAddress.text = self.userAddressList[indexPath.row].Description
-                cell.id = self.userAddressList[indexPath.row].Id
+                cell.configureWithItem(data:  self.userAddressList[indexPath.row], type: .address)
                 return cell
             } else if indexPath.row == userAddressList.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "addInfoCell", for: indexPath) as! AddInfoCell
@@ -57,7 +54,6 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 2 {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
-                cell.configureWithItem(type: .creditCard)
                 return cell
             } else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addInfoCell", for: indexPath) as! AddInfoCell
@@ -109,7 +105,29 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
             self.goto(screenID: "ChangePasswordID")
         }
     }
-    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+       if indexPath.section == 1 {
+            if indexPath.row < userAddressList.count {
+                return true
+            }
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                return true
+            }
+        }
+        return false
+        
+    }
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Sil"
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            if let cell = tableView.cellForRow(at: indexPath) as? AdressCell {
+                
+            }
+        }
+    }
 }
 extension MyAccountController : AddressListDelegate {
     func getResponse(response: UserAddressResponse) {

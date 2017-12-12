@@ -19,11 +19,16 @@ class AdressCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func configureWithItem(type : AddressCellType) {
+    func configureWithItem(data: UserAddress, type : AddressCellType) {
         if type == AddressCellType.creditCard {
             imageViewIcon.image = #imageLiteral(resourceName: "credit-card-icon")
             labelAddress.text = "4543 **** **** ****"
             labelAddressType.text = "Kredi Kartı"
+        } else {
+            imageViewIcon.image = #imageLiteral(resourceName: "home-icon")
+            labelAddress.text = data.Title
+            labelAddress.text = data.Description
+            id = data.Id
         }
     }
 

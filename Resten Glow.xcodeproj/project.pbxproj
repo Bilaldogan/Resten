@@ -28,6 +28,7 @@
 		224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D79971FABE39B00D62D84 /* SmallProfileCell.swift */; };
 		224D799D1FABE41D00D62D84 /* AddInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D799B1FABE41D00D62D84 /* AddInfoCell.swift */; };
 		22651BFF1FE0245E00A5737A /* AddressListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22651BFE1FE0245D00A5737A /* AddressListService.swift */; };
+		22651C011FE0677200A5737A /* DeleteAddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22651C001FE0677200A5737A /* DeleteAddressService.swift */; };
 		226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EE7491FCA097600380281 /* AddCardContoller.swift */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22AFE5E61FAC116F00EF0E63 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */; };
@@ -158,6 +159,7 @@
 		224D799B1FABE41D00D62D84 /* AddInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInfoCell.swift; sourceTree = "<group>"; };
 		224D799C1FABE41D00D62D84 /* AddInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddInfoCell.xib; sourceTree = "<group>"; };
 		22651BFE1FE0245D00A5737A /* AddressListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListService.swift; sourceTree = "<group>"; };
+		22651C001FE0677200A5737A /* DeleteAddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressService.swift; sourceTree = "<group>"; };
 		226EE7491FCA097600380281 /* AddCardContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardContoller.swift; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 				22B2D5551FD4E25B00A8327B /* AddAddressService.swift */,
 				95022DAB1FD9E35400819372 /* ProductService.swift */,
 				22651BFE1FE0245D00A5737A /* AddressListService.swift */,
+				22651C001FE0677200A5737A /* DeleteAddressService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -975,6 +978,7 @@
 				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
 				226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
+				22651C011FE0677200A5737A /* DeleteAddressService.swift in Sources */,
 				224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */,
 				953BF7721FC57242002721A5 /* MBCTableViewExt.swift in Sources */,
 				95B884351FCA296B002E5DC1 /* FSCalendarHeaderView.m in Sources */,

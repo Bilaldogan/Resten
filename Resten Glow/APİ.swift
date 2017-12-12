@@ -19,6 +19,7 @@ enum API : String {
     case productListURL = "ProductList"
     case addressList = "UserAddressListService"
     case addAddress = "AddAddressService"
+    case deleteAddress = "DeleteAddress"
 }
 
 enum ADMIN : String {
