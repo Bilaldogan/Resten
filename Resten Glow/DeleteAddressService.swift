@@ -7,23 +7,22 @@
 //
 
 import Foundation
-import Foundation
 import SWXMLHash
 class DeleteAddressService : ConnectionDelegate
 {
     
     let connection = PostConnection()
-    var serviceDelegate : DeleteAddressService?
+    var serviceDelegate : DeleteAddressServiceDelegate?
     
-    func connectService(memberID : String)
-    {
+    func connectService(addressId: String) {
         
         var soapMessage : String = "<?xml version='1.0' encoding='utf-8'?>"
         soapMessage += "<soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>"
         soapMessage += "<soap:Body><DeleteAddress xmlns='http://tempuri.org/'>"
         soapMessage += "<AdminEmail>\(ADMIN.AdminEmail.rawValue)</AdminEmail>"
         soapMessage += "<AdminPass>\(ADMIN.AdminPass.rawValue)</AdminPass>"
-        soapMessage += "<MemberId>\(memberID)</MemberId>"
+        soapMessage += "<MemberId>\(UserPrefence.getUserId())</MemberId>"
+        soapMessage += "<AddressId>\(addressId)</AddressId>"
         soapMessage += "</DeleteAddress>"
         soapMessage += "</soap:Body></soap:Envelope>"
         
@@ -39,7 +38,7 @@ class DeleteAddressService : ConnectionDelegate
         let result = path3["DeleteAddressResult"]
         
         
-        var responseData = UserAddressResponse()
+        var responseData = AddAddressResponse()
         
 //        if let Message = path4["Message"].element?.text {
 //            if Message == "Daha önce adres eklenmemiştir." {
@@ -105,4 +104,8 @@ class DeleteAddressService : ConnectionDelegate
         self.connection.delegate = self
     }
     
+}
+protocol DeleteAddressServiceDelegate {
+    func getResponse(response : AddAddressResponse)
+    func getErrorDeleteAddress(errorMessage : String)
 }

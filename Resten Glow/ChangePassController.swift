@@ -14,10 +14,13 @@ class ChangePassController: UIViewController {
     @IBOutlet weak var textFieldNewPass: CustomTextField!
     @IBOutlet weak var textFieldOldPass: CustomTextField!
     @IBOutlet weak var textFieldConfirmNewPassword: CustomTextField!
+    
+    var changePassService = UpdatePassService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationView.navDelegate = self
-      
+        changePassService.serviceDelegate = self
     }
 
    
@@ -26,6 +29,17 @@ class ChangePassController: UIViewController {
     }
    
 
+    
+}
+extension ChangePassController : UpdatePassServiceDelegate {
+    func getResponse(message: String) {
+        self.view.makeToast(message)
+    }
+    
+    func getErrorDeleteAddress(errorMessage: String) {
+    
+    }
+    
     
 }
 extension ChangePassController : CustomNavigationViewDelegate {
@@ -39,14 +53,13 @@ extension ChangePassController {
         
         if  textFieldNewPass.text! == "" || textFieldOldPass.text! == "" || textFieldConfirmNewPassword.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
-            //Popup çağır
         }
-        else if textFieldOldPass.text! !=  textFieldConfirmNewPassword.text!  {
+        else if textFieldNewPass.text! !=  textFieldConfirmNewPassword.text!  {
             self.view.makeToast("Girdiğiniz şifreler aynı olmalı.")
             //Popup çağır
         }
         else{
-            //doğru yoldasın
+            self.changePassService.connectService(newPass: self.textFieldNewPass.text!)
         }
     }
 }

@@ -14,7 +14,7 @@ class MyAccountController: BaseController {
     @IBOutlet weak var customNavigation: CustomNavigationView!
     
     var addressListService = AddressListService()
-    
+    var deleteAddressService = DeleteAddressService()
     var userAddressList : [UserAddress] = []
     
     override func viewDidLoad() {
@@ -124,9 +124,18 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             if let cell = tableView.cellForRow(at: indexPath) as? AdressCell {
-                
+                self.deleteAddressService.serviceDelegate = self
+                self.deleteAddressService.connectService(addressId: cell.id)
             }
         }
+    }
+}
+extension MyAccountController : DeleteAddressServiceDelegate {
+    func getErrorDeleteAddress(errorMessage: String) {
+        
+    }
+    func getResponse(response: AddAddressResponse) {
+        tableView.reloadData()
     }
 }
 extension MyAccountController : AddressListDelegate {

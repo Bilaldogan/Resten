@@ -124,6 +124,7 @@ struct RegisterSendModel {
     var Pass = ""
     var Name = ""
     var SurName = ""
+    var PhoneNumber = ""
 }
 
 
