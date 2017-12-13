@@ -41,63 +41,63 @@ class DeleteAddressService : ConnectionDelegate
         
         var responseData = UserAddressResponse()
         
-        if let Message = path4["Message"].element?.text {
-            if Message == "Daha önce adres eklenmemiştir." {
-                if  self.serviceDelegate != nil {
-                    self.serviceDelegate?.getResponse(response: responseData)
-                    return
-                }
-            }
-            responseData.meesage = Message
-        }
-        
-        if let Error = path4["Error"].element?.text {
-            responseData.error = Error
-        }
-        
-        for address in result["AddressVM"].all {
-            var userAddress = UserAddress()
-            
-            if address["Id"].element?.text != nil{
-                guard let id = address["Id"].element?.text else {
-                    print("address address id Error...")
-                    return
-                }
-                userAddress.Id = id
-            }
-            
-            if address["Description"].element?.text != nil{
-                guard let description = address["Description"].element?.text else {
-                    print("address address id Error...")
-                    return
-                }
-                userAddress.Description = description
-            }
-            
-            if address["Description"].element?.text != nil{
-                guard let description = address["Description"].element?.text else {
-                    print("address address id Error...")
-                    return
-                }
-                userAddress.Description = description
-            }
-            responseData.addressList.append(userAddress)
-        }
-        
+//        if let Message = path4["Message"].element?.text {
+//            if Message == "Daha önce adres eklenmemiştir." {
+//                if  self.serviceDelegate != nil {
+//                    self.serviceDelegate?.getResponse(response: responseData)
+//                    return
+//                }
+//            }
+//            responseData.meesage = Message
+//        }
+//
+//        if let Error = path4["Error"].element?.text {
+//            responseData.error = Error
+//        }
+//
+//        for address in result["AddressVM"].all {
+//            var userAddress = UserAddress()
+//
+//            if address["Id"].element?.text != nil{
+//                guard let id = address["Id"].element?.text else {
+//                    print("address address id Error...")
+//                    return
+//                }
+//                userAddress.Id = id
+//            }
+//
+//            if address["Description"].element?.text != nil{
+//                guard let description = address["Description"].element?.text else {
+//                    print("address address id Error...")
+//                    return
+//                }
+//                userAddress.Description = description
+//            }
+//
+//            if address["Description"].element?.text != nil{
+//                guard let description = address["Description"].element?.text else {
+//                    print("address address id Error...")
+//                    return
+//                }
+//                userAddress.Description = description
+//            }
+//            responseData.addressList.append(userAddress)
+//        }
+//
         
         
         
         
         
         if  self.serviceDelegate != nil {
-            self.serviceDelegate?.getResponse(response: responseData)
+            //self.serviceDelegate?.getResponse(response: responseData)
         }
         
     }
     
     func getError(errMessage: String) {
         if  self.serviceDelegate != nil {
-            self.serviceDelegate?.getError(errorMessage: errMessage)
+           // self.serviceDelegate?.getError(errorMessage: errMessage)
         }
     }
     
