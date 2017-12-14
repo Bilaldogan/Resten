@@ -26,7 +26,12 @@ class ProductCell: UITableViewCell {
     func cellConfigure(Product item : ProductList){
         titleLabel.text = item.ProductName
         DescLabel.text = item.Description
-        priceLabel.text = item.Price
+        priceLabel.text = item.Price + " ₺"
+    }
+    func cellConfigureForDetail(Product item : ProductDetailList){
+        titleLabel.text = item.ProductName
+        DescLabel.text = item.Description
+        priceLabel.text = item.Price + " ₺"
     }
     
     @IBOutlet weak var arrowImageView: UIImageView!

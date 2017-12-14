@@ -56,7 +56,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znz-tg-2hx">
-                                <rect key="frame" x="43" y="5.5" width="31" height="28"/>
+                                <rect key="frame" x="40" y="5.5" width="31" height="28"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="w0R-Lu-ZX0" secondAttribute="trailing" id="5Me-kr-2Xb"/>
-                            <constraint firstItem="znz-tg-2hx" firstAttribute="leading" secondItem="ba1-f6-IsM" secondAttribute="trailing" constant="5" id="IxW-gq-WNj"/>
+                            <constraint firstItem="znz-tg-2hx" firstAttribute="leading" secondItem="ba1-f6-IsM" secondAttribute="trailing" constant="2" id="IxW-gq-WNj"/>
                             <constraint firstItem="w0R-Lu-ZX0" firstAttribute="leading" secondItem="nIz-WP-Mlb" secondAttribute="trailing" constant="10" id="JSO-cf-E6a"/>
                             <constraint firstItem="ba1-f6-IsM" firstAttribute="top" secondItem="THH-T2-3rL" secondAttribute="top" id="KBH-hF-SR2"/>
                             <constraint firstItem="nIz-WP-Mlb" firstAttribute="leading" secondItem="THH-T2-3rL" secondAttribute="leading" id="QEl-qn-WxK"/>

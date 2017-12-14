@@ -8,7 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="341" height="118"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="341" height="117.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="341" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkJ-9c-YU8">
@@ -81,6 +81,9 @@
             </tableViewCellContentView>
             <color key="backgroundColor" red="1" green="1" blue="0.75036168981481477" alpha="0.0" colorSpace="calibratedRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="howToPreapereLabel" destination="Aw3-T8-w4m" id="UgM-9x-jnf"/>
+            </connections>
             <point key="canvasLocation" x="44.5" y="110"/>
         </tableViewCell>
     </objects>

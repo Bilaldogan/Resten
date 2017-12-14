@@ -61,6 +61,7 @@
 		953BF76D1FC56FED002721A5 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953BF76B1FC56FED002721A5 /* AddProductCell.xib */; };
 		953BF7701FC570ED002721A5 /* MyBagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF76F1FC570ED002721A5 /* MyBagController.swift */; };
 		953BF7721FC57242002721A5 /* MBCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BF7711FC57242002721A5 /* MBCTableViewExt.swift */; };
+		956684F51FE1E30000CEEF37 /* SOCServiceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684F41FE1E30000CEEF37 /* SOCServiceExt.swift */; };
 		95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AA91FC53912005B6B6C /* AllProducImageViewtCell.swift */; };
 		95A50AAC1FC53912005B6B6C /* AllProducImageViewtCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A50AAA1FC53912005B6B6C /* AllProducImageViewtCell.xib */; };
 		95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A50AAD1FC539A1005B6B6C /* AllProductsController.swift */; };
@@ -130,7 +131,10 @@
 		95E151531FCEEB5D0021F06F /* GetByMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E151521FCEEB5D0021F06F /* GetByMemberService.swift */; };
 		95E151591FCEEE730021F06F /* SIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E151581FCEEE730021F06F /* SIC.swift */; };
 		95E1515E1FCEF8770021F06F /* UserPrefences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1515D1FCEF8770021F06F /* UserPrefences.swift */; };
+		95E175C51FE17AC70099ED53 /* ProductDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E175C41FE17AC70099ED53 /* ProductDetailService.swift */; };
+		95E175C71FE180000099ED53 /* PDServiceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E175C61FE180000099ED53 /* PDServiceExt.swift */; };
 		95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */; };
+		95FF3B5B1FE1E04800CBF27E /* AdditionalProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,6 +195,7 @@
 		953BF76B1FC56FED002721A5 /* AddProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductCell.xib; sourceTree = "<group>"; };
 		953BF76F1FC570ED002721A5 /* MyBagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagController.swift; sourceTree = "<group>"; };
 		953BF7711FC57242002721A5 /* MBCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCTableViewExt.swift; sourceTree = "<group>"; };
+		956684F41FE1E30000CEEF37 /* SOCServiceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCServiceExt.swift; sourceTree = "<group>"; };
 		95A50AA91FC53912005B6B6C /* AllProducImageViewtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProducImageViewtCell.swift; sourceTree = "<group>"; };
 		95A50AAA1FC53912005B6B6C /* AllProducImageViewtCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllProducImageViewtCell.xib; sourceTree = "<group>"; };
 		95A50AAD1FC539A1005B6B6C /* AllProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsController.swift; sourceTree = "<group>"; };
@@ -277,7 +282,10 @@
 		95E151521FCEEB5D0021F06F /* GetByMemberService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetByMemberService.swift; sourceTree = "<group>"; };
 		95E151581FCEEE730021F06F /* SIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIC.swift; sourceTree = "<group>"; };
 		95E1515D1FCEF8770021F06F /* UserPrefences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPrefences.swift; sourceTree = "<group>"; };
+		95E175C41FE17AC70099ED53 /* ProductDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailService.swift; sourceTree = "<group>"; };
+		95E175C61FE180000099ED53 /* PDServiceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDServiceExt.swift; sourceTree = "<group>"; };
 		95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagPopupController.swift; sourceTree = "<group>"; };
+		95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalProductService.swift; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -404,8 +412,8 @@
 				95E151541FCEEC080021F06F /* Login Controller */,
 				95B884441FCA3514002E5DC1 /* Date & Hour Controller */,
 				953BF76E1FC570C6002721A5 /* My Bag Controller */,
-				95A50AB61FC556A1005B6B6C /* Service Option Controller */,
 				950A2D961FAC350400659126 /* Contact us Controller */,
+				95A50AB61FC556A1005B6B6C /* Service Option Controller */,
 				95E02E951FAB92D500873CB0 /* Product detail */,
 				95E02E711FAA8AB600873CB0 /* Side Menu Controller */,
 				95D9B2B31FA92B2500F2BDC6 /* Main Controller */,
@@ -493,6 +501,7 @@
 			children = (
 				95A50AB71FC556D6005B6B6C /* ServiceOptionController.swift */,
 				95A50AB91FC55838005B6B6C /* SOCTableViewExt.swift */,
+				956684F41FE1E30000CEEF37 /* SOCServiceExt.swift */,
 			);
 			name = "Service Option Controller";
 			sourceTree = "<group>";
@@ -678,6 +687,7 @@
 			children = (
 				95E02E961FAB947C00873CB0 /* ProductDetailController.swift */,
 				95E02E981FAB94EC00873CB0 /* PDTableViewExt.swift */,
+				95E175C61FE180000099ED53 /* PDServiceExt.swift */,
 			);
 			name = "Product detail";
 			sourceTree = "<group>";
@@ -742,6 +752,8 @@
 				22651BFE1FE0245D00A5737A /* AddressListService.swift */,
 				22651C001FE0677200A5737A /* DeleteAddressService.swift */,
 				22651C021FE07DF600A5737A /* UpdatePassService.swift */,
+				95E175C41FE17AC70099ED53 /* ProductDetailService.swift */,
+				95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -980,6 +992,7 @@
 				22E326441FA2B46500077FE7 /* PagerViewCell.swift in Sources */,
 				222B20DF1FA27D9700C4ECEE /* WelcomeController.swift in Sources */,
 				22E326491FA39B2F00077FE7 /* CustomTextField.swift in Sources */,
+				95E175C51FE17AC70099ED53 /* ProductDetailService.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
 				22F6F8301FD4D06C0044F40D /* UpdateProfileService.swift in Sources */,
 				22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */,
@@ -996,6 +1009,7 @@
 				221C03011FCA4F7D00E33742 /* HelpController.swift in Sources */,
 				95A50AB81FC556D6005B6B6C /* ServiceOptionController.swift in Sources */,
 				220719A41FC48AFD00A1872A /* AddAddressController.swift in Sources */,
+				956684F51FE1E30000CEEF37 /* SOCServiceExt.swift in Sources */,
 				22651C031FE07DF600A5737A /* UpdatePassService.swift in Sources */,
 				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
 				95E1514A1FCEE7640021F06F /* ConnectionDelegate.swift in Sources */,
@@ -1012,6 +1026,7 @@
 				950A2D9A1FAC354E00659126 /* ContactUsController.swift in Sources */,
 				22E326421FA2B0F300077FE7 /* CustomButton.swift in Sources */,
 				95022DA81FD9D66E00819372 /* CoreDataSuporter.swift in Sources */,
+				95E175C71FE180000099ED53 /* PDServiceExt.swift in Sources */,
 				95022DA31FD9CF6200819372 /* Model.xcdatamodeld in Sources */,
 				22E3264E1FA3C7C000077FE7 /* BaseController.swift in Sources */,
 				95B8842E1FCA296B002E5DC1 /* FSCalendarCollectionViewLayout.m in Sources */,
@@ -1034,6 +1049,7 @@
 				95D9B2D31FA93DA800F2BDC6 /* HCTableViewExt.swift in Sources */,
 				95B884301FCA296B002E5DC1 /* FSCalendarExtensions.m in Sources */,
 				22DA907A1FCC622E007102DF /* CollapsibleTableSectionViewController.swift in Sources */,
+				95FF3B5B1FE1E04800CBF27E /* AdditionalProductService.swift in Sources */,
 				95D9B2CB1FA938A200F2BDC6 /* CalculateClass.swift in Sources */,
 				95E02E751FAA8B4F00873CB0 /* LeftSideMenuController.swift in Sources */,
 				95E02EA11FABB04200873CB0 /* OptionalPropertiesCell.swift in Sources */,

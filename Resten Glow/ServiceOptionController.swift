@@ -13,6 +13,7 @@ class ServiceOptionController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewConfigure()
+        startService()
         // Do any additional setup after loading the view.
     }
 
@@ -23,8 +24,16 @@ class ServiceOptionController: BaseController {
     @IBAction func closeButtonAction(_ sender: Any) {
         self.transitionToBack()
     }
-    
+    //StoryBoard Veriable
+    @IBOutlet weak var priceAndTimeLabel: UILabel!
     @IBOutlet weak var serviceOptionTableView: UITableView!
+    
+    //Service veriable
+    var additionalProductService = AdditionalProductService()
+    //Service responseModel
+    var additionalResponseModel = AdditionalProductResponse()
+    var productResponse = ProductDetailResponse()
+    
 }
 
 extension ServiceOptionController {
@@ -37,4 +46,13 @@ extension ServiceOptionController {
         serviceOptionTableView.estimatedRowHeight = 300
     }
     
+    func startService(){
+        additionalProductService.serviceDelegate = self
+        if let productResponse = self.data as? ProductDetailResponse {
+            self.productResponse = productResponse
+            priceAndTimeLabel.text = productResponse.Price + " ₺ ● " + productResponse.OperationTime + " dk"
+            additionalProductService.connectService(category: productResponse.Category)
+            SHOW_SIC()
+        }
+    }
 }

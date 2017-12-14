@@ -26,21 +26,16 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         switch indexPath.section {
         case 0:
             let cell = Bundle.main.loadNibNamed("ProductPropertiesCell", owner: self, options: nil)?.first as! ProductPropertiesCell
-            
-            
             return cell
         case 1:
             let cell = Bundle.main.loadNibNamed("OptionalPropertiesCell", owner: self, options: nil)?.first as! OptionalPropertiesCell
             cell.descLabel.text = "***pedikür ve manikür pedikür için de aynı yazılar olacak, sadece kalıcı oje ekleme fiyatı 40 ₺ olsun manikür ve pedikür için."
-            
             return cell
         default:
             let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
-            
             return cell
         }
     }
@@ -50,7 +45,6 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         switch indexPath.section {
         case 0:
             return CalculateClass.calculateTableCellHeight(rate: CAH.PRODUCT_PROPERTİES_CELL_RATE.rawValue)
