@@ -16,6 +16,9 @@ class DateController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func closeButtonAct(_ sender: Any) {
+         self.back(animated: true, isModal: true)
+    }
     
     
     fileprivate lazy var dateFormatter: DateFormatter = {

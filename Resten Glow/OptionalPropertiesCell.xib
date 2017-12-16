@@ -8,7 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,6 +31,11 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-gc-rzz">
                         <rect key="frame" x="28" y="23" width="319" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25.5" id="2Xe-0D-AMc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                        </constraints>
                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="22"/>
                         <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -38,7 +43,7 @@
                             <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="25"/>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺20 ✦ +15 dk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga7-D2-I35">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺20 ● +15 dk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga7-D2-I35">
                         <rect key="frame" x="28" y="51.5" width="319" height="25"/>
                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                         <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,7 +57,10 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="49" id="ev4-bj-UTg"/>
                         </constraints>
-                        <color key="onTintColor" red="0.52156862749999999" green="0.16862745100000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="onTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="aditionalCheckButton:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Mm1-Wt-Mwa"/>
+                        </connections>
                     </switch>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-fd-DOD">
                         <rect key="frame" x="28" y="78.5" width="260" height="25"/>
@@ -75,7 +83,6 @@
                 <constraints>
                     <constraint firstItem="Ga7-D2-I35" firstAttribute="top" secondItem="JKc-gc-rzz" secondAttribute="bottom" constant="3" id="1NH-Lk-yag"/>
                     <constraint firstItem="JKc-gc-rzz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5Ka-z2-7Qf"/>
-                    <constraint firstItem="JKc-gc-rzz" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="6bf-gS-Tc9"/>
                     <constraint firstItem="TtS-C0-Ny4" firstAttribute="leading" secondItem="bvY-fd-DOD" secondAttribute="trailing" constant="10" id="FiM-lF-yka"/>
                     <constraint firstAttribute="bottomMargin" secondItem="bvY-fd-DOD" secondAttribute="bottom" constant="15" id="HRu-v7-NS1"/>
                     <constraint firstItem="Ioi-Ml-0fC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OO1-gp-ep9"/>
@@ -95,6 +102,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="descLabel" destination="bvY-fd-DOD" id="h8F-N5-hNN"/>
+                <outlet property="priceAndTimeLabel" destination="Ga7-D2-I35" id="e7w-Hw-B1A"/>
+                <outlet property="productName" destination="JKc-gc-rzz" id="oLP-w5-d2K"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="96.5"/>
         </tableViewCell>

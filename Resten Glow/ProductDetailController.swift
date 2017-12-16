@@ -22,7 +22,9 @@ class ProductDetailController: BaseController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func backButtonAct(_ sender: Any) {
-        self.transitionToBack()
+        DispatchQueue.main.async {
+            self.transitionToBack()
+        }
     }
     
     @IBAction func addToBagButtonAct(_ sender: Any) {
@@ -39,6 +41,7 @@ class ProductDetailController: BaseController {
     var productDetailService = ProductDetailService()
     //Response Model
     var productDetailResponse = ProductDetailResponse()
+    
     var sectionCount : Int = 1
     var otherProductEmpty = true
     var inspritEmpty = true

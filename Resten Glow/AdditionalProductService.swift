@@ -36,7 +36,7 @@ class AdditionalProductService : ConnectionDelegate
         let path2 = path["soap:Body"]
         let path3 = path2["AdditionalProductResponse"]
         let result = path3["AdditionalProductResult"]
-        
+
         var responseData : AdditionalProductResponse = AdditionalProductResponse()
         
         for item in result["ProductList"]["ProductVM"].all {

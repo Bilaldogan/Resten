@@ -87,6 +87,9 @@
 		95B8843A1FCA296B002E5DC1 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B884281FCA296A002E5DC1 /* FSCalendarCalculator.m */; };
 		95B8843B1FCA296B002E5DC1 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8842A1FCA296B002E5DC1 /* FSCalendarTransitionCoordinator.m */; };
 		95B884461FCA3526002E5DC1 /* DateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B884451FCA3526002E5DC1 /* DateController.swift */; };
+		95C8C3E91FE47227008F16C6 /* SOCClickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8C3E81FE47227008F16C6 /* SOCClickDelegate.swift */; };
+		95C8C3EC1FE479C8008F16C6 /* BagProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8C3EA1FE479C8008F16C6 /* BagProductCell.swift */; };
+		95C8C3ED1FE479C8008F16C6 /* BagProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C8C3EB1FE479C8008F16C6 /* BagProductCell.xib */; };
 		95D9B2B51FA92B3F00F2BDC6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */; };
 		95D9B2B81FA92B9000F2BDC6 /* TabbarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */; };
 		95D9B2BD1FA92DDA00F2BDC6 /* TabbarChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9B2BC1FA92DDA00F2BDC6 /* TabbarChildController.swift */; };
@@ -134,6 +137,8 @@
 		95E175C51FE17AC70099ED53 /* ProductDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E175C41FE17AC70099ED53 /* ProductDetailService.swift */; };
 		95E175C71FE180000099ED53 /* PDServiceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E175C61FE180000099ED53 /* PDServiceExt.swift */; };
 		95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */; };
+		95FEE6541FE4131A00CE9ABA /* MBCServiceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FEE6531FE4131A00CE9ABA /* MBCServiceExt.swift */; };
+		95FEE67E1FE46EFB00CE9ABA /* CellClickProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FEE67D1FE46EFB00CE9ABA /* CellClickProtocol.swift */; };
 		95FF3B5B1FE1E04800CBF27E /* AdditionalProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +243,9 @@
 		95B8842B1FCA296B002E5DC1 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
 		95B884451FCA3526002E5DC1 /* DateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateController.swift; sourceTree = "<group>"; };
 		95B884471FCA361C002E5DC1 /* Resten_Glow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Resten_Glow-Bridging-Header.h"; sourceTree = "<group>"; };
+		95C8C3E81FE47227008F16C6 /* SOCClickDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCClickDelegate.swift; sourceTree = "<group>"; };
+		95C8C3EA1FE479C8008F16C6 /* BagProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagProductCell.swift; sourceTree = "<group>"; };
+		95C8C3EB1FE479C8008F16C6 /* BagProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BagProductCell.xib; sourceTree = "<group>"; };
 		95D9B2B41FA92B3F00F2BDC6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		95D9B2B71FA92B9000F2BDC6 /* TabbarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarClass.swift; sourceTree = "<group>"; };
 		95D9B2BC1FA92DDA00F2BDC6 /* TabbarChildController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarChildController.swift; sourceTree = "<group>"; };
@@ -285,6 +293,8 @@
 		95E175C41FE17AC70099ED53 /* ProductDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailService.swift; sourceTree = "<group>"; };
 		95E175C61FE180000099ED53 /* PDServiceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDServiceExt.swift; sourceTree = "<group>"; };
 		95F0C00F1FC86A8B00796E5E /* MyBagPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagPopupController.swift; sourceTree = "<group>"; };
+		95FEE6531FE4131A00CE9ABA /* MBCServiceExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCServiceExt.swift; sourceTree = "<group>"; };
+		95FEE67D1FE46EFB00CE9ABA /* CellClickProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellClickProtocol.swift; sourceTree = "<group>"; };
 		95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalProductService.swift; sourceTree = "<group>"; };
 		D8E8F15D3F720266FC22C132 /* Pods-Resten Glow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resten Glow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Resten Glow/Pods-Resten Glow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,6 +333,7 @@
 		222B20DB1FA27D9700C4ECEE /* Resten Glow */ = {
 			isa = PBXGroup;
 			children = (
+				95FEE67C1FE46ECD00CE9ABA /* Delegate */,
 				95022DA41FD9CF8600819372 /* Core Data */,
 				95E151421FCEE7090021F06F /* Service Structure */,
 				95B8840A1FCA2945002E5DC1 /* Framework */,
@@ -459,13 +470,15 @@
 			name = "Contact us Controller";
 			sourceTree = "<group>";
 		};
-		953BF7691FC56FB9002721A5 /* Add Product Cell */ = {
+		953BF7691FC56FB9002721A5 /* My Bag Cell */ = {
 			isa = PBXGroup;
 			children = (
 				953BF76A1FC56FED002721A5 /* AddProductCell.swift */,
 				953BF76B1FC56FED002721A5 /* AddProductCell.xib */,
+				95C8C3EA1FE479C8008F16C6 /* BagProductCell.swift */,
+				95C8C3EB1FE479C8008F16C6 /* BagProductCell.xib */,
 			);
-			name = "Add Product Cell";
+			name = "My Bag Cell";
 			sourceTree = "<group>";
 		};
 		953BF76E1FC570C6002721A5 /* My Bag Controller */ = {
@@ -474,6 +487,7 @@
 				95F0C00E1FC86A7800796E5E /* My Bag Popup */,
 				953BF76F1FC570ED002721A5 /* MyBagController.swift */,
 				953BF7711FC57242002721A5 /* MBCTableViewExt.swift */,
+				95FEE6531FE4131A00CE9ABA /* MBCServiceExt.swift */,
 			);
 			name = "My Bag Controller";
 			sourceTree = "<group>";
@@ -502,6 +516,7 @@
 				95A50AB71FC556D6005B6B6C /* ServiceOptionController.swift */,
 				95A50AB91FC55838005B6B6C /* SOCTableViewExt.swift */,
 				956684F41FE1E30000CEEF37 /* SOCServiceExt.swift */,
+				95C8C3E81FE47227008F16C6 /* SOCClickDelegate.swift */,
 			);
 			name = "Service Option Controller";
 			sourceTree = "<group>";
@@ -566,7 +581,7 @@
 		95D9B2B21FA926A700F2BDC6 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				953BF7691FC56FB9002721A5 /* Add Product Cell */,
+				953BF7691FC56FB9002721A5 /* My Bag Cell */,
 				95A50AB11FC55549005B6B6C /* Product Properties Cell */,
 				95A50AA41FC538BF005B6B6C /* All Product Cell */,
 				95E02E9A1FAB95B300873CB0 /* ProductDetail Cell */,
@@ -799,6 +814,14 @@
 			name = "My Bag Popup";
 			sourceTree = "<group>";
 		};
+		95FEE67C1FE46ECD00CE9ABA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				95FEE67D1FE46EFB00CE9ABA /* CellClickProtocol.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		F627086D54E0C77B8FD3711A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,6 +919,7 @@
 				95E02EE21FABE34A00873CB0 /* JosefinSans-ThinItalic.ttf in Resources */,
 				95E02EA21FABB04200873CB0 /* OptionalPropertiesCell.xib in Resources */,
 				95E02E9E1FAB95FB00873CB0 /* HowToPrepareCell.xib in Resources */,
+				95C8C3ED1FE479C8008F16C6 /* BagProductCell.xib in Resources */,
 				95E02EA61FABC7DD00873CB0 /* InspritationCell.xib in Resources */,
 				22AFE5E71FAC116F00EF0E63 /* AdressCell.xib in Resources */,
 				95E02E7E1FAA8C8C00873CB0 /* MenuCustomCell.xib in Resources */,
@@ -982,6 +1006,7 @@
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
 				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
 				226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */,
+				95C8C3EC1FE479C8008F16C6 /* BagProductCell.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
 				22651C011FE0677200A5737A /* DeleteAddressService.swift in Sources */,
 				224D79991FABE39B00D62D84 /* SmallProfileCell.swift in Sources */,
@@ -1000,6 +1025,7 @@
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
 				95A50AB41FC5557E005B6B6C /* ProductPropertiesCell.swift in Sources */,
 				953BF76C1FC56FED002721A5 /* AddProductCell.swift in Sources */,
+				95FEE67E1FE46EFB00CE9ABA /* CellClickProtocol.swift in Sources */,
 				95B884321FCA296B002E5DC1 /* FSCalendarCell.m in Sources */,
 				95B8842D1FCA296B002E5DC1 /* FSCalendar.m in Sources */,
 				95B884361FCA296B002E5DC1 /* FSCalendarStickyHeader.m in Sources */,
@@ -1008,6 +1034,7 @@
 				95E1515E1FCEF8770021F06F /* UserPrefences.swift in Sources */,
 				221C03011FCA4F7D00E33742 /* HelpController.swift in Sources */,
 				95A50AB81FC556D6005B6B6C /* ServiceOptionController.swift in Sources */,
+				95FEE6541FE4131A00CE9ABA /* MBCServiceExt.swift in Sources */,
 				220719A41FC48AFD00A1872A /* AddAddressController.swift in Sources */,
 				956684F51FE1E30000CEEF37 /* SOCServiceExt.swift in Sources */,
 				22651C031FE07DF600A5737A /* UpdatePassService.swift in Sources */,
@@ -1036,6 +1063,7 @@
 				22404E8E1FDAB18D000A5706 /* NoConnectionController.swift in Sources */,
 				953BF7701FC570ED002721A5 /* MyBagController.swift in Sources */,
 				95B8843A1FCA296B002E5DC1 /* FSCalendarCalculator.m in Sources */,
+				95C8C3E91FE47227008F16C6 /* SOCClickDelegate.swift in Sources */,
 				95E02E971FAB947C00873CB0 /* ProductDetailController.swift in Sources */,
 				95A50AB01FC53D2F005B6B6C /* ScreedID.swift in Sources */,
 				95B8843B1FCA296B002E5DC1 /* FSCalendarTransitionCoordinator.m in Sources */,

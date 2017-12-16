@@ -1,18 +1,18 @@
 //
-//  ProductPropertiesCell.swift
+//  BagProductCell.swift
 //  Resten Glow
 //
-//  Created by Baran on 22.11.2017.
+//  Created by Baran on 16.12.2017.
 //  Copyright © 2017 bilal. All rights reserved.
 //
 
 import UIKit
 
-class ProductPropertiesCell: UITableViewCell {
+class BagProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.selectionStyle = .none
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,9 +20,7 @@ class ProductPropertiesCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-        
-    
-    @IBOutlet weak var productNameLabel: UILabel!
-    @IBOutlet weak var productDetailLabel: UILabel!
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productPrice: UILabel!
     
 }

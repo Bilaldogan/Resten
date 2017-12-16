@@ -16,17 +16,42 @@ class CoreDataSupporter {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
-        let newProduct = NSEntityDescription.insertNewObject(forEntityName: "Product", into: context)
-        newProduct.setValue(product.category_id, forKey: "category_id")
-        newProduct.setValue(product.desc, forKey: "desc")
-        newProduct.setValue(product.id, forKey: "id")
-        newProduct.setValue(product.name, forKey: "name")
-        newProduct.setValue(product.price, forKey: "price")
-        newProduct.setValue(product.time, forKey: "time")
         
         do {
-            try context.save()
-            print("Product Saved Core Data")
+            if fetchToBag() != nil {
+                var productExistsKey = false
+                for item in fetchToBag()! {
+                    if item.id == product.id {
+                        productExistsKey = true
+                    }
+                }
+                if productExistsKey {
+                    print("this product already exists")
+                }
+                else{
+                    let newProduct = NSEntityDescription.insertNewObject(forEntityName: "Product", into: context)
+                    newProduct.setValue(product.category_id, forKey: "category_id")
+                    newProduct.setValue(product.desc, forKey: "desc")
+                    newProduct.setValue(product.id, forKey: "id")
+                    newProduct.setValue(product.name, forKey: "name")
+                    newProduct.setValue(product.price, forKey: "price")
+                    newProduct.setValue(product.time, forKey: "time")
+                    try context.save()
+                    print("Product Saved Core Data")
+                }
+            }
+            else{
+                let newProduct = NSEntityDescription.insertNewObject(forEntityName: "Product", into: context)
+                newProduct.setValue(product.category_id, forKey: "category_id")
+                newProduct.setValue(product.desc, forKey: "desc")
+                newProduct.setValue(product.id, forKey: "id")
+                newProduct.setValue(product.name, forKey: "name")
+                newProduct.setValue(product.price, forKey: "price")
+                newProduct.setValue(product.time, forKey: "time")
+                try context.save()
+                print("Product Saved Core Data")
+            }
+            
         } catch {
             print("ERROR! Saved")
             //Process error

@@ -15,4 +15,8 @@ enum ScrennID : String {
     case SERVICEOPTION_CONTROLLER_ID = "ServiceOptionControllerID"
     case ALL_PRODUCT_CONTROLLER_ID = "AllProductsControllerID"
     case HELP_CONTROLLER_ID = "helpControllerID"
+    case MY_BAG_CONTROLLER_ID = "MyBagControllerID"
+    case DATE_CONTROLLER_ID = "DateControllerID"
+    
+    
 }

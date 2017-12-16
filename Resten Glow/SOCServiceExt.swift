@@ -16,6 +16,13 @@ extension ServiceOptionController : AdditionalProductDelegate {
     }
     func getResponse(response: AdditionalProductResponse) {
         print(response)
+        if response.Error == "false"{
+            additionalResponseModel = response
+            serviceOptionTableView.reloadData()
+        }
+        else{
+            self.view.makeToast(response.Message)
+        }
         HIDE_SIC(customView: self.view)
     }
 }

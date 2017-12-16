@@ -12,43 +12,84 @@ import UIKit
 extension MyBagController : UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        if CoreDataSupporter.fetchToBag() != nil {
+            return 2
+        }
+        else{
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 4
-        default:
-            return 0
+        if CoreDataSupporter.fetchToBag() != nil {
+            switch section {
+            case 0:
+                return (CoreDataSupporter.fetchToBag()?.count)!
+            case 1:
+                return self.categoryList.count
+            default:
+                return 0
+            }
         }
+        else{
+            return self.categoryList.count
+        }
+       
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.section {
-        case 0:
-            let cell = Bundle.main.loadNibNamed("AddProductCell", owner: self, options: nil)?.first as! AddProductCell
-            cell.productButton.setTitle(addProductNameArray[indexPath.row], for: .normal)
-            
-            return cell
-        default:
-            let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
-            
-            return cell
+        if CoreDataSupporter.fetchToBag() != nil {
+            switch indexPath.section {
+            case 0:
+                let cell = Bundle.main.loadNibNamed("BagProductCell", owner: self, options: nil)?.first as! BagProductCell
+                cell.productName.text = CoreDataSupporter.fetchToBag()?[indexPath.row].name
+                cell.productPrice.text = (CoreDataSupporter.fetchToBag()?[indexPath.row].price)! + "₺"
+                return cell
+            case 1:
+                let cell = Bundle.main.loadNibNamed("AddProductCell", owner: self, options: nil)?.first as! AddProductCell
+                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName + "Ekle", for: .normal)
+                return cell
+            default:
+                let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
+                return cell
+            }
+        }
+        else{
+            switch indexPath.section {
+            case 0:
+                let cell = Bundle.main.loadNibNamed("AddProductCell", owner: self, options: nil)?.first as! AddProductCell
+                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName, for: .normal)
+                return cell
+            default:
+                let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
+                return cell
+            }
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.goto(screenID: "MyBagPopupControllerID", animated: false, data: nil, isModal: true)
+        //self.goto(screenID: "MyBagPopupControllerID", animated: false, data: nil, isModal: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        switch indexPath.section {
-        case 0:
-            return (self.productTableView.frame.height - 10) / 4
-        default:
-            return 0
+        if CoreDataSupporter.fetchToBag() != nil {
+            switch indexPath.section {
+            case 0:
+                return CalculateClass.calculateTableCellHeight(rate: CAH.MY_BAG_TABLEVİEW_CELL_RATE.rawValue)
+            case 1:
+                return CalculateClass.calculateTableCellHeight(rate: CAH.MY_BAG_TABLEVİEW_CELL_RATE.rawValue)
+            default:
+                return 0
+            }
+        }
+        else{
+            switch indexPath.section {
+            case 0:
+                return CalculateClass.calculateTableCellHeight(rate: CAH.MY_BAG_TABLEVİEW_CELL_RATE.rawValue)
+            default:
+                return 0
+            }
         }
     }
     
@@ -160,6 +201,38 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
         
         return headerView
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        
+        if CoreDataSupporter.fetchToBag() != nil {
+            switch indexPath.section {
+            case 0:
+                return true
+            default:
+                return false
+            }
+        }
+        else{
+            return false
+        }
+    }
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Sil"
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            CoreDataSupporter.removeSelectedData(objectID: (CoreDataSupporter.fetchToBag()?[indexPath.row].id)!)
+            if CoreDataSupporter.fetchToBag() == nil {
+                self.startService()
+            }
+            else{
+                productTableView.reloadData()
+            }
+            coreDataChecked()
+        }
+    }
+    
+    
 }
 
 

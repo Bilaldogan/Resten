@@ -29,25 +29,13 @@ extension TabbarChildController : UITableViewDelegate, UITableViewDataSource{
         self.goto(screenID: "ProductDetailControllerID", data: productResponse.productList[indexPath.row].Id as AnyObject)
     }
     
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CalculateClass.calculateTableCellHeight(rate: CAH.MAİN_TABLEVİEW_CELL_RATE.rawValue)
     }
     
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return
-//    }
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//    }
-   
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         paralaxHeader.updateHeaderView(tableView: hairTableView, headerView: tableHeaderView, tableHeaderHeight: paralax_Header_Height)
     }
-    
-   
     
 }
 

@@ -12,7 +12,12 @@ import UIKit
 extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        if additionalResponseModel.AdditionalList.count == 0 {
+           return 1
+        }
+        else{
+           return 2
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,7 +25,7 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
         case 0:
             return 1
         case 1:
-            return 1
+            return additionalResponseModel.AdditionalList.count
         default:
             return 0
         }
@@ -29,10 +34,14 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0:
             let cell = Bundle.main.loadNibNamed("ProductPropertiesCell", owner: self, options: nil)?.first as! ProductPropertiesCell
+            cell.productNameLabel.text = self.productResponse.ProductName
+            cell.productDetailLabel.text = self.productResponse.Price + "₺" + " ● " + self.productResponse.OperationTime + " dk"
             return cell
         case 1:
             let cell = Bundle.main.loadNibNamed("OptionalPropertiesCell", owner: self, options: nil)?.first as! OptionalPropertiesCell
-            cell.descLabel.text = "***pedikür ve manikür pedikür için de aynı yazılar olacak, sadece kalıcı oje ekleme fiyatı 40 ₺ olsun manikür ve pedikür için."
+            cell.configure(Product: additionalResponseModel.AdditionalList[indexPath.row])
+            cell.additionalProduct = additionalResponseModel.AdditionalList[indexPath.row]
+            cell.clickDelegate = self
             return cell
         default:
             let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
@@ -127,32 +136,30 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         var headerView : UIView!
-        var headerSmallView : UIView!
         var headerLabel : UILabel!
         
         switch UIDevice.current.userInterfaceIdiom{
         case .pad:
             headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 80))
             headerView.backgroundColor = ColorUtil.lightGray
-            headerSmallView = UIView(frame: CGRect(x: self.view.frame.width * 0.3, y: 80, width: self.view.frame.width * 0.7, height: 1.0))
-            headerSmallView.backgroundColor = ColorUtil.purple
+            //                headerSmallView = UIView(frame: CGRect(x: self.view.frame.width * 0.3, y: 80, width: self.view.frame.width * 0.7, height: 1.0))
+            //                headerSmallView.backgroundColor = ColorUtil.purple
             
             headerLabel = UILabel(frame: CGRect(x: headerView.frame.width * 0.05, y: 0, width: headerView.frame.width * 0.9, height: 80))
             headerLabel.backgroundColor = UIColor.clear
-            headerLabel.textColor = ColorUtil.purple
-            headerLabel.textAlignment = .right
-            headerLabel.font = UIFont(name: "JosefinSans-BoldItalic", size: 20)
+            headerLabel.textColor = ColorUtil.textDarkGray
+            headerLabel.textAlignment = .left
+            headerLabel.font = UIFont(name: "JosefinSans-Bold", size: 20)
             headerLabel.minimumScaleFactor = 6.0 / 10.0
         case .phone:
             headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
             headerView.backgroundColor = ColorUtil.lightGray
-            headerSmallView  = UIView(frame: CGRect(x: self.view.frame.width * 0.3, y: 40, width: self.view.frame.width * 0.7, height: 1.0))
-            headerSmallView.backgroundColor = ColorUtil.purple
+            
             
             headerLabel = UILabel(frame: CGRect(x: headerView.frame.width * 0.05, y: 0, width: headerView.frame.width * 0.9, height: 40))
-            headerLabel.textColor = ColorUtil.purple
-            headerLabel.textAlignment = .right
-            headerLabel.font = UIFont(name: "JosefinSans-BoldItalic", size: 13)
+            headerLabel.textColor = ColorUtil.textDarkGray
+            headerLabel.textAlignment = .left
+            headerLabel.font = UIFont(name: "JosefinSans-Bold", size: 13)
             headerLabel.minimumScaleFactor = 6.0 / 10.0
         default:
             break
@@ -162,8 +169,7 @@ extension ServiceOptionController : UITableViewDelegate, UITableViewDataSource{
         case 0:
             headerLabel.text = ""
         case 1:
-            headerLabel.text = "İSTEĞE GÖRE HİZMETLER"
-            headerView.addSubview(headerSmallView)
+            headerLabel.text = "EK HİZMETLER"
             headerView.addSubview(headerLabel)
         default:
             break
