@@ -74,12 +74,12 @@ class AddressListService : ConnectionDelegate
                 userAddress.Description = description
             }
             
-            if address["Description"].element?.text != nil{
-                guard let description = address["Description"].element?.text else {
+            if address["Title"].element?.text != nil{
+                guard let title = address["Title"].element?.text else {
                     print("address address id Error...")
                     return
                 }
-                userAddress.Description = description
+                userAddress.Title = title
             }
             responseData.addressList.append(userAddress)
         }

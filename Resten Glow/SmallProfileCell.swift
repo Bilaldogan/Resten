@@ -17,6 +17,7 @@ class SmallProfileCell: UITableViewCell {
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblUserMail: UILabel!
     
+    @IBOutlet weak var lblPhoneNumber: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         

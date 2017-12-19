@@ -38,6 +38,13 @@
 		22AFE5EA1FAC1E8D00EF0E63 /* SmallProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D79981FABE39B00D62D84 /* SmallProfileCell.xib */; };
 		22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224D799C1FABE41D00D62D84 /* AddInfoCell.xib */; };
 		22B2D5561FD4E25B00A8327B /* AddAddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D5551FD4E25B00A8327B /* AddAddressService.swift */; };
+		22D0E87A1FE99E5900AAAE31 /* OrderDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0E8781FE99E5900AAAE31 /* OrderDetailCell.swift */; };
+		22D0E87B1FE99E5900AAAE31 /* OrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D0E8791FE99E5900AAAE31 /* OrderDetailCell.xib */; };
+		22D707C71FE7281700148AFA /* ChoseAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D707C61FE7281700148AFA /* ChoseAddressController.swift */; };
+		22D707C91FE738CF00148AFA /* AllOrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D707C81FE738CF00148AFA /* AllOrderListController.swift */; };
+		22D707CF1FE744A500148AFA /* AllOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D707CE1FE744A500148AFA /* AllOrderService.swift */; };
+		22D707D11FE8824200148AFA /* OderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D707D01FE8824200148AFA /* OderHeaderView.swift */; };
+		22D707D31FE882A600148AFA /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D707D21FE882A600148AFA /* OrderHeaderView.xib */; };
 		22DA907A1FCC622E007102DF /* CollapsibleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA90791FCC622E007102DF /* CollapsibleTableSectionViewController.swift */; };
 		22DA907C1FCC6233007102DF /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA907B1FCC6233007102DF /* CollapsibleTableViewHeader.swift */; };
 		22DA907F1FCC628A007102DF /* HelpControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA907E1FCC628A007102DF /* HelpControllerData.swift */; };
@@ -176,6 +183,13 @@
 		22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
 		22AFE5E81FAC156300EF0E63 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		22B2D5551FD4E25B00A8327B /* AddAddressService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressService.swift; sourceTree = "<group>"; };
+		22D0E8781FE99E5900AAAE31 /* OrderDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailCell.swift; sourceTree = "<group>"; };
+		22D0E8791FE99E5900AAAE31 /* OrderDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailCell.xib; sourceTree = "<group>"; };
+		22D707C61FE7281700148AFA /* ChoseAddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseAddressController.swift; sourceTree = "<group>"; };
+		22D707C81FE738CF00148AFA /* AllOrderListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderListController.swift; sourceTree = "<group>"; };
+		22D707CE1FE744A500148AFA /* AllOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderService.swift; sourceTree = "<group>"; };
+		22D707D01FE8824200148AFA /* OderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderHeaderView.swift; sourceTree = "<group>"; };
+		22D707D21FE882A600148AFA /* OrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHeaderView.xib; sourceTree = "<group>"; };
 		22DA90791FCC622E007102DF /* CollapsibleTableSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableSectionViewController.swift; sourceTree = "<group>"; };
 		22DA907B1FCC6233007102DF /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		22DA907E1FCC628A007102DF /* HelpControllerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpControllerData.swift; sourceTree = "<group>"; };
@@ -375,6 +389,24 @@
 			name = "My Account Controller Cells";
 			sourceTree = "<group>";
 		};
+		22D0E8771FE99E1D00AAAE31 /* AllOrderController */ = {
+			isa = PBXGroup;
+			children = (
+				22D0E8781FE99E5900AAAE31 /* OrderDetailCell.swift */,
+				22D0E8791FE99E5900AAAE31 /* OrderDetailCell.xib */,
+			);
+			name = AllOrderController;
+			sourceTree = "<group>";
+		};
+		22D707CA1FE7425C00148AFA /* AllOrder */ = {
+			isa = PBXGroup;
+			children = (
+				22D707D01FE8824200148AFA /* OderHeaderView.swift */,
+				22D707D21FE882A600148AFA /* OrderHeaderView.xib */,
+			);
+			name = AllOrder;
+			sourceTree = "<group>";
+		};
 		22DA90781FCC6217007102DF /* DetailHelp */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				22DA90781FCC6217007102DF /* DetailHelp */,
+				22D707CA1FE7425C00148AFA /* AllOrder */,
 				22E326481FA39B2F00077FE7 /* CustomTextField.swift */,
 				220719AD1FC4B5D000A1872A /* CustomTextView.swift */,
 				220719A51FC49CC500A1872A /* CustomView.swift */,
@@ -440,6 +473,8 @@
 				221C03001FCA4F7D00E33742 /* HelpController.swift */,
 				221C03021FCA575800E33742 /* DetailHelpController.swift */,
 				22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */,
+				22D707C61FE7281700148AFA /* ChoseAddressController.swift */,
+				22D707C81FE738CF00148AFA /* AllOrderListController.swift */,
 			);
 			name = "\U0010Controller";
 			sourceTree = "<group>";
@@ -590,6 +625,7 @@
 				95D9B2C81FA9355E00F2BDC6 /* Onboarding Cell */,
 				224D79961FABE33800D62D84 /* My Account Controller Cells */,
 				22DA90801FCCC309007102DF /* Help Controller Cell */,
+				22D0E8771FE99E1D00AAAE31 /* AllOrderController */,
 			);
 			name = "Custom Cell";
 			sourceTree = "<group>";
@@ -769,6 +805,7 @@
 				22651C021FE07DF600A5737A /* UpdatePassService.swift */,
 				95E175C41FE17AC70099ED53 /* ProductDetailService.swift */,
 				95FF3B5A1FE1E04800CBF27E /* AdditionalProductService.swift */,
+				22D707CE1FE744A500148AFA /* AllOrderService.swift */,
 			);
 			name = "Post Service";
 			sourceTree = "<group>";
@@ -904,6 +941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AFE5EA1FAC1E8D00EF0E63 /* SmallProfileCell.xib in Resources */,
+				22D0E87B1FE99E5900AAAE31 /* OrderDetailCell.xib in Resources */,
 				22AFE5EB1FAC1E8D00EF0E63 /* AddInfoCell.xib in Resources */,
 				95E02ED91FABE34A00873CB0 /* JosefinSans-Bold.ttf in Resources */,
 				95E02EDA1FABE34A00873CB0 /* JosefinSans-BoldItalic.ttf in Resources */,
@@ -927,6 +965,7 @@
 				222B20F31FA2889A00C4ECEE /* PagerViewCell.xib in Resources */,
 				953BF76D1FC56FED002721A5 /* AddProductCell.xib in Resources */,
 				222B20E71FA27D9700C4ECEE /* LaunchScreen.storyboard in Resources */,
+				22D707D31FE882A600148AFA /* OrderHeaderView.xib in Resources */,
 				95D9B2D71FA93EB500F2BDC6 /* ProductCell.xib in Resources */,
 				222B20E41FA27D9700C4ECEE /* Assets.xcassets in Resources */,
 				222B20E21FA27D9700C4ECEE /* Main.storyboard in Resources */,
@@ -1005,6 +1044,7 @@
 				95A50AAE1FC539A1005B6B6C /* AllProductsController.swift in Sources */,
 				224D79931FABA10000D62D84 /* PhoneNumberValidator.swift in Sources */,
 				224D79951FABCFA700D62D84 /* MyAccountController.swift in Sources */,
+				22D707D11FE8824200148AFA /* OderHeaderView.swift in Sources */,
 				226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */,
 				95C8C3EC1FE479C8008F16C6 /* BagProductCell.swift in Sources */,
 				2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */,
@@ -1020,6 +1060,7 @@
 				95E175C51FE17AC70099ED53 /* ProductDetailService.swift in Sources */,
 				222B20DD1FA27D9700C4ECEE /* AppDelegate.swift in Sources */,
 				22F6F8301FD4D06C0044F40D /* UpdateProfileService.swift in Sources */,
+				22D0E87A1FE99E5900AAAE31 /* OrderDetailCell.swift in Sources */,
 				22AFE5E91FAC156300EF0E63 /* EditProfileController.swift in Sources */,
 				2208651C1FA9615E00F3539A /* ChangePassController.swift in Sources */,
 				22E326501FA3C9A100077FE7 /* ForgotPasswordController.swift in Sources */,
@@ -1039,6 +1080,7 @@
 				956684F51FE1E30000CEEF37 /* SOCServiceExt.swift in Sources */,
 				22651C031FE07DF600A5737A /* UpdatePassService.swift in Sources */,
 				95E02E731FAA8AF100873CB0 /* RootViewController.swift in Sources */,
+				22D707C71FE7281700148AFA /* ChoseAddressController.swift in Sources */,
 				95E1514A1FCEE7640021F06F /* ConnectionDelegate.swift in Sources */,
 				95B884381FCA296B002E5DC1 /* FSCalendarWeekdayView.m in Sources */,
 				95B884331FCA296B002E5DC1 /* FSCalendarAppearance.m in Sources */,
@@ -1071,6 +1113,8 @@
 				95E1514E1FCEE7860021F06F /* LoginService.swift in Sources */,
 				22E31DF91FA9546600784508 /* CustomNavigationView.swift in Sources */,
 				95D9B2D91FA944B800F2BDC6 /* ProductPrice.swift in Sources */,
+				22D707C91FE738CF00148AFA /* AllOrderListController.swift in Sources */,
+				22D707CF1FE744A500148AFA /* AllOrderService.swift in Sources */,
 				95E02E801FAA952100873CB0 /* GradientView.swift in Sources */,
 				95E02E991FAB94EC00873CB0 /* PDTableViewExt.swift in Sources */,
 				22651BFF1FE0245E00A5737A /* AddressListService.swift in Sources */,

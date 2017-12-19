@@ -78,6 +78,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="lblPhoneNumber" destination="ITV-x6-eGB" id="hBB-Lq-cmo"/>
                 <outlet property="lblUserMail" destination="dl1-n3-axH" id="ocs-Ue-Eid"/>
                 <outlet property="lblUserName" destination="9pb-I7-Cwg" id="aAH-dR-dfA"/>
             </connections>
