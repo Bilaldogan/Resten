@@ -96,6 +96,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         case 1:
             goToAccountDetailController()
         case 2:
+            goToAllOrderController()
+        case 3:
             goToContactController()
         case 5:
             goToHelpController()
@@ -153,6 +155,15 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         self.sideMenuViewController!.hideMenuViewController()
         
     }
+    func goToAllOrderController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: ScrennID.ALL_ORDER_LIST_CONTROLLER_ID.rawValue) as! AllOrderListController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+        
+    }
 
     
 
@@ -182,7 +193,7 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 
     
     let imageArray : Array = ["ev","liste","kilit","question","odul","cikis"]
-    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","İLETİŞİM","PROMOSYONLAR","PAYLAŞ","YARDIM"]
+    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","SİPARİŞLERİM","İLETİŞİM","PROMOSYONLAR","PAYLAŞ","YARDIM"]
     let menuItemCount : CGFloat = 6
     
     
