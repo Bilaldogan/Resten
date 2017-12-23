@@ -54,7 +54,7 @@ class DeleteAddressService : ConnectionDelegate
         
         
         if  self.serviceDelegate != nil {
-            //self.serviceDelegate?.getResponse(response: responseData)
+            self.serviceDelegate?.getResponse(response: responseData)
         }
         
     }

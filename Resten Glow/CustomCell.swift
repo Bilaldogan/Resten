@@ -23,7 +23,6 @@ class CustomCell: UITableViewCell {
         nameLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         nameLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        
         nameLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
 
         nameLabel.numberOfLines = 0
