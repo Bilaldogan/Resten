@@ -18,6 +18,7 @@ import UIKit
     @objc optional func collapsibleTableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
     @objc optional func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat
     @objc optional func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    @objc optional func collapsibleTableView(_ tableView: UITableView, OrderDataForHeaderInSection section: Int) -> AnyObject?
     @objc optional func collapsibleTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     @objc optional func shouldCollapseByDefault(_ tableView: UITableView) -> Bool
     @objc optional func shouldCollapseOthers(_ tableView: UITableView) -> Bool
@@ -29,8 +30,8 @@ import UIKit
  class CollapsibleTableSectionViewController: BaseController {
     
     public var delegate: CollapsibleTableSectionDelegate?
-    
-    fileprivate var _tableView: UITableView!
+    public var isOrderController = false
+    public var _tableView: UITableView!
     fileprivate var _sectionsState = [Int : Bool]()
     
     public func isSectionCollapsed(_ section: Int) -> Bool {
@@ -82,7 +83,11 @@ import UIKit
         // Auto layout the tableView
         view.addSubview(_tableView)
         _tableView.translatesAutoresizingMaskIntoConstraints = false
+        if isOrderController {
+        _tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.82).isActive = true
+        } else {
         _tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.9).isActive = true
+        }
         _tableView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.bottomAnchor).isActive = true
         _tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         _tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -119,6 +124,19 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
     
     // Header
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if (isOrderController) {
+            let header = OderHeaderView()
+            
+            if let data = delegate?.collapsibleTableView?(tableView, OrderDataForHeaderInSection: section) as? SectionOrder {
+                header.configure(with: data)
+                // header.setCollapsed(isSectionCollapsed(section))
+                header.section = section
+                header.delegate = self
+                return header
+            }
+            
+           
+        }
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
         let title = delegate?.collapsibleTableView?(tableView, titleForHeaderInSection: section) ?? ""
@@ -128,7 +146,6 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
         
         header.section = section
         header.delegate = self
-        
         return header
     }
     
