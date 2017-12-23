@@ -40,6 +40,7 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! SmallProfileCell
             cell.lblUserName.text = UserPrefence.getUserName() + " " + UserPrefence.getUserSurname()
             cell.lblUserMail.text = UserPrefence.getUserMail()
+            cell.lblPhoneNumber.text = UserPrefence.getGSM()
             cell.delegate = self
             return cell
         } else if indexPath.section == 1 {
@@ -53,8 +54,9 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
             }
         } else if indexPath.section == 2 {
             if indexPath.row == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
-                return cell
+                //let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as! AdressCell
+                
+               // return cell
             } else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "addInfoCell", for: indexPath) as! AddInfoCell
                 cell.label.text = "ÖDEME YÖNTEMİ EKLE"
@@ -135,7 +137,7 @@ extension MyAccountController : DeleteAddressServiceDelegate {
         
     }
     func getResponse(response: AddAddressResponse) {
-        tableView.reloadData()
+        addressListService.connectService(memberID: UserPrefence.getUserId())
     }
 }
 extension MyAccountController : AddressListDelegate {
