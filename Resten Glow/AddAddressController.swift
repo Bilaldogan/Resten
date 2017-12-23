@@ -62,6 +62,7 @@ extension AddAddressController : AddAddressDelegate {
 extension AddAddressController : CustomNavigationViewDelegate {
     func backButtonTapped() {
         self.back()
+        self.back(animated: true, isModal: true)
     }
 }
 extension AddAddressController{

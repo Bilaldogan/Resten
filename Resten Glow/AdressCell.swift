@@ -26,7 +26,7 @@ class AdressCell: UITableViewCell {
             labelAddressType.text = "Kredi Kartı"
         } else {
             imageViewIcon.image = #imageLiteral(resourceName: "home-icon")
-            labelAddress.text = data.Title
+            labelAddressType.text = data.Title
             labelAddress.text = data.Description
             id = data.Id
         }
