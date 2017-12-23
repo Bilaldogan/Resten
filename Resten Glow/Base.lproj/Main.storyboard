@@ -169,7 +169,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAİL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-oG-tWl">
-                                <rect key="frame" x="31" y="88" width="46.5" height="21.5"/>
+                                <rect key="frame" x="31" y="84" width="46.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -178,7 +178,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-jl-BeF" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="124.5" width="313" height="44"/>
+                                <rect key="frame" x="31" y="120.5" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -201,7 +201,7 @@
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ŞİFRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-68-ck7">
-                                <rect key="frame" x="31" y="188.5" width="40.5" height="21.5"/>
+                                <rect key="frame" x="31" y="184.5" width="40.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -210,7 +210,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-7G-cVq" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="225" width="313" height="44"/>
+                                <rect key="frame" x="31" y="221" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -233,7 +233,7 @@
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İLETİŞİM BİLGİLERİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-wC-NW7">
-                                <rect key="frame" x="31" y="336" width="137" height="21.5"/>
+                                <rect key="frame" x="31" y="332" width="137" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -242,7 +242,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-wE-f6u" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="372.5" width="149" height="44"/>
+                                <rect key="frame" x="31" y="368.5" width="149" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -265,7 +265,7 @@
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyadınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lW-0E-wnQ" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="195" y="372.5" width="149" height="44"/>
+                                <rect key="frame" x="195" y="368.5" width="149" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -288,7 +288,7 @@
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-VT-5u0" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="277" width="313" height="44"/>
+                                <rect key="frame" x="31" y="273" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -311,7 +311,7 @@
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefon Numaranız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDx-Ku-jIk" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="424.5" width="313" height="44"/>
+                                <rect key="frame" x="31" y="420.5" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -337,7 +337,7 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-UN-1F8">
-                                <rect key="frame" x="180" y="372.5" width="15" height="44"/>
+                                <rect key="frame" x="180" y="368.5" width="15" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="Aw6-wq-Nfr"/>
@@ -426,7 +426,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAİL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-8m-vf2">
-                                <rect key="frame" x="31" y="98" width="46.5" height="21.5"/>
+                                <rect key="frame" x="31" y="94" width="46.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -435,7 +435,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-FB-QP3" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="134.5" width="313" height="44"/>
+                                <rect key="frame" x="31" y="130.5" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -458,7 +458,7 @@
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ŞİFRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ail-H9-bW6">
-                                <rect key="frame" x="31" y="208.5" width="40.5" height="21.5"/>
+                                <rect key="frame" x="31" y="204.5" width="40.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -467,7 +467,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1x-gt-uzS" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="245" width="313" height="44"/>
+                                <rect key="frame" x="31" y="241" width="313" height="44"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
@@ -490,7 +490,7 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8A-R4-jw3">
-                                <rect key="frame" x="31" y="309" width="113" height="29"/>
+                                <rect key="frame" x="31" y="305" width="113" height="29"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="11"/>
                                 <state key="normal" title="ŞİFREMİ UNUTTUM?">
                                     <color key="titleColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -594,7 +594,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aşağıya kayıtlı e-posta adresinizi yazın, şifrenizi değiştirebileceğiniz linki e-postanıza gönderelim." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-Zk-2h6">
-                                <rect key="frame" x="36" y="118" width="303" height="72.5"/>
+                                <rect key="frame" x="36" y="114" width="303" height="72.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -603,7 +603,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAİL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-6h-KJh">
-                                <rect key="frame" x="31" y="240.5" width="46.5" height="21.5"/>
+                                <rect key="frame" x="31" y="236.5" width="46.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -612,7 +612,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresinizi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-SB-9Fb" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="31" y="277" width="313" height="40"/>
+                                <rect key="frame" x="31" y="273" width="313" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -827,7 +827,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cra-OR-zmI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wM6-VX-eED">
-                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1137,7 +1137,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-S2-6Kq" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="125.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="133" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1152,7 +1152,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkiye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-bZ-RW6">
-                                <rect key="frame" x="31" y="131.5" width="52" height="19"/>
+                                <rect key="frame" x="31" y="137" width="56" height="24.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1161,7 +1161,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1s-8a-9Xg" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="165.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="176.5" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1176,7 +1176,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-tu-dLR">
-                                <rect key="frame" x="31" y="165.5" width="57" height="33"/>
+                                <rect key="frame" x="31" y="176.5" width="62.5" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1185,7 +1185,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-dY-cgy" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="213.5" width="317" height="36"/>
+                                <rect key="frame" x="27" y="224.5" width="317" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlçe Seçiniz ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELM-IB-76s">
                                         <rect key="frame" x="4" y="0.0" width="276" height="33"/>
@@ -1241,7 +1241,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Gg-WA-BXR" customClass="CustomTextView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="279.5" width="321" height="133.5"/>
+                                <rect key="frame" x="27" y="290.5" width="321" height="133.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1258,7 +1258,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-hd-W2j">
-                                <rect key="frame" x="31" y="62" width="77.5" height="19"/>
+                                <rect key="frame" x="31" y="62" width="81" height="24.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1267,7 +1267,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-Ni-NDl" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="88.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="94" width="317" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -2635,7 +2635,7 @@
                                 <rect key="frame" x="0.0" y="547" width="375" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARA TOPLAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-J0-b8a">
-                                        <rect key="frame" x="153" y="8" width="69.5" height="13"/>
+                                        <rect key="frame" x="151.5" y="8" width="73" height="16"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2644,7 +2644,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50₺ ● 45 dk " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iu-Cw-1CK">
-                                        <rect key="frame" x="137" y="29" width="101.5" height="21"/>
+                                        <rect key="frame" x="136.5" y="32" width="103" height="26"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2758,7 +2758,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 dk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-bl-tHC">
-                                                <rect key="frame" x="166" y="2" width="35.5" height="16.5"/>
+                                                <rect key="frame" x="166" y="0.0" width="36.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2972,7 +2972,7 @@
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ne eklemek istersiniz?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-Jf-omM">
-                                        <rect key="frame" x="98" y="4" width="180" height="41"/>
+                                        <rect key="frame" x="98.5" y="4" width="179" height="41"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3111,7 +3111,7 @@
                                 <rect key="frame" x="0.0" y="467" width="375" height="146.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MQ2-BF-vKd">
-                                        <rect key="frame" x="56" y="103.5" width="263.5" height="31"/>
+                                        <rect key="frame" x="56" y="101.5" width="263.5" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     </slider>
@@ -3131,7 +3131,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşleminizi saat 9:00 civarında gerçekleştireceğiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-N5-PIB">
-                                        <rect key="frame" x="61.5" y="53.5" width="253.5" height="14"/>
+                                        <rect key="frame" x="59.5" y="53.5" width="256" height="17.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3140,25 +3140,25 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-jK-Ol9">
-                                        <rect key="frame" x="8" y="110" width="34" height="16.5"/>
+                                        <rect key="frame" x="8" y="106" width="34" height="20.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-Dk-34n">
-                                        <rect key="frame" x="333.5" y="110" width="33.5" height="16.5"/>
+                                        <rect key="frame" x="333.5" y="106" width="33.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-3F-1cC">
-                                        <rect key="frame" x="16.5" y="84.5" width="17" height="17"/>
+                                        <rect key="frame" x="16.5" y="80.5" width="17" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MMQ-3F-1cC" secondAttribute="height" id="p2L-fa-bvH"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-1b-6pn">
-                                        <rect key="frame" x="341" y="85" width="17" height="17"/>
+                                        <rect key="frame" x="341" y="81" width="17" height="17"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
