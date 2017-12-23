@@ -53,8 +53,7 @@ extension ChangePassController {
         
         if  textFieldNewPass.text! == "" || textFieldOldPass.text! == "" || textFieldConfirmNewPassword.text! == "" {
             self.view.makeToast("Lütfen tüm boş alanları doldurunuz.")
-        }
-        else if textFieldNewPass.text! !=  textFieldConfirmNewPassword.text!  {
+        } else if textFieldNewPass.text! !=  textFieldConfirmNewPassword.text!  {
             self.view.makeToast("Girdiğiniz şifreler aynı olmalı.")
             //Popup çağır
         }

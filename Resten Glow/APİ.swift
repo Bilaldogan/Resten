@@ -23,6 +23,7 @@ enum API : String {
     case addAddress = "AddAddressService"
     case deleteAddress = "DeleteAddress"
     case updatePassword = "UpdatePassService"
+    case getOrderBy = "GetByOrder"
 }
 
 enum ADMIN : String {
