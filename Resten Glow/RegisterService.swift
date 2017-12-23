@@ -26,6 +26,7 @@ class RegisterService : ConnectionDelegate
         soapMessage += "<Pass>\(model.Pass)</Pass>"
         soapMessage += "<Name>\(model.Name)</Name>"
         soapMessage += "<SurName>\(model.SurName)</SurName>"
+        soapMessage +=  "<Phone>\(model.PhoneNumber)</Phone>"
         soapMessage += "</RegisterService>"
         soapMessage += "</soap:Body></soap:Envelope>"
         

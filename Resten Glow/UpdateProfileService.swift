@@ -21,7 +21,7 @@ class UpdateProfileService : ConnectionDelegate
 
         var soapMessage : String = "<?xml version='1.0' encoding='utf-8'?>"
         soapMessage += "<soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>"
-        soapMessage += "<soap:Body><RegisterService xmlns='http://tempuri.org/'>"
+        soapMessage += "<soap:Body><UpdateProfilService xmlns='http://tempuri.org/'>"
         soapMessage += "<AdminEmail>\(ADMIN.AdminEmail.rawValue)</AdminEmail>"
         soapMessage += "<AdminPass>\(ADMIN.AdminPass.rawValue)</AdminPass>"
         soapMessage += "<Email>\(model.Email)</Email>"
@@ -30,7 +30,7 @@ class UpdateProfileService : ConnectionDelegate
         soapMessage += "<SurName>\(model.SurName)</SurName>"
         soapMessage += "<MemberId>\(model.MemberId)</MemberId>"
         soapMessage += "<Gsm>\(model.Gsm)</Gsm>"
-        soapMessage += "</RegisterService>"
+        soapMessage += "</UpdateProfilService>"
         soapMessage += "</soap:Body></soap:Envelope>"
         
         let serviceUrl : String = API.baseURL.rawValue + API.updateProfile.rawValue

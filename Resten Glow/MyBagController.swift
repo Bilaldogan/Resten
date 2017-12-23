@@ -29,6 +29,7 @@ class MyBagController: BaseController {
     }
     
     @IBAction func selectAddressButtonAct(_ sender: Any) {
+        self.goto(screenID: ScrennID.CHOSE_ADDRESS_CONTROLLER_ID.rawValue, animated: true, data: nil, isModal: true)
     }
     
     @IBAction func selectDateButtonAct(_ sender: Any) {
