@@ -27,29 +27,30 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         
         let marginGuide = contentView.layoutMarginsGuide
         //
-        contentView.addSubview(seperatorView)
-        seperatorView.backgroundColor = UIColor.black
-        seperatorView.translatesAutoresizingMaskIntoConstraints = false
-        seperatorView.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor, constant: 3.0).isActive = true
-        seperatorView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 15.0).isActive = true
-        seperatorView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -15.0).isActive = true
-        seperatorView.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+       
         // Arrow label
         
         // Title label
         contentView.addSubview(titleLabel)
         titleLabel.lineBreakMode = .byWordWrapping
         titleLabel.textColor = UIColor.black
-        titleLabel.font = UIFont(name: "JosefinSans-Bold", size: 22.0)
+        titleLabel.font = UIFont(name: "JosefinSans-Bold", size: 18.0)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 10.0).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: seperatorView.topAnchor, constant: -7.0).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor, constant: 7.0).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         titleLabel.numberOfLines = 0
         //
         // Call tapHeader when tapping on this header
         //
+        contentView.addSubview(seperatorView)
+        seperatorView.backgroundColor = UIColor.black
+        seperatorView.translatesAutoresizingMaskIntoConstraints = false
+        seperatorView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4.0).isActive = true
+        seperatorView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 15.0).isActive = true
+        seperatorView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -15.0).isActive = true
+        seperatorView.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CollapsibleTableViewHeader.tapHeader(_:))))
     }
     

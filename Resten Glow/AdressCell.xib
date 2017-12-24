@@ -29,13 +29,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Joq-bt-Si0">
-                        <rect key="frame" x="5" y="20" width="35.5" height="35.5"/>
+                        <rect key="frame" x="5" y="25" width="25.5" height="25.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Joq-bt-Si0" secondAttribute="height" multiplier="1:1" id="FbQ-0L-eoR"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR0-MI-Zpy">
-                        <rect key="frame" x="48.5" y="11" width="19" height="20"/>
+                        <rect key="frame" x="38.5" y="11" width="19" height="20"/>
                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                         <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Keçeci Piri Mah Nehir Sok No 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-jR-Y0g">
-                        <rect key="frame" x="48.5" y="36" width="211" height="28.5"/>
+                        <rect key="frame" x="38.5" y="36" width="211" height="28.5"/>
                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
                         <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -54,10 +54,10 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Joq-bt-Si0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="1Ho-xR-dpi"/>
+                    <constraint firstItem="Joq-bt-Si0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="1Ho-xR-dpi"/>
                     <constraint firstItem="Zlm-jR-Y0g" firstAttribute="top" secondItem="bR0-MI-Zpy" secondAttribute="bottom" constant="5" id="IRX-s5-hNw"/>
                     <constraint firstItem="bR0-MI-Zpy" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="KL6-r9-hqw"/>
-                    <constraint firstAttribute="bottom" secondItem="Joq-bt-Si0" secondAttribute="bottom" constant="20" id="PXJ-5p-fGI"/>
+                    <constraint firstAttribute="bottom" secondItem="Joq-bt-Si0" secondAttribute="bottom" constant="25" id="PXJ-5p-fGI"/>
                     <constraint firstItem="Zlm-jR-Y0g" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="Q41-wo-PLa"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Zlm-jR-Y0g" secondAttribute="bottom" constant="0.5" id="WsL-2C-k8s"/>
                     <constraint firstItem="Joq-bt-Si0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XMx-ev-UZ2"/>

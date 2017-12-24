@@ -19,6 +19,7 @@ class CustomCell: UITableViewCell {
         let marginGuide = contentView.layoutMarginsGuide
         // configure nameLabel
         contentView.addSubview(nameLabel)
+        nameLabel.font = UIFont(name: "JosefinSans-Bold", size: 15.0)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         nameLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
