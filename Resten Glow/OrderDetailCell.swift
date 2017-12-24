@@ -25,6 +25,7 @@ class OrderDetailCell: UITableViewCell {
         lblDescription.text = data.operationTime
         lblProductName.text = data.productName
         lblOperationTime.text = data.operationTime
+        self.layoutIfNeeded()
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -66,7 +66,7 @@ extension MyAccountController : UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 3 && indexPath.row == 0 {
             let cell = UITableViewCell()
             cell.textLabel?.font = UIFont(name: "JosefinSans-Bold", size: 17)
-            cell.textLabel?.textColor = ColorUtil.purple
+            cell.textLabel?.textColor = ColorUtil.pink
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = "Şifre Değiştir"
             return cell

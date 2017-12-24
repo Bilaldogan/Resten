@@ -18,6 +18,7 @@ class AllOrderListController: CollapsibleTableSectionViewController {
     var tableViewData : AllOrderServiceResponseModel = AllOrderServiceResponseModel()
     var selectedSection : Int?
     override func viewDidLoad() {
+        self.customNavigation.addShadow()
         self.isOrderController = true
         super.viewDidLoad()
         _tableView.register(UINib(nibName: "OrderDetailCell", bundle: nil), forCellReuseIdentifier: "orderDetailCell")

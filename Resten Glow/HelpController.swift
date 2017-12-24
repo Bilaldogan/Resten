@@ -13,6 +13,7 @@ class HelpController: BaseController {
     @IBOutlet weak var customNavigaiton: CustomNavigationView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.customNavigaiton.addShadow()
         self.customNavigaiton.navDelegate = self
         // Do any additional setup after loading the view.
     }
