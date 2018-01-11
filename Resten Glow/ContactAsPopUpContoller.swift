@@ -35,13 +35,12 @@ class ContactAsPopUpContoller: BaseController,MFMailComposeViewControllerDelegat
         var mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
         mc.setSubject(emailTitle)
-        mc.setMessageBody(messageBody, isHTML: false)
         mc.setToRecipients(toRecipents)
         
         self.present(mc, animated: true, completion: nil)
 
     }
-    func mailComposeController(controller:MFMailComposeViewController, didFinishWithResult result:MFMailComposeResult, error:Error) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         switch result {
         case .cancelled:
             print("Mail cancelled")
@@ -50,9 +49,8 @@ class ContactAsPopUpContoller: BaseController,MFMailComposeViewControllerDelegat
         case .sent:
             print("Mail sent")
         case .failed:
-            print("Mail sent failure: \(error.localizedDescription)")
-        default:
-            break
+            print("Mail sent failure: \(error)")
+        
         }
         self.dismiss(animated: true, completion: nil)
     }
