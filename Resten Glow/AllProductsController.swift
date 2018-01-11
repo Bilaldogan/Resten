@@ -38,7 +38,6 @@ class AllProductsController: BaseController {
     
     @IBOutlet weak var allProductTableView: UITableView!
     @IBOutlet weak var navBarView: UIView!
-    var productImageArray = [#imageLiteral(resourceName: "HairHeader"),#imageLiteral(resourceName: "MakeupHeader"),#imageLiteral(resourceName: "NailsHeader"),#imageLiteral(resourceName: "WeddingHeader")]
     
     //Service Veriable
     var categoryListService = CategoryListService()

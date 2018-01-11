@@ -14,6 +14,7 @@ class MyBagPopupController: BaseController {
         super.viewDidLoad()
         tableViewConfigure()
         configure()
+        self.startService()
     }
     override func viewWillAppear(_ animated: Bool) {
         self.shadowViewBottomConstraint.constant = -self.shadowView.frame.height
@@ -31,12 +32,23 @@ class MyBagPopupController: BaseController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    private func startService(){
+        if let categoryName = self.data as? String {
+            self.productService.serviceDelegate = self
+            self.productService.connectService(categoryName: categoryName)
+            SHOW_SIC()
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var blurView: UIView!
     @IBOutlet weak var shadowViewBottomConstraint: NSLayoutConstraint!
+    
+    //Service veriable
+    var productService = ProductService()
+    //Service Response Model
+    var productResponse = ProductResponse()
     
 }
 
@@ -66,7 +78,7 @@ extension MyBagPopupController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 4
+            return productResponse.productList.count
         default:
             return 0
         }
@@ -76,7 +88,7 @@ extension MyBagPopupController : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0:
             let cell = Bundle.main.loadNibNamed("AddProductCell", owner: self, options: nil)?.first as! AddProductCell
-            
+            cell.productButton.setTitle(productResponse.productList[indexPath.row].ProductName, for: .normal)
             return cell
         default:
             let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
@@ -86,14 +98,14 @@ extension MyBagPopupController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.goto(screenID: "ProductDetailControllerID", data: productResponse.productList[indexPath.row].Id as AnyObject)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         switch indexPath.section {
         case 0:
-            return (self.tableView.frame.height - 10) / 3
+            return CalculateClass.calculateTableCellHeight(rate: CAH.MY_BAG_TABLEVİEW_CELL_RATE.rawValue)
         default:
             return 0
         }
@@ -208,6 +220,22 @@ extension MyBagPopupController : UITableViewDelegate, UITableViewDataSource{
         return headerView
     }
 }
-
+extension MyBagPopupController : ProductDelegate {
+    func getResponse(response: ProductResponse) {
+        if response.Error == "false" {
+            self.productResponse = response
+            tableView.reloadData()
+        }
+        else{
+            self.view.makeToast(response.Message)
+        }
+        HIDE_SIC(customView: self.view)
+    }
+    
+    func getError(errorMessage: String) {
+        print(errorMessage)
+        HIDE_SIC(customView: self.view)
+    }
+}
 
 

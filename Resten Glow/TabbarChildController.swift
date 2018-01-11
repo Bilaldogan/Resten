@@ -90,6 +90,4 @@ extension TabbarChildController : ProductDelegate {
         print(errorMessage)
         HIDE_SIC(customView: self.view)
     }
-    
-    
 }

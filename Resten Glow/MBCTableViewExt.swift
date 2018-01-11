@@ -46,8 +46,8 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
                 cell.productPrice.text = (CoreDataSupporter.fetchToBag()?[indexPath.row].price)! + "₺"
                 return cell
             case 1:
-                let cell = Bundle.main.loadNibNamed("AddProductCell", owner: self, options: nil)?.first as! AddProductCell
-                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName + "Ekle", for: .normal)
+                let cell = Bundle.main.loadNibNamed("LittleAddProductCell", owner: self, options: nil)?.first as! LittleAddProductCell
+                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName + " Ekle", for: .normal)
                 return cell
             default:
                 let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
@@ -68,7 +68,26 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //self.goto(screenID: "MyBagPopupControllerID", animated: false, data: nil, isModal: true)
+        if CoreDataSupporter.fetchToBag() != nil {
+            switch indexPath.section {
+            case 0:break
+            case 1:
+                self.goto(screenID: "MyBagPopupControllerID", animated: false, data: self.categoryList[indexPath.row].CategoryName as AnyObject, isModal: true)
+            default:
+                break
+            }
+        }
+        else{
+            switch indexPath.section {
+            case 0:
+                self.goto(screenID: "MyBagPopupControllerID", animated: false, data: self.categoryList[indexPath.row].CategoryName as AnyObject, isModal: true)
+            default:
+               break
+            }
+        }
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -23,7 +23,13 @@ class TabbarClass {
             
         var option = TabPageOption()
         option.tabMargin = 10.0
-        option.tabWidth = (tabView.width / 4)
+        if categoryArray.count > 4 {
+            option.tabWidth = (tabView.width / 4)
+        }
+        else{
+            option.tabWidth = (tabView.width / CGFloat(categoryArray.count))
+        }
+        
         option.tabHeight = 45
         option.fontSize = 13.0
         //option.tabBackgroundColor = ColorUtil.backGroundColor

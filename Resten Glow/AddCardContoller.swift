@@ -16,12 +16,23 @@ class AddCardContoller: BaseController {
     @IBOutlet weak var creditCardForm: CreditCardFormView!
     let paymentTextField = STPPaymentCardTextField()
     @IBOutlet weak var nameStackView: UIStackView!
+    @IBOutlet weak var nameTextField: TextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCardView()
+        addTextFieldImage()
         customNavigation.navDelegate = self
     }
+    override func viewWillAppear(_ animated: Bool) {
+        nameTextField.setBottomBorder()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
     @IBAction func nameTextFieldChanged(_ sender: CustomTextField) {
         if let text = sender.text {
             creditCardForm.cardHolderString = text
@@ -32,6 +43,14 @@ class AddCardContoller: BaseController {
         self.back()
     }
     
+    func addTextFieldImage(){
+       nameTextField.leftViewMode = UITextFieldViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 57, height: 20))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "user")
+        imageView.image = image
+        nameTextField.leftView = imageView
+    }
 
 }
 extension AddCardContoller : STPPaymentCardTextFieldDelegate {
@@ -54,7 +73,7 @@ extension AddCardContoller : STPPaymentCardTextFieldDelegate {
         view.addSubview(paymentTextField)
         
         NSLayoutConstraint.activate([
-            paymentTextField.topAnchor.constraint(equalTo: nameStackView.bottomAnchor, constant: 10),
+            paymentTextField.topAnchor.constraint(equalTo: nameStackView.bottomAnchor, constant: 20),
             paymentTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             paymentTextField.widthAnchor.constraint(equalToConstant: self.creditCardForm.frame.size.width),
             paymentTextField.heightAnchor.constraint(equalToConstant: 44)
@@ -81,6 +100,7 @@ extension AddCardContoller : CustomNavigationViewDelegate {
     internal func backButtonTapped() {
         self.back()
     }
-
-    
 }
+
+
+

@@ -21,7 +21,7 @@ extension ServiceOptionController : AdditionalProductDelegate {
             serviceOptionTableView.reloadData()
         }
         else{
-            self.view.makeToast(response.Message)
+            
         }
         HIDE_SIC(customView: self.view)
     }

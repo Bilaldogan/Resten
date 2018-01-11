@@ -46,9 +46,17 @@ extension DetailHelpController: CollapsibleTableSectionDelegate {
     func collapsibleTableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return UITableViewAutomaticDimension
     }
-    func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].name
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+        
+        header.titleLabel.text = sections[section].name
+        header.section = section
+        header.delegate = self
+        
+        return header
     }
+    
     func shouldCollapseByDefault(_ tableView: UITableView) -> Bool {
         return true
     }

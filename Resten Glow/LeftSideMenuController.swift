@@ -11,6 +11,7 @@ import UIKit
 class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewDelegate {
     
     
+    @IBOutlet weak var mailLabel: UILabel!
     var tableView: UITableView?
     var window: UIWindow?
 
@@ -46,6 +47,7 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         
         
         self.view.addSubview(self.tableView!)
+        self.mailLabel.text = UserPrefence.getUserMail()
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +57,29 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         
     }
    
+    @IBAction func exitAppButtonAct(_ sender: Any) {
+        let alert = UIAlertController(title: "Rest & Glow", message: "Çıkış yapmak istediğinize emin misiniz?", preferredStyle: UIAlertControllerStyle.alert)
+        DispatchQueue.main.async {
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "Evet", style: UIAlertActionStyle.default, handler: { action in
+                print("Click Yes")
+                UserPrefence.setUserLoginStatus(isLogin: false)
+                UserPrefence.removeUserId()
+                UserPrefence.removeUserMail()
+                UserPrefence.removeoneSignalUserId()
+                UserPrefence.removeGSM()
+                UserPrefence.removeUserName()
+                CoreDataSupporter.removeAllData()
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "WelcomeControllerID")
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+            }))
+            alert.addAction(UIAlertAction(title: "Hayır", style: UIAlertActionStyle.cancel, handler: nil))
+        }
+        self.present(alert, animated: true, completion: nil)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,6 +123,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         case 2:
             goToAllOrderController()
         case 3:
+            goToWeddingController()
+        case 4:
             goToContactController()
         case 5:
             goToHelpController()
@@ -108,19 +135,23 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         
     }
     
-//    func goToAccountDetailController(){
-//
-//        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let myProfileVC = storyboard.instantiateViewController(withIdentifier: "AccounDetailControllerID") as! AccounDetailController
-//        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
-//        obj .pushViewController(myProfileVC, animated: true)
-//        self.sideMenuViewController!.hideMenuViewController()
-//    }
+
+    
     
     func goToAllProductController(){
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let myProfileVC = storyboard.instantiateViewController(withIdentifier: ScrennID.ALL_PRODUCT_CONTROLLER_ID.rawValue) as! AllProductsController
+        let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
+        obj .pushViewController(myProfileVC, animated: true)
+        self.sideMenuViewController!.hideMenuViewController()
+        
+    }
+    
+    func goToWeddingController(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: ScrennID.Wedding_CONTROLLER_ID.rawValue)
         let obj : UINavigationController = self.sideMenuViewController?.contentViewController as! UINavigationController
         obj .pushViewController(myProfileVC, animated: true)
         self.sideMenuViewController!.hideMenuViewController()
@@ -193,7 +224,7 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 
     
     let imageArray : Array = ["ev","liste","kilit","question","odul","cikis"]
-    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","SİPARİŞLERİM","İLETİŞİM","PROMOSYONLAR","PAYLAŞ","YARDIM"]
+    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","SİPARİŞLERİM","DÜĞÜN","İLETİŞİM","YARDIM","PAYLAŞ"]
     let menuItemCount : CGFloat = 6
     
     

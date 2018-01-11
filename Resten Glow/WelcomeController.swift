@@ -23,7 +23,8 @@ class   WelcomeController: BaseController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        pagerView.transformer = FSPagerViewTransformer(type: .cubic)
+        //pagerView.transformer = FSPagerViewTransformer(type: .linear)
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
