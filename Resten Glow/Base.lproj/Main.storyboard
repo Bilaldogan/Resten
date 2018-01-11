@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cra-OR-zmI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -1137,7 +1137,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-S2-6Kq" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="133" width="317" height="33"/>
+                                <rect key="frame" x="27" y="125" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1152,7 +1152,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkiye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-bZ-RW6">
-                                <rect key="frame" x="31" y="137" width="56" height="24.5"/>
+                                <rect key="frame" x="31" y="131.5" width="52" height="19"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1161,7 +1161,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1s-8a-9Xg" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="176.5" width="317" height="33"/>
+                                <rect key="frame" x="27" y="165.5" width="317" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1176,7 +1176,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İstanbul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-tu-dLR">
-                                <rect key="frame" x="31" y="176.5" width="62.5" height="33"/>
+                                <rect key="frame" x="31" y="165.5" width="57" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1185,7 +1185,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-dY-cgy" customClass="CustomView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="224.5" width="317" height="36"/>
+                                <rect key="frame" x="27" y="213.5" width="317" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlçe Seçiniz ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELM-IB-76s">
                                         <rect key="frame" x="4" y="0.0" width="276" height="33"/>
@@ -1241,7 +1241,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Gg-WA-BXR" customClass="CustomTextView" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="290.5" width="321" height="133.5"/>
+                                <rect key="frame" x="27" y="279.5" width="321" height="133.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1258,7 +1258,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-hd-W2j">
-                                <rect key="frame" x="31" y="62" width="81" height="24.5"/>
+                                <rect key="frame" x="31" y="62" width="77.5" height="19"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="16"/>
                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1267,7 +1267,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-Ni-NDl" customClass="CustomTextField" customModule="Resten_Glow" customModuleProvider="target">
-                                <rect key="frame" x="27" y="94" width="317" height="33"/>
+                                <rect key="frame" x="27" y="88.5" width="317" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1465,6 +1465,19 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBt-FA-W3Y">
+                                <rect key="frame" x="294" y="46" width="61" height="30"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
+                                <state key="normal" title="İLETİŞİM">
+                                    <color key="titleColor" red="0.94170987606048584" green="0.45733338594436646" blue="0.43965482711791992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="17"/>
+                                </variation>
+                                <connections>
+                                    <action selector="contactButtonTapped:" destination="6mp-X6-RIZ" eventType="touchUpInside" id="C4o-r7-k14"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWd-3n-XPu">
                                 <rect key="frame" x="26" y="84" width="323" height="367"/>
                                 <subviews>
@@ -1566,19 +1579,74 @@
                                     <constraint firstItem="EB5-Wk-Ceb" firstAttribute="height" secondItem="N3U-9i-uBK" secondAttribute="height" id="uZb-Cj-9Rh"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bizi Takip Et" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-LP-x2Q">
+                                <rect key="frame" x="139.5" y="461" width="98" height="21"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="18"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="31"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ts6-0L-esr">
+                                <rect key="frame" x="140.5" y="492" width="95" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXf-lb-s2L">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JXf-lb-s2L" secondAttribute="height" multiplier="1:1" id="6OD-Ry-12S"/>
+                                        </constraints>
+                                        <state key="normal" image="twitter-icon"/>
+                                        <connections>
+                                            <action selector="twitterTapped:" destination="6mp-X6-RIZ" eventType="touchUpInside" id="qxV-bW-MCD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvD-sB-fY9">
+                                        <rect key="frame" x="35" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HvD-sB-fY9" secondAttribute="height" multiplier="1:1" id="YzM-89-T2V"/>
+                                        </constraints>
+                                        <state key="normal" image="instagram-icon"/>
+                                        <connections>
+                                            <action selector="instaTapped:" destination="6mp-X6-RIZ" eventType="touchUpInside" id="cfb-yb-wmE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-2X-NBX">
+                                        <rect key="frame" x="70" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sWD-2X-NBX" secondAttribute="height" multiplier="1:1" id="HSn-zs-2j6"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook-icon"/>
+                                        <connections>
+                                            <action selector="faceTapped:" destination="6mp-X6-RIZ" eventType="touchUpInside" id="cdp-EP-Py0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="V5l-p1-gy7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iPH-lz-kcz" firstAttribute="leading" secondItem="Vjg-3E-Trz" secondAttribute="leading" id="0vL-oO-UiL"/>
                             <constraint firstItem="iPH-lz-kcz" firstAttribute="height" secondItem="Vjg-3E-Trz" secondAttribute="height" multiplier="0.08" id="1u0-uK-HAl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MWd-3n-XPu" secondAttribute="trailing" constant="10" id="63B-4T-vkS"/>
+                            <constraint firstItem="Ts6-0L-esr" firstAttribute="centerX" secondItem="3p6-LP-x2Q" secondAttribute="centerX" id="8JU-u0-oSL"/>
                             <constraint firstItem="MWd-3n-XPu" firstAttribute="top" secondItem="iPH-lz-kcz" secondAttribute="bottom" constant="10" id="Ebl-bY-dvX"/>
+                            <constraint firstItem="3p6-LP-x2Q" firstAttribute="top" secondItem="MWd-3n-XPu" secondAttribute="bottom" constant="10" id="Htd-dM-xEK"/>
+                            <constraint firstItem="3p6-LP-x2Q" firstAttribute="centerX" secondItem="Vjg-3E-Trz" secondAttribute="centerX" id="Zru-4q-RuP"/>
+                            <constraint firstItem="VBt-FA-W3Y" firstAttribute="centerY" secondItem="iPH-lz-kcz" secondAttribute="centerY" constant="14" id="at7-Cl-Pqr"/>
                             <constraint firstItem="MWd-3n-XPu" firstAttribute="leading" secondItem="Vjg-3E-Trz" secondAttribute="leadingMargin" constant="10" id="eDl-hv-TM5"/>
                             <constraint firstItem="MWd-3n-XPu" firstAttribute="height" secondItem="Vjg-3E-Trz" secondAttribute="height" multiplier="0.55" id="fau-Jx-IIh"/>
                             <constraint firstAttribute="trailing" secondItem="iPH-lz-kcz" secondAttribute="trailing" id="hTW-Vh-AFd"/>
+                            <constraint firstItem="Ts6-0L-esr" firstAttribute="top" secondItem="3p6-LP-x2Q" secondAttribute="bottom" constant="10" id="hpg-0g-zDC"/>
                             <constraint firstItem="iPH-lz-kcz" firstAttribute="top" secondItem="lvV-gr-dmJ" secondAttribute="bottom" id="i8s-Pv-d9E"/>
+                            <constraint firstItem="VBt-FA-W3Y" firstAttribute="trailing" secondItem="iPH-lz-kcz" secondAttribute="trailing" constant="-20" id="u5V-J8-xkD"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="customNavigaiton" destination="iPH-lz-kcz" id="Lzy-hQ-4zE"/>
                     </connections>
@@ -1715,13 +1783,28 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-mb-Iyz">
+                                <rect key="frame" x="290" y="31.5" width="65" height="34"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
+                                <state key="normal" title="İLETİŞİM">
+                                    <color key="titleColor" red="0.94170987610000001" green="0.4573333859" blue="0.43965482709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="17"/>
+                                </variation>
+                                <connections>
+                                    <action selector="contactButtonTapped:" destination="luT-Se-tZW" eventType="touchUpInside" id="zlb-vC-NtE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1uR-mb-Iyz" firstAttribute="trailing" secondItem="uib-hR-GfO" secondAttribute="trailing" constant="-20" id="6l9-T2-mXw"/>
                             <constraint firstItem="uib-hR-GfO" firstAttribute="leading" secondItem="rHH-0v-Yh7" secondAttribute="leading" id="KBb-qS-SmQ"/>
                             <constraint firstAttribute="trailing" secondItem="uib-hR-GfO" secondAttribute="trailing" id="Vw2-4C-0ia"/>
                             <constraint firstItem="uib-hR-GfO" firstAttribute="top" secondItem="rHH-0v-Yh7" secondAttribute="top" id="u6z-Ki-KYr"/>
                             <constraint firstItem="uib-hR-GfO" firstAttribute="height" secondItem="rHH-0v-Yh7" secondAttribute="height" multiplier="0.1" id="vCJ-lI-WYb"/>
+                            <constraint firstItem="1uR-mb-Iyz" firstAttribute="centerY" secondItem="uib-hR-GfO" secondAttribute="centerY" constant="15" id="wGo-9B-C0I"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2626,7 +2709,7 @@
                                 <rect key="frame" x="0.0" y="547" width="375" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARA TOPLAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-J0-b8a">
-                                        <rect key="frame" x="151.5" y="8" width="73" height="16"/>
+                                        <rect key="frame" x="153.5" y="8" width="69.5" height="13"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="11"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2635,7 +2718,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50₺ ● 45 dk " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iu-Cw-1CK">
-                                        <rect key="frame" x="136.5" y="32" width="103" height="26"/>
+                                        <rect key="frame" x="137.5" y="29" width="101.5" height="21"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2749,7 +2832,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 dk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-bl-tHC">
-                                                <rect key="frame" x="166" y="4" width="34" height="19"/>
+                                                <rect key="frame" x="166" y="6" width="33" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2963,7 +3046,7 @@
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ne eklemek istersiniz?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-Jf-omM">
-                                        <rect key="frame" x="98.5" y="4" width="179" height="41"/>
+                                        <rect key="frame" x="98" y="4" width="180" height="41"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3029,6 +3112,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oX2-nt-Uq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9724" y="-1054"/>
+        </scene>
+        <!--Contact As Pop Up Contoller-->
+        <scene sceneID="IDY-mp-r8d">
+            <objects>
+                <viewController storyboardIdentifier="ContactAsPopUpContollerID" id="y9C-3z-7HZ" customClass="ContactAsPopUpContoller" customModule="Resten_Glow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="17a-kA-LLD"/>
+                        <viewControllerLayoutGuide type="bottom" id="0eZ-N3-hSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DVb-jr-PS8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THe-dh-QDk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNQ-fo-S2D">
+                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phd-Tp-tu5">
+                                        <rect key="frame" x="30" y="15" width="315" height="58.5"/>
+                                        <color key="backgroundColor" red="0.99949055910110474" green="0.31871238350868225" blue="0.27661800384521484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
+                                        <state key="normal" title="BİZİ ARA">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="callUs:" destination="y9C-3z-7HZ" eventType="touchUpInside" id="qsZ-OX-0Wp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8m-kc-mVn">
+                                        <rect key="frame" x="29.5" y="92.5" width="315" height="58"/>
+                                        <color key="backgroundColor" red="0.99949055909999995" green="0.31871238349999997" blue="0.27661800380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
+                                        <state key="normal" title="E-MAİL AT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="emailUsTapped:" destination="y9C-3z-7HZ" eventType="touchUpInside" id="FXF-4I-qHv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="J8m-kc-mVn" firstAttribute="top" secondItem="Phd-Tp-tu5" secondAttribute="bottom" constant="19" id="1ku-q7-qz2"/>
+                                    <constraint firstItem="Phd-Tp-tu5" firstAttribute="height" secondItem="XNQ-fo-S2D" secondAttribute="height" multiplier="0.35" id="9NQ-7v-i4f"/>
+                                    <constraint firstItem="Phd-Tp-tu5" firstAttribute="top" secondItem="XNQ-fo-S2D" secondAttribute="top" constant="15" id="BKN-jK-XQa"/>
+                                    <constraint firstItem="J8m-kc-mVn" firstAttribute="centerX" secondItem="Phd-Tp-tu5" secondAttribute="centerX" id="DTC-vc-TyA"/>
+                                    <constraint firstItem="J8m-kc-mVn" firstAttribute="height" secondItem="Phd-Tp-tu5" secondAttribute="height" id="EjV-qN-Lfc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Phd-Tp-tu5" secondAttribute="trailing" constant="30" id="R8c-0M-8Hn"/>
+                                    <constraint firstItem="Phd-Tp-tu5" firstAttribute="leading" secondItem="XNQ-fo-S2D" secondAttribute="leading" constant="30" id="bw5-ok-pt5"/>
+                                    <constraint firstItem="J8m-kc-mVn" firstAttribute="width" secondItem="Phd-Tp-tu5" secondAttribute="width" id="sGl-kN-xYx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS8-rf-gaK" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
+                                <rect key="frame" x="322" y="447.5" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IS8-rf-gaK" secondAttribute="height" id="McN-PZ-Na6"/>
+                                </constraints>
+                                <state key="normal" image="kapat"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
+                                        <color key="value" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closePopupAct:" destination="y9C-3z-7HZ" eventType="touchUpInside" id="8go-kc-8qE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="THe-dh-QDk" secondAttribute="trailing" id="4Ld-ur-cuj"/>
+                            <constraint firstItem="0eZ-N3-hSG" firstAttribute="top" secondItem="XNQ-fo-S2D" secondAttribute="bottom" id="5Tf-Hz-GZF"/>
+                            <constraint firstItem="XNQ-fo-S2D" firstAttribute="leading" secondItem="DVb-jr-PS8" secondAttribute="leading" id="BBc-mN-NOS"/>
+                            <constraint firstAttribute="trailing" secondItem="IS8-rf-gaK" secondAttribute="trailing" constant="8" id="Dv2-94-w6q"/>
+                            <constraint firstItem="THe-dh-QDk" firstAttribute="leading" secondItem="DVb-jr-PS8" secondAttribute="leading" id="RNi-Hp-gQs"/>
+                            <constraint firstItem="XNQ-fo-S2D" firstAttribute="height" secondItem="DVb-jr-PS8" secondAttribute="height" multiplier="0.25" id="RdA-a1-fCo"/>
+                            <constraint firstItem="IS8-rf-gaK" firstAttribute="width" secondItem="DVb-jr-PS8" secondAttribute="width" multiplier="0.12" id="Ub1-tk-B90"/>
+                            <constraint firstItem="0eZ-N3-hSG" firstAttribute="top" secondItem="THe-dh-QDk" secondAttribute="bottom" id="dY0-ju-ZDd"/>
+                            <constraint firstItem="THe-dh-QDk" firstAttribute="top" secondItem="17a-kA-LLD" secondAttribute="bottom" id="f2I-DA-1VC"/>
+                            <constraint firstItem="XNQ-fo-S2D" firstAttribute="top" secondItem="IS8-rf-gaK" secondAttribute="bottom" constant="8" id="xsr-0b-VS3"/>
+                            <constraint firstAttribute="trailing" secondItem="XNQ-fo-S2D" secondAttribute="trailing" id="ykx-Wa-fmb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S1T-iE-otS"/>
+                    <connections>
+                        <outlet property="blurView" destination="THe-dh-QDk" id="siU-il-Ujg"/>
+                        <outlet property="shadowView" destination="XNQ-fo-S2D" id="AvP-gD-Whi"/>
+                        <outlet property="shadowViewBottomConstraint" destination="5Tf-Hz-GZF" id="IcF-Zx-tyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLQ-Ae-Vai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3717.5999999999999" y="3031.9340329835086"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="AJ6-Nc-n74">
@@ -3103,7 +3288,7 @@
                                 <rect key="frame" x="0.0" y="467" width="375" height="146.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MQ2-BF-vKd">
-                                        <rect key="frame" x="56" y="101.5" width="263.5" height="31"/>
+                                        <rect key="frame" x="56" y="103.5" width="263.5" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     </slider>
@@ -3123,7 +3308,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşleminizi saat 9:00 civarında gerçekleştireceğiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-N5-PIB">
-                                        <rect key="frame" x="59.5" y="53.5" width="256" height="17.5"/>
+                                        <rect key="frame" x="61" y="53.5" width="253.5" height="14"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3132,25 +3317,25 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-jK-Ol9">
-                                        <rect key="frame" x="8" y="106" width="34" height="20.5"/>
+                                        <rect key="frame" x="8" y="110" width="34" height="16.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-Dk-34n">
-                                        <rect key="frame" x="333.5" y="106" width="33.5" height="20.5"/>
+                                        <rect key="frame" x="333.5" y="110" width="33.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-3F-1cC">
-                                        <rect key="frame" x="16.5" y="80.5" width="17" height="17"/>
+                                        <rect key="frame" x="16.5" y="84.5" width="17" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="MMQ-3F-1cC" secondAttribute="height" id="p2L-fa-bvH"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-1b-6pn">
-                                        <rect key="frame" x="341" y="81" width="17" height="17"/>
+                                        <rect key="frame" x="341" y="85" width="17" height="17"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3303,7 +3488,7 @@
                                 <rect key="frame" x="0.0" y="82" width="375" height="585"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu büyük günde ihtiyacın olan güzellik için tek yapman gereken bizimle iletişime geçip taleplerini bildirmek :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vL-NS-AgC">
-                                        <rect key="frame" x="37.5" y="200.5" width="300" height="103"/>
+                                        <rect key="frame" x="37.5" y="200.5" width="300" height="59.5"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3312,7 +3497,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xih-9s-iYf">
-                                        <rect key="frame" x="67.5" y="353.5" width="240" height="40"/>
+                                        <rect key="frame" x="67.5" y="310" width="240" height="40"/>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.2156862745" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xih-9s-iYf" secondAttribute="height" multiplier="6:1" id="OJX-Ka-UGD"/>
@@ -3326,7 +3511,7 @@
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="for-D0-NaH" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
-                                        <rect key="frame" x="67.5" y="403.5" width="240" height="40"/>
+                                        <rect key="frame" x="67.5" y="360" width="240" height="40"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <state key="normal" title="Telefon aç">
                                             <color key="titleColor" red="0.70152150849999995" green="0.0" blue="0.57994550540000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -3395,6 +3580,8 @@
         <image name="cemberlogotrans" width="136" height="136"/>
         <image name="circular-clock" width="410" height="410"/>
         <image name="down-icon" width="32" height="32"/>
+        <image name="facebook-icon" width="32" height="32"/>
+        <image name="instagram-icon" width="32" height="32"/>
         <image name="kapat" width="100" height="100"/>
         <image name="mapIcon" width="410" height="410"/>
         <image name="menu" width="100" height="100"/>
@@ -3403,8 +3590,9 @@
         <image name="sepetim" width="410" height="410"/>
         <image name="sun" width="410" height="410"/>
         <image name="textdeneme" width="393" height="54"/>
+        <image name="twitter-icon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GGb-Yb-Nsu"/>
+        <segue reference="enj-iq-jhs"/>
     </inferredMetricsTieBreakers>
 </document>

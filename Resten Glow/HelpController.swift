@@ -17,7 +17,13 @@ class HelpController: BaseController {
         self.customNavigaiton.navDelegate = self
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func instaTapped(_ sender: UIButton) {
+    }
+    @IBAction func twitterTapped(_ sender: UIButton) {
+    }
+    @IBAction func faceTapped(_ sender: UIButton) {
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         if let title = sender.currentTitle {
             switch title {
@@ -35,6 +41,9 @@ class HelpController: BaseController {
         }
     }
  
+    @IBAction func contactButtonTapped(_ sender: UIButton) {
+        self.goto(screenID: "ContactAsPopUpContollerID", animated: false, data: true as? AnyObject, isModal: true)
+    }
     
 
 }

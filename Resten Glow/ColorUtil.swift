@@ -18,7 +18,7 @@ struct ColorUtil {
     static var purple = UIColor(red: 133, green: 43, blue: 129)
     static var lightGray = UIColor(red: 235, green: 235, blue: 235)
     static var pink = UIColor(red: 215, green: 55, blue: 138)
-    
+    static var redButton = UIColor(red: 252, green: 72, blue: 71)
     
     //Gradient Color.
     static var lightYellow = UIColor(red: 254, green: 218, blue: 117)

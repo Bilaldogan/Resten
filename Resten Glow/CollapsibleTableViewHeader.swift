@@ -48,7 +48,7 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         contentView.addSubview(seperatorView)
         seperatorView.backgroundColor = UIColor.black
         seperatorView.translatesAutoresizingMaskIntoConstraints = false
-        seperatorView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15.0).isActive = true
+        seperatorView.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 15.0).isActive = true
         seperatorView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 10.0).isActive = true
         seperatorView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -10.0).isActive = true
         seperatorView.heightAnchor.constraint(equalToConstant: 1.0).isActive = true

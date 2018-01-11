@@ -31,6 +31,7 @@
 		22651C011FE0677200A5737A /* DeleteAddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22651C001FE0677200A5737A /* DeleteAddressService.swift */; };
 		22651C031FE07DF600A5737A /* UpdatePassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22651C021FE07DF600A5737A /* UpdatePassService.swift */; };
 		226EE74A1FCA097700380281 /* AddCardContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EE7491FCA097600380281 /* AddCardContoller.swift */; };
+		228097702007BA070024F4B3 /* ContactAsPopUpContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280976F2007BA070024F4B3 /* ContactAsPopUpContoller.swift */; };
 		2291AF8C1FA68925009680DE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291AF8B1FA68925009680DE /* RegisterController.swift */; };
 		22AFE5E61FAC116F00EF0E63 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */; };
 		22AFE5E71FAC116F00EF0E63 /* AdressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */; };
@@ -180,6 +181,7 @@
 		22651C001FE0677200A5737A /* DeleteAddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressService.swift; sourceTree = "<group>"; };
 		22651C021FE07DF600A5737A /* UpdatePassService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePassService.swift; sourceTree = "<group>"; };
 		226EE7491FCA097600380281 /* AddCardContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardContoller.swift; sourceTree = "<group>"; };
+		2280976F2007BA070024F4B3 /* ContactAsPopUpContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAsPopUpContoller.swift; sourceTree = "<group>"; };
 		2291AF8B1FA68925009680DE /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		22AFE5E41FAC116F00EF0E63 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
 		22AFE5E51FAC116F00EF0E63 /* AdressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
@@ -476,6 +478,7 @@
 				226EE7491FCA097600380281 /* AddCardContoller.swift */,
 				221C03001FCA4F7D00E33742 /* HelpController.swift */,
 				221C03021FCA575800E33742 /* DetailHelpController.swift */,
+				2280976F2007BA070024F4B3 /* ContactAsPopUpContoller.swift */,
 				22404E8D1FDAB18D000A5706 /* NoConnectionController.swift */,
 				22D707C61FE7281700148AFA /* ChoseAddressController.swift */,
 				22D707C81FE738CF00148AFA /* AllOrderListController.swift */,
@@ -1045,6 +1048,7 @@
 				220719AC1FC4A3D500A1872A /* DistrictListController.swift in Sources */,
 				95B884391FCA296B002E5DC1 /* FSCalendarCollectionView.m in Sources */,
 				22DA907F1FCC628A007102DF /* HelpControllerData.swift in Sources */,
+				228097702007BA070024F4B3 /* ContactAsPopUpContoller.swift in Sources */,
 				95F0C0101FC86A8B00796E5E /* MyBagPopupController.swift in Sources */,
 				95A50AAB1FC53912005B6B6C /* AllProducImageViewtCell.swift in Sources */,
 				95D9B2FB1FA9734500F2BDC6 /* ColorUtil.swift in Sources */,

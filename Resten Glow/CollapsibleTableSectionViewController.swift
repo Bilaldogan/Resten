@@ -129,7 +129,7 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
             
             if let data = delegate?.collapsibleTableView?(tableView, OrderDataForHeaderInSection: section) as? SectionOrder {
                 header.configure(with: data)
-                // header.setCollapsed(isSectionCollapsed(section))
+                //header.setCollapsed(isSectionCollapsed(section))
                 header.section = section
                 header.delegate = self
                 return header
@@ -138,11 +138,13 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
            
         }
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
-        
+        if isSectionCollapsed(section) {
+            header.seperatorView.isHidden = true
+        }
         let title = delegate?.collapsibleTableView?(tableView, titleForHeaderInSection: section) ?? ""
         
         header.titleLabel.text = title
-       // header.setCollapsed(isSectionCollapsed(section))
+        //header.setCollapsed(isSectionCollapsed(section))
         
         header.section = section
         header.delegate = self
@@ -166,6 +168,11 @@ extension CollapsibleTableSectionViewController: CollapsibleTableViewHeaderDeleg
     
     func toggleSection(_ section: Int) {
         let sectionsNeedReload = getSectionsNeedReload(section)
+        for i in sectionsNeedReload {
+           let header = _tableView.headerView(forSection: i) as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+            header.seperatorView.isHidden = !isSectionCollapsed(i)
+        
+        }
         _tableView.reloadSections(IndexSet(sectionsNeedReload), with: .automatic)
     }
     

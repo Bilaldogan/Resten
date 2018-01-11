@@ -21,6 +21,9 @@ class DetailHelpController: CollapsibleTableSectionViewController {
         }
         self.delegate = self
     }
+    @IBAction func contactButtonTapped(_ sender: UIButton) {
+        self.goto(screenID: "ContactAsPopUpContollerID", animated: false, data: nil, isModal: true)
+    }
     
 }
 extension DetailHelpController: CollapsibleTableSectionDelegate {
@@ -50,8 +53,9 @@ extension DetailHelpController: CollapsibleTableSectionDelegate {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
-        header.titleLabel.text = sections[section].name
+        header.titleLabel.text = sections[section].name.uppercased()
         header.section = section
+        
         header.delegate = self
         
         return header
