@@ -125,8 +125,6 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
         case 3:
             goToWeddingController()
         case 4:
-            goToContactController()
-        case 5:
             goToHelpController()
         default:
             break
@@ -224,8 +222,8 @@ class LeftSideMenuController: BaseController,UITableViewDataSource, UITableViewD
 
     
     let imageArray : Array = ["ev","liste","kilit","question","odul","cikis"]
-    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","SİPARİŞLERİM","DÜĞÜN","İLETİŞİM","YARDIM","PAYLAŞ"]
-    let menuItemCount : CGFloat = 6
+    let labelTextArray : Array = ["ANASAYFA","PROFİLİM","SİPARİŞLERİM","DÜĞÜN","YARDIM","PAYLAŞ"]
+    let menuItemCount : CGFloat = 5
     
     
 }

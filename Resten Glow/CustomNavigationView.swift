@@ -14,6 +14,7 @@ import UIKit
 @IBDesignable class CustomNavigationView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak  var navDelegate: NSObject?
     var delegate: CustomNavigationViewDelegate? { return navDelegate as? CustomNavigationViewDelegate }
 

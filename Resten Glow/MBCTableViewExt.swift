@@ -47,7 +47,7 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
                 return cell
             case 1:
                 let cell = Bundle.main.loadNibNamed("LittleAddProductCell", owner: self, options: nil)?.first as! LittleAddProductCell
-                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName + " Ekle", for: .normal)
+                cell.productButton.setTitle(self.categoryList[indexPath.row].CategoryName + " EKLE", for: .normal)
                 return cell
             default:
                 let cell = Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)?.first as! ProductCell
@@ -85,8 +85,6 @@ extension MyBagController : UITableViewDelegate, UITableViewDataSource{
                break
             }
         }
-        
-        
         
     }
     

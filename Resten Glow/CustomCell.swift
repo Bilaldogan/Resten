@@ -16,26 +16,29 @@ class CustomCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        let marginGuide = contentView.layoutMarginsGuide
+
         // configure nameLabel
         contentView.addSubview(nameLabel)
-        nameLabel.font = UIFont(name: "JosefinSans-Regular", size: 15.0)
-        
+        nameLabel.font = UIFont(name: "JosefinSans-Regular", size: 13.0)
+        nameLabel.textColor = UIColor(red: 34.0/255.0, green: 34.0/255.0, blue: 34.0/255.0, alpha: 0.6)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-        nameLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        nameLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
+        
+        let topConstraint = NSLayoutConstraint(item: nameLabel, attribute: NSLayoutAttribute.top, relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.top,
+                                               multiplier: 1.0, constant: 2.0)
+        let leadingConstraint = NSLayoutConstraint(item: nameLabel, attribute: NSLayoutAttribute.leading, relatedBy: .equal,
+                                                   toItem: self.contentView, attribute: NSLayoutAttribute.leading,
+                                                   multiplier: 1.0, constant: 25.0)
+        let trailingConstraint = NSLayoutConstraint(item: nameLabel, attribute:  NSLayoutAttribute.trailing , relatedBy: .equal,
+                                                    toItem: self.contentView, attribute: NSLayoutAttribute.trailing ,
+                                                    multiplier: 1.0, constant: -25.0)
+        let bottomConstraint = NSLayoutConstraint(item: nameLabel, attribute: NSLayoutAttribute.bottom, relatedBy: .equal,
+                                                  toItem: self.contentView, attribute: NSLayoutAttribute.bottom,
+                                                  multiplier: 1.0, constant: -10.0)
+        
+        self.contentView.addConstraints([topConstraint, leadingConstraint, trailingConstraint, bottomConstraint])
         nameLabel.numberOfLines = 0
-        /*
-         contentView.addSubview(seperatorView)
-        seperatorView.backgroundColor = UIColor.black
-        seperatorView.translatesAutoresizingMaskIntoConstraints = false
-        seperatorView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0.0).isActive = true
-        seperatorView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 10.0).isActive = true
-        seperatorView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -10.0).isActive = true
-        seperatorView.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
-        */
+       
     }
     
     required init?(coder aDecoder: NSCoder) {

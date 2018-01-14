@@ -20,7 +20,7 @@ class SmallProfileCell: UITableViewCell {
     @IBOutlet weak var lblPhoneNumber: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        self.selectionStyle = .none
         // Initialization code
     }
     @IBAction func editButtonTapped(sender: AnyObject) {

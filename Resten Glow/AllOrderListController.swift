@@ -12,8 +12,6 @@ class AllOrderListController: CollapsibleTableSectionViewController {
 
     @IBOutlet weak var customNavigation: CustomNavigationView!
     
-    @IBOutlet weak var waitingButton: CustomButton!
-    @IBOutlet weak var completedButton: CustomButton!
     var allOrderService = AllOrderService()
     var tableViewData : AllOrderServiceResponseModel = AllOrderServiceResponseModel()
     var selectedSection : Int?
@@ -25,31 +23,22 @@ class AllOrderListController: CollapsibleTableSectionViewController {
         self.customNavigation.navDelegate = self
         self.allOrderService.serviceDelegate = self
         self.allOrderService.connectService(memberId: UserPrefence.getUserId())
+        self.SHOW_SIC()
         self.delegate = self
 
     }
-    @IBAction func sectionClicked(_ sender: CustomButton) {
-        resetButtons()
-        sender.backgroundColor = UIColor.white
-        sender.setTitleColor(UIColor.black, for: .normal)
-        if sender.currentTitle == "Tamamlananlar" {
-            if selectedSection != 0 {
-                selectedSection = 0
-                _tableView.reloadData()
-            }
-        } else {
-            if selectedSection != 1 {
-                selectedSection = 1
-                _tableView.reloadData()
-            }
+    
+    @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            selectedSection = 0
+            _tableView.reloadData()
+        case 1:
+            selectedSection = 1
+            _tableView.reloadData()
+        default:
+            break
         }
-    }
-    func resetButtons() {
-        self.waitingButton.backgroundColor = ColorUtil.pink
-        self.waitingButton.setTitleColor(UIColor.white, for: .normal)
-        self.completedButton.backgroundColor = ColorUtil.pink
-        self.completedButton.setTitleColor(UIColor.white, for: .normal)
-
     }
     
  }
@@ -57,16 +46,13 @@ class AllOrderListController: CollapsibleTableSectionViewController {
 extension AllOrderListController : AllOrderServiceDelegate {
     func getResponse(response: AllOrderServiceResponseModel) {
         tableViewData = response
-        if response.completeOrders.count > 0 {
-            self.completedButton.isEnabled = true
-            sectionClicked(completedButton)
-        }
-        if response.inCompleteOrders.count > 0 {
-            self.waitingButton.isEnabled = true
-        }
+        _tableView.reloadData()
+        HIDE_SIC(customView: self.view)
     }
     
     func getError(errorMessage: String) {
+        print(errorMessage)
+        HIDE_SIC(customView: self.view)
     }
     
     

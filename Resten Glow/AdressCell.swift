@@ -17,6 +17,7 @@ class AdressCell: UITableViewCell {
     var id = ""
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         // Initialization code
     }
     func configureWithItem(data: UserAddress, type : AddressCellType) {

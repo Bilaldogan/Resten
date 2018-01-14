@@ -25,33 +25,47 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         // Content View
         contentView.backgroundColor = UIColor.white
         
-        let marginGuide = contentView.layoutMarginsGuide
-        //
-       
-        // Arrow label
-        
         // Title label
         contentView.addSubview(titleLabel)
         //titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.textColor = UIColor.black
-        titleLabel.font = UIFont(name: "JosefinSans-Regular", size: 18.0)
+        titleLabel.textColor = UIColor(red: 34.0 / 255.0 , green: 34.0 / 255.0, blue: 34.0 / 255.0, alpha: 1.0)
+        titleLabel.font = UIFont(name: "JosefinSans-Regular", size: 16.0)
         titleLabel.textAlignment = .center
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 15.0).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -10.0).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor, constant: 0).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 10.0).isActive = true
+        
+        let topConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.top, relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.top,
+                                               multiplier: 1.0, constant: 35.0)
+        let leadingConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.leading, relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.leading,
+                                               multiplier: 1.0, constant: 25.0)
+        let trailingConstraint = NSLayoutConstraint(item: titleLabel, attribute:  NSLayoutAttribute.trailing , relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.trailing ,
+                                               multiplier: 1.0, constant: -25.0)
+        let bottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.bottom, relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.bottom,
+                                               multiplier: 1.0, constant: -35.0)
+        
+        self.contentView.addConstraints([topConstraint, leadingConstraint, trailingConstraint, bottomConstraint])
         titleLabel.numberOfLines = 0
-        //
-        // Call tapHeader when tapping on this header
-        //
+        
+        
         contentView.addSubview(seperatorView)
-        seperatorView.backgroundColor = UIColor.black
+        seperatorView.backgroundColor = UIColor(hex: 000000, alpha: 0.7)
         seperatorView.translatesAutoresizingMaskIntoConstraints = false
-        seperatorView.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 15.0).isActive = true
-        seperatorView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 10.0).isActive = true
-        seperatorView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -10.0).isActive = true
-        seperatorView.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+        let topViewtopConstraint = NSLayoutConstraint(item: seperatorView, attribute: NSLayoutAttribute.top, relatedBy: .equal,
+                                               toItem: self.contentView, attribute: NSLayoutAttribute.top,
+                                               multiplier: 1.0, constant: 0.0)
+        let topViewleadingConstraint = NSLayoutConstraint(item: seperatorView, attribute: NSLayoutAttribute.leading, relatedBy: .equal,
+                                                   toItem: self.contentView, attribute: NSLayoutAttribute.leading,
+                                                   multiplier: 1.0, constant: 25.0)
+        let topViewtrailingConstraint = NSLayoutConstraint(item: seperatorView, attribute:  NSLayoutAttribute.trailing , relatedBy: .equal,
+                                                    toItem: self.contentView, attribute: NSLayoutAttribute.trailing ,
+                                                    multiplier: 1.0, constant: -25.0)
+        let topViewbottomConstraint = NSLayoutConstraint(item: seperatorView, attribute: NSLayoutAttribute.height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 1.0)
+        
+        self.contentView.addConstraints([topViewtopConstraint, topViewleadingConstraint, topViewtrailingConstraint, topViewbottomConstraint])
+        
         
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CollapsibleTableViewHeader.tapHeader(_:))))
     }
@@ -59,10 +73,6 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    //
-    // Trigger toggle section when tapping on the header
-    //
     func tapHeader(_ gestureRecognizer: UITapGestureRecognizer) {
         guard let cell = gestureRecognizer.view as? CollapsibleTableViewHeader else {
             return

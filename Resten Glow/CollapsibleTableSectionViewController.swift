@@ -84,10 +84,11 @@ import UIKit
         view.addSubview(_tableView)
         _tableView.translatesAutoresizingMaskIntoConstraints = false
         if isOrderController {
-        _tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.82).isActive = true
+        _tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.80).isActive = true
         } else {
         _tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.9).isActive = true
         }
+        
         _tableView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.bottomAnchor).isActive = true
         _tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         _tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true

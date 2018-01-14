@@ -15,6 +15,7 @@ class DetailHelpController: CollapsibleTableSectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customNavigaiton.navDelegate = self
+        self.customNavigaiton.bottomView.isHidden = true
         self.customNavigaiton.addShadow()
         if let title = data as? String {
             self.customNavigaiton.title = title
@@ -55,7 +56,6 @@ extension DetailHelpController: CollapsibleTableSectionDelegate {
         
         header.titleLabel.text = sections[section].name.uppercased()
         header.section = section
-        
         header.delegate = self
         
         return header

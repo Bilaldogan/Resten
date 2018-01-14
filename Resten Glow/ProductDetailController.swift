@@ -23,7 +23,13 @@ class ProductDetailController: BaseController {
     }
     @IBAction func backButtonAct(_ sender: Any) {
         DispatchQueue.main.async {
-            self.transitionToBack()
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            transition.type = kCATransitionPush
+            transition.subtype = kCATransitionFromLeft
+            self.navigationController?.view.layer.add(transition, forKey: nil)
+            _ = self.navigationController?.popViewController(animated: false)
         }
     }
     

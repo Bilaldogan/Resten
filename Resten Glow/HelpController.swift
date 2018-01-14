@@ -14,6 +14,7 @@ class HelpController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customNavigaiton.addShadow()
+        self.customNavigaiton.bottomView.isHidden = true
         self.customNavigaiton.navDelegate = self
         // Do any additional setup after loading the view.
     }

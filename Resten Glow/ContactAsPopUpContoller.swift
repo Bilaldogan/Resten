@@ -30,15 +30,14 @@ class ContactAsPopUpContoller: BaseController,MFMailComposeViewControllerDelegat
     @IBAction func callUs(_ sender: UIButton) {
     }
     @IBAction func emailUsTapped(_ sender: UIButton) {
-        var emailTitle = "Feedback"
-        var toRecipents = ["friend@stackoverflow.com"]
-        var mc: MFMailComposeViewController = MFMailComposeViewController()
-        mc.mailComposeDelegate = self
-        mc.setSubject(emailTitle)
-        mc.setToRecipients(toRecipents)
-        
-        self.present(mc, animated: true, completion: nil)
-
+//        var emailTitle = "Feedback"
+//        var toRecipents = ["friend@stackoverflow.com"]
+//        var mc: MFMailComposeViewController = MFMailComposeViewController()
+//        mc.mailComposeDelegate = self
+//        mc.setSubject(emailTitle)
+//        mc.setToRecipients(toRecipents)
+//        
+//        self.present(mc, animated: true, completion: nil)
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         switch result {

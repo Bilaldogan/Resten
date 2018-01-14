@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,39 +30,52 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Joq-bt-Si0">
-                        <rect key="frame" x="5" y="25" width="25.5" height="25.5"/>
+                        <rect key="frame" x="5" y="22" width="32" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Joq-bt-Si0" secondAttribute="height" multiplier="1:1" id="FbQ-0L-eoR"/>
+                            <constraint firstAttribute="width" secondItem="Joq-bt-Si0" secondAttribute="height" multiplier="1:1" id="9uz-K5-esi"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR0-MI-Zpy">
-                        <rect key="frame" x="38.5" y="11" width="19" height="20"/>
-                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
-                        <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="45" y="11" width="259" height="23"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
+                        <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
                             <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="27"/>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Keçeci Piri Mah Nehir Sok No 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-jR-Y0g">
-                        <rect key="frame" x="38.5" y="36" width="211" height="28.5"/>
-                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="15"/>
-                        <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Keçeci Piri Mah Nehir Sok No 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-jR-Y0g">
+                        <rect key="frame" x="45" y="34" width="251" height="30.5"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="13"/>
+                        <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=regular">
                             <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="25"/>
                         </variation>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfh-qa-lWz">
+                        <rect key="frame" x="0.0" y="75" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hme-uB-tFb"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Joq-bt-Si0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="1Ho-xR-dpi"/>
-                    <constraint firstItem="Zlm-jR-Y0g" firstAttribute="top" secondItem="bR0-MI-Zpy" secondAttribute="bottom" constant="5" id="IRX-s5-hNw"/>
-                    <constraint firstItem="bR0-MI-Zpy" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="KL6-r9-hqw"/>
-                    <constraint firstAttribute="bottom" secondItem="Joq-bt-Si0" secondAttribute="bottom" constant="25" id="PXJ-5p-fGI"/>
-                    <constraint firstItem="Zlm-jR-Y0g" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="Q41-wo-PLa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bR0-MI-Zpy" secondAttribute="trailing" id="6nL-rC-DoJ"/>
+                    <constraint firstItem="Zlm-jR-Y0g" firstAttribute="top" secondItem="bR0-MI-Zpy" secondAttribute="bottom" id="IRX-s5-hNw"/>
+                    <constraint firstAttribute="trailing" secondItem="pfh-qa-lWz" secondAttribute="trailing" id="UMG-c5-h76"/>
+                    <constraint firstAttribute="bottom" secondItem="pfh-qa-lWz" secondAttribute="bottom" id="UrK-AM-lm1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zlm-jR-Y0g" secondAttribute="bottom" id="VFa-fu-tZb"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Zlm-jR-Y0g" secondAttribute="bottom" constant="0.5" id="WsL-2C-k8s"/>
                     <constraint firstItem="Joq-bt-Si0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XMx-ev-UZ2"/>
+                    <constraint firstItem="Joq-bt-Si0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZAo-xl-r3C"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zlm-jR-Y0g" secondAttribute="trailing" constant="8" id="amD-KQ-A5b"/>
+                    <constraint firstItem="bR0-MI-Zpy" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="dVG-gP-CMT"/>
                     <constraint firstItem="bR0-MI-Zpy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="hLE-22-1xi"/>
+                    <constraint firstItem="Joq-bt-Si0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="iQl-8c-gFg"/>
+                    <constraint firstItem="Zlm-jR-Y0g" firstAttribute="leading" secondItem="Joq-bt-Si0" secondAttribute="trailing" constant="8" id="qOs-e2-88L"/>
+                    <constraint firstItem="pfh-qa-lWz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v14-hn-cBv"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationView" customModule="Resten_Glow">
             <connections>
+                <outlet property="bottomView" destination="LNr-u4-N0V" id="Fwx-1D-8d5"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="Nyh-Qx-zjG"/>
                 <outlet property="titleLabel" destination="k2a-sw-fJI" id="cma-xm-1iI"/>
             </connections>
@@ -28,14 +29,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx0-1r-94K" customClass="CustomButton" customModule="Resten_Glow" customModuleProvider="target">
-                    <rect key="frame" x="8" y="37.5" width="46.5" height="46.5"/>
+                    <rect key="frame" x="8" y="23" width="46.5" height="46.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="dx0-1r-94K" secondAttribute="height" id="MrK-Fa-VqY"/>
                     </constraints>
                     <state key="normal" image="back-icon"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
-                            <color key="value" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -43,19 +44,30 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-sw-fJI">
-                    <rect key="frame" x="169.5" y="53" width="37" height="17.5"/>
-                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
+                    <rect key="frame" x="170.5" y="36.5" width="35.5" height="20"/>
+                    <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="13"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=regular">
-                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="27"/>
+                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="23"/>
                     </variation>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-u4-N0V">
+                    <rect key="frame" x="0.0" y="92" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NpW-bH-mWS"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="dx0-1r-94K" firstAttribute="centerY" secondItem="k2a-sw-fJI" secondAttribute="centerY" id="8nr-Kk-du8"/>
-                <constraint firstItem="k2a-sw-fJI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="15" id="LQR-xv-cJV"/>
+                <constraint firstItem="LNr-u4-N0V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BFy-jy-qTW"/>
+                <constraint firstAttribute="bottom" secondItem="LNr-u4-N0V" secondAttribute="bottom" id="BSL-z9-1dc"/>
+                <constraint firstItem="k2a-sw-fJI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LQR-xv-cJV"/>
                 <constraint firstItem="k2a-sw-fJI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PQZ-EL-aMh"/>
+                <constraint firstAttribute="trailing" secondItem="LNr-u4-N0V" secondAttribute="trailing" id="U2i-Cj-Yce"/>
                 <constraint firstItem="dx0-1r-94K" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="Ufp-Dx-ZkK"/>
                 <constraint firstItem="dx0-1r-94K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="cxX-UZ-R4d"/>
             </constraints>

@@ -55,14 +55,13 @@ extension AddAddressController : AddAddressDelegate {
     func getResponse(response: AddAddressResponse) {
         self.HIDE_SIC(customView: self.view)
         self.back()
-        self.view.makeToast(response.Message)
+        //Buraya delegaye ekleyerek bir önceki sayfada tableview reload edilecek.
     }
 }
 
 extension AddAddressController : CustomNavigationViewDelegate {
     func backButtonTapped() {
         self.back()
-        self.back(animated: true, isModal: true)
     }
 }
 extension AddAddressController{
